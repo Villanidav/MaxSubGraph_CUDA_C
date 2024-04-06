@@ -44,4 +44,17 @@ class LabelClass {
         }
     }
 
+     // Get ring match data method
+    std::vector<int> get_ring_match_data(const std::vector<int>& elems) {
+        std::vector<int> res;
+        for (int i : elems) {
+            auto it = std::find(g.begin(), g.end(), i);
+            if (it != g.end()) {
+                int idx = std::distance(g.begin(), it);
+                res.push_back(rings_g[idx]);
+            }
+        }
+        return res;
+    }
 };
+
