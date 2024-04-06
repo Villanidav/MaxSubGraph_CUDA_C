@@ -1,0 +1,3 @@
+/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/subgraph_search.dir
+/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/edit_cache.dir
+/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/rebuild_cache.dir

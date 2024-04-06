@@ -1,0 +1,2 @@
+"/opt/homebrew/bin/aarch64-apple-darwin23-gcc-ar-13" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+"/opt/homebrew/bin/aarch64-apple-darwin23-gcc-ranlib-13" libfoo.a
