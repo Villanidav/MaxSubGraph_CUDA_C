@@ -3,13 +3,14 @@
 
 class LabelClass {
     private:
-        std::vector<int> g;
+        
+    
+    public:
+    std::vector<int> g;
         std::vector<int> h;
         int adj;
         int label;
         std::vector<int> rings_g;
-    
-    public:
     // Constructor
     LabelClass(const std::vector<int>& elems_g, const std::vector<int>& elems_h, const std::vector<int>& rings, int adj = 0, int label = 0) 
         : g(elems_g), h(elems_h), adj(adj), label(label), rings_g(rings) {}
