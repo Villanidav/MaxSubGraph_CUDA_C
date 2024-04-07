@@ -52,6 +52,7 @@ set(header_path "${CMAKE_CURRENT_SOURCE_DIR}/src")
 list(APPEND header_files
   "${header_path}/main.hpp"
   "${header_path}/test.hpp"
+  "${header_path}/testFra.hpp"
 )
 
 
@@ -80,6 +81,12 @@ add_executable(test ${header_files} "${source_path}/test.cpp" "${source_path}/ge
 set_target_properties(test PROPERTIES
     COMPILE_DEFINITIONS "TESTING"
 )
+
+add_executable(testFra ${header_files} "${source_path}/testFra.cpp" ) #Aggiungere qui tutte le funzioni a cui faccio riferimento, di fianco a sourcepath...
+set_target_properties(test PROPERTIES
+    COMPILE_DEFINITIONS "TESTING"
+)
+
 
 
 

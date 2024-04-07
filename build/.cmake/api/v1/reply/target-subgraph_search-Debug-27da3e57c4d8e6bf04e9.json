@@ -29,19 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 70,
+				"line" : 71,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 101,
+				"line" : 108,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 102,
+				"line" : 109,
 				"parent" : 0
 			},
 			{
@@ -53,13 +53,13 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 99,
+				"line" : 106,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 71,
+				"line" : 72,
 				"parent" : 0
 			}
 		]
@@ -118,7 +118,7 @@
 			},
 			"sourceIndexes" : 
 			[
-				2
+				3
 			]
 		}
 	],
@@ -187,14 +187,15 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		},
 		{
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				2
+				3
 			]
 		}
 	],
@@ -208,6 +209,11 @@
 		{
 			"backtrace" : 1,
 			"path" : "src/test.hpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "src/testFra.hpp",
 			"sourceGroupIndex" : 0
 		},
 		{

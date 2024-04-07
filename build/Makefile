@@ -142,6 +142,19 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
+#=============================================================================
+# Target rules for targets named testFra
+
+# Build rule for target.
+testFra: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 testFra
+.PHONY : testFra
+
+# fast build rule for target.
+testFra/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/build
+.PHONY : testFra/fast
+
 src/gen_rotations.o: src/gen_rotations.cpp.o
 .PHONY : src/gen_rotations.o
 
@@ -214,6 +227,30 @@ src/test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/test.cpp.s
 .PHONY : src/test.cpp.s
 
+src/testFra.o: src/testFra.cpp.o
+.PHONY : src/testFra.o
+
+# target to build an object file
+src/testFra.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/testFra.cpp.o
+.PHONY : src/testFra.cpp.o
+
+src/testFra.i: src/testFra.cpp.i
+.PHONY : src/testFra.i
+
+# target to preprocess a source file
+src/testFra.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/testFra.cpp.i
+.PHONY : src/testFra.cpp.i
+
+src/testFra.s: src/testFra.cpp.s
+.PHONY : src/testFra.s
+
+# target to generate assembly for a file
+src/testFra.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/testFra.cpp.s
+.PHONY : src/testFra.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -224,6 +261,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... subgraph_search"
 	@echo "... test"
+	@echo "... testFra"
 	@echo "... src/gen_rotations.o"
 	@echo "... src/gen_rotations.i"
 	@echo "... src/gen_rotations.s"
@@ -233,6 +271,9 @@ help:
 	@echo "... src/test.o"
 	@echo "... src/test.i"
 	@echo "... src/test.s"
+	@echo "... src/testFra.o"
+	@echo "... src/testFra.i"
+	@echo "... src/testFra.s"
 .PHONY : help
 
 
