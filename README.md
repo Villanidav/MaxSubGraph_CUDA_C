@@ -20,7 +20,7 @@ The project is organized as follow:
 - ***script*** containing the python file provided by the previous student
 - ***src*** where you should place the source code of the C++ and CUDA porting of your application
 
-## Important for adding new ESECUTABLE TESTS 
+## Important for adding new EXECUTABLE TESTS 
  Nel file CMakeLists.txt è presente una parte di add executable, ogni qual volta si voglia testare, 
  o aggiungere una nuova funzione al file di test, bisogna seguire questo procedimento:
  - inserisco l'header della funzione nella classe test.hpp o testFra.hpp
