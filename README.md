@@ -31,7 +31,12 @@ NON AGGIUNGERE ALTRO NEL CMAKE FILE
 
 ## Problemi con il Merge?  ⭐
  Se prima di pushare dimentichi di pullare:
- - git config pull.rebase false        //incolla in console
+```
+$ git config pull.rebase false 
+$ git commit -m "###"
+$ git push
+```
+
  - commit and synch
 
 ## Test
