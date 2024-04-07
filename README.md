@@ -28,3 +28,8 @@ The project is organized as follow:
  - salvo cmake file ctrl S
  - buildo nuovamente l'app ed eseguo ./test // ./testFra
 NON AGGIUNGERE ALTRO NEL CMAKE FILE
+
+## Problemi con il Merge?
+ Se prima di pushare dimentichi di pullare:
+ - git config pull.rebase false    //incolla in console
+ - commit and synch
