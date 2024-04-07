@@ -26,7 +26,7 @@ The project is organized as follow:
  - inserisco l'header della funzione nella classe test.hpp o testFra.hpp
  - vado nel file cmake e per ogni funzione aggiunta scrivo "${source_path}/NOMEFUNZIONE.cpp" di fianco a "${source_path}/testFra.cpp"
  - salvo cmake file ctrl S
- - buildo nuovamente l'app ed eseguo ./test // ./testFra
+ - buildo nuovamente l'app ed eseguo ./test o ./testFra
 NON AGGIUNGERE ALTRO NEL CMAKE FILE
 
 ## Merge ⭐
