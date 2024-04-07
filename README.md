@@ -33,3 +33,9 @@ NON AGGIUNGERE ALTRO NEL CMAKE FILE
  Se prima di pushare dimentichi di pullare:
  - git config pull.rebase false        //incolla in console
  - commit and synch
+
+## Test
+- gen_rotations : ✅
+- Label : ❌
+
+
