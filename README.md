@@ -29,7 +29,7 @@ The project is organized as follow:
  - buildo nuovamente l'app ed eseguo ./test // ./testFra
 NON AGGIUNGERE ALTRO NEL CMAKE FILE
 
-## Problemi con il Merge?  ⭐
+## Merge ⭐
  Se prima di pushare dimentichi di pullare:
 ```
 $ git config pull.rebase false 
