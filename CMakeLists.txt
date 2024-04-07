@@ -51,12 +51,15 @@ find_package(rdkit REQUIRED)
 set(header_path "${CMAKE_CURRENT_SOURCE_DIR}/src")
 list(APPEND header_files
   "${header_path}/main.hpp"
+  "${header_path}/test.hpp"
 )
+
 
 # application sources
 set(source_path "${CMAKE_CURRENT_SOURCE_DIR}/src")
-list(APPEND source_files
-  "${source_path}/main.cpp"
+list(APPEND source_filess
+  "${source_path}/Label.cpp"
+  "${source_path}/gen_rotations.cpp"
 )
 
 # ########################################################################
@@ -64,13 +67,21 @@ list(APPEND source_files
 # ########################################################################
 
 # define the target and its properties
-add_executable(subgraph_search ${header_files} ${source_files})
+add_executable(subgraph_search ${header_files} "${source_path}/main.cpp" ${source_files})
 set_target_properties(subgraph_search
   PROPERTIES
   CXX_STANDARD 17
   CXX_STANDARD_REQUIRED ON
   CXX_EXTENSIONS OFF
 )
+
+
+add_executable(test ${header_files} "${source_path}/test.cpp" "${source_path}/gen_rotations.cpp")
+set_target_properties(test PROPERTIES
+    COMPILE_DEFINITIONS "TESTING"
+)
+
+
 
 # enable link-time optimizations
 include(CheckIPOSupported)
