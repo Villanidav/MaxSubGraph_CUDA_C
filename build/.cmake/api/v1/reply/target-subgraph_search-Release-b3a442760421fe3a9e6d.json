@@ -13,7 +13,6 @@
 			"add_executable",
 			"target_link_directories",
 			"target_link_libraries",
-			"add_compile_options",
 			"target_include_directories",
 			"set_target_properties"
 		],
@@ -35,6 +34,12 @@
 			{
 				"command" : 1,
 				"file" : 0,
+				"line" : 107,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
 				"line" : 108,
 				"parent" : 0
 			},
@@ -47,17 +52,11 @@
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 25,
-				"parent" : 0
-			},
-			{
-				"command" : 4,
-				"file" : 0,
 				"line" : 106,
 				"parent" : 0
 			},
 			{
-				"command" : 5,
+				"command" : 4,
 				"file" : 0,
 				"line" : 72,
 				"parent" : 0
@@ -70,41 +69,14 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -flto -fno-fat-lto-objects"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "-Wall"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "-Wextra"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "-Wpedantic"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "-Wl,-z,defs"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "-Wl,-z,now"
-				},
-				{
-					"backtrace" : 4,
-					"fragment" : "-Wl,-z,relro"
-				},
-				{
-					"fragment" : "-std=c++17"
+					"fragment" : "-O3 -DNDEBUG -std=c++17 -flto=thin -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 5,
-					"path" : "/home/davide/miniconda3/include/rdkit"
+					"path" : "/opt/homebrew/include/rdkit"
 				}
 			],
 			"language" : "CXX",
@@ -128,44 +100,49 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -flto -fno-fat-lto-objects",
+				"fragment" : "-O3 -DNDEBUG -flto=thin",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/davide/miniconda3/lib -Wl,-rpath-link,/home/davide/miniconda3/lib -L/home/davide/miniconda3/lib",
+				"fragment" : "",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-L/home/davide/miniconda3/lib64",
+				"fragment" : "-L/opt/homebrew/lib",
 				"role" : "libraryPath"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/home/davide/miniconda3/lib64",
+				"backtrace" : 3,
+				"fragment" : "-L/opt/homebrew/lib64",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/opt/homebrew/lib -Wl,-rpath,/opt/homebrew/lib64",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 3,
+				"backtrace" : 4,
 				"fragment" : "-lRDKitFileParsers",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 3,
+				"backtrace" : 4,
 				"fragment" : "-lRDKitGraphMol",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 3,
+				"backtrace" : 4,
 				"fragment" : "-lRDKitRDGeneral",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 3,
+				"backtrace" : 4,
 				"fragment" : "-lRDKitSmilesParse",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 3,
+				"backtrace" : 4,
 				"fragment" : "-lRDKitSubstructMatch",
 				"role" : "libraries"
 			}

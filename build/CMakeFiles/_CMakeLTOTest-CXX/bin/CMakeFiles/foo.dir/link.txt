@@ -1,2 +1,2 @@
-"/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ar" cr libfoo.a CMakeFiles/foo.dir/foo.cpp.o
-"/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ranlib" libfoo.a
+"/Library/Developer/CommandLineTools/usr/bin/ar" qc libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+"/Library/Developer/CommandLineTools/usr/bin/ranlib" libfoo.a

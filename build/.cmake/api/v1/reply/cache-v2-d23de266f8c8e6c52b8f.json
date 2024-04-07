@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/local/lib/cmake/Boost-1.82.0"
+			"value" : "/opt/homebrew/lib/cmake/Boost-1.84.0"
 		},
 		{
 			"name" : "Boost_INCLUDE_DIR",
@@ -27,7 +27,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/local/include"
+			"value" : "/opt/homebrew/include"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -43,7 +43,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-addr2line"
+			"value" : "CMAKE_ADDR2LINE-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -59,7 +59,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-ar"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/ar"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -67,11 +67,15 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "The type of build"
+				},
+				{
+					"name" : "STRINGS",
+					"value" : "Debug;Release;RelWithDebInfo"
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : "Release"
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -83,7 +87,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build"
+			"value" : "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -107,7 +111,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "22"
+			"value" : "29"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -119,7 +123,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "0"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
@@ -147,7 +151,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/bin/cmake"
+			"value" : "/opt/homebrew/Cellar/cmake/3.29.0/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -159,7 +163,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/bin/cpack"
+			"value" : "/opt/homebrew/Cellar/cmake/3.29.0/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -171,7 +175,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/bin/ctest"
+			"value" : "/opt/homebrew/Cellar/cmake/3.29.0/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -183,43 +187,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++"
-		},
-		{
-			"name" : "CMAKE_CXX_COMPILER_AR",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ar"
-		},
-		{
-			"name" : "CMAKE_CXX_COMPILER_RANLIB",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ranlib"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/c++"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -235,7 +207,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_DEBUG",
@@ -311,43 +283,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc"
-		},
-		{
-			"name" : "CMAKE_C_COMPILER_AR",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ar"
-		},
-		{
-			"name" : "CMAKE_C_COMPILER_RANLIB",
-			"properties" : 
-			[
-				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
-					"name" : "HELPSTRING",
-					"value" : "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
-				}
-			],
-			"type" : "FILEPATH",
-			"value" : "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ranlib"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/cc"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -363,7 +303,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_C_FLAGS_DEBUG",
@@ -446,6 +386,18 @@
 			"value" : "CMAKE_DLLTOOL-NOTFOUND"
 		},
 		{
+			"name" : "CMAKE_EDIT_COMMAND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to cache edit program executable."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/opt/homebrew/Cellar/cmake/3.29.0/bin/ccmake"
+		},
+		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
 			"properties" : 
 			[
@@ -455,7 +407,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ELF"
+			"value" : "MACHO"
 		},
 		{
 			"name" : "CMAKE_EXE_LINKER_FLAGS",
@@ -471,7 +423,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/davide/miniconda3/lib -Wl,-rpath-link,/home/davide/miniconda3/lib -L/home/davide/miniconda3/lib"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_EXE_LINKER_FLAGS_DEBUG",
@@ -542,12 +494,16 @@
 			"properties" : 
 			[
 				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Enable/Disable output of compile commands during generation."
 				}
 			],
 			"type" : "BOOL",
-			"value" : "TRUE"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_EXTRA_GENERATOR",
@@ -560,6 +516,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : ""
+		},
+		{
+			"name" : "CMAKE_FIND_PACKAGE_REDIRECTS_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake."
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -619,42 +587,6 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "CMAKE_HAVE_PTHREADS_CREATE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Have library pthreads"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
-		},
-		{
-			"name" : "CMAKE_HAVE_PTHREAD_CREATE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Have library pthread"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "1"
-		},
-		{
-			"name" : "CMAKE_HAVE_PTHREAD_H",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Have include pthread.h"
-				}
-			],
-			"type" : "INTERNAL",
 			"value" : "1"
 		},
 		{
@@ -667,7 +599,23 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C"
+			"value" : "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C"
+		},
+		{
+			"name" : "CMAKE_INSTALL_NAME_TOOL",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/install_name_tool"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -680,18 +628,6 @@
 			],
 			"type" : "PATH",
 			"value" : "/usr/local"
-		},
-		{
-			"name" : "CMAKE_INSTALL_SO_NO_EXE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Install .so files without execute permission."
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -707,7 +643,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-ld"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/ld"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -723,7 +659,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gmake"
+			"value" : "/usr/bin/make"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -739,7 +675,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/davide/miniconda3/lib -Wl,-rpath-link,/home/davide/miniconda3/lib -L/home/davide/miniconda3/lib"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS_DEBUG",
@@ -819,7 +755,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-nm"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/nm"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -847,7 +783,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-objcopy"
+			"value" : "CMAKE_OBJCOPY-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -863,7 +799,43 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-objdump"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/objdump"
+		},
+		{
+			"name" : "CMAKE_OSX_ARCHITECTURES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Build architectures for OSX"
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_OSX_DEPLOYMENT_TARGET",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Minimum OS X version to target for deployment (at runtime); newer APIs weak linked. Set to empty string for default value."
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_OSX_SYSROOT",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The product will be built against the headers and libraries located inside the indicated SDK."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -987,7 +959,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-ranlib"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/ranlib"
 		},
 		{
 			"name" : "CMAKE_READELF",
@@ -1003,7 +975,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-readelf"
+			"value" : "CMAKE_READELF-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -1015,7 +987,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/share/cmake-3.22"
+			"value" : "/opt/homebrew/Cellar/cmake/3.29.0/share/cmake"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1031,7 +1003,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/davide/miniconda3/lib -Wl,-rpath-link,/home/davide/miniconda3/lib -L/home/davide/miniconda3/lib"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS_DEBUG",
@@ -1223,7 +1195,23 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-strip"
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/strip"
+		},
+		{
+			"name" : "CMAKE_TAPI",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/Library/Developer/CommandLineTools/usr/bin/tapi"
 		},
 		{
 			"name" : "CMAKE_UNAME",
@@ -1263,7 +1251,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/share/eigen3/cmake"
+			"value" : "/opt/homebrew/share/eigen3/cmake"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Boost",
@@ -1275,7 +1263,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/local/lib/cmake/Boost-1.82.0/BoostConfig.cmake][c ][v1.82.0(1.82.0)]"
+			"value" : "[/opt/homebrew/lib/cmake/Boost-1.84.0/BoostConfig.cmake][c ][v1.84.0(1.84.0)]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
@@ -1319,7 +1307,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/local/lib/cmake/boost_headers-1.82.0"
+			"value" : "/opt/homebrew/lib/cmake/boost_headers-1.84.0"
 		},
 		{
 			"name" : "rdkit_DIR",
@@ -1331,7 +1319,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/davide/miniconda3/lib/cmake/rdkit"
+			"value" : "/opt/homebrew/lib/cmake/rdkit"
 		},
 		{
 			"name" : "subgraph_search_BINARY_DIR",
@@ -1343,7 +1331,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build"
+			"value" : "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build"
 		},
 		{
 			"name" : "subgraph_search_IS_TOP_LEVEL",
@@ -1367,7 +1355,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C"
+			"value" : "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C"
 		}
 	],
 	"kind" : "cache",
