@@ -40,5 +40,17 @@ $ git config pull.rebase false
 ## Test
 - gen_rotations : ✅
 - Label : ❌
+## Rdkit
+Data structure
 
+    Basic data structure to describe a molecule: RDKit::RWMol or RDKit::ROMol
+
+Parsing
+
+    Parse a string that describe the protein (in PDB format): RDKit::PDBBlockToMol
+    Parse a string that describe the ligand (in Mol2 format): RDKit::Mol2BlockToMol
+
+Headers
+
+    GraphMol/FileParsers/FileParsers.h <- to parse a file format GraphMol/GraphMol.h <- data structure definition
 
