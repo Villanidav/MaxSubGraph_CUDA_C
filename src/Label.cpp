@@ -1,5 +1,6 @@
 #include <vector>
 #include <algorithm>
+#include <iostream>
 
 class LabelClass {
 
@@ -10,9 +11,9 @@ class LabelClass {
     std::vector<int> h;
     int adj;
     int label;
-    std::vector<int> rings_g;
+    std::vector<std::vector<int> > rings_g;
     
-    LabelClass(const std::vector<int> elems_g, const std::vector<int> elems_h, const std::vector<int> rings, int adjj , int labell ) 
+    LabelClass(const std::vector<int> elems_g, const std::vector<int> elems_h, const std::vector<std::vector<int> > rings, int adjj , int labell ) 
         {
             g = elems_g;
             h = elems_h;
@@ -21,6 +22,7 @@ class LabelClass {
             label = labell;
         };
 
+    
      // Remove method
     void remove(int graph, int elem) {
         if (graph == 0) {
@@ -39,13 +41,13 @@ class LabelClass {
     }
 
      // Get ring match data method
-    std::vector<int> get_ring_match_data(const std::vector<int>& elems) {
-        std::vector<int> res;
+    std::vector<std::vector<int> > get_ring_match_data(const std::vector<int>& elems) {
+        std::vector<std::vector<int> > res;
         for (int i : elems) {
             auto it = std::find(g.begin(), g.end(), i);
             if (it != g.end()) {
                 int idx = std::distance(g.begin(), it);
-                res.push_back(rings_g[idx]);
+                res.push_back(rings_g.at(idx));
             }
         }
         return res;
