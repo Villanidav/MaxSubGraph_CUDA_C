@@ -3,7 +3,7 @@ using namespace std;
 // vtx: selected node
 // g: selected graph
 // edge: bond type
-std::vector<int> hood(int vtx, const std::vector<std::vector<int>>& g, int edge) {
+std::vector<int> hood(int vtx, const std::vector<std::vector<int> >& g, int edge) {
     // Return the neighbors of a specified node, with the specified bond type.
     std::vector<int> friends;
     for (std::size_t i = 0; i < g.size(); ++i) {
