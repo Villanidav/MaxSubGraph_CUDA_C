@@ -44,7 +44,7 @@ $ git config pull.rebase false
 - select_label : ✅
 - gen_initial_label : ❌
 - gen_ring_classes : ❌
-- calc_bound : ❌
+- calc_bound : ✅
 - gen_bond : ❌
 ## Rdkit
 Data structure
