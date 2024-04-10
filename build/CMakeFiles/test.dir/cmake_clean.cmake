@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test.dir/src/Label.cpp.o"
   "CMakeFiles/test.dir/src/Label.cpp.o.d"
+  "CMakeFiles/test.dir/src/calc_bound.cpp.o"
+  "CMakeFiles/test.dir/src/calc_bound.cpp.o.d"
+  "CMakeFiles/test.dir/src/gen_bond_labels.cpp.o"
+  "CMakeFiles/test.dir/src/gen_bond_labels.cpp.o.d"
   "CMakeFiles/test.dir/src/gen_rotations.cpp.o"
   "CMakeFiles/test.dir/src/gen_rotations.cpp.o.d"
   "CMakeFiles/test.dir/src/hood.cpp.o"

@@ -182,6 +182,54 @@ src/Label.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/Label.cpp.s
 .PHONY : src/Label.cpp.s
 
+src/calc_bound.o: src/calc_bound.cpp.o
+.PHONY : src/calc_bound.o
+
+# target to build an object file
+src/calc_bound.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/calc_bound.cpp.o
+.PHONY : src/calc_bound.cpp.o
+
+src/calc_bound.i: src/calc_bound.cpp.i
+.PHONY : src/calc_bound.i
+
+# target to preprocess a source file
+src/calc_bound.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/calc_bound.cpp.i
+.PHONY : src/calc_bound.cpp.i
+
+src/calc_bound.s: src/calc_bound.cpp.s
+.PHONY : src/calc_bound.s
+
+# target to generate assembly for a file
+src/calc_bound.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/calc_bound.cpp.s
+.PHONY : src/calc_bound.cpp.s
+
+src/gen_bond_labels.o: src/gen_bond_labels.cpp.o
+.PHONY : src/gen_bond_labels.o
+
+# target to build an object file
+src/gen_bond_labels.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gen_bond_labels.cpp.o
+.PHONY : src/gen_bond_labels.cpp.o
+
+src/gen_bond_labels.i: src/gen_bond_labels.cpp.i
+.PHONY : src/gen_bond_labels.i
+
+# target to preprocess a source file
+src/gen_bond_labels.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gen_bond_labels.cpp.i
+.PHONY : src/gen_bond_labels.cpp.i
+
+src/gen_bond_labels.s: src/gen_bond_labels.cpp.s
+.PHONY : src/gen_bond_labels.s
+
+# target to generate assembly for a file
+src/gen_bond_labels.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gen_bond_labels.cpp.s
+.PHONY : src/gen_bond_labels.cpp.s
+
 src/gen_rotations.o: src/gen_rotations.cpp.o
 .PHONY : src/gen_rotations.o
 
@@ -388,6 +436,12 @@ help:
 	@echo "... src/Label.o"
 	@echo "... src/Label.i"
 	@echo "... src/Label.s"
+	@echo "... src/calc_bound.o"
+	@echo "... src/calc_bound.i"
+	@echo "... src/calc_bound.s"
+	@echo "... src/gen_bond_labels.o"
+	@echo "... src/gen_bond_labels.i"
+	@echo "... src/gen_bond_labels.s"
 	@echo "... src/gen_rotations.o"
 	@echo "... src/gen_rotations.i"
 	@echo "... src/gen_rotations.s"

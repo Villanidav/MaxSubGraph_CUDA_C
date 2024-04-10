@@ -73,123 +73,155 @@ CMakeFiles/test.dir/src/test.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/test.cpp.o: ../src/test.cpp
 CMakeFiles/test.dir/src/test.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/test.cpp.o"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/test.cpp.o -MF CMakeFiles/test.dir/src/test.cpp.o.d -o CMakeFiles/test.dir/src/test.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/test.cpp
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/test.cpp.o -MF CMakeFiles/test.dir/src/test.cpp.o.d -o CMakeFiles/test.dir/src/test.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/test.cpp
 
 CMakeFiles/test.dir/src/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/test.cpp.i"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/test.cpp > CMakeFiles/test.dir/src/test.cpp.i
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/test.cpp > CMakeFiles/test.dir/src/test.cpp.i
 
 CMakeFiles/test.dir/src/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/test.cpp.s"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/test.cpp -o CMakeFiles/test.dir/src/test.cpp.s
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/test.cpp -o CMakeFiles/test.dir/src/test.cpp.s
+
+CMakeFiles/test.dir/src/gen_bond_labels.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/gen_bond_labels.cpp.o: ../src/gen_bond_labels.cpp
+CMakeFiles/test.dir/src/gen_bond_labels.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/gen_bond_labels.cpp.o"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/gen_bond_labels.cpp.o -MF CMakeFiles/test.dir/src/gen_bond_labels.cpp.o.d -o CMakeFiles/test.dir/src/gen_bond_labels.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/gen_bond_labels.cpp
+
+CMakeFiles/test.dir/src/gen_bond_labels.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/gen_bond_labels.cpp.i"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/gen_bond_labels.cpp > CMakeFiles/test.dir/src/gen_bond_labels.cpp.i
+
+CMakeFiles/test.dir/src/gen_bond_labels.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/gen_bond_labels.cpp.s"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/gen_bond_labels.cpp -o CMakeFiles/test.dir/src/gen_bond_labels.cpp.s
 
 CMakeFiles/test.dir/src/gen_rotations.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/gen_rotations.cpp.o: ../src/gen_rotations.cpp
 CMakeFiles/test.dir/src/gen_rotations.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/gen_rotations.cpp.o"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/gen_rotations.cpp.o -MF CMakeFiles/test.dir/src/gen_rotations.cpp.o.d -o CMakeFiles/test.dir/src/gen_rotations.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/gen_rotations.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/src/gen_rotations.cpp.o"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/gen_rotations.cpp.o -MF CMakeFiles/test.dir/src/gen_rotations.cpp.o.d -o CMakeFiles/test.dir/src/gen_rotations.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/gen_rotations.cpp
 
 CMakeFiles/test.dir/src/gen_rotations.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/gen_rotations.cpp.i"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/gen_rotations.cpp > CMakeFiles/test.dir/src/gen_rotations.cpp.i
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/gen_rotations.cpp > CMakeFiles/test.dir/src/gen_rotations.cpp.i
 
 CMakeFiles/test.dir/src/gen_rotations.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/gen_rotations.cpp.s"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/gen_rotations.cpp -o CMakeFiles/test.dir/src/gen_rotations.cpp.s
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/gen_rotations.cpp -o CMakeFiles/test.dir/src/gen_rotations.cpp.s
 
 CMakeFiles/test.dir/src/select_vertex.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/select_vertex.cpp.o: ../src/select_vertex.cpp
 CMakeFiles/test.dir/src/select_vertex.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/src/select_vertex.cpp.o"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/select_vertex.cpp.o -MF CMakeFiles/test.dir/src/select_vertex.cpp.o.d -o CMakeFiles/test.dir/src/select_vertex.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/select_vertex.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/src/select_vertex.cpp.o"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/select_vertex.cpp.o -MF CMakeFiles/test.dir/src/select_vertex.cpp.o.d -o CMakeFiles/test.dir/src/select_vertex.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/select_vertex.cpp
 
 CMakeFiles/test.dir/src/select_vertex.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/select_vertex.cpp.i"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/select_vertex.cpp > CMakeFiles/test.dir/src/select_vertex.cpp.i
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/select_vertex.cpp > CMakeFiles/test.dir/src/select_vertex.cpp.i
 
 CMakeFiles/test.dir/src/select_vertex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/select_vertex.cpp.s"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/select_vertex.cpp -o CMakeFiles/test.dir/src/select_vertex.cpp.s
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/select_vertex.cpp -o CMakeFiles/test.dir/src/select_vertex.cpp.s
 
 CMakeFiles/test.dir/src/hood.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/hood.cpp.o: ../src/hood.cpp
 CMakeFiles/test.dir/src/hood.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/src/hood.cpp.o"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/hood.cpp.o -MF CMakeFiles/test.dir/src/hood.cpp.o.d -o CMakeFiles/test.dir/src/hood.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/hood.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/src/hood.cpp.o"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/hood.cpp.o -MF CMakeFiles/test.dir/src/hood.cpp.o.d -o CMakeFiles/test.dir/src/hood.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/hood.cpp
 
 CMakeFiles/test.dir/src/hood.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/hood.cpp.i"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/hood.cpp > CMakeFiles/test.dir/src/hood.cpp.i
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/hood.cpp > CMakeFiles/test.dir/src/hood.cpp.i
 
 CMakeFiles/test.dir/src/hood.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/hood.cpp.s"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/hood.cpp -o CMakeFiles/test.dir/src/hood.cpp.s
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/hood.cpp -o CMakeFiles/test.dir/src/hood.cpp.s
 
 CMakeFiles/test.dir/src/Label.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/Label.cpp.o: ../src/Label.cpp
 CMakeFiles/test.dir/src/Label.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/src/Label.cpp.o"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/Label.cpp.o -MF CMakeFiles/test.dir/src/Label.cpp.o.d -o CMakeFiles/test.dir/src/Label.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/Label.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test.dir/src/Label.cpp.o"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/Label.cpp.o -MF CMakeFiles/test.dir/src/Label.cpp.o.d -o CMakeFiles/test.dir/src/Label.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/Label.cpp
 
 CMakeFiles/test.dir/src/Label.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/Label.cpp.i"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/Label.cpp > CMakeFiles/test.dir/src/Label.cpp.i
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/Label.cpp > CMakeFiles/test.dir/src/Label.cpp.i
 
 CMakeFiles/test.dir/src/Label.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/Label.cpp.s"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/Label.cpp -o CMakeFiles/test.dir/src/Label.cpp.s
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/Label.cpp -o CMakeFiles/test.dir/src/Label.cpp.s
 
 CMakeFiles/test.dir/src/smiles_mcs.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/smiles_mcs.cpp.o: ../src/smiles_mcs.cpp
 CMakeFiles/test.dir/src/smiles_mcs.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test.dir/src/smiles_mcs.cpp.o"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/smiles_mcs.cpp.o -MF CMakeFiles/test.dir/src/smiles_mcs.cpp.o.d -o CMakeFiles/test.dir/src/smiles_mcs.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test.dir/src/smiles_mcs.cpp.o"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/smiles_mcs.cpp.o -MF CMakeFiles/test.dir/src/smiles_mcs.cpp.o.d -o CMakeFiles/test.dir/src/smiles_mcs.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp
 
 CMakeFiles/test.dir/src/smiles_mcs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/smiles_mcs.cpp.i"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp > CMakeFiles/test.dir/src/smiles_mcs.cpp.i
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp > CMakeFiles/test.dir/src/smiles_mcs.cpp.i
 
 CMakeFiles/test.dir/src/smiles_mcs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/smiles_mcs.cpp.s"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp -o CMakeFiles/test.dir/src/smiles_mcs.cpp.s
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp -o CMakeFiles/test.dir/src/smiles_mcs.cpp.s
+
+CMakeFiles/test.dir/src/calc_bound.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/calc_bound.cpp.o: ../src/calc_bound.cpp
+CMakeFiles/test.dir/src/calc_bound.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test.dir/src/calc_bound.cpp.o"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/calc_bound.cpp.o -MF CMakeFiles/test.dir/src/calc_bound.cpp.o.d -o CMakeFiles/test.dir/src/calc_bound.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/calc_bound.cpp
+
+CMakeFiles/test.dir/src/calc_bound.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/calc_bound.cpp.i"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/calc_bound.cpp > CMakeFiles/test.dir/src/calc_bound.cpp.i
+
+CMakeFiles/test.dir/src/calc_bound.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/calc_bound.cpp.s"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/calc_bound.cpp -o CMakeFiles/test.dir/src/calc_bound.cpp.s
 
 CMakeFiles/test.dir/src/select_label.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/select_label.cpp.o: ../src/select_label.cpp
 CMakeFiles/test.dir/src/select_label.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test.dir/src/select_label.cpp.o"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/select_label.cpp.o -MF CMakeFiles/test.dir/src/select_label.cpp.o.d -o CMakeFiles/test.dir/src/select_label.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/select_label.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/test.dir/src/select_label.cpp.o"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/select_label.cpp.o -MF CMakeFiles/test.dir/src/select_label.cpp.o.d -o CMakeFiles/test.dir/src/select_label.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/select_label.cpp
 
 CMakeFiles/test.dir/src/select_label.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/select_label.cpp.i"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/select_label.cpp > CMakeFiles/test.dir/src/select_label.cpp.i
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/select_label.cpp > CMakeFiles/test.dir/src/select_label.cpp.i
 
 CMakeFiles/test.dir/src/select_label.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/select_label.cpp.s"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/select_label.cpp -o CMakeFiles/test.dir/src/select_label.cpp.s
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/select_label.cpp -o CMakeFiles/test.dir/src/select_label.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
 "CMakeFiles/test.dir/src/test.cpp.o" \
+"CMakeFiles/test.dir/src/gen_bond_labels.cpp.o" \
 "CMakeFiles/test.dir/src/gen_rotations.cpp.o" \
 "CMakeFiles/test.dir/src/select_vertex.cpp.o" \
 "CMakeFiles/test.dir/src/hood.cpp.o" \
 "CMakeFiles/test.dir/src/Label.cpp.o" \
 "CMakeFiles/test.dir/src/smiles_mcs.cpp.o" \
+"CMakeFiles/test.dir/src/calc_bound.cpp.o" \
 "CMakeFiles/test.dir/src/select_label.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
 test: CMakeFiles/test.dir/src/test.cpp.o
+test: CMakeFiles/test.dir/src/gen_bond_labels.cpp.o
 test: CMakeFiles/test.dir/src/gen_rotations.cpp.o
 test: CMakeFiles/test.dir/src/select_vertex.cpp.o
 test: CMakeFiles/test.dir/src/hood.cpp.o
 test: CMakeFiles/test.dir/src/Label.cpp.o
 test: CMakeFiles/test.dir/src/smiles_mcs.cpp.o
+test: CMakeFiles/test.dir/src/calc_bound.cpp.o
 test: CMakeFiles/test.dir/src/select_label.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -75,15 +75,15 @@ include CMakeFiles/boo.dir/flags.make
 CMakeFiles/boo.dir/main.cpp.o: CMakeFiles/boo.dir/flags.make
 CMakeFiles/boo.dir/main.cpp.o: /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/boo.dir/main.cpp.o"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/boo.dir/main.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/boo.dir/main.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
 
 CMakeFiles/boo.dir/main.cpp.i: cmake_force
 	@echo "Preprocessing CXX source to CMakeFiles/boo.dir/main.cpp.i"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp > CMakeFiles/boo.dir/main.cpp.i
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp > CMakeFiles/boo.dir/main.cpp.i
 
 CMakeFiles/boo.dir/main.cpp.s: cmake_force
 	@echo "Compiling CXX source to assembly CMakeFiles/boo.dir/main.cpp.s"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp -o CMakeFiles/boo.dir/main.cpp.s
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp -o CMakeFiles/boo.dir/main.cpp.s
 
 # Object files for target boo
 boo_OBJECTS = \

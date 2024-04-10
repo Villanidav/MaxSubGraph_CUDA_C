@@ -73,15 +73,15 @@ CMakeFiles/subgraph_search.dir/src/main.cpp.o: CMakeFiles/subgraph_search.dir/fl
 CMakeFiles/subgraph_search.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/subgraph_search.dir/src/main.cpp.o: CMakeFiles/subgraph_search.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/subgraph_search.dir/src/main.cpp.o"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/subgraph_search.dir/src/main.cpp.o -MF CMakeFiles/subgraph_search.dir/src/main.cpp.o.d -o CMakeFiles/subgraph_search.dir/src/main.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/main.cpp
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/subgraph_search.dir/src/main.cpp.o -MF CMakeFiles/subgraph_search.dir/src/main.cpp.o.d -o CMakeFiles/subgraph_search.dir/src/main.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/main.cpp
 
 CMakeFiles/subgraph_search.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/subgraph_search.dir/src/main.cpp.i"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/main.cpp > CMakeFiles/subgraph_search.dir/src/main.cpp.i
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/main.cpp > CMakeFiles/subgraph_search.dir/src/main.cpp.i
 
 CMakeFiles/subgraph_search.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/subgraph_search.dir/src/main.cpp.s"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/main.cpp -o CMakeFiles/subgraph_search.dir/src/main.cpp.s
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/main.cpp -o CMakeFiles/subgraph_search.dir/src/main.cpp.s
 
 # Object files for target subgraph_search
 subgraph_search_OBJECTS = \

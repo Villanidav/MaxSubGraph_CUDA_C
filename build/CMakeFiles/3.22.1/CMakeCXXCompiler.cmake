@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++")
+set(CMAKE_CXX_COMPILER "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "11.2.0")

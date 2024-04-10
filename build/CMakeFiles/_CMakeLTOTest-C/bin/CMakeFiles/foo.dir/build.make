@@ -75,15 +75,15 @@ include CMakeFiles/foo.dir/flags.make
 CMakeFiles/foo.dir/foo.c.o: CMakeFiles/foo.dir/flags.make
 CMakeFiles/foo.dir/foo.c.o: /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/foo.dir/foo.c.o"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/foo.dir/foo.c.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/foo.dir/foo.c.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c
 
 CMakeFiles/foo.dir/foo.c.i: cmake_force
 	@echo "Preprocessing C source to CMakeFiles/foo.dir/foo.c.i"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c > CMakeFiles/foo.dir/foo.c.i
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c > CMakeFiles/foo.dir/foo.c.i
 
 CMakeFiles/foo.dir/foo.c.s: cmake_force
 	@echo "Compiling C source to assembly CMakeFiles/foo.dir/foo.c.s"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c -o CMakeFiles/foo.dir/foo.c.s
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c -o CMakeFiles/foo.dir/foo.c.s
 
 # Object files for target foo
 foo_OBJECTS = \

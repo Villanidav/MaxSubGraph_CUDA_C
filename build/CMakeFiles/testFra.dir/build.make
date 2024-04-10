@@ -73,29 +73,29 @@ CMakeFiles/testFra.dir/src/testFra.cpp.o: CMakeFiles/testFra.dir/flags.make
 CMakeFiles/testFra.dir/src/testFra.cpp.o: ../src/testFra.cpp
 CMakeFiles/testFra.dir/src/testFra.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/testFra.dir/src/testFra.cpp.o"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/testFra.cpp.o -MF CMakeFiles/testFra.dir/src/testFra.cpp.o.d -o CMakeFiles/testFra.dir/src/testFra.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/testFra.cpp
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/testFra.cpp.o -MF CMakeFiles/testFra.dir/src/testFra.cpp.o.d -o CMakeFiles/testFra.dir/src/testFra.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/testFra.cpp
 
 CMakeFiles/testFra.dir/src/testFra.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/testFra.cpp.i"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/testFra.cpp > CMakeFiles/testFra.dir/src/testFra.cpp.i
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/testFra.cpp > CMakeFiles/testFra.dir/src/testFra.cpp.i
 
 CMakeFiles/testFra.dir/src/testFra.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/testFra.cpp.s"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/testFra.cpp -o CMakeFiles/testFra.dir/src/testFra.cpp.s
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/testFra.cpp -o CMakeFiles/testFra.dir/src/testFra.cpp.s
 
 CMakeFiles/testFra.dir/src/Label.cpp.o: CMakeFiles/testFra.dir/flags.make
 CMakeFiles/testFra.dir/src/Label.cpp.o: ../src/Label.cpp
 CMakeFiles/testFra.dir/src/Label.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testFra.dir/src/Label.cpp.o"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/Label.cpp.o -MF CMakeFiles/testFra.dir/src/Label.cpp.o.d -o CMakeFiles/testFra.dir/src/Label.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/Label.cpp
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/Label.cpp.o -MF CMakeFiles/testFra.dir/src/Label.cpp.o.d -o CMakeFiles/testFra.dir/src/Label.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/Label.cpp
 
 CMakeFiles/testFra.dir/src/Label.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/Label.cpp.i"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/Label.cpp > CMakeFiles/testFra.dir/src/Label.cpp.i
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/Label.cpp > CMakeFiles/testFra.dir/src/Label.cpp.i
 
 CMakeFiles/testFra.dir/src/Label.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/Label.cpp.s"
-	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/Label.cpp -o CMakeFiles/testFra.dir/src/Label.cpp.s
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/Label.cpp -o CMakeFiles/testFra.dir/src/Label.cpp.s
 
 # Object files for target testFra
 testFra_OBJECTS = \
