@@ -16,6 +16,16 @@
 },
 {
   "directory": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ -DTESTING  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/test.dir/src/select_vertex.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/select_vertex.cpp",
+  "file": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/select_vertex.cpp"
+},
+{
+  "directory": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ -DTESTING  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/test.dir/src/hood.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/hood.cpp",
+  "file": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/hood.cpp"
+},
+{
+  "directory": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build",
   "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++   -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/testFra.dir/src/testFra.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/testFra.cpp",
   "file": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/testFra.cpp"
 }

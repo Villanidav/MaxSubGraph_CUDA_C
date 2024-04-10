@@ -179,6 +179,30 @@ src/gen_rotations.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gen_rotations.cpp.s
 .PHONY : src/gen_rotations.cpp.s
 
+src/hood.o: src/hood.cpp.o
+.PHONY : src/hood.o
+
+# target to build an object file
+src/hood.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/hood.cpp.o
+.PHONY : src/hood.cpp.o
+
+src/hood.i: src/hood.cpp.i
+.PHONY : src/hood.i
+
+# target to preprocess a source file
+src/hood.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/hood.cpp.i
+.PHONY : src/hood.cpp.i
+
+src/hood.s: src/hood.cpp.s
+.PHONY : src/hood.s
+
+# target to generate assembly for a file
+src/hood.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/hood.cpp.s
+.PHONY : src/hood.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -202,6 +226,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/select_vertex.o: src/select_vertex.cpp.o
+.PHONY : src/select_vertex.o
+
+# target to build an object file
+src/select_vertex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/select_vertex.cpp.o
+.PHONY : src/select_vertex.cpp.o
+
+src/select_vertex.i: src/select_vertex.cpp.i
+.PHONY : src/select_vertex.i
+
+# target to preprocess a source file
+src/select_vertex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/select_vertex.cpp.i
+.PHONY : src/select_vertex.cpp.i
+
+src/select_vertex.s: src/select_vertex.cpp.s
+.PHONY : src/select_vertex.s
+
+# target to generate assembly for a file
+src/select_vertex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/select_vertex.cpp.s
+.PHONY : src/select_vertex.cpp.s
 
 src/test.o: src/test.cpp.o
 .PHONY : src/test.o
@@ -265,9 +313,15 @@ help:
 	@echo "... src/gen_rotations.o"
 	@echo "... src/gen_rotations.i"
 	@echo "... src/gen_rotations.s"
+	@echo "... src/hood.o"
+	@echo "... src/hood.i"
+	@echo "... src/hood.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/select_vertex.o"
+	@echo "... src/select_vertex.i"
+	@echo "... src/select_vertex.s"
 	@echo "... src/test.o"
 	@echo "... src/test.i"
 	@echo "... src/test.s"
