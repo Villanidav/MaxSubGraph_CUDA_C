@@ -1,91 +1,56 @@
 [
 {
-<<<<<<< HEAD
   "directory": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build",
-  "command": "/opt/homebrew/bin/aarch64-apple-darwin23-g++-13  -I/opt/homebrew/include/rdkit -g -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/subgraph_search.dir/src/main.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/main.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/opt/homebrew/include/rdkit -O3 -DNDEBUG -std=c++17 -flto=thin -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/subgraph_search.dir/src/main.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/main.cpp",
   "file": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/main.cpp",
   "output": "CMakeFiles/subgraph_search.dir/src/main.cpp.o"
 },
 {
   "directory": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build",
-  "command": "/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 -DTESTING  -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/test.dir/src/test.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/test.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DTESTING  -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/test.dir/src/test.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/test.cpp",
   "file": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/test.cpp",
   "output": "CMakeFiles/test.dir/src/test.cpp.o"
 },
 {
   "directory": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build",
-  "command": "/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 -DTESTING  -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/test.dir/src/gen_rotations.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DTESTING  -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/test.dir/src/gen_rotations.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp",
   "file": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp",
   "output": "CMakeFiles/test.dir/src/gen_rotations.cpp.o"
 },
 {
   "directory": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build",
-  "command": "/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 -DTESTING  -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/test.dir/src/select_vertex.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/select_vertex.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DTESTING  -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/test.dir/src/select_vertex.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/select_vertex.cpp",
   "file": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/select_vertex.cpp",
   "output": "CMakeFiles/test.dir/src/select_vertex.cpp.o"
 },
 {
   "directory": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build",
-  "command": "/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 -DTESTING  -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/test.dir/src/hood.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/hood.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DTESTING  -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/test.dir/src/hood.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/hood.cpp",
   "file": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/hood.cpp",
   "output": "CMakeFiles/test.dir/src/hood.cpp.o"
 },
 {
   "directory": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build",
-  "command": "/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 -DTESTING  -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/test.dir/src/Label.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/Label.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DTESTING  -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/test.dir/src/Label.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/Label.cpp",
   "file": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/Label.cpp",
   "output": "CMakeFiles/test.dir/src/Label.cpp.o"
 },
 {
   "directory": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build",
-  "command": "/opt/homebrew/bin/aarch64-apple-darwin23-g++-13   -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/testFra.dir/src/testFra.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/testFra.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DTESTING  -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/test.dir/src/smiles_mcs.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp",
+  "file": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp",
+  "output": "CMakeFiles/test.dir/src/smiles_mcs.cpp.o"
+},
+{
+  "directory": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/testFra.dir/src/testFra.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/testFra.cpp",
   "file": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/testFra.cpp",
   "output": "CMakeFiles/testFra.dir/src/testFra.cpp.o"
 },
 {
   "directory": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build",
-  "command": "/opt/homebrew/bin/aarch64-apple-darwin23-g++-13   -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/testFra.dir/src/Label.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/Label.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -O3 -DNDEBUG -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/testFra.dir/src/Label.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/Label.cpp",
   "file": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/Label.cpp",
   "output": "CMakeFiles/testFra.dir/src/Label.cpp.o"
-=======
-  "directory": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build",
-  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++  -I/home/davide/miniconda3/include/rdkit -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -flto -fno-fat-lto-objects -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -std=c++17 -o CMakeFiles/subgraph_search.dir/src/main.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/main.cpp",
-  "file": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/main.cpp"
-},
-{
-  "directory": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build",
-  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ -DTESTING  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/test.dir/src/test.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/test.cpp",
-  "file": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/test.cpp"
-},
-{
-  "directory": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build",
-  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ -DTESTING  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/test.dir/src/gen_rotations.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/gen_rotations.cpp",
-  "file": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/gen_rotations.cpp"
-},
-{
-  "directory": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build",
-  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ -DTESTING  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/test.dir/src/select_vertex.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/select_vertex.cpp",
-  "file": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/select_vertex.cpp"
-},
-{
-  "directory": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build",
-  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ -DTESTING  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/test.dir/src/hood.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/hood.cpp",
-  "file": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/hood.cpp"
-},
-{
-  "directory": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build",
-  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ -DTESTING  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/test.dir/src/Label.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/Label.cpp",
-  "file": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/Label.cpp"
-},
-{
-  "directory": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build",
-  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++ -DTESTING  -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/test.dir/src/smiles_mcs.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp",
-  "file": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp"
-},
-{
-  "directory": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build",
-  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++   -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/testFra.dir/src/testFra.cpp.o -c /home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/testFra.cpp",
-  "file": "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/testFra.cpp"
->>>>>>> 95e46c156a7981bac75ed96dd8865ea010240b8f
 }
 ]

@@ -25,6 +25,7 @@ class LabelClass {
     
      // Remove method
     void remove(int graph, int elem) {
+        
         if (graph == 0) {
             auto it = std::find(g.begin(), g.end(), elem);
             if (it != g.end()) {
@@ -45,6 +46,7 @@ class LabelClass {
         std::vector<std::vector<int> > res;
         for (int i : elems) {
             auto it = std::find(g.begin(), g.end(), i);
+            
             if (it != g.end()) {
                 int idx = std::distance(g.begin(), it);
                 res.push_back(rings_g.at(idx));
