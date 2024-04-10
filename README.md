@@ -30,7 +30,6 @@ The project is organized as follow:
 NON AGGIUNGERE ALTRO NEL CMAKE FILE
 
 ## Merge ⭐
- Se prima di pushare dimentichi di pullare:
 ```
 $ git config pull.rebase false 
 ```
