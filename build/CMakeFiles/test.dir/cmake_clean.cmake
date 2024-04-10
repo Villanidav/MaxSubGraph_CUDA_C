@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/test.dir/src/gen_rotations.cpp.o.d"
   "CMakeFiles/test.dir/src/hood.cpp.o"
   "CMakeFiles/test.dir/src/hood.cpp.o.d"
+  "CMakeFiles/test.dir/src/select_label.cpp.o"
+  "CMakeFiles/test.dir/src/select_label.cpp.o.d"
   "CMakeFiles/test.dir/src/select_vertex.cpp.o"
   "CMakeFiles/test.dir/src/select_vertex.cpp.o.d"
   "CMakeFiles/test.dir/src/smiles_mcs.cpp.o"
