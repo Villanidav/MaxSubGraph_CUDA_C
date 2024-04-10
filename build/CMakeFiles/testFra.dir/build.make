@@ -73,15 +73,15 @@ CMakeFiles/testFra.dir/src/testFra.cpp.o: CMakeFiles/testFra.dir/flags.make
 CMakeFiles/testFra.dir/src/testFra.cpp.o: /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/testFra.cpp
 CMakeFiles/testFra.dir/src/testFra.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/testFra.dir/src/testFra.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/testFra.cpp.o -MF CMakeFiles/testFra.dir/src/testFra.cpp.o.d -o CMakeFiles/testFra.dir/src/testFra.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/testFra.cpp
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/testFra.cpp.o -MF CMakeFiles/testFra.dir/src/testFra.cpp.o.d -o CMakeFiles/testFra.dir/src/testFra.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/testFra.cpp
 
 CMakeFiles/testFra.dir/src/testFra.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/testFra.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/testFra.cpp > CMakeFiles/testFra.dir/src/testFra.cpp.i
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/testFra.cpp > CMakeFiles/testFra.dir/src/testFra.cpp.i
 
 CMakeFiles/testFra.dir/src/testFra.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/testFra.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/testFra.cpp -o CMakeFiles/testFra.dir/src/testFra.cpp.s
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/testFra.cpp -o CMakeFiles/testFra.dir/src/testFra.cpp.s
 
 # Object files for target testFra
 testFra_OBJECTS = \

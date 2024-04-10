@@ -73,29 +73,29 @@ CMakeFiles/test.dir/src/test.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/test.cpp.o: /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/test.cpp
 CMakeFiles/test.dir/src/test.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/src/test.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/test.cpp.o -MF CMakeFiles/test.dir/src/test.cpp.o.d -o CMakeFiles/test.dir/src/test.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/test.cpp
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/test.cpp.o -MF CMakeFiles/test.dir/src/test.cpp.o.d -o CMakeFiles/test.dir/src/test.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/test.cpp
 
 CMakeFiles/test.dir/src/test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/src/test.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/test.cpp > CMakeFiles/test.dir/src/test.cpp.i
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/test.cpp > CMakeFiles/test.dir/src/test.cpp.i
 
 CMakeFiles/test.dir/src/test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/test.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/test.cpp -o CMakeFiles/test.dir/src/test.cpp.s
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/test.cpp -o CMakeFiles/test.dir/src/test.cpp.s
 
 CMakeFiles/test.dir/src/gen_rotations.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/gen_rotations.cpp.o: /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp
 CMakeFiles/test.dir/src/gen_rotations.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test.dir/src/gen_rotations.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/gen_rotations.cpp.o -MF CMakeFiles/test.dir/src/gen_rotations.cpp.o.d -o CMakeFiles/test.dir/src/gen_rotations.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/gen_rotations.cpp.o -MF CMakeFiles/test.dir/src/gen_rotations.cpp.o.d -o CMakeFiles/test.dir/src/gen_rotations.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp
 
 CMakeFiles/test.dir/src/gen_rotations.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test.dir/src/gen_rotations.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp > CMakeFiles/test.dir/src/gen_rotations.cpp.i
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp > CMakeFiles/test.dir/src/gen_rotations.cpp.i
 
 CMakeFiles/test.dir/src/gen_rotations.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/gen_rotations.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp -o CMakeFiles/test.dir/src/gen_rotations.cpp.s
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp -o CMakeFiles/test.dir/src/gen_rotations.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
