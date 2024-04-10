@@ -6,7 +6,11 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/opt/homebrew/include/rdkit
 
+<<<<<<< HEAD
 CXX_FLAGSarm64 = -g -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro
 
 CXX_FLAGS = -g -std=c++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro
+=======
+CXX_FLAGS = -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -flto -fno-fat-lto-objects -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -std=c++17
+>>>>>>> 95e46c156a7981bac75ed96dd8865ea010240b8f
 

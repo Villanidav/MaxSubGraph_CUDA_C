@@ -278,6 +278,30 @@ src/select_vertex.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/select_vertex.cpp.s
 .PHONY : src/select_vertex.cpp.s
 
+src/smiles_mcs.o: src/smiles_mcs.cpp.o
+.PHONY : src/smiles_mcs.o
+
+# target to build an object file
+src/smiles_mcs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/smiles_mcs.cpp.o
+.PHONY : src/smiles_mcs.cpp.o
+
+src/smiles_mcs.i: src/smiles_mcs.cpp.i
+.PHONY : src/smiles_mcs.i
+
+# target to preprocess a source file
+src/smiles_mcs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/smiles_mcs.cpp.i
+.PHONY : src/smiles_mcs.cpp.i
+
+src/smiles_mcs.s: src/smiles_mcs.cpp.s
+.PHONY : src/smiles_mcs.s
+
+# target to generate assembly for a file
+src/smiles_mcs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/smiles_mcs.cpp.s
+.PHONY : src/smiles_mcs.cpp.s
+
 src/test.o: src/test.cpp.o
 .PHONY : src/test.o
 
@@ -352,6 +376,9 @@ help:
 	@echo "... src/select_vertex.o"
 	@echo "... src/select_vertex.i"
 	@echo "... src/select_vertex.s"
+	@echo "... src/smiles_mcs.o"
+	@echo "... src/smiles_mcs.i"
+	@echo "... src/smiles_mcs.s"
 	@echo "... src/test.o"
 	@echo "... src/test.i"
 	@echo "... src/test.s"
