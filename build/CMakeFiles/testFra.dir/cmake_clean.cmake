@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/testFra.dir/src/Label.cpp.o"
+  "CMakeFiles/testFra.dir/src/Label.cpp.o.d"
   "CMakeFiles/testFra.dir/src/testFra.cpp.o"
   "CMakeFiles/testFra.dir/src/testFra.cpp.o.d"
   "testFra"
