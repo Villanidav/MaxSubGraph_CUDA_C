@@ -9,7 +9,7 @@ int main()
     //TEST GEN ROTATIONS
     /*
     std::string input = "example";
-    std::vector<std::pair<std::string, int>>  result = gen_rotations(input);
+    std::vector<std::pair<std::string, int> >  result = gen_rotations(input);
  
     // Printing the result
     for (const auto& pair : result) {
