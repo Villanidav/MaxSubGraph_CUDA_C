@@ -41,7 +41,7 @@ $ git config pull.rebase false
 - Label : ✅
 - select_vertex : ✅
 - hood : ✅
-- select_label : ❌
+- select_label : ✅
 - gen_initial_label : ❌
 - gen_ring_classes : ❌
 - calc_bound : ❌
