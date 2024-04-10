@@ -45,25 +45,6 @@ int main()
     }
     std::cout << std::endl;*/
 
-    std::vector<int> g;
-    std::vector<int> h;
-    /*int adj;
-    int label;*/
-    std::vector<int> rings_g;
-
-    g.push_back(8);
-    g.push_back(10);
-    g.push_back(2);
-    
-    h.push_back(45);
-    h.push_back(40);
-    h.push_back(25);
-    
-    rings_g.push_back(16);
-
-    LabelClass label(g,h,rings_g,0,0);
-
-    
 
 
     return 0;

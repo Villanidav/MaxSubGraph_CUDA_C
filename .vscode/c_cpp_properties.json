@@ -6,7 +6,8 @@
                 "${workspaceFolder}/**",
                 "/home/davide/miniconda3/include/rdkit",
                 "/home/davide/miniconda3/envs/my-rdkit-env/lib/python3.12/site-packages/rdkit",
-                "/home/davide/miniconda3/include/rdkit"
+                "/home/davide/miniconda3/include/rdkit",
+                "${workspaceFolder}/rdkit/Code"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

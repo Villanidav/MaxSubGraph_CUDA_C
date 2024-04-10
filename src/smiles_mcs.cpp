@@ -1,9 +1,11 @@
-#include <RDGeneral/Invariant.h>
-#include <GraphMol/RWMol.h>
-#include <GraphMol/ROMol.h>
-#include <GraphMol/Conformer.h>
-
 using namespace RDKit; 
 
-//['/home/davide/miniconda3/envs/my-rdkit-env/lib/python3.12/site-packages/rdkit'] 
+#include <GraphMol/GraphMol.h>
+#include <GraphMol/FileParsers/MolSupplier.h>
+#include <GraphMol/FileParsers/MolWriters.h>
 
+
+//['/home/davide/miniconda3/envs/my-rdkit-env/lib/python3.12/site-packages/rdkit'] 
+int smiles_mcs(){ 
+    return 1;
+}
