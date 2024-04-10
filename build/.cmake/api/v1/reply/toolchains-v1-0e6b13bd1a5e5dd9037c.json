@@ -1,0 +1,117 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/home/davide/miniconda3/include",
+						"/home/davide/miniconda3/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include",
+						"/home/davide/miniconda3/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/include",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/usr/include"
+					],
+					"linkDirectories" : 
+					[
+						"/home/davide/miniconda3/lib",
+						"/home/davide/miniconda3/lib/gcc/x86_64-conda-linux-gnu/11.2.0",
+						"/home/davide/miniconda3/lib/gcc",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/lib64",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/lib64",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/usr/lib64",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/lib",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/lib",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/usr/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"gcc",
+						"gcc_s",
+						"c",
+						"gcc",
+						"gcc_s"
+					]
+				},
+				"path" : "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc",
+				"version" : "11.2.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/home/davide/miniconda3/include",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/backward",
+						"/home/davide/miniconda3/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include",
+						"/home/davide/miniconda3/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/include",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/usr/include"
+					],
+					"linkDirectories" : 
+					[
+						"/home/davide/miniconda3/lib",
+						"/home/davide/miniconda3/lib/gcc/x86_64-conda-linux-gnu/11.2.0",
+						"/home/davide/miniconda3/lib/gcc",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/lib64",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/lib64",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/usr/lib64",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/lib",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/lib",
+						"/home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/usr/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"stdc++",
+						"m",
+						"gcc_s",
+						"gcc",
+						"c",
+						"gcc_s",
+						"gcc"
+					]
+				},
+				"path" : "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-g++",
+				"version" : "11.2.0"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}

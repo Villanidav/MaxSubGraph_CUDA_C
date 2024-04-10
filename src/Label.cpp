@@ -3,17 +3,22 @@
 
 class LabelClass {
 
+
+    // Constructor
+    public :     
     std::vector<int> g;
     std::vector<int> h;
     int adj;
     int label;
     std::vector<int> rings_g;
-    // Constructor
-    LabelClass(const std::vector<int> elems_g, const std::vector<int> elems_h, const std::vector<int> rings, int adj = 0, int label = 0) 
+    
+    LabelClass(const std::vector<int> elems_g, const std::vector<int> elems_h, const std::vector<int> rings, int adjj , int labell ) 
         {
             g = elems_g;
             h = elems_h;
             rings_g = rings;
+            adj = adjj;
+            label = labell;
         };
 
      // Remove method
@@ -45,5 +50,7 @@ class LabelClass {
         }
         return res;
     }
+
+
 };
 

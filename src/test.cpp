@@ -2,6 +2,8 @@
 #include <vector>
 #include <string>
 #include "test.hpp"
+#include "testFra.hpp"
+
 using namespace std;
 
 int main() 
@@ -25,12 +27,12 @@ int main()
     std::cout << "Selected vertex: " << selected_vertex << std::endl;*/
 
     //TEST HOOD
+    /*
         // Example graph represented as an adjacency matrix
     std::vector<std::vector<int>> g = {{0, 1, 0, 1},
                                         {1, 0, 1, 0},
                                         {0, 1, 0, 1},
                                         {1, 0, 1, 0}};
-    
     // Example vertex and bond type
     int vtx = 1;  // Example vertex
     int edge = 1; // Example bond type
@@ -41,7 +43,27 @@ int main()
     for (int neighbor : neighbors) {
         std::cout << neighbor << " ";
     }
-    std::cout << std::endl;
+    std::cout << std::endl;*/
+
+    std::vector<int> g;
+    std::vector<int> h;
+    /*int adj;
+    int label;*/
+    std::vector<int> rings_g;
+
+    g.push_back(8);
+    g.push_back(10);
+    g.push_back(2);
+    
+    h.push_back(45);
+    h.push_back(40);
+    h.push_back(25);
+    
+    rings_g.push_back(16);
+
+    LabelClass label(g,h,rings_g,0,0);
+
+    
 
 
     return 0;

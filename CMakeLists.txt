@@ -77,7 +77,7 @@ set_target_properties(subgraph_search
 )
 
 
-add_executable(test ${header_files} "${source_path}/test.cpp" "${source_path}/gen_rotations.cpp" "${source_path}/select_vertex.cpp" "${source_path}/hood.cpp")
+add_executable(test ${header_files} "${source_path}/test.cpp" "${source_path}/gen_rotations.cpp" "${source_path}/select_vertex.cpp" "${source_path}/hood.cpp" "${source_path}/Label.cpp")
 set_target_properties(test PROPERTIES
     COMPILE_DEFINITIONS "TESTING"
 )
