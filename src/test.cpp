@@ -117,11 +117,8 @@ int main()
     }*/
 
     //TEST GEN BOND LABELS
-    /* */
+    /* 
       // Test case 1: Empty intersection
-    std::vector<std::vector<int>> graph0 = {{1, 0, 2}, {0, 1, 1}, {2, 1, 0}};
-    std::vector<std::vector<int>> graph1 = {{2, 1, 0}, {1, 2, 0}, {0, 0, 2}};
-    std::vector<int> expected_labels = {};
 
     std::vector<int> test_labels = gen_bond_labels(graph0, graph1);
 
@@ -150,7 +147,7 @@ int main()
     for (int label : test_labels) {
         std::cout << " " << label;
     }
-    std::cout << std::endl;
+    std::cout << std::endl;*/
 
 
     return 0;
