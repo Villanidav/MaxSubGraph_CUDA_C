@@ -34,7 +34,22 @@ NON AGGIUNGERE ALTRO NEL CMAKE FILE
 $ git config pull.rebase false 
 ```
 
+'''
+ git add .
+ git commit -m "aggiornamento"
+ git merge
+ git push 
+'''
+
  - commit and synch
+## CMakeCache.txt Problems ⭐
+```
+cd build
+rm CMakeCache.txt
+cd ..
+$ cmake -S ./ -B ./build
+```
+
 
 ## Test ✅ / ❌
 - gen_rotations : ✅
@@ -45,7 +60,7 @@ $ git config pull.rebase false
 - gen_initial_label : ❌
 - gen_ring_classes : ❌
 - calc_bound : ✅
-- gen_bond : ❌
+- gen_bond_classes : ✅
 ## Rdkit
 Data structure
 

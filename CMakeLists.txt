@@ -82,7 +82,7 @@ set_target_properties(test PROPERTIES
     COMPILE_DEFINITIONS "TESTING"
 )
 
-add_executable(testFra ${header_files} "${source_path}/testFra.cpp"  "${source_path}/Label.cpp") #Aggiungere qui tutte le funzioni a cui faccio riferimento, di fianco a sourcepath...
+add_executable(testFra ${header_files} "${source_path}/testFra.cpp"  "${source_path}/Label.cpp" "${source_path}/gen_ring_classes.cpp") #Aggiungere qui tutte le funzioni a cui faccio riferimento, di fianco a sourcepath...
 set_target_properties(test PROPERTIES
     COMPILE_DEFINITIONS "TESTING"
 )
