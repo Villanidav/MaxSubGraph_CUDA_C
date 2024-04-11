@@ -74,17 +74,16 @@ include CMakeFiles/boo.dir/flags.make
 
 CMakeFiles/boo.dir/main.cpp.o: CMakeFiles/boo.dir/flags.make
 CMakeFiles/boo.dir/main.cpp.o: /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
-CMakeFiles/boo.dir/main.cpp.o: CMakeFiles/boo.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/boo.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/boo.dir/main.cpp.o -MF CMakeFiles/boo.dir/main.cpp.o.d -o CMakeFiles/boo.dir/main.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/boo.dir/main.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
 
 CMakeFiles/boo.dir/main.cpp.i: cmake_force
 	@echo "Preprocessing CXX source to CMakeFiles/boo.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp > CMakeFiles/boo.dir/main.cpp.i
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp > CMakeFiles/boo.dir/main.cpp.i
 
 CMakeFiles/boo.dir/main.cpp.s: cmake_force
 	@echo "Compiling CXX source to assembly CMakeFiles/boo.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp -o CMakeFiles/boo.dir/main.cpp.s
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp -o CMakeFiles/boo.dir/main.cpp.s
 
 # Object files for target boo
 boo_OBJECTS = \
