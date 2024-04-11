@@ -111,11 +111,41 @@ CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.s"
 	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp -o CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.s
 
+CMakeFiles/testFra.dir/src/gen_rotations.cpp.o: CMakeFiles/testFra.dir/flags.make
+CMakeFiles/testFra.dir/src/gen_rotations.cpp.o: /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp
+CMakeFiles/testFra.dir/src/gen_rotations.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/testFra.dir/src/gen_rotations.cpp.o"
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/gen_rotations.cpp.o -MF CMakeFiles/testFra.dir/src/gen_rotations.cpp.o.d -o CMakeFiles/testFra.dir/src/gen_rotations.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp
+
+CMakeFiles/testFra.dir/src/gen_rotations.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/gen_rotations.cpp.i"
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp > CMakeFiles/testFra.dir/src/gen_rotations.cpp.i
+
+CMakeFiles/testFra.dir/src/gen_rotations.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/gen_rotations.cpp.s"
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp -o CMakeFiles/testFra.dir/src/gen_rotations.cpp.s
+
+CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o: CMakeFiles/testFra.dir/flags.make
+CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o: /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp
+CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o"
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o -MF CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o.d -o CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp
+
+CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.i"
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp > CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.i
+
+CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.s"
+	/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp -o CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.s
+
 # Object files for target testFra
 testFra_OBJECTS = \
 "CMakeFiles/testFra.dir/src/testFra.cpp.o" \
 "CMakeFiles/testFra.dir/src/Label.cpp.o" \
-"CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o"
+"CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o" \
+"CMakeFiles/testFra.dir/src/gen_rotations.cpp.o" \
+"CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o"
 
 # External object files for target testFra
 testFra_EXTERNAL_OBJECTS =
@@ -123,9 +153,11 @@ testFra_EXTERNAL_OBJECTS =
 testFra: CMakeFiles/testFra.dir/src/testFra.cpp.o
 testFra: CMakeFiles/testFra.dir/src/Label.cpp.o
 testFra: CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o
+testFra: CMakeFiles/testFra.dir/src/gen_rotations.cpp.o
+testFra: CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o
 testFra: CMakeFiles/testFra.dir/build.make
 testFra: CMakeFiles/testFra.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable testFra"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable testFra"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testFra.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

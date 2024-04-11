@@ -76,5 +76,17 @@
   "command": "/opt/homebrew/bin/aarch64-apple-darwin23-g++-13   -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp",
   "file": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp",
   "output": "CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o"
+},
+{
+  "directory": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build",
+  "command": "/opt/homebrew/bin/aarch64-apple-darwin23-g++-13   -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/testFra.dir/src/gen_rotations.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp",
+  "file": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp",
+  "output": "CMakeFiles/testFra.dir/src/gen_rotations.cpp.o"
+},
+{
+  "directory": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build",
+  "command": "/opt/homebrew/bin/aarch64-apple-darwin23-g++-13   -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp",
+  "file": "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp",
+  "output": "CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o"
 }
 ]
