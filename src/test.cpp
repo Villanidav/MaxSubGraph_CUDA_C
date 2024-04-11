@@ -117,32 +117,36 @@ int main()
     }*/
 
     //TEST GEN BOND LABELS
-    /* 
-      // Test case 1: Empty intersection
+    /*
 
-    std::vector<int> test_labels = gen_bond_labels(graph0, graph1);
+    // Test case 1: Empty intersection (assuming float values)
+    std::vector<std::vector<float>> graph0 = {{3.8, 0.2, 2.1}, {0.8, 1.3, 1.7}, {2.4, 1.1, 0.9}};
+    std::vector<std::vector<float>> graph1 = {{2.3, 1.8, 0.0}, {1.2, 2.7, 0.5}, {0.6, 0.1, 2.9}};
+    std::vector<float> expected_labels = {}; // No common edges (adapt if expected is different)
+
+    std::vector<float> test_labels = gen_bond_labels(graph0, graph1);
 
     if (test_labels == expected_labels) {
-        std::cout << "Test passed! Expected labels (no common edges):";
+      std::cout << "Test passed! Expected labels (no common edges):";
     } else {
-        std::cout << "Test failed! Got:";
+      std::cout << "Test failed! Got:";
     }
-    for (int label : test_labels) {
-        std::cout << " " << label;
+    for (float label : test_labels) {
+      std::cout << " " << label;
     }
     std::cout << std::endl;
 
-    // Test case 2: Common edges with duplicates
-    graph0 = {{1, 0, 1}, {0, 1, 0}};
-    graph1 = {{1, 1, 0}, {1, 0, 1}};
-    expected_labels = {0, 1};
+    // Test case 2: Common edges with duplicates (adapt values if needed)
+    graph0 = {{1.0, 0.0}, {0.0, 1.0}};
+    graph1 = {{1.0, 1.0}, {1.0, 0.0}};
+    expected_labels = { 0.0 , 1.0 };
 
     test_labels = gen_bond_labels(graph0, graph1);
 
     if (test_labels == expected_labels) {
-        std::cout << "Test passed! Expected labels:";
+      std::cout << "Test passed! Expected labels:";
     } else {
-        std::cout << "Test failed! Got:";
+      std::cout << "Test failed! Got:";
     }
     for (int label : test_labels) {
         std::cout << " " << label;
