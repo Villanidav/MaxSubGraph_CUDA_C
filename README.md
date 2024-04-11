@@ -34,6 +34,13 @@ NON AGGIUNGERE ALTRO NEL CMAKE FILE
 $ git config pull.rebase false 
 ```
 
+'''
+git add .
+git commit -m "aggiornamento"
+git merge
+git push 
+'''
+
  - commit and synch
 
 ## Test ✅ / ❌
