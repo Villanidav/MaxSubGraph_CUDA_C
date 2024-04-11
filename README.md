@@ -35,13 +35,21 @@ $ git config pull.rebase false
 ```
 
 '''
-git add .
-git commit -m "aggiornamento"
-git merge
-git push 
+ git add .
+ git commit -m "aggiornamento"
+ git merge
+ git push 
 '''
 
  - commit and synch
+## CMakeCache.txt Problems ⭐
+```
+cd build
+rm CMakeCache.txt
+cd ..
+$ cmake -S ./ -B ./build
+```
+
 
 ## Test ✅ / ❌
 - gen_rotations : ✅
@@ -52,7 +60,12 @@ git push
 - gen_initial_label : ❌
 - gen_ring_classes : ❌
 - calc_bound : ✅
-- gen_bond : ❌
+- gen_bond_classes : ✅
+- smile_mcs : ❌
+- molmcs : ❌
+- mcSplit : ❌
+- g2Mol : ❌
+  
 ## Rdkit
 Data structure
 
