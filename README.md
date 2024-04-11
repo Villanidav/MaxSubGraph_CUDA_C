@@ -57,8 +57,8 @@ $ cmake -S ./ -B ./build
 - select_vertex : ✅
 - hood : ✅
 - select_label : ✅
-- gen_initial_label : ❌
-- gen_ring_classes : ❌
+- gen_initial_label : ✅
+- gen_ring_classes :  ✅ (❗️ la stringa inversa non funziona )
 - calc_bound : ✅
 - gen_bond_classes : ✅
 - smile_mcs : ❌
