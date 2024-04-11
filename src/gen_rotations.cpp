@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+std::vector<std::pair<std::string, int> > gen_rotations(const std::string& s);
 
 std::vector<std::pair<std::string, int> > gen_rotations(const std::string& s) {
     int rot_len = s.length();

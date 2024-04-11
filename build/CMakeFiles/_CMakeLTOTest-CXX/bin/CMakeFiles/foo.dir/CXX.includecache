@@ -6,9 +6,5 @@
 
 #IncludeRegexTransform: 
 
-<<<<<<< HEAD
 /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
-=======
-/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
->>>>>>> 4e5ab161865783decc36e532f31f9b6a75bff1b3
 

@@ -1,13 +1,13 @@
 #include <iostream>
 #include "test.hpp"
-
+#include "testFra.hpp"
 
 int main() {
-    
+/*
     std::vector<int> g;
     std::vector<int> h;
     /*int adj;
-    int label;*/
+    int label;
     std::vector<std::vector<int> > rings_g;
     rings_g.resize(3);
 
@@ -62,8 +62,24 @@ int main() {
         }
     }
     
-    
+*/
 
-    
+    const std::vector<std::string> l0 = std::vector<std::string>( {"C","C","O","C","H","H","O"} );
+    const std::vector<std::string> l1 = std::vector<std::string>( {"C","H","F","O","H","C","B","R"} );
+
+    const std::vector<std::vector<int> > ring_info_m0 = std::vector<std::vector<int> >( {{0,1,2},{4,3,5}} );
+    const std::vector<std::vector<int> > ring_info_m1 = std::vector<std::vector<int> >( {{4,1,0},{1,2,3},{1,4,5},{5,0,3}} );
+
+
+    std::vector<std::vector<int> > ring_generated = gen_rings_classes(l0,l1,ring_info_m0,ring_info_m1);
+    int i = 0;
+    for(std::vector<int> posizione : ring_generated){
+        std::cout << "\nidx: " << i << "\n";
+        i++;
+
+        for(int j: posizione){
+            std::cout << j << " ";
+        }
+    }
     return 0;
 }

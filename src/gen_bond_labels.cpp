@@ -1,7 +1,7 @@
 #include <vector>
 #include <algorithm> // for std::sort, std::unique
 
-std::vector<int> gen_bond_labels(const std::vector<std::vector<int>>& g0, const std::vector<std::vector<int>>& g1) {
+std::vector<int> gen_bond_labels(const std::vector<std::vector<int> >& g0, const std::vector<std::vector<int> >& g1) {
   // Vector to store potential bond labels (extracted from both matrices)
   std::vector<int> all_labels;
 
