@@ -8,7 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+<<<<<<< HEAD
   "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp" "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/main.cpp.o"
+=======
+  "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp" "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/main.cpp.o"
+>>>>>>> 4e5ab161865783decc36e532f31f9b6a75bff1b3
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,12 +24,9 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
-  )
-
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

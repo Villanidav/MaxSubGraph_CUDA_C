@@ -30,16 +30,22 @@ The project is organized as follow:
 NON AGGIUNGERE ALTRO NEL CMAKE FILE
 
 ## Merge ⭐
- Se prima di pushare dimentichi di pullare:
 ```
 $ git config pull.rebase false 
 ```
 
  - commit and synch
 
-## Test
+## Test ✅ / ❌
 - gen_rotations : ✅
-- Label : ❌
+- Label : ✅
+- select_vertex : ✅
+- hood : ✅
+- select_label : ✅
+- gen_initial_label : ❌
+- gen_ring_classes : ❌
+- calc_bound : ✅
+- gen_bond : ❌
 ## Rdkit
 Data structure
 
