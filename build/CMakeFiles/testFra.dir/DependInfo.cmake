@@ -8,17 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/Label.cpp" "CMakeFiles/testFra.dir/src/Label.cpp.o" "gcc" "CMakeFiles/testFra.dir/src/Label.cpp.o.d"
-  "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp" "CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o" "gcc" "CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o.d"
-  "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/src/testFra.cpp" "CMakeFiles/testFra.dir/src/testFra.cpp.o" "gcc" "CMakeFiles/testFra.dir/src/testFra.cpp.o.d"
+  "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/Label.cpp" "CMakeFiles/testFra.dir/src/Label.cpp.o" "gcc" "CMakeFiles/testFra.dir/src/Label.cpp.o.d"
+  "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp" "CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o" "gcc" "CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o.d"
+  "/home/davide/Desktop/MCS/MaxSubGraph_CUDA_C/src/testFra.cpp" "CMakeFiles/testFra.dir/src/testFra.cpp.o" "gcc" "CMakeFiles/testFra.dir/src/testFra.cpp.o.d"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
-  )
-
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.
