@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20"
@@ -21,7 +21,7 @@
 					]
 				}
 			],
-			"name" : "Release",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -43,21 +43,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "subgraph_search::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-subgraph_search-Release-4007d83a70f0540934b7.json",
+					"jsonFile" : "target-subgraph_search-Debug-27da3e57c4d8e6bf04e9.json",
 					"name" : "subgraph_search",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test-Release-a16a64076eaf8003f4cd.json",
+					"jsonFile" : "target-test-Debug-a5212e7f9cfcdd24a4a2.json",
 					"name" : "test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "testFra::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-testFra-Release-d81fe730230f61200127.json",
+					"jsonFile" : "target-testFra-Debug-51795d2590248d60760e.json",
 					"name" : "testFra",
 					"projectIndex" : 0
 				}

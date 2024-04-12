@@ -230,6 +230,30 @@ src/gen_bond_labels.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gen_bond_labels.cpp.s
 .PHONY : src/gen_bond_labels.cpp.s
 
+src/gen_initial_labels.o: src/gen_initial_labels.cpp.o
+.PHONY : src/gen_initial_labels.o
+
+# target to build an object file
+src/gen_initial_labels.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o
+.PHONY : src/gen_initial_labels.cpp.o
+
+src/gen_initial_labels.i: src/gen_initial_labels.cpp.i
+.PHONY : src/gen_initial_labels.i
+
+# target to preprocess a source file
+src/gen_initial_labels.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.i
+.PHONY : src/gen_initial_labels.cpp.i
+
+src/gen_initial_labels.s: src/gen_initial_labels.cpp.s
+.PHONY : src/gen_initial_labels.s
+
+# target to generate assembly for a file
+src/gen_initial_labels.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.s
+.PHONY : src/gen_initial_labels.cpp.s
+
 src/gen_ring_classes.o: src/gen_ring_classes.cpp.o
 .PHONY : src/gen_ring_classes.o
 
@@ -260,6 +284,7 @@ src/gen_rotations.o: src/gen_rotations.cpp.o
 # target to build an object file
 src/gen_rotations.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gen_rotations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gen_rotations.cpp.o
 .PHONY : src/gen_rotations.cpp.o
 
 src/gen_rotations.i: src/gen_rotations.cpp.i
@@ -268,6 +293,7 @@ src/gen_rotations.i: src/gen_rotations.cpp.i
 # target to preprocess a source file
 src/gen_rotations.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gen_rotations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gen_rotations.cpp.i
 .PHONY : src/gen_rotations.cpp.i
 
 src/gen_rotations.s: src/gen_rotations.cpp.s
@@ -276,6 +302,7 @@ src/gen_rotations.s: src/gen_rotations.cpp.s
 # target to generate assembly for a file
 src/gen_rotations.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gen_rotations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gen_rotations.cpp.s
 .PHONY : src/gen_rotations.cpp.s
 
 src/hood.o: src/hood.cpp.o
@@ -466,6 +493,9 @@ help:
 	@echo "... src/gen_bond_labels.o"
 	@echo "... src/gen_bond_labels.i"
 	@echo "... src/gen_bond_labels.s"
+	@echo "... src/gen_initial_labels.o"
+	@echo "... src/gen_initial_labels.i"
+	@echo "... src/gen_initial_labels.s"
 	@echo "... src/gen_ring_classes.o"
 	@echo "... src/gen_ring_classes.i"
 	@echo "... src/gen_ring_classes.s"
