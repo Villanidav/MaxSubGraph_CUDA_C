@@ -1,9 +1,17 @@
 #include <vector>
 #include <algorithm> // for std::sort, std::unique
 
-std::vector<float> gen_bond_labels(const std::vector<std::vector<float>>& g0, const std::vector<std::vector<float>>& g1) {
+std::vector<float> gen_bond_labels(const std::vector<std::vector<float> >& g0, const std::vector<std::vector<float> >& g1) {
   
-  std::vector<float> all_labels={0.0 ,1.0 , 1.5, 2.0 ,3.0 ,4.0 ,5.0 ,6.0 };
+  std::vector<float> all_labels;
+  all_labels.push_back(0.0);
+  all_labels.push_back(1.0);
+  all_labels.push_back(1.5);
+  all_labels.push_back(2.0);
+  all_labels.push_back(3.0);
+  all_labels.push_back(4.0);
+  all_labels.push_back(5.0);
+  all_labels.push_back(6.0);
   // Vector to store potential bond labels (extracted from both matrices)
   std::vector<float> intersection;
 

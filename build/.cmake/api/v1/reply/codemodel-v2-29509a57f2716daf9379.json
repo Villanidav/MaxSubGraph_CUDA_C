@@ -43,21 +43,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "subgraph_search::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-subgraph_search-Debug-b7a63a8eb1d856709c20.json",
+					"jsonFile" : "target-subgraph_search-Debug-218d29508637f99813c5.json",
 					"name" : "subgraph_search",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test-Debug-3f61262adbf91ae6df22.json",
+					"jsonFile" : "target-test-Debug-878bde1124a196469852.json",
 					"name" : "test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "testFra::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-testFra-Debug-3d7d8a71f1ed63a73372.json",
+					"jsonFile" : "target-testFra-Debug-8028e3b9997af0cec651.json",
 					"name" : "testFra",
 					"projectIndex" : 0
 				}

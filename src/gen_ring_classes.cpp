@@ -10,9 +10,7 @@ std::vector<std::vector<int> > gen_rings_classes(
     const std::vector<std::vector<int> > ring_info_m0,
     const std::vector<std::vector<int> > ring_info_m1
 ){
-    /*const std::vector<std::string> l0; const std::vector<std::string> l1;
-    const std::vector<std::vector<int> > ring_info_m0;
-    const std::vector<std::vector<int> > ring_info_m1;*/
+    
     std::vector<std::vector<int> > ring_comp_m0;
     ring_comp_m0.resize(l0.size());
 
@@ -38,7 +36,7 @@ std::vector<std::vector<int> > gen_rings_classes(
 
         std::string r0_label_rev = r0_label;  // Make a copy of the original string
         std::reverse(r0_label_rev.begin(), r0_label_rev.end());  // Reverse the copied string
-        //std::cout << " direzione giusta:" << r0_label << "direzione inversa: "<< r0_label_rev << "\n";
+        
         for (const std::vector<int>& r1 : ring_info_m1) {
             if(r0.size() == r1.size()){
                 std::string r1_label = "";
@@ -69,24 +67,46 @@ std::vector<std::vector<int> > gen_rings_classes(
                 for(std::pair<std::string, int> rot : r0_rots){
                     for (int idx = 0; idx < r0.size(); ++idx) {
                         if(ring_comp_m0.at(r0.at(idx)).at(0) == -1){
-                            ring_comp_m0.at(r0.at(idx)).at(0) = r1.at(std::abs( idx - rot.second ));
+                            if(idx - rot.second < 0){
+                                ring_comp_m0.at(r0.at(idx)).at(0) = r1.at((r0.size() + idx - rot.second ));
+                            }
+                            else{
+                                ring_comp_m0.at(r0.at(idx)).at(0) = r1.at((idx - rot.second ));
+                            }
+                            
                         }else{
-                            ring_comp_m0.at(r0.at(idx)).push_back(r1.at(std::abs( idx - rot.second )));
+                            if(idx - rot.second < 0){
+                                ring_comp_m0.at(r0.at(idx)).push_back(r1.at((r1.size() + idx - rot.second )));
+                            }
+                            else{
+                               ring_comp_m0.at(r0.at(idx)).push_back(r1.at(( idx - rot.second )));
+                            }
+                            
                         }
                     }
                 }
                 
                 
-                /*for(std::pair<std::string, int> rot : r0_rev_rots){
+                for(std::pair<std::string, int> rot : r0_rev_rots){
                     for (int idx = 0; idx < r0.size(); ++idx) {
                         int rev_idx = r1.size() - idx - 1;
+                        std:cout << rot.first << rot.second << " ";
                         if(ring_comp_m0.at(r0.at(idx)).at(0) == -1){
-                            ring_comp_m0.at(r0.at(idx)).at(0) = r1.at(std::abs(rev_idx - rot.second));
+                            if(rev_idx - rot.second < 0){
+                                ring_comp_m0.at(r0.at(idx)).at(0) = r1.at((r1.size() + rev_idx - rot.second));
+                            }else{
+                                ring_comp_m0.at(r0.at(idx)).at(0) = r1.at(std::abs(rev_idx - rot.second));
+                            }       
                         }else{
-                            ring_comp_m0.at(r0.at(idx)).push_back(std::abs(rev_idx - rot.second));
+                            if(rev_idx - rot.second < 0){
+                                ring_comp_m0.at(r0.at(idx)).push_back(r1.at((r1.size() + rev_idx - rot.second)));
+                            }else{
+                                ring_comp_m0.at(r0.at(idx)).push_back(r1.at(std::abs(rev_idx - rot.second)));
+                            }
                         }
                     }
-                }*/
+                }
+                
                 
             }
         }

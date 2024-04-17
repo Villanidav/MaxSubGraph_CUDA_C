@@ -63,17 +63,18 @@ int main() {
     }
     
 */
-    std:cout << "ciao";
-    const std::vector<std::string> l0 = std::vector<std::string>( {"C","C","O","C","H","H","O"} );
-    const std::vector<std::string> l1 = std::vector<std::string>( {"C","H","F","O","H","C","B","R"} );
+   
+    const std::vector<std::string> l0({"C","C","O","C","H","H","O"});
 
-    const std::vector<std::vector<int> > ring_info_m0 = std::vector<std::vector<int> >( {{0,1,2},{4,3,5}} );
-    const std::vector<std::vector<int> > ring_info_m1 = std::vector<std::vector<int> >( {{4,1,0},{1,2,3},{1,4,5},{5,0,3}} );
+    const std::vector<std::string> l1({"C","H","F","O","H","C","B","R"});
+
+    const std::vector<std::vector<int> > ring_info_m0({{0,1,2},{4,3,5}});
+    const std::vector<std::vector<int> > ring_info_m1({{4,1,0},{1,2,3},{1,4,5},{5,0,3}});
 
 
     std::vector<std::vector<int> > ring_generated = gen_rings_classes(l0,l1,ring_info_m0,ring_info_m1);
     
-    /*int i = 0;
+    int i = 0;
     for(std::vector<int> posizione : ring_generated){
         std::cout << "\nidx: " << i << "\n";
         i++;
@@ -81,7 +82,7 @@ int main() {
         for(int j: posizione){
             std::cout << j << " ";
         }
-    };*/
+    }; 
 
     
     std::vector<LabelClass> intial_labels = gen_initial_labels(l0,l1,ring_generated);
