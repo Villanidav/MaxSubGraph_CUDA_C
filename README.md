@@ -60,7 +60,7 @@ $ cmake -S ./ -B ./build
 - hood : ✅
 - select_label : ✅
 - gen_initial_label : ✅
-- gen_ring_classes :  ✅ (❗️ la stringa inversa non funziona )
+- gen_ring_classes :  ✅ 
 - calc_bound : ✅
 - gen_bond_classes : ✅
 - smile_mcs : ❌
