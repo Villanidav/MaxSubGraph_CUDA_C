@@ -790,3 +790,77 @@ events:
         
       exitCode: 2
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.0/share/cmake/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.0/share/cmake/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "CMakeLists.txt:97 (check_ipo_supported)"
+    directories:
+      source: "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.0/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /opt/homebrew/Cellar/cmake/3.29.0/bin/cmake -S/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /opt/homebrew/Cellar/cmake/3.29.0/bin/cmake -E cmake_progress_start /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/Makefile2 all
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        cd /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /opt/homebrew/Cellar/cmake/3.29.0/bin/cmake -E cmake_depends "Unix Makefiles" /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        Dependee "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin23-g++-13   -flto=auto -fno-fat-lto-objects -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/foo.dir/foo.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        cc1plus: error: '-fno-fat-lto-objects' are supported only with linker plugin
+        make[2]: *** [CMakeFiles/foo.dir/foo.cpp.o] Error 1
+        make[1]: *** [CMakeFiles/foo.dir/all] Error 2
+        make: *** [all] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.29.0/share/cmake/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.29.0/share/cmake/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "CMakeLists.txt:97 (check_ipo_supported)"
+    directories:
+      source: "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.29.0/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile
+        /opt/homebrew/Cellar/cmake/3.29.0/bin/cmake -S/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /opt/homebrew/Cellar/cmake/3.29.0/bin/cmake -E cmake_progress_start /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/Makefile2 all
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        cd /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /opt/homebrew/Cellar/cmake/3.29.0/bin/cmake -E cmake_depends "Unix Makefiles" /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        Dependee "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /opt/homebrew/bin/aarch64-apple-darwin23-g++-13   -flto=auto -fno-fat-lto-objects -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -o CMakeFiles/foo.dir/foo.cpp.o -c /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        cc1plus: error: '-fno-fat-lto-objects' are supported only with linker plugin
+        make[2]: *** [CMakeFiles/foo.dir/foo.cpp.o] Error 1
+        make[1]: *** [CMakeFiles/foo.dir/all] Error 2
+        make: *** [all] Error 2
+        
+      exitCode: 2
+...

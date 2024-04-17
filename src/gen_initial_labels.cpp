@@ -22,7 +22,7 @@ std::vector<std::string> find_common_strings(const std::vector<std::string>& l0,
   return result;
 }
 
-std::vector<LabelClass> gen_initial_labels(const std::vector<std::string> l0, const std::vector<std::string> l1,     std::vector<std::vector<int> > ring_classes){
+std::vector<LabelClass> gen_initial_labels(const std::vector<std::string>& l0, const std::vector<std::string>& l1,     std::vector<std::vector<int> >& ring_classes){
     std::vector<LabelClass> label_classes;
     const std::vector<std::string> common_labels = find_common_strings(l0,l1);
     
@@ -46,7 +46,7 @@ std::vector<LabelClass> gen_initial_labels(const std::vector<std::string> l0, co
             }
         }
 
-        LabelClass label_tmp(g_elems,h_elems,g_ring_classes,0,0);
+        LabelClass label_tmp(g_elems,h_elems,g_ring_classes,0, label);
         label_classes.push_back(label_tmp);
 
     }

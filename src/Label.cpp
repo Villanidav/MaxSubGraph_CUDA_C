@@ -10,10 +10,10 @@ class LabelClass {
     std::vector<int> g;
     std::vector<int> h;
     int adj;
-    int label;
+    std::string label;
     std::vector<std::vector<int> > rings_g;
     
-    LabelClass(const std::vector<int> elems_g, const std::vector<int> elems_h, const std::vector<std::vector<int> > rings, int adjj , int labell ) 
+    LabelClass(const std::vector<int> elems_g, const std::vector<int> elems_h, const std::vector<std::vector<int> > rings, int adjj , std::string labell ) 
         {
             g = elems_g;
             h = elems_h;
