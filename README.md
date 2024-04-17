@@ -65,7 +65,7 @@ $ cmake -S ./ -B ./build
 - gen_bond_classes : ✅
 - smile_mcs : ❌
 - molmcs : ❌
-- mcSplit : ❌
+- search_mcs : ✅❌ (❗️mancano i test)
 - g2Mol : ❌
   
 ## Rdkit
