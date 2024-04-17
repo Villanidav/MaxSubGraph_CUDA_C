@@ -63,7 +63,7 @@ int main() {
     }
     
 */
-
+    std:cout << "ciao";
     const std::vector<std::string> l0 = std::vector<std::string>( {"C","C","O","C","H","H","O"} );
     const std::vector<std::string> l1 = std::vector<std::string>( {"C","H","F","O","H","C","B","R"} );
 
@@ -85,6 +85,7 @@ int main() {
 
     
     std::vector<LabelClass> intial_labels = gen_initial_labels(l0,l1,ring_generated);
+    /*
     for(LabelClass l : intial_labels){
         for(int i : l.g){
             int index = 0;
@@ -98,6 +99,6 @@ int main() {
         }
         
 
-    }
+    }*/
     return 0;
 }

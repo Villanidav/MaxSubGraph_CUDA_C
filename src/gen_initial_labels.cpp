@@ -25,7 +25,8 @@ std::vector<std::string> find_common_strings(const std::vector<std::string>& l0,
 std::vector<LabelClass> gen_initial_labels(const std::vector<std::string> l0, const std::vector<std::string> l1,     std::vector<std::vector<int> > ring_classes){
     std::vector<LabelClass> label_classes;
     const std::vector<std::string> common_labels = find_common_strings(l0,l1);
-    for(std::string com : common_labels){ std::cout << "\n" << com; }
+    
+    //for(std::string com : common_labels){ std::cout << "\n" << com; }
 
     for (const std::string& label : common_labels) {
         // Filter atoms and ring data based on label

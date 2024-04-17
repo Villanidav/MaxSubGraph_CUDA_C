@@ -38,7 +38,7 @@ std::vector<std::vector<int> > gen_rings_classes(
 
         std::string r0_label_rev = r0_label;  // Make a copy of the original string
         std::reverse(r0_label_rev.begin(), r0_label_rev.end());  // Reverse the copied string
-
+        //std::cout << " direzione giusta:" << r0_label << "direzione inversa: "<< r0_label_rev << "\n";
         for (const std::vector<int>& r1 : ring_info_m1) {
             if(r0.size() == r1.size()){
                 std::string r1_label = "";
