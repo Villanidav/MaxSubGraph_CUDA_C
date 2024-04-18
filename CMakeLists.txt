@@ -43,7 +43,7 @@ endif()
 # ########################################################################
 
 # the rdkit to perform the heavy lifting
-find_package(rdkit REQUIRED)
+find_package(RDKit REQUIRED)
 
 # ########################################################################
 # ### Define the application sources
@@ -70,7 +70,8 @@ list(APPEND source_filess
 # ########################################################################
 
 # define the target and its properties
-add_executable(subgraph_search ${header_files} "${source_path}/main.cpp" ${source_files})
+add_executable(subgraph_search ${header_files} "${source_path}/main.cpp" ${source_files}
+        src/search_mcs.cpp)
 set_target_properties(subgraph_search
   PROPERTIES
   CXX_STANDARD 17
@@ -79,12 +80,15 @@ set_target_properties(subgraph_search
 )
 
 
-add_executable(test ${header_files} "${source_path}/test.cpp" "${source_path}/gen_bond_labels.cpp" "${source_path}/gen_rotations.cpp" "${source_path}/select_vertex.cpp" "${source_path}/hood.cpp" "${source_path}/Label.cpp" "${source_path}/smiles_mcs.cpp" "${source_path}/calc_bound.cpp" "${source_path}/select_label.cpp")
+add_executable(test ${header_files} "${source_path}/test.cpp" "${source_path}/gen_bond_labels.cpp" "${source_path}/gen_rotations.cpp" "${source_path}/select_vertex.cpp" "${source_path}/hood.cpp" "${source_path}/Label.cpp" "${source_path}/smiles_mcs.cpp" "${source_path}/calc_bound.cpp" "${source_path}/select_label.cpp"
+        src/search_mcs.cpp
+        src/mol_mcs.cpp)
 set_target_properties(test PROPERTIES
     COMPILE_DEFINITIONS "TESTING"
 )
 
-add_executable(testFra ${header_files} "${source_path}/testFra.cpp"  "${source_path}/Label.cpp" "${source_path}/gen_ring_classes.cpp" "${source_path}/gen_rotations.cpp" "${source_path}/gen_initial_labels.cpp" ) #Aggiungere qui tutte le funzioni a cui faccio riferimento, di fianco a sourcepath...
+add_executable(testFra ${header_files} "${source_path}/testFra.cpp"  "${source_path}/Label.cpp" "${source_path}/gen_ring_classes.cpp" "${source_path}/gen_rotations.cpp" "${source_path}/gen_initial_labels.cpp"
+        src/search_mcs.cpp) #Aggiungere qui tutte le funzioni a cui faccio riferimento, di fianco a sourcepath...
 set_target_properties(test PROPERTIES
     COMPILE_DEFINITIONS "TESTING"
 )
@@ -105,13 +109,25 @@ endif()
 get_target_property(RDKIT_LIB_FULLPATH RDKit::RDGeneral LOCATION)
 get_filename_component(RDKIT_LIB_DIRPATH "${RDKIT_LIB_FULLPATH}" DIRECTORY)
 cmake_path(GET RDKIT_LIB_DIRPATH PARENT_PATH RDKIT_INSTALL_PREFIX)
+include_directories(${RDKit_INCLUDE_DIR}) #modified
 target_include_directories(subgraph_search PUBLIC "${RDKIT_INSTALL_PREFIX}/include/rdkit")
 target_link_directories(subgraph_search PUBLIC "${RDKIT_INSTALL_PREFIX}/lib")
 target_link_directories(subgraph_search PUBLIC "${RDKIT_INSTALL_PREFIX}/lib64")
 target_link_libraries(subgraph_search PUBLIC
+  RDKit
   RDKitFileParsers
   RDKitGraphMol
   RDKitRDGeneral
   RDKitSmilesParse
   RDKitSubstructMatch
+)
+target_include_directories(test PUBLIC "${RDKIT_INSTALL_PREFIX}/include/rdkit")
+target_link_directories(test PUBLIC "${RDKIT_INSTALL_PREFIX}/lib")
+target_link_directories(test PUBLIC "${RDKIT_INSTALL_PREFIX}/lib64")
+target_link_libraries(test PUBLIC
+        RDKitFileParsers
+        RDKitGraphMol
+        RDKitRDGeneral
+        RDKitSmilesParsers
+        RDKitSubstructMatch
 )
