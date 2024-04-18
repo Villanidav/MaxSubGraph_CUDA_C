@@ -1,0 +1,92 @@
+[
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -I/home/davide/miniconda3/include/rdkit -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -std=c++17 -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -fdiagnostics-color=always -o CMakeFiles/subgraph_search.dir/src/main.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/main.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/main.cpp",
+  "output": "CMakeFiles/subgraph_search.dir/src/main.cpp.o"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -DTESTING -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -fdiagnostics-color=always -o CMakeFiles/test.dir/src/test.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/test.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/test.cpp",
+  "output": "CMakeFiles/test.dir/src/test.cpp.o"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -DTESTING -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -fdiagnostics-color=always -o CMakeFiles/test.dir/src/gen_bond_labels.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_bond_labels.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_bond_labels.cpp",
+  "output": "CMakeFiles/test.dir/src/gen_bond_labels.cpp.o"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -DTESTING -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -fdiagnostics-color=always -o CMakeFiles/test.dir/src/gen_rotations.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_rotations.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_rotations.cpp",
+  "output": "CMakeFiles/test.dir/src/gen_rotations.cpp.o"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -DTESTING -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -fdiagnostics-color=always -o CMakeFiles/test.dir/src/select_vertex.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/select_vertex.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/select_vertex.cpp",
+  "output": "CMakeFiles/test.dir/src/select_vertex.cpp.o"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -DTESTING -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -fdiagnostics-color=always -o CMakeFiles/test.dir/src/hood.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/hood.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/hood.cpp",
+  "output": "CMakeFiles/test.dir/src/hood.cpp.o"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -DTESTING -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -fdiagnostics-color=always -o CMakeFiles/test.dir/src/Label.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/Label.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/Label.cpp",
+  "output": "CMakeFiles/test.dir/src/Label.cpp.o"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -DTESTING -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -fdiagnostics-color=always -o CMakeFiles/test.dir/src/smiles_mcs.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp",
+  "output": "CMakeFiles/test.dir/src/smiles_mcs.cpp.o"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -DTESTING -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -fdiagnostics-color=always -o CMakeFiles/test.dir/src/calc_bound.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/calc_bound.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/calc_bound.cpp",
+  "output": "CMakeFiles/test.dir/src/calc_bound.cpp.o"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -DTESTING -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -fdiagnostics-color=always -o CMakeFiles/test.dir/src/select_label.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/select_label.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/select_label.cpp",
+  "output": "CMakeFiles/test.dir/src/select_label.cpp.o"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -fdiagnostics-color=always -o CMakeFiles/testFra.dir/src/testFra.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/testFra.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/testFra.cpp",
+  "output": "CMakeFiles/testFra.dir/src/testFra.cpp.o"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -fdiagnostics-color=always -o CMakeFiles/testFra.dir/src/Label.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/Label.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/Label.cpp",
+  "output": "CMakeFiles/testFra.dir/src/Label.cpp.o"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -fdiagnostics-color=always -o CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp",
+  "output": "CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -fdiagnostics-color=always -o CMakeFiles/testFra.dir/src/gen_rotations.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_rotations.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_rotations.cpp",
+  "output": "CMakeFiles/testFra.dir/src/gen_rotations.cpp.o"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -fdiagnostics-color=always -o CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp",
+  "output": "CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o"
+}
+]
