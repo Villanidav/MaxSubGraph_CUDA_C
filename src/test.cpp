@@ -153,6 +153,8 @@ int main()
     }
     std::cout << std::endl;*/
 
+    //TEST SMILES_MCS
+
 
     return 0;
 }

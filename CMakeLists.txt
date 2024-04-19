@@ -85,12 +85,18 @@ add_executable(test ${header_files} "${source_path}/test.cpp" "${source_path}/ge
         src/mol_mcs.cpp)
 set_target_properties(test PROPERTIES
     COMPILE_DEFINITIONS "TESTING"
+        CXX_STANDARD 17
+        CXX_STANDARD_REQUIRED ON
+        CXX_EXTENSIONS OFF
 )
 
 add_executable(testFra ${header_files} "${source_path}/testFra.cpp"  "${source_path}/Label.cpp" "${source_path}/gen_ring_classes.cpp" "${source_path}/gen_rotations.cpp" "${source_path}/gen_initial_labels.cpp"
         src/search_mcs.cpp) #Aggiungere qui tutte le funzioni a cui faccio riferimento, di fianco a sourcepath...
 set_target_properties(test PROPERTIES
     COMPILE_DEFINITIONS "TESTING"
+        CXX_STANDARD 17
+        CXX_STANDARD_REQUIRED ON
+        CXX_EXTENSIONS OFF
 )
 
 
