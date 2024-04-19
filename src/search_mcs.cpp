@@ -1,6 +1,5 @@
 #include <vector>
 #include <algorithm>
-#include "testFra.hpp"
 #include "test.hpp"
 using namespace std;
 
@@ -37,7 +36,7 @@ void search_mcs(std::vector<std::vector<int> > g0, std::vector<std::vector<int> 
     std::vector<int>  v_ring_atoms = label_class -> get_ring_match_data(vector).at(0);
 
     for( int w : label_class -> h){
-        if( (v_ring_atoms.size() != 0) && 
+        if( (!v_ring_atoms.empty()) &&
         (std::find(v_ring_atoms.begin(),v_ring_atoms.end(), -1) != v_ring_atoms.end() ) ||
         ( std::find(v_ring_atoms.begin(),v_ring_atoms.end(), w) == v_ring_atoms.end()) ){
             continue;

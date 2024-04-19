@@ -34,7 +34,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin/
+cmake_ninja_workdir = /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin/
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target foo
 
@@ -44,9 +44,9 @@ cmake_ninja_workdir = /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/cmake-
 
 build cmake_object_order_depends_target_foo: phony || CMakeFiles/foo.dir
 
-build CMakeFiles/foo.dir/foo.c.o: C_COMPILER__foo_unscanned_ /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src/foo.c || cmake_object_order_depends_target_foo
+build CMakeFiles/foo.dir/foo.c.o: C_COMPILER__foo_unscanned_ /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src/foo.c || cmake_object_order_depends_target_foo
   DEP_FILE = CMakeFiles/foo.dir/foo.c.o.d
-  FLAGS = -flto=thin -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  FLAGS = -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/foo.dir
   OBJECT_FILE_DIR = CMakeFiles/foo.dir
 
@@ -59,8 +59,7 @@ build CMakeFiles/foo.dir/foo.c.o: C_COMPILER__foo_unscanned_ /Users/francescovir
 # Link the static library libfoo.a
 
 build libfoo.a: C_STATIC_LIBRARY_LINKER__foo_ CMakeFiles/foo.dir/foo.c.o
-  ARCH_FLAGS = -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
-  LANGUAGE_COMPILE_FLAGS = -flto=thin
+  LANGUAGE_COMPILE_FLAGS = -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects
   OBJECT_DIR = CMakeFiles/foo.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -76,9 +75,9 @@ build libfoo.a: C_STATIC_LIBRARY_LINKER__foo_ CMakeFiles/foo.dir/foo.c.o
 
 build cmake_object_order_depends_target_boo: phony || cmake_object_order_depends_target_foo
 
-build CMakeFiles/boo.dir/main.c.o: C_COMPILER__boo_unscanned_ /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src/main.c || cmake_object_order_depends_target_boo
+build CMakeFiles/boo.dir/main.c.o: C_COMPILER__boo_unscanned_ /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src/main.c || cmake_object_order_depends_target_boo
   DEP_FILE = CMakeFiles/boo.dir/main.c.o.d
-  FLAGS = -flto=thin -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -fcolor-diagnostics
+  FLAGS = -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/boo.dir
   OBJECT_FILE_DIR = CMakeFiles/boo.dir
 
@@ -91,7 +90,8 @@ build CMakeFiles/boo.dir/main.c.o: C_COMPILER__boo_unscanned_ /Users/francescovi
 # Link the executable boo
 
 build boo: C_EXECUTABLE_LINKER__boo_ CMakeFiles/boo.dir/main.c.o | libfoo.a || libfoo.a
-  FLAGS = -flto=thin -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk
+  FLAGS = -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects
+  LINK_FLAGS = -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/davide/miniconda3/lib -Wl,-rpath-link,/home/davide/miniconda3/lib -L/home/davide/miniconda3/lib
   LINK_LIBRARIES = libfoo.a
   OBJECT_DIR = CMakeFiles/boo.dir
   POST_BUILD = :
@@ -104,7 +104,7 @@ build boo: C_EXECUTABLE_LINKER__boo_ CMakeFiles/boo.dir/main.c.o | libfoo.a || l
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin && /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -115,7 +115,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src -B/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin
+  COMMAND = cd /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin && /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src -B/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -133,7 +133,7 @@ build foo: phony libfoo.a
 # =============================================================================
 
 #############################################
-# Folder: /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin
+# Folder: /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin
 
 build all: phony libfoo.a boo
 
@@ -144,14 +144,14 @@ build all: phony libfoo.a boo
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/UnixPaths.cmake /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/3.28.1/CMakeCCompiler.cmake /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/3.28.1/CMakeSystem.cmake /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src/CMakeLists.txt CMakeCache.txt
+build build.ninja: RERUN_CMAKE | /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/3.28.1/CMakeCCompiler.cmake /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/3.28.1/CMakeSystem.cmake /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src/CMakeLists.txt /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/UnixPaths.cmake CMakeCache.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.28/Modules/Platform/UnixPaths.cmake /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/3.28.1/CMakeCCompiler.cmake /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/3.28.1/CMakeSystem.cmake /Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src/CMakeLists.txt CMakeCache.txt: phony
+build /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/3.28.1/CMakeCCompiler.cmake /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/3.28.1/CMakeSystem.cmake /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src/CMakeLists.txt /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/Compiler/GNU.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/Linux.cmake /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/Platform/UnixPaths.cmake CMakeCache.txt: phony
 
 
 #############################################
