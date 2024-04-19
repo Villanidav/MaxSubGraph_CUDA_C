@@ -1,1 +1,1 @@
-/opt/homebrew/bin/aarch64-apple-darwin23-g++-13 -flto=auto -fno-fat-lto-objects -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a
+/usr/bin/c++ -flto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a 

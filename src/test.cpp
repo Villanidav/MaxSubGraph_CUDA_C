@@ -1,8 +1,10 @@
+//
+// Created by davide on 4/19/24.
+//
 #include <iostream>
 #include <vector>
 #include <string>
 #include "test.hpp"
-#include "testFra.hpp"
 
 using namespace std;
 
@@ -27,13 +29,13 @@ void print_label_info(const LabelClass* label) {
   std::cout << "  label: " << label->label << std::endl;
 }
 
-int main() 
+int main()
 {
     //TEST GEN ROTATIONS
     /*
     std::string input = "example";
     std::vector<std::pair<std::string, int> >  result = gen_rotations(input);
- 
+
     // Printing the result
     for (const auto& pair : result) {
         std::cout << pair.first << ", " << pair.second << std::endl;

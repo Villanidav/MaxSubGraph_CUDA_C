@@ -1,0 +1,9 @@
+# ninja log v5
+1	154	1713548135674781740	build.ninja	d4368f12ec009707
+1	141	1713547161986752026	CMakeFiles/subgraph_search.dir/src/main.cpp.o	5776e69f8cba3263
+1	296	1713545185950691722	CMakeFiles/test.dir/src/gen_bond_labels.cpp.o	531f8203a0c35c60
+0	2	0	clean	35da7add5c09ff12
+1	204	1713545185858691719	CMakeFiles/test.dir/src/select_vertex.cpp.o	5df2e3e9d60a54f2
+2	117	1713545185770691716	CMakeFiles/test.dir/src/hood.cpp.o	74abb8273f0f1ac9
+1	272	1713545185926691721	CMakeFiles/test.dir/src/gen_rotations.cpp.o	755658976df20a1f
+2	297	1713545185950691722	CMakeFiles/test.dir/src/Label.cpp.o	3f09b3d0d4b0dd0d

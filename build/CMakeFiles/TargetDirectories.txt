@@ -1,5 +1,5 @@
-/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/subgraph_search.dir
-/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/test.dir
-/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/testFra.dir
-/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/edit_cache.dir
-/Users/francescovirgulti/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/rebuild_cache.dir
+/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/subgraph_search.dir
+/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/test.dir
+/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/testFra.dir
+/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/edit_cache.dir
+/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/rebuild_cache.dir
