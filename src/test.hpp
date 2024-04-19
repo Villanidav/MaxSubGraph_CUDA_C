@@ -1,6 +1,12 @@
 //#include <string>
 #include <vector>
 #include "Label.cpp"
+
+#include <rdkit/GraphMol/GraphMol.h>
+#include <GraphMol/FileParsers/MolSupplier.h>
+#include <GraphMol/SmilesParse/SmilesParse.h>
+
+
 using namespace std; // Add this line
 
 std::vector<std::pair<std::string, int> > gen_rotations(const std::string& s);
