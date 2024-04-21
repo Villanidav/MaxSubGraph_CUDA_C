@@ -127,6 +127,41 @@
 			"path" : "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported/CMakeLists-CXX.txt.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported/foo.cpp"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported/main.cpp"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported/CMakeLists-C.txt.in"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported/foo.c"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported/main.c"
+		},
+		{
 			"isExternal" : true,
 			"path" : "/home/davide/miniconda3/lib/cmake/rdkit/rdkit-config-version.cmake"
 		},
@@ -228,37 +263,33 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported.cmake"
+			"path" : "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindBoost.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported/CMakeLists-CXX.txt.in"
+			"path" : "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake"
 		},
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported/foo.cpp"
+			"path" : "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/FindPackageMessage.cmake"
 		},
 		{
-			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported/main.cpp"
+			"path" : "/usr/local/lib/cmake/Boost-1.82.0/BoostConfigVersion.cmake"
 		},
 		{
-			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported/CMakeLists-C.txt.in"
+			"path" : "/usr/local/lib/cmake/Boost-1.82.0/BoostConfig.cmake"
 		},
 		{
-			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported/foo.c"
+			"path" : "/usr/local/lib/cmake/boost_headers-1.82.0/boost_headers-config-version.cmake"
 		},
 		{
-			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported/main.c"
+			"path" : "/usr/local/lib/cmake/boost_headers-1.82.0/boost_headers-config.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",

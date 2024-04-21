@@ -1287,7 +1287,19 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/local/lib/cmake/Boost-1.82.0/BoostConfig.cmake][c ][v1.82.0(1.82.0)]"
+			"value" : "[/usr/local/lib/cmake/Boost-1.82.0/BoostConfig.cmake][c ][v1.82.0()]"
+		},
+		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding PkgConfig"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/bin/pkg-config][v0.29.2()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
@@ -1300,6 +1312,38 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "[TRUE][v()]"
+		},
+		{
+			"name" : "PKG_CONFIG_ARGN",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Arguments to supply to pkg-config"
+				}
+			],
+			"type" : "STRING",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_CONFIG_EXECUTABLE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "pkg-config executable"
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/pkg-config"
 		},
 		{
 			"name" : "RDKit_DIR",
@@ -1356,6 +1400,18 @@
 			],
 			"type" : "PATH",
 			"value" : "/usr/local/lib/cmake/boost_headers-1.82.0"
+		},
+		{
+			"name" : "pkgConfig_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for pkgConfig."
+				}
+			],
+			"type" : "PATH",
+			"value" : "pkgConfig_DIR-NOTFOUND"
 		},
 		{
 			"name" : "subgraph_search_BINARY_DIR",
