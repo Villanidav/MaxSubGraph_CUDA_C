@@ -1259,7 +1259,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/home/davide/miniconda3/envs/my-rdkit-env/lib/cmake/Boost-1.84.0/BoostConfig.cmake][c ][v1.84.0(1.84.0)]"
+			"value" : "[/home/davide/miniconda3/envs/my-rdkit-env/lib/cmake/Boost-1.84.0/BoostConfig.cmake][c ][v1.84.0()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",

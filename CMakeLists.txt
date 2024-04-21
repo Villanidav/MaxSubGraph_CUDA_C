@@ -42,9 +42,6 @@ endif()
 # ### Add external dependency
 # ########################################################################
 
-# the rdkit to perform the heavy lifting
-find_package(RDKit REQUIRED)
-
 # ########################################################################
 # ### Define the application sources
 # ########################################################################
@@ -110,38 +107,52 @@ endif()
 
 # since RDKit doesn't handle the dependencies in a correct way, we need to improvise
 # NOTE: by using this way of importing RDKit, we need to manually include its dependencies
+
+# the rdkit to perform the heavy lifting
+find_package(RDKit REQUIRED)
+find_package(Boost REQUIRED)
+include_directories(${Boost_INCLUDE_DIRS})
+
+
+
+
 get_target_property(RDKIT_LIB_FULLPATH RDKit::RDGeneral LOCATION)
 get_filename_component(RDKIT_LIB_DIRPATH "${RDKIT_LIB_FULLPATH}" DIRECTORY)
 cmake_path(GET RDKIT_LIB_DIRPATH PARENT_PATH RDKIT_INSTALL_PREFIX)
-include_directories(${RDKit_INCLUDE_DIR}) #modified
-target_include_directories(subgraph_search PUBLIC "${RDKIT_INSTALL_PREFIX}/include/rdkit")
+include_directories(${RDKit_INCLUDE_DIRS}) #modified
+include_directories(subgraph_search PUBLIC "${RDKIT_INSTALL_PREFIX}/include/rdkit")
 target_link_directories(subgraph_search PUBLIC "${RDKIT_INSTALL_PREFIX}/lib")
 target_link_directories(subgraph_search PUBLIC "${RDKIT_INSTALL_PREFIX}/lib64")
 target_link_libraries(subgraph_search PUBLIC
-  RDKit
-  RDKitFileParsers
-  RDKitGraphMol
-  RDKitRDGeneral
-  RDKitSmilesParse
-  RDKitSubstructMatch
+        -lRDKitFileParsers
+        -lRDKitGraphMol
+        -lRDKitRDGeneral
+        -lRDKitSmilesParse
+        -lRDKitSubstructMatch
 )
-target_include_directories(test PUBLIC "${RDKIT_INSTALL_PREFIX}/include/rdkit")
+include_directories(test PUBLIC "${RDKIT_INSTALL_PREFIX}/include/rdkit")
 target_link_directories(test PUBLIC "${RDKIT_INSTALL_PREFIX}/lib")
 target_link_directories(test PUBLIC "${RDKIT_INSTALL_PREFIX}/lib64")
 target_link_libraries(test PUBLIC
-        RDKitFileParsers
-        RDKitGraphMol
-        RDKitRDGeneral
-        RDKitSmilesParsers
-        RDKitSubstructMatch
+        -lRDKitFileParsers
+        -lRDKitGraphMol
+        -lRDKitRDGeneral
+        -lRDKitSmilesParse
+        -lRDKitSubstructMatch
 )
-target_include_directories(testFra PUBLIC "${RDKIT_INSTALL_PREFIX}/include/rdkit")
+
+#modificato togliendo target_ prima di link in ogni punto
+
+include_directories(testFra PUBLIC "${RDKIT_INSTALL_PREFIX}/include/rdkit")
 target_link_directories(testFra PUBLIC "${RDKIT_INSTALL_PREFIX}/lib")
 target_link_directories(testFra PUBLIC "${RDKIT_INSTALL_PREFIX}/lib64")
 target_link_libraries(testFra PUBLIC
-        RDKitFileParsers
-        RDKitGraphMol
-        RDKitRDGeneral
-        RDKitSmilesParsers
-        RDKitSubstructMatch
+        -lRDKitFileParsers
+        -lRDKitGraphMol
+        -lRDKitRDGeneral
+        -lRDKitSmilesParse
+        -lRDKitSubstructMatch
 )
+
+message(STATUS "RDKit Include Directories: ${RDKit_INCLUDE_DIRS}")
+message(STATUS "RDKit Library Directories: ${RDKit_LIBRARY_DIRS}")
