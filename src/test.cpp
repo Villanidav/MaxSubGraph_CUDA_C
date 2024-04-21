@@ -7,6 +7,7 @@
 #include "test.hpp"
 
 using namespace std;
+using namespace RDKit;
 
 void print_label_info(const LabelClass* label) {
   if (label == nullptr) {
@@ -156,7 +157,14 @@ int main()
     std::cout << std::endl;*/
 
     //TEST SMILES_MCS
-    String mol = ""
-    RDKit::RWMol mol = smiles_mcs()
+    string mol = "CC(=O)O";
+    std::pair<RWMol, RWMol> molecules = smiles_mcs(mol, mol, 1, 1);
+    RWMol molA = molecules.first;  // Access the first molecule
+    RWMol molB = molecules.second; // Access the second molecule
+
+    for ( Atom *a : molA.atoms() ) {
+        cout<<"\natomo: "<< a->getSymbol();
+    }
+
     return 0;
 }
