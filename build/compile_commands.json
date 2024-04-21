@@ -51,6 +51,16 @@
 },
 {
   "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
+  "command": "/usr/bin/c++ -DTESTING -I/home/davide/miniconda3/envs/my-rdkit-env/include -I/home/davide/miniconda3/envs/my-rdkit-env/include/rdkit -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -std=c++17 -o CMakeFiles/test.dir/src/gen_initial_labels.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
+  "command": "/usr/bin/c++ -DTESTING -I/home/davide/miniconda3/envs/my-rdkit-env/include -I/home/davide/miniconda3/envs/my-rdkit-env/include/rdkit -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -std=c++17 -o CMakeFiles/test.dir/src/gen_ring_classes.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
   "command": "/usr/bin/c++  -I/home/davide/miniconda3/envs/my-rdkit-env/include -I/home/davide/miniconda3/envs/my-rdkit-env/include/rdkit -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/testFra.dir/src/testFra.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/testFra.cpp",
   "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/testFra.cpp"
 },

@@ -195,6 +195,34 @@ CMakeFiles/test.dir/src/select_label.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/select_label.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/select_label.cpp -o CMakeFiles/test.dir/src/select_label.cpp.s
 
+CMakeFiles/test.dir/src/gen_initial_labels.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/gen_initial_labels.cpp.o: ../src/gen_initial_labels.cpp
+CMakeFiles/test.dir/src/gen_initial_labels.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/test.dir/src/gen_initial_labels.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/gen_initial_labels.cpp.o -MF CMakeFiles/test.dir/src/gen_initial_labels.cpp.o.d -o CMakeFiles/test.dir/src/gen_initial_labels.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp
+
+CMakeFiles/test.dir/src/gen_initial_labels.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/gen_initial_labels.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp > CMakeFiles/test.dir/src/gen_initial_labels.cpp.i
+
+CMakeFiles/test.dir/src/gen_initial_labels.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/gen_initial_labels.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp -o CMakeFiles/test.dir/src/gen_initial_labels.cpp.s
+
+CMakeFiles/test.dir/src/gen_ring_classes.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/gen_ring_classes.cpp.o: ../src/gen_ring_classes.cpp
+CMakeFiles/test.dir/src/gen_ring_classes.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/test.dir/src/gen_ring_classes.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/gen_ring_classes.cpp.o -MF CMakeFiles/test.dir/src/gen_ring_classes.cpp.o.d -o CMakeFiles/test.dir/src/gen_ring_classes.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp
+
+CMakeFiles/test.dir/src/gen_ring_classes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/gen_ring_classes.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp > CMakeFiles/test.dir/src/gen_ring_classes.cpp.i
+
+CMakeFiles/test.dir/src/gen_ring_classes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/gen_ring_classes.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp -o CMakeFiles/test.dir/src/gen_ring_classes.cpp.s
+
 # Object files for target test
 test_OBJECTS = \
 "CMakeFiles/test.dir/src/test.cpp.o" \
@@ -205,7 +233,9 @@ test_OBJECTS = \
 "CMakeFiles/test.dir/src/Label.cpp.o" \
 "CMakeFiles/test.dir/src/smiles_mcs.cpp.o" \
 "CMakeFiles/test.dir/src/calc_bound.cpp.o" \
-"CMakeFiles/test.dir/src/select_label.cpp.o"
+"CMakeFiles/test.dir/src/select_label.cpp.o" \
+"CMakeFiles/test.dir/src/gen_initial_labels.cpp.o" \
+"CMakeFiles/test.dir/src/gen_ring_classes.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
@@ -219,9 +249,11 @@ test: CMakeFiles/test.dir/src/Label.cpp.o
 test: CMakeFiles/test.dir/src/smiles_mcs.cpp.o
 test: CMakeFiles/test.dir/src/calc_bound.cpp.o
 test: CMakeFiles/test.dir/src/select_label.cpp.o
+test: CMakeFiles/test.dir/src/gen_initial_labels.cpp.o
+test: CMakeFiles/test.dir/src/gen_ring_classes.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

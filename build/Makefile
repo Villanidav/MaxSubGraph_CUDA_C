@@ -235,6 +235,7 @@ src/gen_initial_labels.o: src/gen_initial_labels.cpp.o
 
 # target to build an object file
 src/gen_initial_labels.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gen_initial_labels.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o
 .PHONY : src/gen_initial_labels.cpp.o
 
@@ -243,6 +244,7 @@ src/gen_initial_labels.i: src/gen_initial_labels.cpp.i
 
 # target to preprocess a source file
 src/gen_initial_labels.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gen_initial_labels.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.i
 .PHONY : src/gen_initial_labels.cpp.i
 
@@ -251,6 +253,7 @@ src/gen_initial_labels.s: src/gen_initial_labels.cpp.s
 
 # target to generate assembly for a file
 src/gen_initial_labels.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gen_initial_labels.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.s
 .PHONY : src/gen_initial_labels.cpp.s
 
@@ -259,6 +262,7 @@ src/gen_ring_classes.o: src/gen_ring_classes.cpp.o
 
 # target to build an object file
 src/gen_ring_classes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gen_ring_classes.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o
 .PHONY : src/gen_ring_classes.cpp.o
 
@@ -267,6 +271,7 @@ src/gen_ring_classes.i: src/gen_ring_classes.cpp.i
 
 # target to preprocess a source file
 src/gen_ring_classes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gen_ring_classes.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.i
 .PHONY : src/gen_ring_classes.cpp.i
 
@@ -275,6 +280,7 @@ src/gen_ring_classes.s: src/gen_ring_classes.cpp.s
 
 # target to generate assembly for a file
 src/gen_ring_classes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gen_ring_classes.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.s
 .PHONY : src/gen_ring_classes.cpp.s
 

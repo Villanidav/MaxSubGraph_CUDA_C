@@ -1,6 +1,6 @@
 #include <iostream>
 #include "test.hpp"
-#include "testFra.hpp"
+
 
 int main() {
 /*
@@ -85,7 +85,7 @@ int main() {
     }; 
 
     
-    std::vector<LabelClass> intial_labels = gen_initial_labels(l0,l1,ring_generated);
+    //std::vector<LabelClass> intial_labels = gen_initial_labels(l0,l1,ring_generated);
 
     return 0;
 }

@@ -4791,11 +4791,8 @@ CMakeFiles/testFra.dir/src/testFra.cpp.o: ../src/testFra.cpp \
   /home/davide/miniconda3/envs/my-rdkit-env/include/rdkit/GraphMol/FileParsers/FileWriters.h \
   /home/davide/miniconda3/envs/my-rdkit-env/include/rdkit/GraphMol/FileParsers/CDXMLParser.h \
   /home/davide/miniconda3/envs/my-rdkit-env/include/rdkit/GraphMol/SmilesParse/SmilesParse.h \
-  /home/davide/miniconda3/envs/my-rdkit-env/include/rdkit/GraphMol/FileParsers/MolSupplier.v1API.h \
-  ../src/testFra.hpp
+  /home/davide/miniconda3/envs/my-rdkit-env/include/rdkit/GraphMol/FileParsers/MolSupplier.v1API.h
 
-
-../src/testFra.hpp:
 
 ../src/testFra.cpp:
 

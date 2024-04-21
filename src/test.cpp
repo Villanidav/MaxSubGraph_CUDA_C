@@ -156,7 +156,7 @@ int main()
     std::cout << std::endl;*/
 
     //TEST SMILES_MCS
-
-    std::cout << "prova" << std::endl;
+    String mol = ""
+    RDKit::RWMol mol = smiles_mcs()
     return 0;
 }
