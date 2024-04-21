@@ -51,27 +51,27 @@
 },
 {
   "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
-  "command": "/usr/bin/c++   -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/testFra.dir/src/testFra.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/testFra.cpp",
+  "command": "/usr/bin/c++  -I/home/davide/miniconda3/envs/my-rdkit-env/include/rdkit -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/testFra.dir/src/testFra.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/testFra.cpp",
   "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/testFra.cpp"
 },
 {
   "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
-  "command": "/usr/bin/c++   -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/testFra.dir/src/Label.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/Label.cpp",
+  "command": "/usr/bin/c++  -I/home/davide/miniconda3/envs/my-rdkit-env/include/rdkit -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/testFra.dir/src/Label.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/Label.cpp",
   "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/Label.cpp"
 },
 {
   "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
-  "command": "/usr/bin/c++   -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp",
+  "command": "/usr/bin/c++  -I/home/davide/miniconda3/envs/my-rdkit-env/include/rdkit -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp",
   "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp"
 },
 {
   "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
-  "command": "/usr/bin/c++   -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/testFra.dir/src/gen_rotations.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_rotations.cpp",
+  "command": "/usr/bin/c++  -I/home/davide/miniconda3/envs/my-rdkit-env/include/rdkit -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/testFra.dir/src/gen_rotations.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_rotations.cpp",
   "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_rotations.cpp"
 },
 {
   "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
-  "command": "/usr/bin/c++   -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp",
+  "command": "/usr/bin/c++  -I/home/davide/miniconda3/envs/my-rdkit-env/include/rdkit -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -o CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp",
   "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp"
 }
 ]

@@ -11,7 +11,10 @@
 		"commands" : 
 		[
 			"add_executable",
-			"add_compile_options"
+			"target_link_directories",
+			"target_link_libraries",
+			"add_compile_options",
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -31,7 +34,31 @@
 			{
 				"command" : 1,
 				"file" : 0,
+				"line" : 139,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 140,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 141,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
 				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 138,
 				"parent" : 0
 			}
 		]
@@ -45,28 +72,35 @@
 					"fragment" : "-O3 -DNDEBUG"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 5,
 					"fragment" : "-Wall"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 5,
 					"fragment" : "-Wextra"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 5,
 					"fragment" : "-Wpedantic"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 5,
 					"fragment" : "-Wl,-z,defs"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 5,
 					"fragment" : "-Wl,-z,now"
 				},
 				{
-					"backtrace" : 2,
+					"backtrace" : 5,
 					"fragment" : "-Wl,-z,relro"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 6,
+					"path" : "/home/davide/miniconda3/envs/my-rdkit-env/include/rdkit"
 				}
 			],
 			"language" : "CXX",
@@ -92,6 +126,45 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-L/home/davide/miniconda3/envs/my-rdkit-env/lib",
+				"role" : "libraryPath"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-L/home/davide/miniconda3/envs/my-rdkit-env/lib64",
+				"role" : "libraryPath"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/home/davide/miniconda3/envs/my-rdkit-env/lib:/home/davide/miniconda3/envs/my-rdkit-env/lib64",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lRDKitFileParsers",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lRDKitGraphMol",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lRDKitRDGeneral",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lRDKitSmilesParsers",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "-lRDKitSubstructMatch",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"

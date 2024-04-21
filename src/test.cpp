@@ -157,6 +157,6 @@ int main()
 
     //TEST SMILES_MCS
 
-
+    cout << "prova " <<endl;
     return 0;
 }

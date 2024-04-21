@@ -135,3 +135,13 @@ target_link_libraries(test PUBLIC
         RDKitSmilesParsers
         RDKitSubstructMatch
 )
+target_include_directories(testFra PUBLIC "${RDKIT_INSTALL_PREFIX}/include/rdkit")
+target_link_directories(testFra PUBLIC "${RDKIT_INSTALL_PREFIX}/lib")
+target_link_directories(testFra PUBLIC "${RDKIT_INSTALL_PREFIX}/lib64")
+target_link_libraries(testFra PUBLIC
+        RDKitFileParsers
+        RDKitGraphMol
+        RDKitRDGeneral
+        RDKitSmilesParsers
+        RDKitSubstructMatch
+)

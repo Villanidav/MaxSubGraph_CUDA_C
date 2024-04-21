@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/davide/miniconda3/envs/my-rdkit-env/include/rdkit
 
 CXX_FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro
 
