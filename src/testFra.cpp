@@ -6,7 +6,7 @@ int main() {
 /*
     std::vector<int> g;
     std::vector<int> h;
-    /*int adj;
+    int adj;
     int label;
     std::vector<std::vector<int> > rings_g;
     rings_g.resize(3);
@@ -74,10 +74,10 @@ int main() {
 
     std::vector<std::vector<int> > ring_generated = gen_rings_classes(l0,l1,ring_info_m0,ring_info_m1);
     
-    int i = 0;
+    int k = 0;
     for(std::vector<int> posizione : ring_generated){
-        std::cout << "\nidx: " << i << "\n";
-        i++;
+        std::cout << "\nidx: " << k << "\n";
+        k++;
 
         for(int j: posizione){
             std::cout << j << " ";
@@ -86,20 +86,6 @@ int main() {
 
     
     std::vector<LabelClass> intial_labels = gen_initial_labels(l0,l1,ring_generated);
-    /*
-    for(LabelClass l : intial_labels){
-        for(int i : l.g){
-            int index = 0;
-            std::cout<< "\n l'atomo :" << l0[i] << " si trova alla posizione : "<< i;
-            std::cout<< "\n è collegato con : ";
-            for(int j : l.rings_g.at(index))
-            {
-                std::cout<< " " << j;
-            }
 
-        }
-        
-
-    }*/
     return 0;
 }
