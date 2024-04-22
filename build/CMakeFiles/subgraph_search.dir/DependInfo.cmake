@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/main.cpp" "CMakeFiles/subgraph_search.dir/src/main.cpp.o" "gcc" "CMakeFiles/subgraph_search.dir/src/main.cpp.o.d"
+  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/main.cpp" "CMakeFiles/subgraph_search.dir/src/main.cpp.o" "gcc" "CMakeFiles/subgraph_search.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links.

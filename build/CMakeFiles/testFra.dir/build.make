@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/davide/CLionProjects/MaxSubGraph_CUDA_C
+CMAKE_SOURCE_DIR = /home/francesco/Desktop/MaxSubGraph_CUDA_C
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build
+CMAKE_BINARY_DIR = /home/francesco/Desktop/MaxSubGraph_CUDA_C/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/testFra.dir/depend.make
@@ -72,92 +72,188 @@ include CMakeFiles/testFra.dir/flags.make
 CMakeFiles/testFra.dir/src/testFra.cpp.o: CMakeFiles/testFra.dir/flags.make
 CMakeFiles/testFra.dir/src/testFra.cpp.o: ../src/testFra.cpp
 CMakeFiles/testFra.dir/src/testFra.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/testFra.dir/src/testFra.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/testFra.cpp.o -MF CMakeFiles/testFra.dir/src/testFra.cpp.o.d -o CMakeFiles/testFra.dir/src/testFra.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/testFra.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/testFra.dir/src/testFra.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/testFra.cpp.o -MF CMakeFiles/testFra.dir/src/testFra.cpp.o.d -o CMakeFiles/testFra.dir/src/testFra.cpp.o -c /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/testFra.cpp
 
 CMakeFiles/testFra.dir/src/testFra.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/testFra.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/testFra.cpp > CMakeFiles/testFra.dir/src/testFra.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/testFra.cpp > CMakeFiles/testFra.dir/src/testFra.cpp.i
 
 CMakeFiles/testFra.dir/src/testFra.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/testFra.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/testFra.cpp -o CMakeFiles/testFra.dir/src/testFra.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/testFra.cpp -o CMakeFiles/testFra.dir/src/testFra.cpp.s
 
-CMakeFiles/testFra.dir/src/Label.cpp.o: CMakeFiles/testFra.dir/flags.make
-CMakeFiles/testFra.dir/src/Label.cpp.o: ../src/Label.cpp
-CMakeFiles/testFra.dir/src/Label.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testFra.dir/src/Label.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/Label.cpp.o -MF CMakeFiles/testFra.dir/src/Label.cpp.o.d -o CMakeFiles/testFra.dir/src/Label.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/Label.cpp
+CMakeFiles/testFra.dir/src/gen_bond_labels.cpp.o: CMakeFiles/testFra.dir/flags.make
+CMakeFiles/testFra.dir/src/gen_bond_labels.cpp.o: ../src/gen_bond_labels.cpp
+CMakeFiles/testFra.dir/src/gen_bond_labels.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/testFra.dir/src/gen_bond_labels.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/gen_bond_labels.cpp.o -MF CMakeFiles/testFra.dir/src/gen_bond_labels.cpp.o.d -o CMakeFiles/testFra.dir/src/gen_bond_labels.cpp.o -c /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/gen_bond_labels.cpp
 
-CMakeFiles/testFra.dir/src/Label.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/Label.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/Label.cpp > CMakeFiles/testFra.dir/src/Label.cpp.i
+CMakeFiles/testFra.dir/src/gen_bond_labels.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/gen_bond_labels.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/gen_bond_labels.cpp > CMakeFiles/testFra.dir/src/gen_bond_labels.cpp.i
 
-CMakeFiles/testFra.dir/src/Label.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/Label.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/Label.cpp -o CMakeFiles/testFra.dir/src/Label.cpp.s
-
-CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o: CMakeFiles/testFra.dir/flags.make
-CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o: ../src/gen_ring_classes.cpp
-CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o -MF CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o.d -o CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp
-
-CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp > CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.i
-
-CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp -o CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.s
+CMakeFiles/testFra.dir/src/gen_bond_labels.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/gen_bond_labels.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/gen_bond_labels.cpp -o CMakeFiles/testFra.dir/src/gen_bond_labels.cpp.s
 
 CMakeFiles/testFra.dir/src/gen_rotations.cpp.o: CMakeFiles/testFra.dir/flags.make
 CMakeFiles/testFra.dir/src/gen_rotations.cpp.o: ../src/gen_rotations.cpp
 CMakeFiles/testFra.dir/src/gen_rotations.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/testFra.dir/src/gen_rotations.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/gen_rotations.cpp.o -MF CMakeFiles/testFra.dir/src/gen_rotations.cpp.o.d -o CMakeFiles/testFra.dir/src/gen_rotations.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_rotations.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/testFra.dir/src/gen_rotations.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/gen_rotations.cpp.o -MF CMakeFiles/testFra.dir/src/gen_rotations.cpp.o.d -o CMakeFiles/testFra.dir/src/gen_rotations.cpp.o -c /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp
 
 CMakeFiles/testFra.dir/src/gen_rotations.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/gen_rotations.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_rotations.cpp > CMakeFiles/testFra.dir/src/gen_rotations.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp > CMakeFiles/testFra.dir/src/gen_rotations.cpp.i
 
 CMakeFiles/testFra.dir/src/gen_rotations.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/gen_rotations.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_rotations.cpp -o CMakeFiles/testFra.dir/src/gen_rotations.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp -o CMakeFiles/testFra.dir/src/gen_rotations.cpp.s
+
+CMakeFiles/testFra.dir/src/select_vertex.cpp.o: CMakeFiles/testFra.dir/flags.make
+CMakeFiles/testFra.dir/src/select_vertex.cpp.o: ../src/select_vertex.cpp
+CMakeFiles/testFra.dir/src/select_vertex.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/testFra.dir/src/select_vertex.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/select_vertex.cpp.o -MF CMakeFiles/testFra.dir/src/select_vertex.cpp.o.d -o CMakeFiles/testFra.dir/src/select_vertex.cpp.o -c /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/select_vertex.cpp
+
+CMakeFiles/testFra.dir/src/select_vertex.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/select_vertex.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/select_vertex.cpp > CMakeFiles/testFra.dir/src/select_vertex.cpp.i
+
+CMakeFiles/testFra.dir/src/select_vertex.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/select_vertex.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/select_vertex.cpp -o CMakeFiles/testFra.dir/src/select_vertex.cpp.s
+
+CMakeFiles/testFra.dir/src/hood.cpp.o: CMakeFiles/testFra.dir/flags.make
+CMakeFiles/testFra.dir/src/hood.cpp.o: ../src/hood.cpp
+CMakeFiles/testFra.dir/src/hood.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/testFra.dir/src/hood.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/hood.cpp.o -MF CMakeFiles/testFra.dir/src/hood.cpp.o.d -o CMakeFiles/testFra.dir/src/hood.cpp.o -c /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/hood.cpp
+
+CMakeFiles/testFra.dir/src/hood.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/hood.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/hood.cpp > CMakeFiles/testFra.dir/src/hood.cpp.i
+
+CMakeFiles/testFra.dir/src/hood.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/hood.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/hood.cpp -o CMakeFiles/testFra.dir/src/hood.cpp.s
+
+CMakeFiles/testFra.dir/src/Label.cpp.o: CMakeFiles/testFra.dir/flags.make
+CMakeFiles/testFra.dir/src/Label.cpp.o: ../src/Label.cpp
+CMakeFiles/testFra.dir/src/Label.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/testFra.dir/src/Label.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/Label.cpp.o -MF CMakeFiles/testFra.dir/src/Label.cpp.o.d -o CMakeFiles/testFra.dir/src/Label.cpp.o -c /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/Label.cpp
+
+CMakeFiles/testFra.dir/src/Label.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/Label.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/Label.cpp > CMakeFiles/testFra.dir/src/Label.cpp.i
+
+CMakeFiles/testFra.dir/src/Label.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/Label.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/Label.cpp -o CMakeFiles/testFra.dir/src/Label.cpp.s
+
+CMakeFiles/testFra.dir/src/smiles_mcs.cpp.o: CMakeFiles/testFra.dir/flags.make
+CMakeFiles/testFra.dir/src/smiles_mcs.cpp.o: ../src/smiles_mcs.cpp
+CMakeFiles/testFra.dir/src/smiles_mcs.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/testFra.dir/src/smiles_mcs.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/smiles_mcs.cpp.o -MF CMakeFiles/testFra.dir/src/smiles_mcs.cpp.o.d -o CMakeFiles/testFra.dir/src/smiles_mcs.cpp.o -c /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp
+
+CMakeFiles/testFra.dir/src/smiles_mcs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/smiles_mcs.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp > CMakeFiles/testFra.dir/src/smiles_mcs.cpp.i
+
+CMakeFiles/testFra.dir/src/smiles_mcs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/smiles_mcs.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp -o CMakeFiles/testFra.dir/src/smiles_mcs.cpp.s
+
+CMakeFiles/testFra.dir/src/calc_bound.cpp.o: CMakeFiles/testFra.dir/flags.make
+CMakeFiles/testFra.dir/src/calc_bound.cpp.o: ../src/calc_bound.cpp
+CMakeFiles/testFra.dir/src/calc_bound.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/testFra.dir/src/calc_bound.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/calc_bound.cpp.o -MF CMakeFiles/testFra.dir/src/calc_bound.cpp.o.d -o CMakeFiles/testFra.dir/src/calc_bound.cpp.o -c /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/calc_bound.cpp
+
+CMakeFiles/testFra.dir/src/calc_bound.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/calc_bound.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/calc_bound.cpp > CMakeFiles/testFra.dir/src/calc_bound.cpp.i
+
+CMakeFiles/testFra.dir/src/calc_bound.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/calc_bound.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/calc_bound.cpp -o CMakeFiles/testFra.dir/src/calc_bound.cpp.s
+
+CMakeFiles/testFra.dir/src/select_label.cpp.o: CMakeFiles/testFra.dir/flags.make
+CMakeFiles/testFra.dir/src/select_label.cpp.o: ../src/select_label.cpp
+CMakeFiles/testFra.dir/src/select_label.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/testFra.dir/src/select_label.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/select_label.cpp.o -MF CMakeFiles/testFra.dir/src/select_label.cpp.o.d -o CMakeFiles/testFra.dir/src/select_label.cpp.o -c /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/select_label.cpp
+
+CMakeFiles/testFra.dir/src/select_label.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/select_label.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/select_label.cpp > CMakeFiles/testFra.dir/src/select_label.cpp.i
+
+CMakeFiles/testFra.dir/src/select_label.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/select_label.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/select_label.cpp -o CMakeFiles/testFra.dir/src/select_label.cpp.s
 
 CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o: CMakeFiles/testFra.dir/flags.make
 CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o: ../src/gen_initial_labels.cpp
 CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o -MF CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o.d -o CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o -MF CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o.d -o CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o -c /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp
 
 CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp > CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp > CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.i
 
 CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp -o CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp -o CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.s
+
+CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o: CMakeFiles/testFra.dir/flags.make
+CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o: ../src/gen_ring_classes.cpp
+CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o -MF CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o.d -o CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o -c /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp
+
+CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp > CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.i
+
+CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp -o CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.s
 
 # Object files for target testFra
 testFra_OBJECTS = \
 "CMakeFiles/testFra.dir/src/testFra.cpp.o" \
-"CMakeFiles/testFra.dir/src/Label.cpp.o" \
-"CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o" \
+"CMakeFiles/testFra.dir/src/gen_bond_labels.cpp.o" \
 "CMakeFiles/testFra.dir/src/gen_rotations.cpp.o" \
-"CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o"
+"CMakeFiles/testFra.dir/src/select_vertex.cpp.o" \
+"CMakeFiles/testFra.dir/src/hood.cpp.o" \
+"CMakeFiles/testFra.dir/src/Label.cpp.o" \
+"CMakeFiles/testFra.dir/src/smiles_mcs.cpp.o" \
+"CMakeFiles/testFra.dir/src/calc_bound.cpp.o" \
+"CMakeFiles/testFra.dir/src/select_label.cpp.o" \
+"CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o" \
+"CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o"
 
 # External object files for target testFra
 testFra_EXTERNAL_OBJECTS =
 
 testFra: CMakeFiles/testFra.dir/src/testFra.cpp.o
-testFra: CMakeFiles/testFra.dir/src/Label.cpp.o
-testFra: CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o
+testFra: CMakeFiles/testFra.dir/src/gen_bond_labels.cpp.o
 testFra: CMakeFiles/testFra.dir/src/gen_rotations.cpp.o
+testFra: CMakeFiles/testFra.dir/src/select_vertex.cpp.o
+testFra: CMakeFiles/testFra.dir/src/hood.cpp.o
+testFra: CMakeFiles/testFra.dir/src/Label.cpp.o
+testFra: CMakeFiles/testFra.dir/src/smiles_mcs.cpp.o
+testFra: CMakeFiles/testFra.dir/src/calc_bound.cpp.o
+testFra: CMakeFiles/testFra.dir/src/select_label.cpp.o
 testFra: CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o
+testFra: CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o
 testFra: CMakeFiles/testFra.dir/build.make
 testFra: CMakeFiles/testFra.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable testFra"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable testFra"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testFra.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -169,6 +265,6 @@ CMakeFiles/testFra.dir/clean:
 .PHONY : CMakeFiles/testFra.dir/clean
 
 CMakeFiles/testFra.dir/depend:
-	cd /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/davide/CLionProjects/MaxSubGraph_CUDA_C /home/davide/CLionProjects/MaxSubGraph_CUDA_C /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/testFra.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/francesco/Desktop/MaxSubGraph_CUDA_C/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/francesco/Desktop/MaxSubGraph_CUDA_C /home/francesco/Desktop/MaxSubGraph_CUDA_C /home/francesco/Desktop/MaxSubGraph_CUDA_C/build /home/francesco/Desktop/MaxSubGraph_CUDA_C/build /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/testFra.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/testFra.dir/depend
 
