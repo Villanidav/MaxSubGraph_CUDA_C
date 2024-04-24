@@ -53,7 +53,7 @@ $ cmake -S ./ -B ./build
 
 
 
-## Test ✅ / ❌
+## Test ✅ / ❌      ✅❌  = (❗️ scritta ma mancano i test)
 - gen_rotations : ✅
 - Label : ✅
 - select_vertex : ✅
@@ -63,10 +63,11 @@ $ cmake -S ./ -B ./build
 - gen_ring_classes :  ✅ 
 - calc_bound : ✅
 - gen_bond_classes : ✅
-- smile_mcs : ❌
-- molmcs : ❌
-- search_mcs : ✅❌ (❗️mancano i test)
-- g2Mol : ❌
+- smile_mcs : ✅❌
+- molmcs : ✅❌
+- search_mcs : ✅❌ 
+- g2Mol : ✅❌
+- mc_split : ✅❌
   
 ## Rdkit
 Data structure

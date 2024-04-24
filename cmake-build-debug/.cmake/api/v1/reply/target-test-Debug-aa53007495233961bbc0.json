@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "testFra"
+			"path" : "test"
 		}
 	],
 	"backtrace" : 1,
@@ -14,6 +14,7 @@
 			"target_link_directories",
 			"target_link_libraries",
 			"add_compile_options",
+			"set_target_properties",
 			"include_directories"
 		],
 		"files" : 
@@ -28,19 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 104,
+				"line" : 83,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 178,
+				"line" : 169,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 179,
+				"line" : 170,
 				"parent" : 0
 			},
 			{
@@ -58,31 +59,37 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 144,
+				"line" : 122,
 				"parent" : 0
 			},
 			{
-				"command" : 4,
+				"command" : 5,
 				"file" : 0,
-				"line" : 152,
+				"line" : 146,
 				"parent" : 0
 			},
 			{
-				"command" : 4,
+				"command" : 5,
 				"file" : 0,
-				"line" : 153,
+				"line" : 154,
 				"parent" : 0
 			},
 			{
-				"command" : 4,
+				"command" : 5,
 				"file" : 0,
-				"line" : 163,
+				"line" : 155,
 				"parent" : 0
 			},
 			{
-				"command" : 4,
+				"command" : 5,
 				"file" : 0,
-				"line" : 176,
+				"line" : 167,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 182,
 				"parent" : 0
 			}
 		]
@@ -93,7 +100,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -fdiagnostics-color=always"
+					"fragment" : "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -std=c++17 -fdiagnostics-color=always"
 				},
 				{
 					"backtrace" : 4,
@@ -124,34 +131,49 @@
 					"fragment" : "-fdiagnostics-color=always"
 				}
 			],
-			"includes" : 
+			"defines" : 
 			[
 				{
 					"backtrace" : 6,
+					"define" : "TESTING"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
 					"path" : "/usr/local/include"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
 					"path" : "/home/davide/miniconda3/include/rdkit"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 9,
 					"path" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 9,
 					"path" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"path" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test"
 				},
 				{
-					"backtrace" : 10,
+					"backtrace" : 11,
 					"path" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra"
 				}
 			],
 			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					6
+				],
+				"standard" : "17"
+			},
 			"sourceIndexes" : 
 			[
 				3,
@@ -165,12 +187,11 @@
 				11,
 				12,
 				13,
-				14,
-				15
+				14
 			]
 		}
 	],
-	"id" : "testFra::@6890427a1f51a3e7e1df",
+	"id" : "test::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -190,6 +211,11 @@
 			},
 			{
 				"fragment" : "-Wl,-rpath,/home/davide/miniconda3/lib64",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lRDKit",
 				"role" : "libraries"
 			},
 			{
@@ -216,12 +242,17 @@
 				"backtrace" : 3,
 				"fragment" : "-lRDKitSubstructMatch",
 				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lRDKitChem",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "testFra",
-	"nameOnDisk" : "testFra",
+	"name" : "test",
+	"nameOnDisk" : "test",
 	"paths" : 
 	{
 		"build" : ".",
@@ -253,8 +284,7 @@
 				11,
 				12,
 				13,
-				14,
-				15
+				14
 			]
 		}
 	],
@@ -278,7 +308,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/testFra.cpp",
+			"path" : "src/test.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -345,12 +375,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/search_mcs.cpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/mc_split.cpp",
 			"sourceGroupIndex" : 1
 		}
 	],

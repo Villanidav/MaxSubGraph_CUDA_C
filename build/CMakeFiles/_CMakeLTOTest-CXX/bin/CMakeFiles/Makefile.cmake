@@ -7,9 +7,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
-  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/3.22.1/CMakeSystem.cmake"
-  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/CMakeLists.txt"
+  "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
+  "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/3.22.1/CMakeSystem.cmake"
+  "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/CMakeLists.txt"
   "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake"

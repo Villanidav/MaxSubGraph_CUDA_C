@@ -1,4 +1,5 @@
 CMakeFiles/testFra.dir/src/hood.cpp.o: \
+<<<<<<< HEAD
  /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/hood.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/vector \
  /usr/include/c++/11/bits/stl_algobase.h \
@@ -43,3 +44,51 @@ CMakeFiles/testFra.dir/src/hood.cpp.o: \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/range_access.h \
  /usr/include/c++/11/bits/vector.tcc
+=======
+ /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/hood.cpp \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/usr/include/stdc-predef.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/vector \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/stl_algobase.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu/bits/c++config.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu/bits/os_defines.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/usr/include/features.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/usr/include/sys/cdefs.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/usr/include/bits/wordsize.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/usr/include/gnu/stubs.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/usr/include/gnu/stubs-64.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu/bits/cpu_defines.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/pstl/pstl_config.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/functexcept.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/exception_defines.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/cpp_type_traits.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/ext/type_traits.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/ext/numeric_traits.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/stl_pair.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/move.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/type_traits \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/stl_iterator_base_types.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/stl_iterator_base_funcs.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/concept_check.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/debug/assertions.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/stl_iterator.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/ptr_traits.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/debug/debug.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/predefined_ops.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/allocator.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu/bits/c++allocator.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/ext/new_allocator.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/new \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/exception.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/memoryfwd.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/stl_construct.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/stl_uninitialized.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/ext/alloc_traits.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/alloc_traits.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/stl_vector.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/initializer_list \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/stl_bvector.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/functional_hash.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/hash_bytes.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/range_access.h \
+ /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/bits/vector.tcc
+>>>>>>> origin/main
