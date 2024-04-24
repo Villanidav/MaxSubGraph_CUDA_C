@@ -63,10 +63,10 @@ $ cmake -S ./ -B ./build
 - gen_ring_classes :  ✅ 
 - calc_bound : ✅
 - gen_bond_classes : ✅
-- smile_mcs : ❌
-- molmcs : ❌
+- smile_mcs : ✅❌
+- molmcs : ✅❌
 - search_mcs : ✅❌ (❗️mancano i test)
-- g2Mol : ❌
+- g2Mol : ✅❌
   
 ## Rdkit
 Data structure
