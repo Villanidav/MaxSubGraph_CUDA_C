@@ -2,9 +2,6 @@
 // Created by davide on 4/24/24.
 //
 #include "test.hpp"
-#include <rdkit/GraphMol/GraphMol.h>
-#include <GraphMol/FileParsers/MolSupplier.h>
-#include <GraphMol/SmilesParse/SmilesParse.h>
 #include <RDGeneral/test.h>
 
 // Function to convert a graph (adjacency matrix and labels) to an RDKit molecule

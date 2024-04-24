@@ -44,3 +44,7 @@ std::vector<std::pair<int, int>> mc_split(const std::vector<std::vector<double>>
                                           std::vector<std::vector<int> >& ring_classes);
 
 void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<double> > g1, std::vector<LabelClass>& label_classes, std::vector<double> edge_labels, std::vector<std::pair<int, int> > m);
+
+RDKit::ROMol g2mol( std::vector<std::string>& labels,  std::vector<std::vector<double>>& adj) ;
+
+void mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match=1, int ring_match=1, int return_map=0) ;

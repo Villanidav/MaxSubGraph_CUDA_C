@@ -93,9 +93,9 @@ add_executable(test ${header_files} "${source_path}/test.cpp"
         "${source_path}/gen_ring_classes.cpp"
         "${source_path}/gen_rotations.cpp"
         "${source_path}/search_mcs.cpp"
+        "${source_path}/mc_split.cpp.cpp"
+        "${source_path}/g2mol.cpp.cpp"
 
-        src/mc_split.cpp
-        src/g2mol.cpp
 )
 set_target_properties(test PROPERTIES
     COMPILE_DEFINITIONS "TESTING"
