@@ -368,6 +368,63 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/mc_split.o: src/mc_split.cpp.o
+.PHONY : src/mc_split.o
+
+# target to build an object file
+src/mc_split.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mc_split.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mc_split.cpp.o
+.PHONY : src/mc_split.cpp.o
+
+src/mc_split.i: src/mc_split.cpp.i
+.PHONY : src/mc_split.i
+
+# target to preprocess a source file
+src/mc_split.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/mc_split.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mc_split.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mc_split.cpp.i
+.PHONY : src/mc_split.cpp.i
+
+src/mc_split.s: src/mc_split.cpp.s
+.PHONY : src/mc_split.s
+
+# target to generate assembly for a file
+src/mc_split.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/mc_split.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mc_split.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mc_split.cpp.s
+.PHONY : src/mc_split.cpp.s
+
+src/search_mcs.o: src/search_mcs.cpp.o
+.PHONY : src/search_mcs.o
+
+# target to build an object file
+src/search_mcs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/search_mcs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/search_mcs.cpp.o
+.PHONY : src/search_mcs.cpp.o
+
+src/search_mcs.i: src/search_mcs.cpp.i
+.PHONY : src/search_mcs.i
+
+# target to preprocess a source file
+src/search_mcs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/search_mcs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/search_mcs.cpp.i
+.PHONY : src/search_mcs.cpp.i
+
+src/search_mcs.s: src/search_mcs.cpp.s
+.PHONY : src/search_mcs.s
+
+# target to generate assembly for a file
+src/search_mcs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/search_mcs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/search_mcs.cpp.s
+.PHONY : src/search_mcs.cpp.s
+
 src/select_label.o: src/select_label.cpp.o
 .PHONY : src/select_label.o
 
@@ -532,6 +589,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/mc_split.o"
+	@echo "... src/mc_split.i"
+	@echo "... src/mc_split.s"
+	@echo "... src/search_mcs.o"
+	@echo "... src/search_mcs.i"
+	@echo "... src/search_mcs.s"
 	@echo "... src/select_label.o"
 	@echo "... src/select_label.i"
 	@echo "... src/select_label.s"

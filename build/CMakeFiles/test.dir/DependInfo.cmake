@@ -15,6 +15,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp" "CMakeFiles/test.dir/src/gen_ring_classes.cpp.o" "gcc" "CMakeFiles/test.dir/src/gen_ring_classes.cpp.o.d"
   "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp" "CMakeFiles/test.dir/src/gen_rotations.cpp.o" "gcc" "CMakeFiles/test.dir/src/gen_rotations.cpp.o.d"
   "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/hood.cpp" "CMakeFiles/test.dir/src/hood.cpp.o" "gcc" "CMakeFiles/test.dir/src/hood.cpp.o.d"
+  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/mc_split.cpp" "CMakeFiles/test.dir/src/mc_split.cpp.o" "gcc" "CMakeFiles/test.dir/src/mc_split.cpp.o.d"
+  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/search_mcs.cpp" "CMakeFiles/test.dir/src/search_mcs.cpp.o" "gcc" "CMakeFiles/test.dir/src/search_mcs.cpp.o.d"
   "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/select_label.cpp" "CMakeFiles/test.dir/src/select_label.cpp.o" "gcc" "CMakeFiles/test.dir/src/select_label.cpp.o.d"
   "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/select_vertex.cpp" "CMakeFiles/test.dir/src/select_vertex.cpp.o" "gcc" "CMakeFiles/test.dir/src/select_vertex.cpp.o.d"
   "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp" "CMakeFiles/test.dir/src/smiles_mcs.cpp.o" "gcc" "CMakeFiles/test.dir/src/smiles_mcs.cpp.o.d"

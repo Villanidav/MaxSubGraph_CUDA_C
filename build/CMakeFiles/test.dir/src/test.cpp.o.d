@@ -1512,4 +1512,6 @@ CMakeFiles/test.dir/src/test.cpp.o: \
  /home/francesco/miniconda3/envs/my-rdkit-env/include/rdkit/GraphMol/SanitException.h \
  /home/francesco/miniconda3/envs/my-rdkit-env/include/rdkit/GraphMol/GraphMol.h \
  /home/francesco/miniconda3/envs/my-rdkit-env/include/rdkit/GraphMol/Atom.h \
- /home/francesco/miniconda3/envs/my-rdkit-env/include/rdkit/GraphMol/Bond.h
+ /home/francesco/miniconda3/envs/my-rdkit-env/include/rdkit/GraphMol/Bond.h \
+ /home/francesco/miniconda3/envs/my-rdkit-env/include/rdkit/Numerics/Matrix.h \
+ /home/francesco/miniconda3/envs/my-rdkit-env/include/rdkit/Numerics/Vector.h

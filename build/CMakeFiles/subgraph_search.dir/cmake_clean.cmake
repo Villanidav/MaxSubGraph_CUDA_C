@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/subgraph_search.dir/src/main.cpp.o"
   "CMakeFiles/subgraph_search.dir/src/main.cpp.o.d"
+  "CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o"
+  "CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o.d"
   "subgraph_search"
   "subgraph_search.pdb"
 )

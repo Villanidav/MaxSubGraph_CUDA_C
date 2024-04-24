@@ -340,6 +340,6 @@ initial_label = gen_initial_labels(l0,l1,gen_classes)
 """
 
 
-result = smiles_mcs("CCO","CCN",bond_match=1, ring_match=1)
+result = smiles_mcs("C[C@H](F)N","CN",bond_match=1, ring_match=1)
 print(result)
 

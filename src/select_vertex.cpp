@@ -5,7 +5,7 @@ using namespace std;
 
 // vtx_set: selected label class
 // g: selected graph
-int select_vertex(std::vector<int>& vtx_set, std::vector<std::vector<int> >& g) {
+int select_vertex(std::vector<int>& vtx_set, std::vector<std::vector<double> >& g) {
     // selects node from graph given a label, choosing an adjacent node with the maximum degree
 
     int max_deg = -1;
@@ -14,7 +14,7 @@ int select_vertex(std::vector<int>& vtx_set, std::vector<std::vector<int> >& g) 
     for (int c_vtx : vtx_set) {
         int deg = 0;
 
-        for (int i : g[c_vtx]) {
+        for (float i : g[c_vtx]) {
             if (i != 0) {
                 deg += 1;
             }
