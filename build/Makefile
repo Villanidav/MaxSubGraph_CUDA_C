@@ -216,6 +216,7 @@ src/g2mol.o: src/g2mol.cpp.o
 src/g2mol.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/g2mol.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/g2mol.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/g2mol.cpp.o
 .PHONY : src/g2mol.cpp.o
 
 src/g2mol.i: src/g2mol.cpp.i
@@ -225,6 +226,7 @@ src/g2mol.i: src/g2mol.cpp.i
 src/g2mol.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/g2mol.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/g2mol.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/g2mol.cpp.i
 .PHONY : src/g2mol.cpp.i
 
 src/g2mol.s: src/g2mol.cpp.s
@@ -234,6 +236,7 @@ src/g2mol.s: src/g2mol.cpp.s
 src/g2mol.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/g2mol.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/g2mol.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/g2mol.cpp.s
 .PHONY : src/g2mol.cpp.s
 
 src/gen_bond_labels.o: src/gen_bond_labels.cpp.o
@@ -402,6 +405,7 @@ src/mc_split.o: src/mc_split.cpp.o
 src/mc_split.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mc_split.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mc_split.cpp.o
 .PHONY : src/mc_split.cpp.o
 
 src/mc_split.i: src/mc_split.cpp.i
@@ -411,6 +415,7 @@ src/mc_split.i: src/mc_split.cpp.i
 src/mc_split.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/mc_split.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mc_split.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mc_split.cpp.i
 .PHONY : src/mc_split.cpp.i
 
 src/mc_split.s: src/mc_split.cpp.s
@@ -420,6 +425,7 @@ src/mc_split.s: src/mc_split.cpp.s
 src/mc_split.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/mc_split.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mc_split.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mc_split.cpp.s
 .PHONY : src/mc_split.cpp.s
 
 src/mol_mcs.o: src/mol_mcs.cpp.o
@@ -429,6 +435,7 @@ src/mol_mcs.o: src/mol_mcs.cpp.o
 src/mol_mcs.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mol_mcs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mol_mcs.cpp.o
 .PHONY : src/mol_mcs.cpp.o
 
 src/mol_mcs.i: src/mol_mcs.cpp.i
@@ -438,6 +445,7 @@ src/mol_mcs.i: src/mol_mcs.cpp.i
 src/mol_mcs.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mol_mcs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mol_mcs.cpp.i
 .PHONY : src/mol_mcs.cpp.i
 
 src/mol_mcs.s: src/mol_mcs.cpp.s
@@ -447,6 +455,7 @@ src/mol_mcs.s: src/mol_mcs.cpp.s
 src/mol_mcs.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mol_mcs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mol_mcs.cpp.s
 .PHONY : src/mol_mcs.cpp.s
 
 src/search_mcs.o: src/search_mcs.cpp.o

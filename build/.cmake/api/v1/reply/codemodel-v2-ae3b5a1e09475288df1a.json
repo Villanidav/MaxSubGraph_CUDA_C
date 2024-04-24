@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-Release-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20"
@@ -21,7 +21,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -43,21 +43,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "subgraph_search::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-subgraph_search-Debug-b1569ead0ab32cd0d1e1.json",
+					"jsonFile" : "target-subgraph_search-Release-aa2328dc10e6d2c4f924.json",
 					"name" : "subgraph_search",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test-Debug-7d42e8e9f66c5916b0d5.json",
+					"jsonFile" : "target-test-Release-acbea886b3670bf2e458.json",
 					"name" : "test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "testFra::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-testFra-Debug-43b05e5432db38a6f331.json",
+					"jsonFile" : "target-testFra-Release-c1e7fa8999f65589ad25.json",
 					"name" : "testFra",
 					"projectIndex" : 0
 				}
@@ -67,12 +67,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug",
+		"build" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
 		"source" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 3
 	}
 }

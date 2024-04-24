@@ -237,6 +237,48 @@ CMakeFiles/testFra.dir/src/search_mcs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/search_mcs.cpp.s"
 	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/search_mcs.cpp -o CMakeFiles/testFra.dir/src/search_mcs.cpp.s
 
+CMakeFiles/testFra.dir/src/mol_mcs.cpp.o: CMakeFiles/testFra.dir/flags.make
+CMakeFiles/testFra.dir/src/mol_mcs.cpp.o: ../src/mol_mcs.cpp
+CMakeFiles/testFra.dir/src/mol_mcs.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/testFra.dir/src/mol_mcs.cpp.o"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/mol_mcs.cpp.o -MF CMakeFiles/testFra.dir/src/mol_mcs.cpp.o.d -o CMakeFiles/testFra.dir/src/mol_mcs.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mol_mcs.cpp
+
+CMakeFiles/testFra.dir/src/mol_mcs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/mol_mcs.cpp.i"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mol_mcs.cpp > CMakeFiles/testFra.dir/src/mol_mcs.cpp.i
+
+CMakeFiles/testFra.dir/src/mol_mcs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/mol_mcs.cpp.s"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mol_mcs.cpp -o CMakeFiles/testFra.dir/src/mol_mcs.cpp.s
+
+CMakeFiles/testFra.dir/src/mc_split.cpp.o: CMakeFiles/testFra.dir/flags.make
+CMakeFiles/testFra.dir/src/mc_split.cpp.o: ../src/mc_split.cpp
+CMakeFiles/testFra.dir/src/mc_split.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/testFra.dir/src/mc_split.cpp.o"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/mc_split.cpp.o -MF CMakeFiles/testFra.dir/src/mc_split.cpp.o.d -o CMakeFiles/testFra.dir/src/mc_split.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mc_split.cpp
+
+CMakeFiles/testFra.dir/src/mc_split.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/mc_split.cpp.i"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mc_split.cpp > CMakeFiles/testFra.dir/src/mc_split.cpp.i
+
+CMakeFiles/testFra.dir/src/mc_split.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/mc_split.cpp.s"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mc_split.cpp -o CMakeFiles/testFra.dir/src/mc_split.cpp.s
+
+CMakeFiles/testFra.dir/src/g2mol.cpp.o: CMakeFiles/testFra.dir/flags.make
+CMakeFiles/testFra.dir/src/g2mol.cpp.o: ../src/g2mol.cpp
+CMakeFiles/testFra.dir/src/g2mol.cpp.o: CMakeFiles/testFra.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/testFra.dir/src/g2mol.cpp.o"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/testFra.dir/src/g2mol.cpp.o -MF CMakeFiles/testFra.dir/src/g2mol.cpp.o.d -o CMakeFiles/testFra.dir/src/g2mol.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/g2mol.cpp
+
+CMakeFiles/testFra.dir/src/g2mol.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testFra.dir/src/g2mol.cpp.i"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/g2mol.cpp > CMakeFiles/testFra.dir/src/g2mol.cpp.i
+
+CMakeFiles/testFra.dir/src/g2mol.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testFra.dir/src/g2mol.cpp.s"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/g2mol.cpp -o CMakeFiles/testFra.dir/src/g2mol.cpp.s
+
 # Object files for target testFra
 testFra_OBJECTS = \
 "CMakeFiles/testFra.dir/src/testFra.cpp.o" \
@@ -250,7 +292,10 @@ testFra_OBJECTS = \
 "CMakeFiles/testFra.dir/src/select_label.cpp.o" \
 "CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o" \
 "CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o" \
-"CMakeFiles/testFra.dir/src/search_mcs.cpp.o"
+"CMakeFiles/testFra.dir/src/search_mcs.cpp.o" \
+"CMakeFiles/testFra.dir/src/mol_mcs.cpp.o" \
+"CMakeFiles/testFra.dir/src/mc_split.cpp.o" \
+"CMakeFiles/testFra.dir/src/g2mol.cpp.o"
 
 # External object files for target testFra
 testFra_EXTERNAL_OBJECTS =
@@ -267,9 +312,12 @@ testFra: CMakeFiles/testFra.dir/src/select_label.cpp.o
 testFra: CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o
 testFra: CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o
 testFra: CMakeFiles/testFra.dir/src/search_mcs.cpp.o
+testFra: CMakeFiles/testFra.dir/src/mol_mcs.cpp.o
+testFra: CMakeFiles/testFra.dir/src/mc_split.cpp.o
+testFra: CMakeFiles/testFra.dir/src/g2mol.cpp.o
 testFra: CMakeFiles/testFra.dir/build.make
 testFra: CMakeFiles/testFra.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable testFra"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable testFra"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/testFra.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

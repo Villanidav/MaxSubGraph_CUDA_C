@@ -4,19 +4,18 @@
 
 #include <rdkit/GraphMol/GraphMol.h>
 #include <GraphMol/FileParsers/MolSupplier.h>
-#include <GraphMol/SmilesParse/SmilesParse.h>
+
 #include <Numerics/Matrix.h>
 
 
-using namespace std; // Add this line
-using namespace RDKit; // Add this line
+using namespace std;
+using namespace RDKit;
 
 std::vector<std::vector<int> > gen_rings_classes(
-    /*RDKit::ROMol mol0,RDKit::ROMol mol1*/
-    const std::vector<std::string> l0,
-    const std::vector<std::string> l1,
-    const std::vector<std::vector<int> > ring_info_m0,
-    const std::vector<std::vector<int> > ring_info_m1
+     std::vector<std::string> l0,
+     std::vector<std::string> l1,
+     std::vector<std::vector<int> > ring_info_m0,
+     std::vector<std::vector<int> > ring_info_m1
 );
 
 std::vector<std::pair<std::string, int> > gen_rotations(const std::string& s);

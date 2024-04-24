@@ -96,7 +96,6 @@ add_executable(test ${header_files} "${source_path}/test.cpp"
         "${source_path}/mol_mcs.cpp"
         "${source_path}/mc_split.cpp"
         "${source_path}/g2mol.cpp"
-
 )
 set_target_properties(test PROPERTIES
     COMPILE_DEFINITIONS "TESTING"
@@ -118,11 +117,9 @@ add_executable(testFra ${header_files} "${source_path}/testFra.cpp"
         "${source_path}/gen_ring_classes.cpp"
         "${source_path}/gen_rotations.cpp"
         "${source_path}/search_mcs.cpp"
-<<<<<<< HEAD
         "${source_path}/mol_mcs.cpp"
-        src/mc_split.cpp
-=======
->>>>>>> origin/main
+        "${source_path}/mc_split.cpp"
+        "${source_path}/g2mol.cpp"
 )
 
 set_target_properties(test PROPERTIES
@@ -189,8 +186,9 @@ target_link_libraries(testFra PUBLIC
         -lRDKitGraphMol
         -lRDKitRDGeneral
         -lRDKitSmilesParse
-        -lRDKitSubstructMatch
+
 )
+
 
 message(STATUS "RDKit Include Directories: ${RDKit_INCLUDE_DIRS}")
 message(STATUS "RDKit Library Directories: ${RDKit_LIBRARY_DIRS}")

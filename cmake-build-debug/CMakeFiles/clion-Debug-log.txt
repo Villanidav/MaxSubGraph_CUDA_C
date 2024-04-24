@@ -3,15 +3,6 @@
 -- Found Boost: /usr/local/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found version "1.82.0")  
 -- RDKit Include Directories: /home/davide/miniconda3/include/rdkit
 -- RDKit Library Directories: 
--- Configuring done (0.2s)
-CMake Error at CMakeLists.txt:108 (add_executable):
-  Cannot find source file:
-
-    <<<<<<<
-
-
-CMake Error at CMakeLists.txt:108 (add_executable):
-  No SOURCES given to target: testFra
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug

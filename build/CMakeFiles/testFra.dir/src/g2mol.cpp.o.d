@@ -1,5 +1,5 @@
-CMakeFiles/test.dir/src/mc_split.cpp.o: \
- /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mc_split.cpp \
+CMakeFiles/testFra.dir/src/g2mol.cpp.o: \
+ /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/g2mol.cpp \
  /home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/usr/include/stdc-predef.h \
  /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/test.hpp \
  /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/vector \
@@ -1522,4 +1522,5 @@ CMakeFiles/test.dir/src/mc_split.cpp.o: \
  /home/davide/miniconda3/include/rdkit/GraphMol/ROMol.h \
  /home/davide/miniconda3/include/rdkit/RDGeneral/BadFileException.h \
  /home/davide/miniconda3/include/rdkit/Numerics/Matrix.h \
- /home/davide/miniconda3/include/rdkit/Numerics/Vector.h
+ /home/davide/miniconda3/include/rdkit/Numerics/Vector.h \
+ /home/davide/miniconda3/include/rdkit/RDGeneral/test.h
