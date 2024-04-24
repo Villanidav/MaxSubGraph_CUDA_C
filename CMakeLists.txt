@@ -68,7 +68,8 @@ list(APPEND source_filess
 
 # define the target and its properties
 add_executable(subgraph_search ${header_files} "${source_path}/main.cpp" ${source_files}
-        )
+        src/mc_split.cpp
+)
 set_target_properties(subgraph_search
   PROPERTIES
   CXX_STANDARD 17
@@ -88,6 +89,10 @@ add_executable(test ${header_files} "${source_path}/test.cpp"
         "${source_path}/select_label.cpp"
         "${source_path}/gen_initial_labels.cpp"
         "${source_path}/gen_ring_classes.cpp"
+        "${source_path}/gen_rotations.cpp"
+        "${source_path}/search_mcs.cpp"
+
+        src/mc_split.cpp
 )
 set_target_properties(test PROPERTIES
     COMPILE_DEFINITIONS "TESTING"
@@ -97,10 +102,21 @@ set_target_properties(test PROPERTIES
 )
 
 add_executable(testFra ${header_files} "${source_path}/testFra.cpp"
+        "${source_path}/gen_bond_labels.cpp"
+        "${source_path}/gen_rotations.cpp"
+        "${source_path}/select_vertex.cpp"
+        "${source_path}/hood.cpp"
         "${source_path}/Label.cpp"
+        "${source_path}/smiles_mcs.cpp"
+        "${source_path}/calc_bound.cpp"
+        "${source_path}/select_label.cpp"
+        "${source_path}/gen_initial_labels.cpp"
         "${source_path}/gen_ring_classes.cpp"
         "${source_path}/gen_rotations.cpp"
-        "${source_path}/gen_initial_labels.cpp") #Aggiungere qui tutte le funzioni a cui faccio riferimento, di fianco a sourcepath...
+        "${source_path}/search_mcs.cpp"
+        src/mc_split.cpp
+)
+
 set_target_properties(test PROPERTIES
     COMPILE_DEFINITIONS "TESTING"
         CXX_STANDARD 17

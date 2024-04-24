@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/davide/CLionProjects/MaxSubGraph_CUDA_C
+CMAKE_SOURCE_DIR = /home/francesco/Desktop/MaxSubGraph_CUDA_C
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build
+CMAKE_BINARY_DIR = /home/francesco/Desktop/MaxSubGraph_CUDA_C/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles /home/francesco/Desktop/MaxSubGraph_CUDA_C/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -188,6 +188,7 @@ src/calc_bound.o: src/calc_bound.cpp.o
 # target to build an object file
 src/calc_bound.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/calc_bound.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/calc_bound.cpp.o
 .PHONY : src/calc_bound.cpp.o
 
 src/calc_bound.i: src/calc_bound.cpp.i
@@ -196,6 +197,7 @@ src/calc_bound.i: src/calc_bound.cpp.i
 # target to preprocess a source file
 src/calc_bound.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/calc_bound.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/calc_bound.cpp.i
 .PHONY : src/calc_bound.cpp.i
 
 src/calc_bound.s: src/calc_bound.cpp.s
@@ -204,6 +206,7 @@ src/calc_bound.s: src/calc_bound.cpp.s
 # target to generate assembly for a file
 src/calc_bound.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/calc_bound.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/calc_bound.cpp.s
 .PHONY : src/calc_bound.cpp.s
 
 src/gen_bond_labels.o: src/gen_bond_labels.cpp.o
@@ -212,6 +215,7 @@ src/gen_bond_labels.o: src/gen_bond_labels.cpp.o
 # target to build an object file
 src/gen_bond_labels.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gen_bond_labels.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gen_bond_labels.cpp.o
 .PHONY : src/gen_bond_labels.cpp.o
 
 src/gen_bond_labels.i: src/gen_bond_labels.cpp.i
@@ -220,6 +224,7 @@ src/gen_bond_labels.i: src/gen_bond_labels.cpp.i
 # target to preprocess a source file
 src/gen_bond_labels.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gen_bond_labels.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gen_bond_labels.cpp.i
 .PHONY : src/gen_bond_labels.cpp.i
 
 src/gen_bond_labels.s: src/gen_bond_labels.cpp.s
@@ -228,6 +233,7 @@ src/gen_bond_labels.s: src/gen_bond_labels.cpp.s
 # target to generate assembly for a file
 src/gen_bond_labels.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gen_bond_labels.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gen_bond_labels.cpp.s
 .PHONY : src/gen_bond_labels.cpp.s
 
 src/gen_initial_labels.o: src/gen_initial_labels.cpp.o
@@ -317,6 +323,7 @@ src/hood.o: src/hood.cpp.o
 # target to build an object file
 src/hood.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/hood.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/hood.cpp.o
 .PHONY : src/hood.cpp.o
 
 src/hood.i: src/hood.cpp.i
@@ -325,6 +332,7 @@ src/hood.i: src/hood.cpp.i
 # target to preprocess a source file
 src/hood.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/hood.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/hood.cpp.i
 .PHONY : src/hood.cpp.i
 
 src/hood.s: src/hood.cpp.s
@@ -333,6 +341,7 @@ src/hood.s: src/hood.cpp.s
 # target to generate assembly for a file
 src/hood.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/hood.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/hood.cpp.s
 .PHONY : src/hood.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -359,12 +368,70 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/mc_split.o: src/mc_split.cpp.o
+.PHONY : src/mc_split.o
+
+# target to build an object file
+src/mc_split.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mc_split.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mc_split.cpp.o
+.PHONY : src/mc_split.cpp.o
+
+src/mc_split.i: src/mc_split.cpp.i
+.PHONY : src/mc_split.i
+
+# target to preprocess a source file
+src/mc_split.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/mc_split.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mc_split.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mc_split.cpp.i
+.PHONY : src/mc_split.cpp.i
+
+src/mc_split.s: src/mc_split.cpp.s
+.PHONY : src/mc_split.s
+
+# target to generate assembly for a file
+src/mc_split.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/mc_split.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mc_split.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mc_split.cpp.s
+.PHONY : src/mc_split.cpp.s
+
+src/search_mcs.o: src/search_mcs.cpp.o
+.PHONY : src/search_mcs.o
+
+# target to build an object file
+src/search_mcs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/search_mcs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/search_mcs.cpp.o
+.PHONY : src/search_mcs.cpp.o
+
+src/search_mcs.i: src/search_mcs.cpp.i
+.PHONY : src/search_mcs.i
+
+# target to preprocess a source file
+src/search_mcs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/search_mcs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/search_mcs.cpp.i
+.PHONY : src/search_mcs.cpp.i
+
+src/search_mcs.s: src/search_mcs.cpp.s
+.PHONY : src/search_mcs.s
+
+# target to generate assembly for a file
+src/search_mcs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/search_mcs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/search_mcs.cpp.s
+.PHONY : src/search_mcs.cpp.s
+
 src/select_label.o: src/select_label.cpp.o
 .PHONY : src/select_label.o
 
 # target to build an object file
 src/select_label.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/select_label.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/select_label.cpp.o
 .PHONY : src/select_label.cpp.o
 
 src/select_label.i: src/select_label.cpp.i
@@ -373,6 +440,7 @@ src/select_label.i: src/select_label.cpp.i
 # target to preprocess a source file
 src/select_label.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/select_label.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/select_label.cpp.i
 .PHONY : src/select_label.cpp.i
 
 src/select_label.s: src/select_label.cpp.s
@@ -381,6 +449,7 @@ src/select_label.s: src/select_label.cpp.s
 # target to generate assembly for a file
 src/select_label.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/select_label.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/select_label.cpp.s
 .PHONY : src/select_label.cpp.s
 
 src/select_vertex.o: src/select_vertex.cpp.o
@@ -389,6 +458,7 @@ src/select_vertex.o: src/select_vertex.cpp.o
 # target to build an object file
 src/select_vertex.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/select_vertex.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/select_vertex.cpp.o
 .PHONY : src/select_vertex.cpp.o
 
 src/select_vertex.i: src/select_vertex.cpp.i
@@ -397,6 +467,7 @@ src/select_vertex.i: src/select_vertex.cpp.i
 # target to preprocess a source file
 src/select_vertex.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/select_vertex.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/select_vertex.cpp.i
 .PHONY : src/select_vertex.cpp.i
 
 src/select_vertex.s: src/select_vertex.cpp.s
@@ -405,6 +476,7 @@ src/select_vertex.s: src/select_vertex.cpp.s
 # target to generate assembly for a file
 src/select_vertex.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/select_vertex.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/select_vertex.cpp.s
 .PHONY : src/select_vertex.cpp.s
 
 src/smiles_mcs.o: src/smiles_mcs.cpp.o
@@ -413,6 +485,7 @@ src/smiles_mcs.o: src/smiles_mcs.cpp.o
 # target to build an object file
 src/smiles_mcs.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/smiles_mcs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/smiles_mcs.cpp.o
 .PHONY : src/smiles_mcs.cpp.o
 
 src/smiles_mcs.i: src/smiles_mcs.cpp.i
@@ -421,6 +494,7 @@ src/smiles_mcs.i: src/smiles_mcs.cpp.i
 # target to preprocess a source file
 src/smiles_mcs.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/smiles_mcs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/smiles_mcs.cpp.i
 .PHONY : src/smiles_mcs.cpp.i
 
 src/smiles_mcs.s: src/smiles_mcs.cpp.s
@@ -429,6 +503,7 @@ src/smiles_mcs.s: src/smiles_mcs.cpp.s
 # target to generate assembly for a file
 src/smiles_mcs.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/smiles_mcs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/smiles_mcs.cpp.s
 .PHONY : src/smiles_mcs.cpp.s
 
 src/test.o: src/test.cpp.o
@@ -514,6 +589,12 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/mc_split.o"
+	@echo "... src/mc_split.i"
+	@echo "... src/mc_split.s"
+	@echo "... src/search_mcs.o"
+	@echo "... src/search_mcs.i"
+	@echo "... src/search_mcs.s"
 	@echo "... src/select_label.o"
 	@echo "... src/select_label.i"
 	@echo "... src/select_label.s"

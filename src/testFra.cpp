@@ -2,8 +2,9 @@
 #include "test.hpp"
 
 
+
 int main() {
-/*
+/* TESTING CREAZIONE LABEL
     std::vector<int> g;
     std::vector<int> h;
     int adj;
@@ -63,11 +64,10 @@ int main() {
     }
     
 */
-   
+/*      TEST GEN_RING_CLASSES && GEN_INITIAL_LABEL
     const std::vector<std::string> l0({"C","C","O","C","H","H","O"});
 
     const std::vector<std::string> l1({"C","H","F","O","H","C","B","R"});
-
     const std::vector<std::vector<int> > ring_info_m0({{0,1,2},{4,3,5}});
     const std::vector<std::vector<int> > ring_info_m1({{4,1,0},{1,2,3},{1,4,5},{5,0,3}});
 
@@ -85,7 +85,29 @@ int main() {
     }; 
 
     
-    //std::vector<LabelClass> intial_labels = gen_initial_labels(l0,l1,ring_generated);
+    std::vector<LabelClass> initial_labels = gen_initial_labels(l0,l1,ring_generated);
+
+    for(LabelClass label : initial_labels){
+        std::cout << "\n" << label.label;
+        std::cout << "\ng:";
+        for(int idx : label.g){
+            std::cout << idx;
+        }
+        stad:cout << "\nh:";
+        for(int idx : label.h){
+            std::cout << idx;
+        }
+    }
+*/
+
+    std::string s0 = "C[C@H](F)N";
+    std::string s1 = "CN";
+
+    std::pair<RWMol, RWMol> molecules = smiles_mcs(s0, s1, 1, 1);
+    RWMol molA = molecules.first;  // Access the first molecule
+    RWMol molB = molecules.second; // Access the second molecule
+
+
 
     return 0;
 }

@@ -8,17 +8,19 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/Label.cpp" "CMakeFiles/test.dir/src/Label.cpp.o" "gcc" "CMakeFiles/test.dir/src/Label.cpp.o.d"
-  "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/calc_bound.cpp" "CMakeFiles/test.dir/src/calc_bound.cpp.o" "gcc" "CMakeFiles/test.dir/src/calc_bound.cpp.o.d"
-  "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_bond_labels.cpp" "CMakeFiles/test.dir/src/gen_bond_labels.cpp.o" "gcc" "CMakeFiles/test.dir/src/gen_bond_labels.cpp.o.d"
-  "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp" "CMakeFiles/test.dir/src/gen_initial_labels.cpp.o" "gcc" "CMakeFiles/test.dir/src/gen_initial_labels.cpp.o.d"
-  "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp" "CMakeFiles/test.dir/src/gen_ring_classes.cpp.o" "gcc" "CMakeFiles/test.dir/src/gen_ring_classes.cpp.o.d"
-  "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_rotations.cpp" "CMakeFiles/test.dir/src/gen_rotations.cpp.o" "gcc" "CMakeFiles/test.dir/src/gen_rotations.cpp.o.d"
-  "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/hood.cpp" "CMakeFiles/test.dir/src/hood.cpp.o" "gcc" "CMakeFiles/test.dir/src/hood.cpp.o.d"
-  "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/select_label.cpp" "CMakeFiles/test.dir/src/select_label.cpp.o" "gcc" "CMakeFiles/test.dir/src/select_label.cpp.o.d"
-  "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/select_vertex.cpp" "CMakeFiles/test.dir/src/select_vertex.cpp.o" "gcc" "CMakeFiles/test.dir/src/select_vertex.cpp.o.d"
-  "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp" "CMakeFiles/test.dir/src/smiles_mcs.cpp.o" "gcc" "CMakeFiles/test.dir/src/smiles_mcs.cpp.o.d"
-  "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/test.cpp" "CMakeFiles/test.dir/src/test.cpp.o" "gcc" "CMakeFiles/test.dir/src/test.cpp.o.d"
+  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/Label.cpp" "CMakeFiles/test.dir/src/Label.cpp.o" "gcc" "CMakeFiles/test.dir/src/Label.cpp.o.d"
+  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/calc_bound.cpp" "CMakeFiles/test.dir/src/calc_bound.cpp.o" "gcc" "CMakeFiles/test.dir/src/calc_bound.cpp.o.d"
+  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/gen_bond_labels.cpp" "CMakeFiles/test.dir/src/gen_bond_labels.cpp.o" "gcc" "CMakeFiles/test.dir/src/gen_bond_labels.cpp.o.d"
+  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp" "CMakeFiles/test.dir/src/gen_initial_labels.cpp.o" "gcc" "CMakeFiles/test.dir/src/gen_initial_labels.cpp.o.d"
+  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp" "CMakeFiles/test.dir/src/gen_ring_classes.cpp.o" "gcc" "CMakeFiles/test.dir/src/gen_ring_classes.cpp.o.d"
+  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/gen_rotations.cpp" "CMakeFiles/test.dir/src/gen_rotations.cpp.o" "gcc" "CMakeFiles/test.dir/src/gen_rotations.cpp.o.d"
+  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/hood.cpp" "CMakeFiles/test.dir/src/hood.cpp.o" "gcc" "CMakeFiles/test.dir/src/hood.cpp.o.d"
+  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/mc_split.cpp" "CMakeFiles/test.dir/src/mc_split.cpp.o" "gcc" "CMakeFiles/test.dir/src/mc_split.cpp.o.d"
+  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/search_mcs.cpp" "CMakeFiles/test.dir/src/search_mcs.cpp.o" "gcc" "CMakeFiles/test.dir/src/search_mcs.cpp.o.d"
+  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/select_label.cpp" "CMakeFiles/test.dir/src/select_label.cpp.o" "gcc" "CMakeFiles/test.dir/src/select_label.cpp.o.d"
+  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/select_vertex.cpp" "CMakeFiles/test.dir/src/select_vertex.cpp.o" "gcc" "CMakeFiles/test.dir/src/select_vertex.cpp.o.d"
+  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp" "CMakeFiles/test.dir/src/smiles_mcs.cpp.o" "gcc" "CMakeFiles/test.dir/src/smiles_mcs.cpp.o.d"
+  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/src/test.cpp" "CMakeFiles/test.dir/src/test.cpp.o" "gcc" "CMakeFiles/test.dir/src/test.cpp.o.d"
   )
 
 # Targets to which this target links.

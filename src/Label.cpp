@@ -55,6 +55,13 @@ class LabelClass {
         return res;
     }
 
+    // Overload the operator==
+    bool operator==(const LabelClass& other) const {
+        // Compare relevant attributes of LabelClass for equality
+        // For example:
+        return (this->g == other.g && this->h == other.h && this->label == other.label);
+    }
+
 
 };
 

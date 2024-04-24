@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/davide/CLionProjects/MaxSubGraph_CUDA_C
+CMAKE_SOURCE_DIR = /home/francesco/Desktop/MaxSubGraph_CUDA_C
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build
+CMAKE_BINARY_DIR = /home/francesco/Desktop/MaxSubGraph_CUDA_C/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/subgraph_search.dir/depend.make
@@ -72,28 +72,44 @@ include CMakeFiles/subgraph_search.dir/flags.make
 CMakeFiles/subgraph_search.dir/src/main.cpp.o: CMakeFiles/subgraph_search.dir/flags.make
 CMakeFiles/subgraph_search.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/subgraph_search.dir/src/main.cpp.o: CMakeFiles/subgraph_search.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/subgraph_search.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/subgraph_search.dir/src/main.cpp.o -MF CMakeFiles/subgraph_search.dir/src/main.cpp.o.d -o CMakeFiles/subgraph_search.dir/src/main.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/subgraph_search.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/subgraph_search.dir/src/main.cpp.o -MF CMakeFiles/subgraph_search.dir/src/main.cpp.o.d -o CMakeFiles/subgraph_search.dir/src/main.cpp.o -c /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/main.cpp
 
 CMakeFiles/subgraph_search.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/subgraph_search.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/main.cpp > CMakeFiles/subgraph_search.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/main.cpp > CMakeFiles/subgraph_search.dir/src/main.cpp.i
 
 CMakeFiles/subgraph_search.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/subgraph_search.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/main.cpp -o CMakeFiles/subgraph_search.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/main.cpp -o CMakeFiles/subgraph_search.dir/src/main.cpp.s
+
+CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o: CMakeFiles/subgraph_search.dir/flags.make
+CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o: ../src/mc_split.cpp
+CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o: CMakeFiles/subgraph_search.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o -MF CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o.d -o CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o -c /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/mc_split.cpp
+
+CMakeFiles/subgraph_search.dir/src/mc_split.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/subgraph_search.dir/src/mc_split.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/mc_split.cpp > CMakeFiles/subgraph_search.dir/src/mc_split.cpp.i
+
+CMakeFiles/subgraph_search.dir/src/mc_split.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/subgraph_search.dir/src/mc_split.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/mc_split.cpp -o CMakeFiles/subgraph_search.dir/src/mc_split.cpp.s
 
 # Object files for target subgraph_search
 subgraph_search_OBJECTS = \
-"CMakeFiles/subgraph_search.dir/src/main.cpp.o"
+"CMakeFiles/subgraph_search.dir/src/main.cpp.o" \
+"CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o"
 
 # External object files for target subgraph_search
 subgraph_search_EXTERNAL_OBJECTS =
 
 subgraph_search: CMakeFiles/subgraph_search.dir/src/main.cpp.o
+subgraph_search: CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o
 subgraph_search: CMakeFiles/subgraph_search.dir/build.make
 subgraph_search: CMakeFiles/subgraph_search.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable subgraph_search"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable subgraph_search"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/subgraph_search.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -105,6 +121,6 @@ CMakeFiles/subgraph_search.dir/clean:
 .PHONY : CMakeFiles/subgraph_search.dir/clean
 
 CMakeFiles/subgraph_search.dir/depend:
-	cd /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/davide/CLionProjects/MaxSubGraph_CUDA_C /home/davide/CLionProjects/MaxSubGraph_CUDA_C /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/subgraph_search.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/francesco/Desktop/MaxSubGraph_CUDA_C/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/francesco/Desktop/MaxSubGraph_CUDA_C /home/francesco/Desktop/MaxSubGraph_CUDA_C /home/francesco/Desktop/MaxSubGraph_CUDA_C/build /home/francesco/Desktop/MaxSubGraph_CUDA_C/build /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/subgraph_search.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/subgraph_search.dir/depend
 

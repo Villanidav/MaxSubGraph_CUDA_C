@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DTESTING
 
-CXX_INCLUDES = -I/home/davide/miniconda3/envs/my-rdkit-env/include -I/home/davide/miniconda3/envs/my-rdkit-env/include/rdkit -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra
+CXX_INCLUDES = -I/home/francesco/miniconda3/envs/my-rdkit-env/include -I/home/francesco/miniconda3/envs/my-rdkit-env/include/rdkit -I/home/francesco/Desktop/MaxSubGraph_CUDA_C/subgraph_search -I/home/francesco/Desktop/MaxSubGraph_CUDA_C/PUBLIC -I/home/francesco/Desktop/MaxSubGraph_CUDA_C/test -I/home/francesco/Desktop/MaxSubGraph_CUDA_C/testFra
 
 CXX_FLAGS = -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -std=c++17
 

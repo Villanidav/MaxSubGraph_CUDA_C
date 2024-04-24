@@ -56,10 +56,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src
+CMAKE_SOURCE_DIR = /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin
+CMAKE_BINARY_DIR = /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin
 
 # Include any dependencies generated for this target.
 include CMakeFiles/foo.dir/depend.make
@@ -73,17 +73,17 @@ include CMakeFiles/foo.dir/progress.make
 include CMakeFiles/foo.dir/flags.make
 
 CMakeFiles/foo.dir/foo.cpp.o: CMakeFiles/foo.dir/flags.make
-CMakeFiles/foo.dir/foo.cpp.o: /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/foo.dir/foo.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/foo.dir/foo.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+CMakeFiles/foo.dir/foo.cpp.o: /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/foo.dir/foo.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/foo.dir/foo.cpp.o -c /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
 
 CMakeFiles/foo.dir/foo.cpp.i: cmake_force
 	@echo "Preprocessing CXX source to CMakeFiles/foo.dir/foo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp > CMakeFiles/foo.dir/foo.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp > CMakeFiles/foo.dir/foo.cpp.i
 
 CMakeFiles/foo.dir/foo.cpp.s: cmake_force
 	@echo "Compiling CXX source to assembly CMakeFiles/foo.dir/foo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp -o CMakeFiles/foo.dir/foo.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp -o CMakeFiles/foo.dir/foo.cpp.s
 
 # Object files for target foo
 foo_OBJECTS = \
@@ -95,7 +95,7 @@ foo_EXTERNAL_OBJECTS =
 libfoo.a: CMakeFiles/foo.dir/foo.cpp.o
 libfoo.a: CMakeFiles/foo.dir/build.make
 libfoo.a: CMakeFiles/foo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libfoo.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libfoo.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/foo.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=$(VERBOSE)
 
@@ -108,6 +108,6 @@ CMakeFiles/foo.dir/clean:
 .PHONY : CMakeFiles/foo.dir/clean
 
 CMakeFiles/foo.dir/depend:
-	cd /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+	cd /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
 .PHONY : CMakeFiles/foo.dir/depend
 
