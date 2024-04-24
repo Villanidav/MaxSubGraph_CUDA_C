@@ -237,10 +237,24 @@ CMakeFiles/test.dir/src/search_mcs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/search_mcs.cpp.s"
 	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/search_mcs.cpp -o CMakeFiles/test.dir/src/search_mcs.cpp.s
 
+CMakeFiles/test.dir/src/mol_mcs.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/mol_mcs.cpp.o: ../src/mol_mcs.cpp
+CMakeFiles/test.dir/src/mol_mcs.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/test.dir/src/mol_mcs.cpp.o"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/mol_mcs.cpp.o -MF CMakeFiles/test.dir/src/mol_mcs.cpp.o.d -o CMakeFiles/test.dir/src/mol_mcs.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mol_mcs.cpp
+
+CMakeFiles/test.dir/src/mol_mcs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/mol_mcs.cpp.i"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mol_mcs.cpp > CMakeFiles/test.dir/src/mol_mcs.cpp.i
+
+CMakeFiles/test.dir/src/mol_mcs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/mol_mcs.cpp.s"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mol_mcs.cpp -o CMakeFiles/test.dir/src/mol_mcs.cpp.s
+
 CMakeFiles/test.dir/src/mc_split.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/src/mc_split.cpp.o: ../src/mc_split.cpp
 CMakeFiles/test.dir/src/mc_split.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/test.dir/src/mc_split.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/test.dir/src/mc_split.cpp.o"
 	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/mc_split.cpp.o -MF CMakeFiles/test.dir/src/mc_split.cpp.o.d -o CMakeFiles/test.dir/src/mc_split.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mc_split.cpp
 
 CMakeFiles/test.dir/src/mc_split.cpp.i: cmake_force
@@ -250,6 +264,20 @@ CMakeFiles/test.dir/src/mc_split.cpp.i: cmake_force
 CMakeFiles/test.dir/src/mc_split.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/mc_split.cpp.s"
 	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mc_split.cpp -o CMakeFiles/test.dir/src/mc_split.cpp.s
+
+CMakeFiles/test.dir/src/g2mol.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/g2mol.cpp.o: ../src/g2mol.cpp
+CMakeFiles/test.dir/src/g2mol.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/test.dir/src/g2mol.cpp.o"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/g2mol.cpp.o -MF CMakeFiles/test.dir/src/g2mol.cpp.o.d -o CMakeFiles/test.dir/src/g2mol.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/g2mol.cpp
+
+CMakeFiles/test.dir/src/g2mol.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/g2mol.cpp.i"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/g2mol.cpp > CMakeFiles/test.dir/src/g2mol.cpp.i
+
+CMakeFiles/test.dir/src/g2mol.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/g2mol.cpp.s"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/g2mol.cpp -o CMakeFiles/test.dir/src/g2mol.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
@@ -265,7 +293,9 @@ test_OBJECTS = \
 "CMakeFiles/test.dir/src/gen_initial_labels.cpp.o" \
 "CMakeFiles/test.dir/src/gen_ring_classes.cpp.o" \
 "CMakeFiles/test.dir/src/search_mcs.cpp.o" \
-"CMakeFiles/test.dir/src/mc_split.cpp.o"
+"CMakeFiles/test.dir/src/mol_mcs.cpp.o" \
+"CMakeFiles/test.dir/src/mc_split.cpp.o" \
+"CMakeFiles/test.dir/src/g2mol.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
@@ -282,10 +312,12 @@ test: CMakeFiles/test.dir/src/select_label.cpp.o
 test: CMakeFiles/test.dir/src/gen_initial_labels.cpp.o
 test: CMakeFiles/test.dir/src/gen_ring_classes.cpp.o
 test: CMakeFiles/test.dir/src/search_mcs.cpp.o
+test: CMakeFiles/test.dir/src/mol_mcs.cpp.o
 test: CMakeFiles/test.dir/src/mc_split.cpp.o
+test: CMakeFiles/test.dir/src/g2mol.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

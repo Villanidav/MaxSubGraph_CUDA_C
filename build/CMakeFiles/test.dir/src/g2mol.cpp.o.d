@@ -1,5 +1,5 @@
-CMakeFiles/test.dir/src/mol_mcs.cpp.o: \
- /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mol_mcs.cpp \
+CMakeFiles/test.dir/src/g2mol.cpp.o: \
+ /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/g2mol.cpp \
  /home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/usr/include/stdc-predef.h \
  /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/test.hpp \
  /home/davide/miniconda3/x86_64-conda-linux-gnu/include/c++/11.2.0/vector \
@@ -1528,4 +1528,5 @@ CMakeFiles/test.dir/src/mol_mcs.cpp.o: \
  /home/davide/miniconda3/include/rdkit/GraphMol/Atom.h \
  /home/davide/miniconda3/include/rdkit/GraphMol/Bond.h \
  /home/davide/miniconda3/include/rdkit/Numerics/Matrix.h \
- /home/davide/miniconda3/include/rdkit/Numerics/Vector.h
+ /home/davide/miniconda3/include/rdkit/Numerics/Vector.h \
+ /home/davide/miniconda3/include/rdkit/RDGeneral/test.h

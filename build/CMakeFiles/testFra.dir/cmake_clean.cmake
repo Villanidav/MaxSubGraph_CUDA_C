@@ -13,8 +13,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/testFra.dir/src/gen_rotations.cpp.o.d"
   "CMakeFiles/testFra.dir/src/hood.cpp.o"
   "CMakeFiles/testFra.dir/src/hood.cpp.o.d"
-  "CMakeFiles/testFra.dir/src/mc_split.cpp.o"
-  "CMakeFiles/testFra.dir/src/mc_split.cpp.o.d"
   "CMakeFiles/testFra.dir/src/search_mcs.cpp.o"
   "CMakeFiles/testFra.dir/src/search_mcs.cpp.o.d"
   "CMakeFiles/testFra.dir/src/select_label.cpp.o"

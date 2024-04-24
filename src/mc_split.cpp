@@ -11,13 +11,17 @@ std::vector<std::pair<int, int>> incumbent;
 LabelClass* select_label(std::vector<LabelClass*>& label_classes, int map_size);
 
 void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<double> > g1, std::vector<LabelClass>& label_classes, std::vector<double> edge_labels, std::vector<std::pair<int, int> > m){
+
+    cout << "\n INIZIO RICORSIONE:   "<<endl ;
     //incumbent has to be GLOBAL
     int bound = m.size() + calc_bound(label_classes);
-
+    cout << "\n bound iniziale :   "<<bound ;
     if(m.size() > incumbent.size()){
         incumbent = m;
     }
+    cout << "\n size incumbent "<<incumbent.size() ;
     if(incumbent.size() >= bound){
+        cout << "\n fine \n   "<<endl ;
         return;
     }
 
@@ -37,14 +41,18 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
     }
 
     int v = select_vertex(label_class->g, g0);
+    cout << "\n vertice selezionato : " << v;
     std::vector<int> vector;
     vector.push_back(v);
     std::vector<int>  v_ring_atoms = label_class -> get_ring_match_data(vector).at(0);
+    cout << "\n size v ring atoms " << v_ring_atoms.at(0);
 
     for( int w : label_class -> h){
-        if( (!v_ring_atoms.empty()) &&
-            (std::find(v_ring_atoms.begin(),v_ring_atoms.end(), -1) != v_ring_atoms.end() ) ||
+
+        if( (  v_ring_atoms.at(0) != -1  ) &&
+            //(std::find(v_ring_atoms.begin(),v_ring_atoms.end(), -1) != v_ring_atoms.end() ) ||
             ( std::find(v_ring_atoms.begin(),v_ring_atoms.end(), w) == v_ring_atoms.end()) ){
+            cout << "continue : "<<endl ;
             continue;
         }
 
@@ -79,10 +87,19 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
                 }
             }
         }
+
         std::pair<int, int> nuova_coppia = std::make_pair(v, w);
-        m.push_back(nuova_coppia);
-        search_mcs(g0, g1, l_draft, edge_labels, m );
+
+        std::vector<std::pair<int, int> > h = m;
+
+        h.push_back(nuova_coppia);
+
+        cout << "\n nuova chiamata ricorsiva m:   "<<m.size() << endl ;
+        for ( std::pair<int, int> c : h )
+            cout << c.first << " " << c.second << endl;
+        search_mcs(g0, g1, l_draft, edge_labels, h );
     }
+    cout << "\n salto, fine primo w:   "<<endl ;
 
     LabelClass tmp = *label_class;
     auto it = std::find(label_classes.begin(), label_classes.end(), tmp);
@@ -108,13 +125,29 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
 std::vector<std::pair<int, int>> mc_split(const std::vector<std::vector<double>> g0, const std::vector<std::vector<double>> g1,
                                           const std::vector<std::string>& l0, const std::vector<std::string>& l1,
                                           std::vector<std::vector<int> >& ring_classes) {
+
     incumbent.clear(); // Clear incumbent result
-
-
 
     // Generate label data
     std::vector<LabelClass> initial_label_classes = gen_initial_labels(l0, l1, ring_classes);
+
+
+    for (LabelClass lab : initial_label_classes) {
+        cout<<"\n LABEL: "<<lab.label;
+        cout << "\n G: "  ;
+        for ( int i : lab.g )
+            cout<<i;
+        cout << "\n H: "  ;
+        for ( int i : lab.h )
+            cout<<i;
+    }
+
+
+
     std::vector<double> edge_labels = gen_bond_labels(g0, g1);
+    cout << "\nBOND LABELS: "  ;
+    for ( double d : edge_labels)
+        cout << " " <<d  ;
 
     // Search maximum common connected subgraph
     search_mcs(g0, g1, initial_label_classes, edge_labels, {});

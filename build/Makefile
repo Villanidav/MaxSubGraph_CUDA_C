@@ -209,6 +209,33 @@ src/calc_bound.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/calc_bound.cpp.s
 .PHONY : src/calc_bound.cpp.s
 
+src/g2mol.o: src/g2mol.cpp.o
+.PHONY : src/g2mol.o
+
+# target to build an object file
+src/g2mol.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/g2mol.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/g2mol.cpp.o
+.PHONY : src/g2mol.cpp.o
+
+src/g2mol.i: src/g2mol.cpp.i
+.PHONY : src/g2mol.i
+
+# target to preprocess a source file
+src/g2mol.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/g2mol.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/g2mol.cpp.i
+.PHONY : src/g2mol.cpp.i
+
+src/g2mol.s: src/g2mol.cpp.s
+.PHONY : src/g2mol.s
+
+# target to generate assembly for a file
+src/g2mol.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/g2mol.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/g2mol.cpp.s
+.PHONY : src/g2mol.cpp.s
+
 src/gen_bond_labels.o: src/gen_bond_labels.cpp.o
 .PHONY : src/gen_bond_labels.o
 
@@ -375,7 +402,6 @@ src/mc_split.o: src/mc_split.cpp.o
 src/mc_split.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mc_split.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mc_split.cpp.o
 .PHONY : src/mc_split.cpp.o
 
 src/mc_split.i: src/mc_split.cpp.i
@@ -385,7 +411,6 @@ src/mc_split.i: src/mc_split.cpp.i
 src/mc_split.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/mc_split.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mc_split.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mc_split.cpp.i
 .PHONY : src/mc_split.cpp.i
 
 src/mc_split.s: src/mc_split.cpp.s
@@ -395,8 +420,34 @@ src/mc_split.s: src/mc_split.cpp.s
 src/mc_split.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/mc_split.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mc_split.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mc_split.cpp.s
 .PHONY : src/mc_split.cpp.s
+
+src/mol_mcs.o: src/mol_mcs.cpp.o
+.PHONY : src/mol_mcs.o
+
+# target to build an object file
+src/mol_mcs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mol_mcs.cpp.o
+.PHONY : src/mol_mcs.cpp.o
+
+src/mol_mcs.i: src/mol_mcs.cpp.i
+.PHONY : src/mol_mcs.i
+
+# target to preprocess a source file
+src/mol_mcs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mol_mcs.cpp.i
+.PHONY : src/mol_mcs.cpp.i
+
+src/mol_mcs.s: src/mol_mcs.cpp.s
+.PHONY : src/mol_mcs.s
+
+# target to generate assembly for a file
+src/mol_mcs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/subgraph_search.dir/build.make CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mol_mcs.cpp.s
+.PHONY : src/mol_mcs.cpp.s
 
 src/search_mcs.o: src/search_mcs.cpp.o
 .PHONY : src/search_mcs.o
@@ -571,6 +622,9 @@ help:
 	@echo "... src/calc_bound.o"
 	@echo "... src/calc_bound.i"
 	@echo "... src/calc_bound.s"
+	@echo "... src/g2mol.o"
+	@echo "... src/g2mol.i"
+	@echo "... src/g2mol.s"
 	@echo "... src/gen_bond_labels.o"
 	@echo "... src/gen_bond_labels.i"
 	@echo "... src/gen_bond_labels.s"
@@ -592,6 +646,9 @@ help:
 	@echo "... src/mc_split.o"
 	@echo "... src/mc_split.i"
 	@echo "... src/mc_split.s"
+	@echo "... src/mol_mcs.o"
+	@echo "... src/mol_mcs.i"
+	@echo "... src/mol_mcs.s"
 	@echo "... src/search_mcs.o"
 	@echo "... src/search_mcs.i"
 	@echo "... src/search_mcs.s"

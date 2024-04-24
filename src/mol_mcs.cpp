@@ -56,7 +56,8 @@ vector<vector<double>> getAdjacencyMatrix(const RWMol& mol) {
 
 //ho cambiato la return di questa funzione per fini di test
 ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match, int ring_match, int return_map) {
-    std::vector<RDKit::RWMol> mols = {mol0, mol1};
+
+    std::vector mols = {mol0, mol1};
 
     std::vector<std::string> l0, l1;
     for (const auto &atom : mol0.atoms()) {
@@ -66,10 +67,20 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
         l1.push_back(atom->getSymbol());
     }
 
-    std::vector<std::vector<std::string>> label_ring_data = {l0, l1};
+    std::vector label_ring_data = {l0, l1};
 
+    //stampa per prove
+    cout << "\n first molecule: " <<endl;
+
+    for ( string idx : l0 )
+    cout << idx;
+
+    cout << "\n second molecule: " <<endl;
+    for ( string idx : l1 )
+        cout  << idx;
 
     std::vector<std::vector<double>> g0,g1;
+
     if (bond_match) {
         g0 = getAdjacencyMatrix(mol0);
         g1 = getAdjacencyMatrix(mol1);
@@ -79,14 +90,22 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
     }
 
     //print matrix
-    /*std::cout<<"\n adiacent Matrix";
+    std::cout<<"\n first adiacent Matrix";
+    for (vector<double> line : g0){
+        std::cout<<"\n";
+        for(double i : line){
+            std::cout<<" "<<i;
+        }
+    }
+
+    std::cout<<"\n second adiacent Matrix";
     for (vector<double> line : g1){
         std::cout<<"\n";
         for(double i : line){
             std::cout<<" "<<i;
         }
-    }*/
-
+    }
+/*
     if (ring_match) {
         std::vector<std::vector<int>> ring_info = gen_ring_classes(mol0,mol1);
         for (size_t mol_idx = 0; mol_idx < 2; ++mol_idx) {
@@ -98,10 +117,19 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
                 }
             }
         }
+    }*/
+
+    //todo risolvere questione stringa inversa
+    std::vector<std::vector<int>> ring_classes = gen_ring_classes(mol0, mol1);
+
+    cout << "\n ring classes : \n " << endl;
+    for ( std::vector<int> vect : ring_classes ) {
+        cout << "[" <<endl;
+        for ( int idx : vect)
+            {cout << " , " << idx ;}
+        cout << "[" <<endl;
     }
 
-
-    std::vector<std::vector<int>> ring_classes = gen_ring_classes(mol0, mol1);
     //ho cambiato la seguente riga dal codice Python
     std::vector<std::pair<int, int>> mapping = mc_split(g0, g1, l0, l1, ring_classes);
 
@@ -128,7 +156,7 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
         }
     }
 
-    RDKit::ROMol mcs = g2mol(mcs_labels, mcs_matrix);
+    ROMol mcs = g2mol(mcs_labels, mcs_matrix);
 
     /*if (return_map) {
          //return incumbent;

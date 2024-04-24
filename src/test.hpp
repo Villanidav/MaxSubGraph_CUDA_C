@@ -28,7 +28,7 @@ std::vector<int> hood(int vtx, const std::vector<std::vector<double> >& g, doubl
 
 
 
-int calc_bound(const std::vector<LabelClass>& label_classes);
+int calc_bound( std::vector<LabelClass>& label_classes);
 
 std::vector<double> gen_bond_labels(const std::vector<std::vector<double> >& g0, const std::vector<std::vector<double> >& g1);
 

@@ -97,19 +97,51 @@ CMakeFiles/subgraph_search.dir/src/mc_split.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/subgraph_search.dir/src/mc_split.cpp.s"
 	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mc_split.cpp -o CMakeFiles/subgraph_search.dir/src/mc_split.cpp.s
 
+CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.o: CMakeFiles/subgraph_search.dir/flags.make
+CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.o: ../src/mol_mcs.cpp
+CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.o: CMakeFiles/subgraph_search.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.o"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.o -MF CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.o.d -o CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mol_mcs.cpp
+
+CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.i"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mol_mcs.cpp > CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.i
+
+CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.s"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mol_mcs.cpp -o CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.s
+
+CMakeFiles/subgraph_search.dir/src/g2mol.cpp.o: CMakeFiles/subgraph_search.dir/flags.make
+CMakeFiles/subgraph_search.dir/src/g2mol.cpp.o: ../src/g2mol.cpp
+CMakeFiles/subgraph_search.dir/src/g2mol.cpp.o: CMakeFiles/subgraph_search.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/subgraph_search.dir/src/g2mol.cpp.o"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/subgraph_search.dir/src/g2mol.cpp.o -MF CMakeFiles/subgraph_search.dir/src/g2mol.cpp.o.d -o CMakeFiles/subgraph_search.dir/src/g2mol.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/g2mol.cpp
+
+CMakeFiles/subgraph_search.dir/src/g2mol.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/subgraph_search.dir/src/g2mol.cpp.i"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/g2mol.cpp > CMakeFiles/subgraph_search.dir/src/g2mol.cpp.i
+
+CMakeFiles/subgraph_search.dir/src/g2mol.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/subgraph_search.dir/src/g2mol.cpp.s"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/g2mol.cpp -o CMakeFiles/subgraph_search.dir/src/g2mol.cpp.s
+
 # Object files for target subgraph_search
 subgraph_search_OBJECTS = \
 "CMakeFiles/subgraph_search.dir/src/main.cpp.o" \
-"CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o"
+"CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o" \
+"CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.o" \
+"CMakeFiles/subgraph_search.dir/src/g2mol.cpp.o"
 
 # External object files for target subgraph_search
 subgraph_search_EXTERNAL_OBJECTS =
 
 subgraph_search: CMakeFiles/subgraph_search.dir/src/main.cpp.o
 subgraph_search: CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o
+subgraph_search: CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.o
+subgraph_search: CMakeFiles/subgraph_search.dir/src/g2mol.cpp.o
 subgraph_search: CMakeFiles/subgraph_search.dir/build.make
 subgraph_search: CMakeFiles/subgraph_search.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable subgraph_search"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable subgraph_search"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/subgraph_search.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -93,8 +93,9 @@ add_executable(test ${header_files} "${source_path}/test.cpp"
         "${source_path}/gen_ring_classes.cpp"
         "${source_path}/gen_rotations.cpp"
         "${source_path}/search_mcs.cpp"
-       # "${source_path}/mc_split.cpp.cpp"
-       # "${source_path}/g2mol.cpp.cpp"
+        "${source_path}/mol_mcs.cpp"
+        "${source_path}/mc_split.cpp"
+        "${source_path}/g2mol.cpp"
 
 )
 set_target_properties(test PROPERTIES
@@ -156,25 +157,21 @@ include_directories(subgraph_search PUBLIC "${RDKIT_INSTALL_PREFIX}/include/rdki
 target_link_directories(subgraph_search PUBLIC "${RDKIT_INSTALL_PREFIX}/lib")
 target_link_directories(subgraph_search PUBLIC "${RDKIT_INSTALL_PREFIX}/lib64")
 target_link_libraries(subgraph_search PUBLIC
-        -lRDKit
         -lRDKitFileParsers
         -lRDKitGraphMol
         -lRDKitRDGeneral
         -lRDKitSmilesParse
         -lRDKitSubstructMatch
-        -lRDKitChem
 )
 include_directories(test PUBLIC "${RDKIT_INSTALL_PREFIX}/include/rdkit")
 target_link_directories(test PUBLIC "${RDKIT_INSTALL_PREFIX}/lib")
 target_link_directories(test PUBLIC "${RDKIT_INSTALL_PREFIX}/lib64")
 target_link_libraries(test PUBLIC
-        -lRDKit
         -lRDKitFileParsers
         -lRDKitGraphMol
         -lRDKitRDGeneral
         -lRDKitSmilesParse
         -lRDKitSubstructMatch
-        -lRDKitChem
 )
 
 #modificato togliendo target_ prima di link in ogni punto
@@ -183,13 +180,11 @@ include_directories(testFra PUBLIC "${RDKIT_INSTALL_PREFIX}/include/rdkit")
 target_link_directories(testFra PUBLIC "${RDKIT_INSTALL_PREFIX}/lib")
 target_link_directories(testFra PUBLIC "${RDKIT_INSTALL_PREFIX}/lib64")
 target_link_libraries(testFra PUBLIC
-        -lRDKit
         -lRDKitFileParsers
         -lRDKitGraphMol
         -lRDKitRDGeneral
         -lRDKitSmilesParse
         -lRDKitSubstructMatch
-        -lRDKitChem
 )
 
 message(STATUS "RDKit Include Directories: ${RDKit_INCLUDE_DIRS}")

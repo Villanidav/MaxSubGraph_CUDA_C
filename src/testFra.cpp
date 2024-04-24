@@ -98,7 +98,7 @@ int main() {
             std::cout << idx;
         }
     }
-*/
+
 
     std::string s0 = "C[C@H](F)N";
     std::string s1 = "CN";
@@ -107,7 +107,7 @@ int main() {
     RWMol molA = molecules.first;  // Access the first molecule
     RWMol molB = molecules.second; // Access the second molecule
 
-
+*/
 
     return 0;
 }

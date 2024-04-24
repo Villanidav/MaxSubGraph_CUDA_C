@@ -1,4 +1,4 @@
-CMakeFiles/test.dir/src/mol_mcs.cpp.o: \
+CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.o: \
  /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mol_mcs.cpp \
  /home/davide/miniconda3/x86_64-conda-linux-gnu/sysroot/usr/include/stdc-predef.h \
  /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/test.hpp \

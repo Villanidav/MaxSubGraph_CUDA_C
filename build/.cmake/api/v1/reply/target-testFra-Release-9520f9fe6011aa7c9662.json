@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "test"
+			"path" : "testFra"
 		}
 	],
 	"backtrace" : 1,
@@ -14,7 +14,6 @@
 			"target_link_directories",
 			"target_link_libraries",
 			"add_compile_options",
-			"set_target_properties",
 			"include_directories"
 		],
 		"files" : 
@@ -29,19 +28,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 81,
+				"line" : 108,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 165,
+				"line" : 181,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 166,
+				"line" : 182,
 				"parent" : 0
 			},
 			{
@@ -53,37 +52,31 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 120,
+				"line" : 147,
 				"parent" : 0
 			},
 			{
-				"command" : 5,
+				"command" : 4,
 				"file" : 0,
-				"line" : 144,
+				"line" : 155,
 				"parent" : 0
 			},
 			{
-				"command" : 5,
+				"command" : 4,
 				"file" : 0,
-				"line" : 152,
+				"line" : 156,
 				"parent" : 0
 			},
 			{
-				"command" : 5,
+				"command" : 4,
 				"file" : 0,
-				"line" : 153,
+				"line" : 166,
 				"parent" : 0
 			},
 			{
-				"command" : 5,
+				"command" : 4,
 				"file" : 0,
-				"line" : 163,
-				"parent" : 0
-			},
-			{
-				"command" : 5,
-				"file" : 0,
-				"line" : 176,
+				"line" : 179,
 				"parent" : 0
 			}
 		]
@@ -119,54 +112,36 @@
 				{
 					"backtrace" : 4,
 					"fragment" : "-Wl,-z,relro"
-				},
-				{
-					"fragment" : "-std=c++17"
-				}
-			],
-			"defines" : 
-			[
-				{
-					"backtrace" : 5,
-					"define" : "TESTING"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 6,
+					"backtrace" : 5,
 					"path" : "/usr/local/include"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 6,
 					"path" : "/home/davide/miniconda3/include/rdkit"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"path" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"path" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 8,
 					"path" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test"
 				},
 				{
-					"backtrace" : 10,
+					"backtrace" : 9,
 					"path" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra"
 				}
 			],
 			"language" : "CXX",
-			"languageStandard" : 
-			{
-				"backtraces" : 
-				[
-					5
-				],
-				"standard" : "17"
-			},
 			"sourceIndexes" : 
 			[
 				3,
@@ -180,12 +155,11 @@
 				11,
 				12,
 				13,
-				14,
-				15
+				14
 			]
 		}
 	],
-	"id" : "test::@6890427a1f51a3e7e1df",
+	"id" : "testFra::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -235,8 +209,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "test",
-	"nameOnDisk" : "test",
+	"name" : "testFra",
+	"nameOnDisk" : "testFra",
 	"paths" : 
 	{
 		"build" : ".",
@@ -268,8 +242,7 @@
 				11,
 				12,
 				13,
-				14,
-				15
+				14
 			]
 		}
 	],
@@ -293,7 +266,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/test.cpp",
+			"path" : "src/testFra.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -360,12 +333,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/search_mcs.cpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/mc_split.cpp",
 			"sourceGroupIndex" : 1
 		}
 	],

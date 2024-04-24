@@ -170,5 +170,20 @@ int main()
         cout<<"\natomo seconda molecola: "<< b->getSymbol();
     }*/
 
+    string smile0 = "C[C@H](F)N";
+    string smile1 = "CN";
+    ROMol result = smiles_mcs(smile0, smile1, 1,1);
+
+    cout << "\n" << result.getNumAtoms();
+    std::vector<std::string> result_string;
+    for (const auto &atom : result.atoms()) {
+        result_string.push_back(atom->getSymbol());
+    }
+
+    cout << "\n molecule: " <<endl;
+    for ( string idx : result_string )
+        cout << idx;
+
+
     return 0;
 }

@@ -15,7 +15,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp" "CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o" "gcc" "CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o.d"
   "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_rotations.cpp" "CMakeFiles/testFra.dir/src/gen_rotations.cpp.o" "gcc" "CMakeFiles/testFra.dir/src/gen_rotations.cpp.o.d"
   "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/hood.cpp" "CMakeFiles/testFra.dir/src/hood.cpp.o" "gcc" "CMakeFiles/testFra.dir/src/hood.cpp.o.d"
-  "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mc_split.cpp" "CMakeFiles/testFra.dir/src/mc_split.cpp.o" "gcc" "CMakeFiles/testFra.dir/src/mc_split.cpp.o.d"
   "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/search_mcs.cpp" "CMakeFiles/testFra.dir/src/search_mcs.cpp.o" "gcc" "CMakeFiles/testFra.dir/src/search_mcs.cpp.o.d"
   "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/select_label.cpp" "CMakeFiles/testFra.dir/src/select_label.cpp.o" "gcc" "CMakeFiles/testFra.dir/src/select_label.cpp.o.d"
   "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/select_vertex.cpp" "CMakeFiles/testFra.dir/src/select_vertex.cpp.o" "gcc" "CMakeFiles/testFra.dir/src/select_vertex.cpp.o.d"
