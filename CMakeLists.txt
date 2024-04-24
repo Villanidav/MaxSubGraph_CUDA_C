@@ -118,6 +118,11 @@ add_executable(testFra ${header_files} "${source_path}/testFra.cpp"
         "${source_path}/gen_ring_classes.cpp"
         "${source_path}/gen_rotations.cpp"
         "${source_path}/search_mcs.cpp"
+<<<<<<< HEAD
+        "${source_path}/mol_mcs.cpp"
+        src/mc_split.cpp
+=======
+>>>>>>> origin/main
 )
 
 set_target_properties(test PROPERTIES

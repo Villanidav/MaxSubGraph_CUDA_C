@@ -284,6 +284,11 @@ def mol_mcs(mol0, mol1, bond_match=1, ring_match=1, return_map=0):
         g0 = Chem.rdmolops.GetAdjacencyMatrix(mol0)
         g1 = Chem.rdmolops.GetAdjacencyMatrix(mol1)
 
+    for line in g1:
+        print("\n")
+        for idx in line:
+            print(idx, end=" ")
+
     if ring_match:
         # AtomRings() returns a list of rings, represented as a list containing the indexes of atom members
         ring_info = [mol0.GetRingInfo().AtomRings(), mol1.GetRingInfo().AtomRings()]
@@ -340,6 +345,7 @@ initial_label = gen_initial_labels(l0,l1,gen_classes)
 """
 
 
-result = smiles_mcs("C[C@H](F)N","CN",bond_match=1, ring_match=1)
+result = smiles_mcs("C[C@H](F)N"," CC(=O)NCCC1=CNc2c1cc(OC)cc2",bond_match=1, ring_match=1)
+
 print(result)
 

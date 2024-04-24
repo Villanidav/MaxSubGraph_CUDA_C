@@ -117,7 +117,9 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
 
 
 
-
+std::vector<std::pair<int, int>> getIncumbent(){
+    return incumbent;
+}
 
 
 
