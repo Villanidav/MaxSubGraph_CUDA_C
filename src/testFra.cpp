@@ -1,7 +1,8 @@
 #include <iostream>
 #include "test.hpp"
+#include "testFra.hpp"
 
-
+std::vector<std::pair<int, int>> getIncumbent();
 
 int main() {
 /* TESTING CREAZIONE LABEL
@@ -101,12 +102,17 @@ int main() {
 */
 
     std::string s0 = "C[C@H](F)N";
-    std::string s1 = "CN";
+    std::string s1 = " CC(=O)NCCC1=CNc2c1cc(OC)cc2";
 
     std::pair<RWMol, RWMol> molecules = smiles_mcs(s0, s1, 1, 1);
     RWMol molA = molecules.first;  // Access the first molecule
     RWMol molB = molecules.second; // Access the second molecule
 
+    mol_mcs(molA,molB,1,1,0);
+
+    std::vector<std::pair<int, int>> inc = getIncumbent();
+
+    std::cout << "\n" <<inc.size();
 
 
     return 0;

@@ -20,8 +20,8 @@ vector<vector<double>> getAdjacencyMatrix(const RWMol& mol) {
     vector<vector<double>> adjacencyMatrix(numAtoms, vector<double>(numAtoms, 0.0));
 
     // Iterare su tutti i legami nella molecola e aggiornare la matrice di adiacenza con il peso dei legami
-    for (RWMol::BondIterator bondIt = mol.beginBonds(); bondIt != mol.endBonds(); ++bondIt) {
-        const Bond *bond = *bondIt;
+    // Iterare su tutti i legami nella molecola e aggiornare la matrice di adiacenza con il peso dei legami
+    for (const Bond *bond : mol.bonds()) {
         const Atom *beginAtom = bond->getBeginAtom();
         const Atom *endAtom = bond->getEndAtom();
         Bond::BondType bondType = bond->getBondType();
@@ -65,7 +65,7 @@ void mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match=
     std::vector<std::vector<std::string>> label_ring_data = {l0, l1};
 
 
-    std::vector<std::vector<double>> go,g1;
+    std::vector<std::vector<double>> g0,g1;
     if (bond_match) {
         g0 = getAdjacencyMatrix(mol0);
         g1 = getAdjacencyMatrix(mol1);
@@ -74,10 +74,18 @@ void mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match=
         g1 = getAdjacencyMatrix(mol1);
     }
 
+    std::cout<<"\n adiacent Matrix";
+    for (vector<double> line : g1){
+        std::cout<<"\n";
+        for(double i : line){
+            std::cout<<" "<<i;
+        }
+    }
+/*
     if (ring_match) {
-        std::vector<std::vector<int>> ring_info = {mol0.getRingInfo()->atomRings(), mol1.getRingInfo()->atomRings()};
+        std::vector<std::vector<int>> ring_info = gen_ring_classes(mol0,mol1);
         for (size_t mol_idx = 0; mol_idx < 2; ++mol_idx) {
-            for (const auto &ring : ring_info[mol_idx]) {
+            for (const auto& ring : ring_info[mol_idx]) {
                 for (int atom_idx : ring) {
                     if (label_ring_data[mol_idx][atom_idx].back() != 'R') {
                         label_ring_data[mol_idx][atom_idx] += 'R';
@@ -86,6 +94,7 @@ void mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match=
             }
         }
     }
+*/
 
     std::vector<std::vector<int>> ring_classes = gen_ring_classes(mol0, mol1);
     //ho cambiato la seguente riga dal codice Python
@@ -123,6 +132,6 @@ void mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match=
      */
 
 
-    return
+    return ;
 }
 

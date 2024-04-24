@@ -137,12 +137,12 @@ CMakeFiles/test.dir/clean:
 CMakeFiles/testFra.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=18,19,20,21,22,23,24,25,26,27,28,29,30,31 "Built target testFra"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=18,19,20,21,22,23,24,25,26,27,28,29,30,31,32 "Built target testFra"
 .PHONY : CMakeFiles/testFra.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/testFra.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles 15
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/testFra.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles 0
 .PHONY : CMakeFiles/testFra.dir/rule

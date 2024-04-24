@@ -398,6 +398,30 @@ src/mc_split.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mc_split.cpp.s
 .PHONY : src/mc_split.cpp.s
 
+src/mol_mcs.o: src/mol_mcs.cpp.o
+.PHONY : src/mol_mcs.o
+
+# target to build an object file
+src/mol_mcs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mol_mcs.cpp.o
+.PHONY : src/mol_mcs.cpp.o
+
+src/mol_mcs.i: src/mol_mcs.cpp.i
+.PHONY : src/mol_mcs.i
+
+# target to preprocess a source file
+src/mol_mcs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mol_mcs.cpp.i
+.PHONY : src/mol_mcs.cpp.i
+
+src/mol_mcs.s: src/mol_mcs.cpp.s
+.PHONY : src/mol_mcs.s
+
+# target to generate assembly for a file
+src/mol_mcs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mol_mcs.cpp.s
+.PHONY : src/mol_mcs.cpp.s
+
 src/search_mcs.o: src/search_mcs.cpp.o
 .PHONY : src/search_mcs.o
 
@@ -592,6 +616,9 @@ help:
 	@echo "... src/mc_split.o"
 	@echo "... src/mc_split.i"
 	@echo "... src/mc_split.s"
+	@echo "... src/mol_mcs.o"
+	@echo "... src/mol_mcs.i"
+	@echo "... src/mol_mcs.s"
 	@echo "... src/search_mcs.o"
 	@echo "... src/search_mcs.i"
 	@echo "... src/search_mcs.s"

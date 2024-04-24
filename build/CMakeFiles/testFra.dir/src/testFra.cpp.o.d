@@ -1514,4 +1514,5 @@ CMakeFiles/testFra.dir/src/testFra.cpp.o: \
  /home/francesco/miniconda3/envs/my-rdkit-env/include/rdkit/GraphMol/Atom.h \
  /home/francesco/miniconda3/envs/my-rdkit-env/include/rdkit/GraphMol/Bond.h \
  /home/francesco/miniconda3/envs/my-rdkit-env/include/rdkit/Numerics/Matrix.h \
- /home/francesco/miniconda3/envs/my-rdkit-env/include/rdkit/Numerics/Vector.h
+ /home/francesco/miniconda3/envs/my-rdkit-env/include/rdkit/Numerics/Vector.h \
+ /home/francesco/Desktop/MaxSubGraph_CUDA_C/src/testFra.hpp
