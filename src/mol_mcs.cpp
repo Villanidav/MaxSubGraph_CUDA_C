@@ -14,6 +14,7 @@
 #include <GraphMol/RingInfo.h>
 #include <GraphMol/Bond.h>
 
+using namespace RDKit;
 
 vector<vector<double>> getAdjacencyMatrix(const RWMol& mol) {
     int numAtoms = mol.getNumAtoms();

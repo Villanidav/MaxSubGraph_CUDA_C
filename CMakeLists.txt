@@ -69,6 +69,8 @@ list(APPEND source_filess
 # define the target and its properties
 add_executable(subgraph_search ${header_files} "${source_path}/main.cpp" ${source_files}
         src/mc_split.cpp
+        src/mol_mcs.cpp
+        src/g2mol.cpp
 )
 set_target_properties(subgraph_search
   PROPERTIES
@@ -93,6 +95,7 @@ add_executable(test ${header_files} "${source_path}/test.cpp"
         "${source_path}/search_mcs.cpp"
 
         src/mc_split.cpp
+        src/g2mol.cpp
 )
 set_target_properties(test PROPERTIES
     COMPILE_DEFINITIONS "TESTING"
@@ -115,6 +118,7 @@ add_executable(testFra ${header_files} "${source_path}/testFra.cpp"
         "${source_path}/gen_rotations.cpp"
         "${source_path}/search_mcs.cpp"
         src/mc_split.cpp
+        src/g2mol.cpp
 )
 
 set_target_properties(test PROPERTIES
@@ -154,21 +158,25 @@ include_directories(subgraph_search PUBLIC "${RDKIT_INSTALL_PREFIX}/include/rdki
 target_link_directories(subgraph_search PUBLIC "${RDKIT_INSTALL_PREFIX}/lib")
 target_link_directories(subgraph_search PUBLIC "${RDKIT_INSTALL_PREFIX}/lib64")
 target_link_libraries(subgraph_search PUBLIC
+        -lRDKit
         -lRDKitFileParsers
         -lRDKitGraphMol
         -lRDKitRDGeneral
         -lRDKitSmilesParse
         -lRDKitSubstructMatch
+        -lRDKitChem
 )
 include_directories(test PUBLIC "${RDKIT_INSTALL_PREFIX}/include/rdkit")
 target_link_directories(test PUBLIC "${RDKIT_INSTALL_PREFIX}/lib")
 target_link_directories(test PUBLIC "${RDKIT_INSTALL_PREFIX}/lib64")
 target_link_libraries(test PUBLIC
+        -lRDKit
         -lRDKitFileParsers
         -lRDKitGraphMol
         -lRDKitRDGeneral
         -lRDKitSmilesParse
         -lRDKitSubstructMatch
+        -lRDKitChem
 )
 
 #modificato togliendo target_ prima di link in ogni punto
@@ -177,11 +185,13 @@ include_directories(testFra PUBLIC "${RDKIT_INSTALL_PREFIX}/include/rdkit")
 target_link_directories(testFra PUBLIC "${RDKIT_INSTALL_PREFIX}/lib")
 target_link_directories(testFra PUBLIC "${RDKIT_INSTALL_PREFIX}/lib64")
 target_link_libraries(testFra PUBLIC
+        -lRDKit
         -lRDKitFileParsers
         -lRDKitGraphMol
         -lRDKitRDGeneral
         -lRDKitSmilesParse
         -lRDKitSubstructMatch
+        -lRDKitChem
 )
 
 message(STATUS "RDKit Include Directories: ${RDKit_INCLUDE_DIRS}")

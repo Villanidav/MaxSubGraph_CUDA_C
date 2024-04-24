@@ -157,13 +157,17 @@ int main()
     std::cout << std::endl;*/
 
     //TEST SMILES_MCS
-    string mol = "CC(=O)O";
-    std::pair<RWMol, RWMol> molecules = smiles_mcs(mol, mol, 1, 1);
+    std::string s0 = "C[C@H](F)N";
+    std::string s1 = "CN";
+    std::pair<RWMol, RWMol> molecules = smiles_mcs(s0, s1, 1, 1);
     RWMol molA = molecules.first;  // Access the first molecule
     RWMol molB = molecules.second; // Access the second molecule
 
     for ( Atom *a : molA.atoms() ) {
-        cout<<"\natomo: "<< a->getSymbol();
+        cout<<"\natomo prima molecola: "<< a->getSymbol();
+    }
+    for ( Atom *b : molB.atoms() ) {
+        cout<<"\natomo seconda molecola: "<< b->getSymbol();
     }
 
     return 0;
