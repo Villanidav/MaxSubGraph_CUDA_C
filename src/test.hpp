@@ -32,7 +32,7 @@ int calc_bound(const std::vector<LabelClass>& label_classes);
 
 std::vector<double> gen_bond_labels(const std::vector<std::vector<double> >& g0, const std::vector<std::vector<double> >& g1);
 
-std::pair<RWMol, RWMol> smiles_mcs( std::string& smile0,  std::string& smile1, int bond_match = 1, int ring_match = 1);
+ROMol smiles_mcs( std::string& smile0,  std::string& smile1, int bond_match = 1, int ring_match = 1);
 
 std::vector<LabelClass> gen_initial_labels(const std::vector<std::string>& l0, const std::vector<std::string>& l1,     std::vector<std::vector<int> >& ring_classes);
 
@@ -47,4 +47,4 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
 
 RDKit::ROMol g2mol( std::vector<std::string>& labels,  std::vector<std::vector<double>>& adj) ;
 
-void mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match=1, int ring_match=1, int return_map=0) ;
+ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match=1, int ring_match=1, int return_map=0) ;

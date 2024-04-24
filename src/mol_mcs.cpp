@@ -7,22 +7,16 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <GraphMol/GraphMol.h>
-#include <GraphMol/FileParsers/MolSupplier.h>
-#include <GraphMol/SmilesParse/SmilesParse.h>
-#include <GraphMol/MolOps.h>
-#include <GraphMol/RingInfo.h>
-#include <GraphMol/Bond.h>
 
-using namespace RDKit;
+
 
 vector<vector<double>> getAdjacencyMatrix(const RWMol& mol) {
     int numAtoms = mol.getNumAtoms();
-    vector<vector<double>> adjacencyMatrix(numAtoms, vector<double>(numAtoms, 0.0));
+    vector adjacencyMatrix(numAtoms, vector<double>(numAtoms, 0.0));
 
     // Iterare su tutti i legami nella molecola e aggiornare la matrice di adiacenza con il peso dei legami
-    for (RWMol::BondIterator bondIt = mol.beginBonds(); bondIt != mol.endBonds(); ++bondIt) {
-        const Bond *bond = *bondIt;
+    // Iterare su tutti i legami nella molecola e aggiornare la matrice di adiacenza con il peso dei legami
+    for (const Bond *bond : mol.bonds()) {
         const Atom *beginAtom = bond->getBeginAtom();
         const Atom *endAtom = bond->getEndAtom();
         Bond::BondType bondType = bond->getBondType();
@@ -40,6 +34,15 @@ vector<vector<double>> getAdjacencyMatrix(const RWMol& mol) {
         } else if (bondType == Bond::AROMATIC) {
             bondWeight = 1.5; // Peso per legame aromatico
         }
+        else if (bondType == Bond::QUADRUPLE) {
+            bondWeight = 4.0; // Peso per legame aromatico
+        }
+        else if (bondType == Bond::QUINTUPLE) {
+            bondWeight = 5.0; // Peso per legame aromatico
+        }
+        else if (bondType == Bond::HEXTUPLE) {
+            bondWeight = 6.0; // Peso per legame aromatico
+        }
 
         // Aggiornare la matrice di adiacenza
         adjacencyMatrix[beginAtomIdx][endAtomIdx] = bondWeight;
@@ -52,7 +55,7 @@ vector<vector<double>> getAdjacencyMatrix(const RWMol& mol) {
 
 
 //ho cambiato la return di questa funzione per fini di test
-void mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match=1, int ring_match=1, int return_map=0) {
+ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match, int ring_match, int return_map) {
     std::vector<RDKit::RWMol> mols = {mol0, mol1};
 
     std::vector<std::string> l0, l1;
@@ -66,7 +69,7 @@ void mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match=
     std::vector<std::vector<std::string>> label_ring_data = {l0, l1};
 
 
-    std::vector<std::vector<double>> go,g1;
+    std::vector<std::vector<double>> g0,g1;
     if (bond_match) {
         g0 = getAdjacencyMatrix(mol0);
         g1 = getAdjacencyMatrix(mol1);
@@ -75,10 +78,19 @@ void mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match=
         g1 = getAdjacencyMatrix(mol1);
     }
 
+    //print matrix
+    /*std::cout<<"\n adiacent Matrix";
+    for (vector<double> line : g1){
+        std::cout<<"\n";
+        for(double i : line){
+            std::cout<<" "<<i;
+        }
+    }*/
+
     if (ring_match) {
-        std::vector<std::vector<int>> ring_info = {mol0.getRingInfo()->atomRings(), mol1.getRingInfo()->atomRings()};
+        std::vector<std::vector<int>> ring_info = gen_ring_classes(mol0,mol1);
         for (size_t mol_idx = 0; mol_idx < 2; ++mol_idx) {
-            for (const auto &ring : ring_info[mol_idx]) {
+            for (const auto& ring : ring_info[mol_idx]) {
                 for (int atom_idx : ring) {
                     if (label_ring_data[mol_idx][atom_idx].back() != 'R') {
                         label_ring_data[mol_idx][atom_idx] += 'R';
@@ -88,11 +100,12 @@ void mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match=
         }
     }
 
+
     std::vector<std::vector<int>> ring_classes = gen_ring_classes(mol0, mol1);
     //ho cambiato la seguente riga dal codice Python
     std::vector<std::pair<int, int>> mapping = mc_split(g0, g1, l0, l1, ring_classes);
 
-    /*
+
     std::sort(mapping.begin(), mapping.end());
 
     std::vector<int> mapped_atom_idxs_g0;
@@ -105,7 +118,7 @@ void mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match=
         mcs_labels.push_back(l0[idx_g0]);
     }
 
-    RDKit::INT_MATRIX mcs_matrix = g0;
+    vector<vector<double>> mcs_matrix = g0;
     for (int idx = g0.size() - 1; idx >= 0; --idx) {
         if (std::find(mapped_atom_idxs_g0.begin(), mapped_atom_idxs_g0.end(), idx) == mapped_atom_idxs_g0.end()) {
             mcs_matrix.erase(mcs_matrix.begin() + idx);
@@ -115,15 +128,13 @@ void mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match=
         }
     }
 
-    RDKit::RWMol mcs = g2mol(mcs_labels, mcs_matrix);
-    if (return_map) {
-        // return incumbent
-    }
+    RDKit::ROMol mcs = g2mol(mcs_labels, mcs_matrix);
+
+    /*if (return_map) {
+         //return incumbent;
+    }*/
 
     return mcs;
-     */
 
 
-    return
 }
-
