@@ -156,6 +156,22 @@ build CMakeFiles/test.dir/src/select_label.cpp.o: CXX_COMPILER__test_unscanned_D
   OBJECT_DIR = CMakeFiles/test.dir
   OBJECT_FILE_DIR = CMakeFiles/test.dir/src
 
+build CMakeFiles/test.dir/src/gen_initial_labels.cpp.o: CXX_COMPILER__test_unscanned_Debug /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_initial_labels.cpp || cmake_object_order_depends_target_test
+  DEFINES = -DTESTING
+  DEP_FILE = CMakeFiles/test.dir/src/gen_initial_labels.cpp.o.d
+  FLAGS = -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -std=c++17 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -fdiagnostics-color=always
+  INCLUDES = -I/usr/local/include -I/home/davide/miniconda3/include/rdkit -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra
+  OBJECT_DIR = CMakeFiles/test.dir
+  OBJECT_FILE_DIR = CMakeFiles/test.dir/src
+
+build CMakeFiles/test.dir/src/gen_ring_classes.cpp.o: CXX_COMPILER__test_unscanned_Debug /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp || cmake_object_order_depends_target_test
+  DEFINES = -DTESTING
+  DEP_FILE = CMakeFiles/test.dir/src/gen_ring_classes.cpp.o.d
+  FLAGS = -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -std=c++17 -fdiagnostics-color=always -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -fdiagnostics-color=always
+  INCLUDES = -I/usr/local/include -I/home/davide/miniconda3/include/rdkit -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra
+  OBJECT_DIR = CMakeFiles/test.dir
+  OBJECT_FILE_DIR = CMakeFiles/test.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target test
@@ -164,7 +180,7 @@ build CMakeFiles/test.dir/src/select_label.cpp.o: CXX_COMPILER__test_unscanned_D
 #############################################
 # Link the executable test
 
-build test: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/src/test.cpp.o CMakeFiles/test.dir/src/gen_bond_labels.cpp.o CMakeFiles/test.dir/src/gen_rotations.cpp.o CMakeFiles/test.dir/src/select_vertex.cpp.o CMakeFiles/test.dir/src/hood.cpp.o CMakeFiles/test.dir/src/Label.cpp.o CMakeFiles/test.dir/src/smiles_mcs.cpp.o CMakeFiles/test.dir/src/calc_bound.cpp.o CMakeFiles/test.dir/src/select_label.cpp.o
+build test: CXX_EXECUTABLE_LINKER__test_Debug CMakeFiles/test.dir/src/test.cpp.o CMakeFiles/test.dir/src/gen_bond_labels.cpp.o CMakeFiles/test.dir/src/gen_rotations.cpp.o CMakeFiles/test.dir/src/select_vertex.cpp.o CMakeFiles/test.dir/src/hood.cpp.o CMakeFiles/test.dir/src/Label.cpp.o CMakeFiles/test.dir/src/smiles_mcs.cpp.o CMakeFiles/test.dir/src/calc_bound.cpp.o CMakeFiles/test.dir/src/select_label.cpp.o CMakeFiles/test.dir/src/gen_initial_labels.cpp.o CMakeFiles/test.dir/src/gen_ring_classes.cpp.o
   FLAGS = -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g
   LINK_FLAGS = -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/davide/miniconda3/lib -Wl,-rpath-link,/home/davide/miniconda3/lib -L/home/davide/miniconda3/lib
   LINK_LIBRARIES = -Wl,-rpath,/home/davide/miniconda3/lib64  -lRDKitFileParsers  -lRDKitGraphMol  -lRDKitRDGeneral  -lRDKitSmilesParse  -lRDKitSubstructMatch
