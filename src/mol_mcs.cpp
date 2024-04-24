@@ -81,7 +81,7 @@ void mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match=
             std::cout<<" "<<i;
         }
     }
-/*
+/*      Sta parte non serve ad un cazzo è inutile e genera errori
     if (ring_match) {
         std::vector<std::vector<int>> ring_info = gen_ring_classes(mol0,mol1);
         for (size_t mol_idx = 0; mol_idx < 2; ++mol_idx) {
