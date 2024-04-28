@@ -170,8 +170,8 @@ int main()
         cout<<"\natomo seconda molecola: "<< b->getSymbol();
     }*/
 
-    string smile0 = "C[C@H](F)N";
-    string smile1 = "CC(=O)NCCC1=CNc2c1cc(OC)cc2";
+    string smile0 = "CN(c1ccc(cc1)c2nnn(CC(=O)Nc3ccc4nc(oc4c3)c5ccccc5Cl)n2)c6cc(C)c(N)cn6";
+    string smile1 = "O=C(Cn1nnc(n1)c2ccc(Nc3ccccn3)cc2)Nc4ccc5nc(oc5c4)c6ccccc6";
     ROMol result = smiles_mcs(smile0, smile1, 1,1);
 
     cout << "\n" << result.getNumAtoms();

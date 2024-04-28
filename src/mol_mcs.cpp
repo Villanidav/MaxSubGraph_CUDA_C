@@ -148,9 +148,11 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
     if( !ring_classes.empty() ){
         for ( std::vector<int> r : ring_classes ) {
             cout << "[" ;
-            for ( int idx : r)
-            {cout << idx ;}
-            cout << "]," ;
+            if( !r.empty() ) {
+                for ( int idx : r)
+                {cout << idx ;}
+                cout << "]," ;
+            }
         }
 
     }    cout << "]" ;

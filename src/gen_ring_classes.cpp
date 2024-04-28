@@ -28,68 +28,78 @@ std::vector<std::vector<int>> gen_ring_classes(const RDKit::RWMol& mol0, const R
             cout << a ;
         cout << "] " <<endl;
     }
+    cout << "DEBAGGGGGGGGG111" <<endl;
     std::vector<std::vector<int> >ring_comp_m0; // Initialize with -1
-    for ( std::vector<int> r : ring_info_m0 ) {
-        for ( int a : r ) {
-            ring_comp_m0.at(a) = {-1};
-        }
-    }
 
+    for ( std::vector<int> r : ring_info_m0 ) {
+        if( !r.empty() ) {
+            for ( int a : r ) {
+                ring_comp_m0.at(a) = {-1};
+            }
+        }
+
+    }
+    cout << "DEBAGGGGGGGGG" <<endl;
     for (const std::vector<int>& r0 : ring_info_m0) {
         std::string r0_label;
-        for (int atomIdx : r0) {
-            r0_label += l0[atomIdx];
+        if( !r0.empty() ) {
+            for (int atomIdx : r0) {
+                r0_label += l0[atomIdx];
+            }
         }
-
+        cout << "DEBAGGGGGGGGG 222" <<endl;
         std::string r0_label_rev = r0_label;
         std::reverse(r0_label_rev.begin(), r0_label_rev.end());
 
         for (const std::vector<int>& r1 : ring_info_m1) {
-            if (r0.size() == r1.size()) {
-                std::string r1_label;
-                for (int atomIdx : r1) {
-                    r1_label += l1[atomIdx];
-                }
-
-                std::vector<std::pair<std::string, int>> rotations = gen_rotations(r0_label);
-                std::vector<std::pair<std::string, int>> inv_rotations = gen_rotations(r0_label_rev);
-
-                std::vector<std::pair<std::string, int>> r0_rots;
-                std::vector<std::pair<std::string, int>> r0_rev_rots;
-
-                for (const auto& rot : rotations) {
-                    if (r1_label == rot.first) {
-                        r0_rots.push_back(rot);
+            if( !r1.empty() ) {
+                if (r0.size() == r1.size()) {
+                    std::string r1_label;
+                    for (int atomIdx : r1) {
+                        r1_label += l1[atomIdx];
                     }
-                }
-                for (const auto& rot : inv_rotations) {
-                    if (r1_label == rot.first) {
-                        r0_rev_rots.push_back(rot);
-                    }
-                }
 
-                for (const auto& rot : r0_rots) {
-                    for (size_t idx = 0; idx < r0.size(); ++idx) {
-                        int targetIdx = (idx - rot.second + r1.size()) % r1.size();
-                        if (ring_comp_m0[r0[idx]][0] == -1) {
-                            ring_comp_m0[r0[idx]][0] = r1[targetIdx];
-                        } else {
-                            ring_comp_m0[r0[idx]].push_back(r1[targetIdx]);
+                    std::vector<std::pair<std::string, int>> rotations = gen_rotations(r0_label);
+                    std::vector<std::pair<std::string, int>> inv_rotations = gen_rotations(r0_label_rev);
+
+                    std::vector<std::pair<std::string, int>> r0_rots;
+                    std::vector<std::pair<std::string, int>> r0_rev_rots;
+
+                    for (const auto& rot : rotations) {
+                        if (r1_label == rot.first) {
+                            r0_rots.push_back(rot);
                         }
                     }
-                }
+                    for (const auto& rot : inv_rotations) {
+                        if (r1_label == rot.first) {
+                            r0_rev_rots.push_back(rot);
+                        }
+                    }
 
-                for (const auto& rot : r0_rev_rots) {
-                    for (size_t idx = 0; idx < r0.size(); ++idx) {
-                        int targetIdx = (r1.size() - idx - rot.second + r1.size()) % r1.size();
-                        if (ring_comp_m0[r0[idx]][0] == -1) {
-                            ring_comp_m0[r0[idx]][0] = r1[targetIdx];
-                        } else {
-                            ring_comp_m0[r0[idx]].push_back(r1[targetIdx]);
+                    for (const auto& rot : r0_rots) {
+                        for (size_t idx = 0; idx < r0.size(); ++idx) {
+                            int targetIdx = (idx - rot.second + r1.size()) % r1.size();
+                            if (ring_comp_m0[r0[idx]][0] == -1) {
+                                ring_comp_m0[r0[idx]][0] = r1[targetIdx];
+                            } else {
+                                ring_comp_m0[r0[idx]].push_back(r1[targetIdx]);
+                            }
+                        }
+                    }
+
+                    for (const auto& rot : r0_rev_rots) {
+                        for (size_t idx = 0; idx < r0.size(); ++idx) {
+                            int targetIdx = (r1.size() - idx - rot.second + r1.size()) % r1.size();
+                            if (ring_comp_m0[r0[idx]][0] == -1) {
+                                ring_comp_m0[r0[idx]][0] = r1[targetIdx];
+                            } else {
+                                ring_comp_m0[r0[idx]].push_back(r1[targetIdx]);
+                            }
                         }
                     }
                 }
             }
+
         }
     }
 
