@@ -66,7 +66,7 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
         l1.push_back(atom->getSymbol());
     }
 
-    std::vector label_ring_data = {l0, l1};
+    std::pair<std::vector<std::string>, std::vector<std::string>> label_ring_data = {l0, l1};
 
     //stampa per prove
     cout << "\n first molecule: " <<endl;
@@ -108,34 +108,53 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
     cout << " INIZIO COSA ANELLI  " << endl;
 
     if (ring_match) {
-        std::vector<std::vector<int>> ring_info;
+        std::pair< std::vector<std::vector<int> > , std::vector<std::vector<int>> > ring_info ;
 
         for ( const std::vector<int>& var : mol0.getRingInfo()->atomRings() )
-            ring_info.push_back(var);
+            ring_info.first.push_back(var);
 
         for ( const std::vector<int>& var : mol1.getRingInfo()->atomRings() )
-            ring_info.push_back(var);
+            ring_info.second.push_back(var);
 
 
         //cout << "  SIZE : " << ring_info.size() <<endl;
-        for (size_t mol_idx = 0; mol_idx < 2; ++mol_idx) {
-            cout << mol_idx <<endl;
-            if( !label_ring_data[mol_idx].at(0).empty() ) {
-                for (auto & ring : ring_info) {
-                    for ( int atm_idx : ring ) {
-                        if (mol_idx < label_ring_data.size() &&  // Check if molecule index is valid
-                            !label_ring_data[mol_idx].empty() && // Check if sub-vector is not empty
-                            atm_idx < label_ring_data[mol_idx].size()) { // Check if atom index is valid
+        if( !label_ring_data.first.at(0).empty() ) {
+            for (auto & ring : ring_info.first) {
+                for ( int atm_idx : ring ) {
+                    if (  // Check if molecule index is valid
+                        !label_ring_data.first.empty() && // Check if sub-vector is not empty
+                        atm_idx < label_ring_data.first.size()) { // Check if atom index is valid
 
-                            if (!label_ring_data[mol_idx][atm_idx].empty() && label_ring_data[mol_idx][atm_idx].back() != 'R') {
-                                label_ring_data[mol_idx][atm_idx].push_back('R');
-                            }
-                            }
-                    }
+                        if (!label_ring_data.first[atm_idx].empty() && label_ring_data.first[atm_idx].back() != 'R') {
+                            label_ring_data.first[atm_idx].push_back('R');
+                        }
+                        }
+                }
+            }
+        }
+        if( !label_ring_data.second.at(0).empty() ) {
+            for (auto & ring : ring_info.second) {
+                for ( int atm_idx : ring ) {
+                    if (  // Check if molecule index is valid
+                        !label_ring_data.second.empty() && // Check if sub-vector is not empty
+                        atm_idx < label_ring_data.second.size()) { // Check if atom index is valid
+
+                        if (!label_ring_data.second[atm_idx].empty() && label_ring_data.second[atm_idx].back() != 'R') {
+                            label_ring_data.second[atm_idx].push_back('R');
+                        }
+                        }
                 }
             }
         }
     }
+
+    cout << " LABEL RING DATA \n";
+    for ( string r : label_ring_data.first)
+        cout<< " "<< r;
+    cout << "\n 2 \n";
+    for ( string r : label_ring_data.second)
+        cout<< " "<< r;
+
 
     cout << "\n FINE COSA ANELLI  " << endl;
 
@@ -150,7 +169,7 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
             cout << "[" ;
             if( !r.empty() ) {
                 for ( int idx : r)
-                {cout << idx ;}
+                {cout << "'" <<idx << "'" ;}
                 cout << "]," ;
             }
         }

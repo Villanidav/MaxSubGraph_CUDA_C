@@ -184,7 +184,7 @@ std::vector<std::pair<int, int>> mc_split(const std::vector<std::vector<double>>
         cout << " " <<d  ;
 
     // Search maximum common connected subgraph
-    search_mcs(g0, g1, initial_label_classes, edge_labels, {});
+    //search_mcs(g0, g1, initial_label_classes, edge_labels, {});
 
     return incumbent;
 }

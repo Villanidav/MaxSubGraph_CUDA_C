@@ -30,15 +30,19 @@ std::vector<std::vector<int>> gen_ring_classes(const RDKit::RWMol& mol0, const R
     }
     cout << "DEBAGGGGGGGGG111" <<endl;
     std::vector<std::vector<int> >ring_comp_m0; // Initialize with -1
-
+    ring_comp_m0.reserve(l0.size());
+    int i=0;
     for ( std::vector<int> r : ring_info_m0 ) {
+        cout << "\ndentro " <<endl;
         if( !r.empty() ) {
             for ( int a : r ) {
-                ring_comp_m0.at(a) = {-1};
+                ring_comp_m0.at(i).reserve(r.size());
+                cout << "\n secondo for " <<endl;
+                ring_comp_m0.at(i).at(a) = {-1};
             }
         }
-
     }
+
     cout << "DEBAGGGGGGGGG" <<endl;
     for (const std::vector<int>& r0 : ring_info_m0) {
         std::string r0_label;
