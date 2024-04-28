@@ -120,28 +120,27 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
         //cout << "  SIZE : " << ring_info.size() <<endl;
         for (size_t mol_idx = 0; mol_idx < 2; ++mol_idx) {
             cout << mol_idx <<endl;
-            for (auto & ring : ring_info) {
-                cout << "  deubg 2 : " <<endl;
-                for ( int atm_idx : ring ) {
-                    cout << "  deubg 3.1 : " <<endl;
-                    if (mol_idx < label_ring_data.size() &&  // Check if molecule index is valid
-                        !label_ring_data[mol_idx].empty() && // Check if sub-vector is not empty
-                        atm_idx < label_ring_data[mol_idx].size()) { // Check if atom index is valid
+            if( !label_ring_data[mol_idx].at(0).empty() ) {
+                for (auto & ring : ring_info) {
+                    for ( int atm_idx : ring ) {
+                        if (mol_idx < label_ring_data.size() &&  // Check if molecule index is valid
+                            !label_ring_data[mol_idx].empty() && // Check if sub-vector is not empty
+                            atm_idx < label_ring_data[mol_idx].size()) { // Check if atom index is valid
 
-                        if (!label_ring_data[mol_idx][atm_idx].empty() && label_ring_data[mol_idx][atm_idx].back() != 'R') {
-                            cout << "  dentro if : " <<endl;
-                            label_ring_data[mol_idx][atm_idx].push_back('R');
-                        }
-                        }
-                    cout << "  deubg 3.2 : " <<endl;
+                            if (!label_ring_data[mol_idx][atm_idx].empty() && label_ring_data[mol_idx][atm_idx].back() != 'R') {
+                                label_ring_data[mol_idx][atm_idx].push_back('R');
+                            }
+                            }
+                    }
                 }
             }
         }
     }
 
-    cout << " FINE COSA ANELLI  " << endl;
+    cout << "\n FINE COSA ANELLI  " << endl;
 
     //todo risolvere questione stringa inversa
+
     std::vector<std::vector<int>> ring_classes = gen_ring_classes(mol0, mol1);
 
     cout << "\n ring classes : \n " << endl;

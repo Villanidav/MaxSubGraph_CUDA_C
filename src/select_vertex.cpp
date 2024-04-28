@@ -10,12 +10,9 @@ int select_vertex(std::vector<int>& vtx_set, std::vector<std::vector<double> >& 
 
     int max_deg = -1;
     int vtx = 0;
-    cout << " dentro select vertex " <<endl;
     for (int c_vtx : vtx_set) {
         int deg = 0;
-        cout << " dentro select vertex 2" <<endl;
         for (double i : g[c_vtx]) {
-            cout << " dentro select vertex 3" <<endl;
             if (i != 0) {
                 deg += 1;
             }
@@ -26,6 +23,5 @@ int select_vertex(std::vector<int>& vtx_set, std::vector<std::vector<double> >& 
             vtx = c_vtx;
         }
     }
-    cout << " dentro select vertex 4  " << vtx ;
     return vtx;
 }

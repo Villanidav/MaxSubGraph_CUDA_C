@@ -18,16 +18,13 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
     if( !m.empty() )  bound = m.size() + calc_bound(label_classes);
     else bound = 0 + calc_bound(label_classes);
 
-    cout << "\n bound iniziale :   "<<bound ;
     if(m.size() > incumbent.size()){
         incumbent = m;
     }
-    cout << "\n size incumbent "<<incumbent.size() ;
     if(incumbent.size() >= bound){
         cout << "\n fine \n   "<<endl ;
         return;
     }
-    cout << "\n flag segfault \n   "<<endl ;
     std::vector<LabelClass*> label_class_pointers;
     if( !label_classes.empty() ) label_class_pointers.reserve(label_classes.size()); // Reserve space for the pointers
 
@@ -36,7 +33,6 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
         label_class_pointers.push_back(&item); // Add the address of each element to the new vector
     }
 
-    cout << "\n flag segfault 2\n   "<<endl ;
     LabelClass* label_class;
     //da completare
     if ( !m.empty() )  label_class = select_label(label_class_pointers, m.size());
@@ -47,25 +43,22 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
     if( label_class == nullptr ){
         return;
     }
-    cout << "\n flag segfault 3 \n   "<<label_class->g.empty() ;
     int v = select_vertex(label_class->g, g0);
     std::vector<int> vector;
     vector.push_back(v);
 
-    cout << "\n fuori da select vertex \n   " ;
 
 
     std::vector<int>  v_ring_atoms = {};
-    cout << "\n size v ring atoms "<< v_ring_atoms.empty() ;
-   if ( !label_class -> get_ring_match_data(vector).empty()    ) {
-        if(!label_class -> get_ring_match_data(vector).at(0).empty() ){
-            cout << "\n fuori da select vertex 2\n   " ;
-            v_ring_atoms = label_class -> get_ring_match_data(vector).at(0);}
+    std::vector<std::vector<int> > returned_data = {};
+    returned_data = label_class -> get_ring_match_data(vector);
+
+   if ( !returned_data.empty()    ) {
+            v_ring_atoms = label_class -> get_ring_match_data(vector).at(0);
     }
 
+    cout<< "len "<<v_ring_atoms.size()<<endl;
 
-
-    cout << "\n fuori da select vertex 2\n   " ;
     for( int w : label_class -> h){
 
         if(   !v_ring_atoms.empty()    &&
@@ -151,6 +144,25 @@ std::vector<std::pair<int, int>> mc_split(const std::vector<std::vector<double>>
     cout << "\n step up classes 2: \n " << endl;
     // Generate label data
     std::vector<LabelClass> initial_label_classes = gen_initial_labels(l0, l1, ring_classes);
+
+    for( LabelClass l : initial_label_classes ) {
+        cout<< "label : " << l.label <<endl;
+        cout<< "val in g" << endl;
+        for( int g : l.g)
+            cout<< " " << g;
+        cout<< "\nval in h" << endl;
+        for( int g : l.h)
+            cout<< " " << g;
+        cout<< "\nrings.g [" ;
+        for ( vector<int> r : l.rings_g) {
+            cout<< "["  ;
+            for ( int a : r)
+                cout<< a;
+            cout<< "]"  ;
+        }
+
+        cout<< "]" << endl;
+    }
 
     cout << "\n step up classes 3: \n " << endl;
 
