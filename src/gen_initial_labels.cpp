@@ -35,7 +35,8 @@ std::vector<LabelClass> gen_initial_labels(const std::vector<std::string>& l0, c
         for (size_t i = 0; i < l0.size(); ++i) {
             if (l0[i] == label) {
                 g_elems.push_back(i);
-                g_ring_classes.push_back(ring_classes[i]); // Assuming ring_classes access by index
+                if( !ring_classes.empty() ) g_ring_classes.push_back(ring_classes[i]); // Assuming ring_classes access by index
+
             }
         }
 

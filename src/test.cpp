@@ -171,7 +171,7 @@ int main()
     }*/
 
     string smile0 = "C[C@H](F)N";
-    string smile1 = "CN";
+    string smile1 = "CC(=O)NCCC1=CNc2c1cc(OC)cc2";
     ROMol result = smiles_mcs(smile0, smile1, 1,1);
 
     cout << "\n" << result.getNumAtoms();
@@ -182,8 +182,8 @@ int main()
 
     cout << "\n molecule: " <<endl;
     for ( string idx : result_string )
-        cout << idx;
-
+        cout <<" "<<idx;
+    cout <<endl;
 
     return 0;
 }

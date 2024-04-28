@@ -1701,12 +1701,6 @@ CMakeFiles/testFra.dir/src/calc_bound.cpp.o: ../src/calc_bound.cpp \
   /home/davide/miniconda3/include/rdkit/GraphMol/FileParsers/MolSupplier.h \
   /home/davide/miniconda3/include/rdkit/GraphMol/ROMol.h \
   /home/davide/miniconda3/include/rdkit/RDGeneral/BadFileException.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/SmilesParse/SmilesParse.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/RWMol.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/SanitException.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/GraphMol.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/Atom.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/Bond.h \
   /home/davide/miniconda3/include/rdkit/Numerics/Matrix.h \
   /home/davide/miniconda3/include/rdkit/Numerics/Vector.h
 
@@ -3235,12 +3229,6 @@ CMakeFiles/testFra.dir/src/g2mol.cpp.o: ../src/g2mol.cpp \
   /home/davide/miniconda3/include/rdkit/GraphMol/FileParsers/MolSupplier.h \
   /home/davide/miniconda3/include/rdkit/GraphMol/ROMol.h \
   /home/davide/miniconda3/include/rdkit/RDGeneral/BadFileException.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/SmilesParse/SmilesParse.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/RWMol.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/SanitException.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/GraphMol.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/Atom.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/Bond.h \
   /home/davide/miniconda3/include/rdkit/Numerics/Matrix.h \
   /home/davide/miniconda3/include/rdkit/Numerics/Vector.h \
   /home/davide/miniconda3/include/rdkit/RDGeneral/test.h
@@ -4868,12 +4856,6 @@ CMakeFiles/testFra.dir/src/gen_initial_labels.cpp.o: ../src/gen_initial_labels.c
   /home/davide/miniconda3/include/rdkit/GraphMol/FileParsers/MolSupplier.h \
   /home/davide/miniconda3/include/rdkit/GraphMol/ROMol.h \
   /home/davide/miniconda3/include/rdkit/RDGeneral/BadFileException.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/SmilesParse/SmilesParse.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/RWMol.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/SanitException.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/GraphMol.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/Atom.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/Bond.h \
   /home/davide/miniconda3/include/rdkit/Numerics/Matrix.h \
   /home/davide/miniconda3/include/rdkit/Numerics/Vector.h
 
@@ -6402,12 +6384,6 @@ CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o: ../src/gen_ring_classes.cpp \
   /home/davide/miniconda3/include/rdkit/GraphMol/FileParsers/MolSupplier.h \
   /home/davide/miniconda3/include/rdkit/GraphMol/ROMol.h \
   /home/davide/miniconda3/include/rdkit/RDGeneral/BadFileException.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/SmilesParse/SmilesParse.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/RWMol.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/SanitException.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/GraphMol.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/Atom.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/Bond.h \
   /home/davide/miniconda3/include/rdkit/Numerics/Matrix.h \
   /home/davide/miniconda3/include/rdkit/Numerics/Vector.h
 
@@ -8134,12 +8110,6 @@ CMakeFiles/testFra.dir/src/mc_split.cpp.o: ../src/mc_split.cpp \
   /home/davide/miniconda3/include/rdkit/GraphMol/FileParsers/MolSupplier.h \
   /home/davide/miniconda3/include/rdkit/GraphMol/ROMol.h \
   /home/davide/miniconda3/include/rdkit/RDGeneral/BadFileException.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/SmilesParse/SmilesParse.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/RWMol.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/SanitException.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/GraphMol.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/Atom.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/Bond.h \
   /home/davide/miniconda3/include/rdkit/Numerics/Matrix.h \
   /home/davide/miniconda3/include/rdkit/Numerics/Vector.h
 
@@ -9668,12 +9638,6 @@ CMakeFiles/testFra.dir/src/mol_mcs.cpp.o: ../src/mol_mcs.cpp \
   /home/davide/miniconda3/include/rdkit/GraphMol/FileParsers/MolSupplier.h \
   /home/davide/miniconda3/include/rdkit/GraphMol/ROMol.h \
   /home/davide/miniconda3/include/rdkit/RDGeneral/BadFileException.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/SmilesParse/SmilesParse.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/RWMol.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/SanitException.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/GraphMol.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/Atom.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/Bond.h \
   /home/davide/miniconda3/include/rdkit/Numerics/Matrix.h \
   /home/davide/miniconda3/include/rdkit/Numerics/Vector.h
 
@@ -11202,12 +11166,6 @@ CMakeFiles/testFra.dir/src/search_mcs.cpp.o: ../src/search_mcs.cpp \
   /home/davide/miniconda3/include/rdkit/GraphMol/FileParsers/MolSupplier.h \
   /home/davide/miniconda3/include/rdkit/GraphMol/ROMol.h \
   /home/davide/miniconda3/include/rdkit/RDGeneral/BadFileException.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/SmilesParse/SmilesParse.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/RWMol.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/SanitException.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/GraphMol.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/Atom.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/Bond.h \
   /home/davide/miniconda3/include/rdkit/Numerics/Matrix.h \
   /home/davide/miniconda3/include/rdkit/Numerics/Vector.h
 
@@ -12736,12 +12694,6 @@ CMakeFiles/testFra.dir/src/select_label.cpp.o: ../src/select_label.cpp \
   /home/davide/miniconda3/include/rdkit/GraphMol/FileParsers/MolSupplier.h \
   /home/davide/miniconda3/include/rdkit/GraphMol/ROMol.h \
   /home/davide/miniconda3/include/rdkit/RDGeneral/BadFileException.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/SmilesParse/SmilesParse.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/RWMol.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/SanitException.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/GraphMol.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/Atom.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/Bond.h \
   /home/davide/miniconda3/include/rdkit/Numerics/Matrix.h \
   /home/davide/miniconda3/include/rdkit/Numerics/Vector.h
 
@@ -15956,15 +15908,13 @@ CMakeFiles/testFra.dir/src/testFra.cpp.o: ../src/testFra.cpp \
   /home/davide/miniconda3/include/rdkit/GraphMol/FileParsers/MolSupplier.h \
   /home/davide/miniconda3/include/rdkit/GraphMol/ROMol.h \
   /home/davide/miniconda3/include/rdkit/RDGeneral/BadFileException.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/SmilesParse/SmilesParse.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/RWMol.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/SanitException.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/GraphMol.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/Atom.h \
-  /home/davide/miniconda3/include/rdkit/GraphMol/Bond.h \
   /home/davide/miniconda3/include/rdkit/Numerics/Matrix.h \
   /home/davide/miniconda3/include/rdkit/Numerics/Vector.h
 
+
+/home/davide/miniconda3/include/rdkit/GraphMol/SanitException.h:
+
+/home/davide/miniconda3/include/rdkit/GraphMol/SmilesParse/SmilesParse.h:
 
 ../src/smiles_mcs.cpp:
 
@@ -15987,10 +15937,6 @@ CMakeFiles/testFra.dir/src/testFra.cpp.o: ../src/testFra.cpp \
 ../src/g2mol.cpp:
 
 /home/davide/miniconda3/include/rdkit/Numerics/Matrix.h:
-
-/home/davide/miniconda3/include/rdkit/GraphMol/SanitException.h:
-
-/home/davide/miniconda3/include/rdkit/GraphMol/SmilesParse/SmilesParse.h:
 
 /home/davide/miniconda3/include/rdkit/RDGeneral/BadFileException.h:
 

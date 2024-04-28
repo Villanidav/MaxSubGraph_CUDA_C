@@ -14,7 +14,10 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
 
     cout << "\n INIZIO RICORSIONE:   "<<endl ;
     //incumbent has to be GLOBAL
-    int bound = m.size() + calc_bound(label_classes);
+    int bound;
+    if( !m.empty() )  bound = m.size() + calc_bound(label_classes);
+    else bound = 0 + calc_bound(label_classes);
+
     cout << "\n bound iniziale :   "<<bound ;
     if(m.size() > incumbent.size()){
         incumbent = m;
@@ -24,34 +27,50 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
         cout << "\n fine \n   "<<endl ;
         return;
     }
-
+    cout << "\n flag segfault \n   "<<endl ;
     std::vector<LabelClass*> label_class_pointers;
-    label_class_pointers.reserve(label_classes.size()); // Reserve space for the pointers
+    if( !label_classes.empty() ) label_class_pointers.reserve(label_classes.size()); // Reserve space for the pointers
+
 
     for (LabelClass& item : label_classes) {
         label_class_pointers.push_back(&item); // Add the address of each element to the new vector
     }
 
+    cout << "\n flag segfault 2\n   "<<endl ;
+    LabelClass* label_class;
     //da completare
-    LabelClass* label_class = select_label(label_class_pointers, m.size());
+    if ( !m.empty() )  label_class = select_label(label_class_pointers, m.size());
+    else label_class = select_label(label_class_pointers, 0);
+
 
     // label_class.size() = 0 || label_class = null
-    if(label_class == nullptr){
+    if( label_class == nullptr ){
         return;
     }
-
+    cout << "\n flag segfault 3 \n   "<<label_class->g.empty() ;
     int v = select_vertex(label_class->g, g0);
-    cout << "\n vertice selezionato : " << v;
     std::vector<int> vector;
     vector.push_back(v);
-    std::vector<int>  v_ring_atoms = label_class -> get_ring_match_data(vector).at(0);
-    cout << "\n size v ring atoms " << v_ring_atoms.at(0);
 
+    cout << "\n fuori da select vertex \n   " ;
+
+
+    std::vector<int>  v_ring_atoms = {};
+    cout << "\n size v ring atoms "<< v_ring_atoms.empty() ;
+   if ( !label_class -> get_ring_match_data(vector).empty()    ) {
+        if(!label_class -> get_ring_match_data(vector).at(0).empty() ){
+            cout << "\n fuori da select vertex 2\n   " ;
+            v_ring_atoms = label_class -> get_ring_match_data(vector).at(0);}
+    }
+
+
+
+    cout << "\n fuori da select vertex 2\n   " ;
     for( int w : label_class -> h){
 
-        if( (  v_ring_atoms.at(0) != -1  ) &&
-            //(std::find(v_ring_atoms.begin(),v_ring_atoms.end(), -1) != v_ring_atoms.end() ) ||
-            ( std::find(v_ring_atoms.begin(),v_ring_atoms.end(), w) == v_ring_atoms.end()) ){
+        if(   !v_ring_atoms.empty()    &&
+            ( std::find(v_ring_atoms.begin(), v_ring_atoms.end(), -1) == v_ring_atoms.end() ||
+             std::find(v_ring_atoms.begin(),v_ring_atoms.end(), w) == v_ring_atoms.end() ) ){
             cout << "continue : "<<endl ;
             continue;
         }
@@ -75,7 +94,7 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
                     }
                 }
                 int adj;
-                if(v_conn.size() != 0 && w_conn.size() != 0){
+                if(!v_conn.empty() && !w_conn.empty()){
                     if(edge_l != 0.0 || label.adj == 1){
                         adj = 1;
                     }else{
@@ -94,7 +113,7 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
 
         h.push_back(nuova_coppia);
 
-        cout << "\n nuova chiamata ricorsiva m:   "<<m.size() << endl ;
+        cout << "\n nuova chiamata ricorsiva m:   " << endl ;
         for ( std::pair<int, int> c : h )
             cout << c.first << " " << c.second << endl;
         search_mcs(g0, g1, l_draft, edge_labels, h );
@@ -109,7 +128,7 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
     label_class->remove(0, v);
 
 
-    if(label_class->g.size() > 0){
+    if( !label_class->g.empty() ){
         label_classes.push_back(tmp);
     }
     search_mcs(g0, g1, label_classes, edge_labels, m);
@@ -129,10 +148,11 @@ std::vector<std::pair<int, int>> mc_split(const std::vector<std::vector<double>>
                                           std::vector<std::vector<int> >& ring_classes) {
 
     incumbent.clear(); // Clear incumbent result
-
+    cout << "\n step up classes 2: \n " << endl;
     // Generate label data
     std::vector<LabelClass> initial_label_classes = gen_initial_labels(l0, l1, ring_classes);
 
+    cout << "\n step up classes 3: \n " << endl;
 
     for (LabelClass lab : initial_label_classes) {
         cout<<"\n LABEL: "<<lab.label;

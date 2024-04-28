@@ -13,9 +13,27 @@ std::vector<std::vector<int>> gen_ring_classes(const RDKit::RWMol& mol0, const R
 
     std::vector<std::vector<int>> ring_info_m0, ring_info_m1;
     ring_info_m0 = mol0.getRingInfo()->atomRings();
+    cout << "ring info m0 " <<endl;
+    for ( std::vector<int> r : ring_info_m0 ) {
+        cout << "[ " ;
+        for( int a : r )
+            cout << a ;
+        cout << "[ " <<endl;
+    }
     ring_info_m1 = mol1.getRingInfo()->atomRings();
-
-    std::vector ring_comp_m0(l0.size(), std::vector{-1}); // Initialize with -1
+    cout << "ring info m1 " <<endl;
+    for ( std::vector<int> r : ring_info_m1 ) {
+        cout << "[ " <<endl;
+        for( int a : r )
+            cout << a ;
+        cout << "] " <<endl;
+    }
+    std::vector<std::vector<int> >ring_comp_m0; // Initialize with -1
+    for ( std::vector<int> r : ring_info_m0 ) {
+        for ( int a : r ) {
+            ring_comp_m0.at(a) = {-1};
+        }
+    }
 
     for (const std::vector<int>& r0 : ring_info_m0) {
         std::string r0_label;

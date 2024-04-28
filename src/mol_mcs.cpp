@@ -56,7 +56,6 @@ vector<vector<double>> getAdjacencyMatrix(const RWMol& mol) {
 
 //ho cambiato la return di questa funzione per fini di test
 ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match, int ring_match, int return_map) {
-
     std::vector mols = {mol0, mol1};
 
     std::vector<std::string> l0, l1;
@@ -73,7 +72,7 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
     cout << "\n first molecule: " <<endl;
 
     for ( string idx : l0 )
-    cout << idx;
+        cout << idx;
 
     cout << "\n second molecule: " <<endl;
     for ( string idx : l1 )
@@ -105,35 +104,62 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
             std::cout<<" "<<i;
         }
     }
-/*
+
+    cout << " INIZIO COSA ANELLI  " << endl;
+
     if (ring_match) {
-        std::vector<std::vector<int>> ring_info = gen_ring_classes(mol0,mol1);
+        std::vector<std::vector<int>> ring_info;
+
+        for ( const std::vector<int>& var : mol0.getRingInfo()->atomRings() )
+            ring_info.push_back(var);
+
+        for ( const std::vector<int>& var : mol1.getRingInfo()->atomRings() )
+            ring_info.push_back(var);
+
+
+        //cout << "  SIZE : " << ring_info.size() <<endl;
         for (size_t mol_idx = 0; mol_idx < 2; ++mol_idx) {
-            for (const auto& ring : ring_info[mol_idx]) {
-                for (int atom_idx : ring) {
-                    if (label_ring_data[mol_idx][atom_idx].back() != 'R') {
-                        label_ring_data[mol_idx][atom_idx] += 'R';
-                    }
+            cout << mol_idx <<endl;
+            for (auto & ring : ring_info) {
+                cout << "  deubg 2 : " <<endl;
+                for ( int atm_idx : ring ) {
+                    cout << "  deubg 3.1 : " <<endl;
+                    if (mol_idx < label_ring_data.size() &&  // Check if molecule index is valid
+                        !label_ring_data[mol_idx].empty() && // Check if sub-vector is not empty
+                        atm_idx < label_ring_data[mol_idx].size()) { // Check if atom index is valid
+
+                        if (!label_ring_data[mol_idx][atm_idx].empty() && label_ring_data[mol_idx][atm_idx].back() != 'R') {
+                            cout << "  dentro if : " <<endl;
+                            label_ring_data[mol_idx][atm_idx].push_back('R');
+                        }
+                        }
+                    cout << "  deubg 3.2 : " <<endl;
                 }
             }
         }
-    }*/
+    }
+
+    cout << " FINE COSA ANELLI  " << endl;
 
     //todo risolvere questione stringa inversa
     std::vector<std::vector<int>> ring_classes = gen_ring_classes(mol0, mol1);
 
     cout << "\n ring classes : \n " << endl;
-    for ( std::vector<int> vect : ring_classes ) {
-        cout << "[" <<endl;
-        for ( int idx : vect)
-            {cout << " , " << idx ;}
-        cout << "[" <<endl;
-    }
+    cout << "[" ;
+    if( !ring_classes.empty() ){
+        for ( std::vector<int> r : ring_classes ) {
+            cout << "[" ;
+            for ( int idx : r)
+            {cout << idx ;}
+            cout << "]," ;
+        }
 
+    }    cout << "]" ;
+    cout << "\n step up classes : \n " << endl;
     //ho cambiato la seguente riga dal codice Python
     std::vector<std::pair<int, int>> mapping = mc_split(g0, g1, l0, l1, ring_classes);
 
-
+    cout << "\n step up classes : \n " << endl;
     std::sort(mapping.begin(), mapping.end());
 
     std::vector<int> mapped_atom_idxs_g0;
