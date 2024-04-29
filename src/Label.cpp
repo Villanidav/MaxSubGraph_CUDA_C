@@ -31,7 +31,7 @@ class LabelClass {
             if (it != g.end()) {
                 int idx = std::distance(g.begin(), it);
                 g.erase(it);
-                rings_g.erase(rings_g.begin() + idx);
+                rings_g[idx].erase(rings_g[idx].begin() + idx);
             }
         } else {
             auto it = std::find(h.begin(), h.end(), elem);

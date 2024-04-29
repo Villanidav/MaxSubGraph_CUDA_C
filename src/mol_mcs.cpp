@@ -162,7 +162,7 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
 
     std::vector<std::vector<int>> ring_classes = gen_ring_classes(mol0, mol1);
 
-    cout << "\n ring classes : \n " << endl;
+    /*cout << "\n ring classes : \n " << endl;
     cout << "[" ;
     if( !ring_classes.empty() ){
         for ( std::vector<int> r : ring_classes ) {
@@ -174,7 +174,7 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
             }
         }
 
-    }    cout << "]" ;
+    }    cout << "]" ;*/
     cout << "\n step up classes : \n " << endl;
     //ho cambiato la seguente riga dal codice Python
     std::vector<std::pair<int, int>> mapping = mc_split(g0, g1, label_ring_data.first , label_ring_data.second , ring_classes);

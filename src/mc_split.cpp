@@ -35,14 +35,15 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
 
     LabelClass* label_class;
     //da completare
-    if ( !m.empty() )  label_class = select_label(label_class_pointers, m.size());
-    else label_class = select_label(label_class_pointers, 0);
+    label_class = label_class_pointers.back();
+
 
 
     // label_class.size() = 0 || label_class = null
     if( label_class == nullptr ){
         return;
     }
+
     int v = select_vertex(label_class->g, g0);
     std::vector<int> vector;
     vector.push_back(v);
@@ -61,9 +62,9 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
 
     for( int w : label_class -> h){
 
-        if(   !v_ring_atoms.empty()    &&
-            ( std::find(v_ring_atoms.begin(), v_ring_atoms.end(), -1) == v_ring_atoms.end() ||
-             std::find(v_ring_atoms.begin(),v_ring_atoms.end(), w) == v_ring_atoms.end() ) ){
+        if  ( !v_ring_atoms.empty()    &&
+            ( std::find(v_ring_atoms.begin(), v_ring_atoms.end(), -1) != v_ring_atoms.end() ||
+              std::find(v_ring_atoms.begin(),v_ring_atoms.end(), w) == v_ring_atoms.end() ) ){
             cout << "continue : "<<endl ;
             continue;
         }
@@ -93,7 +94,7 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
                     }else{
                         adj = 0;
                     }
-                    LabelClass tmp(v_conn,w_conn,v_c_rings,adj=adj, label.label);
+                    LabelClass tmp(v_conn,w_conn,v_c_rings,adj, label.label);
                     l_draft.push_back(tmp);
 
                 }
@@ -113,16 +114,15 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
     }
     cout << "\n salto, fine primo w:   "<<endl ;
 
-    LabelClass tmp = *label_class;
-    auto it = std::find(label_classes.begin(), label_classes.end(), tmp);
-    if (it != label_classes.end()) {
-        label_classes.erase(it);
-    }
-    label_class->remove(0, v);
-
+    /*LabelClass tmp = *label_class;
+    for( LabelClass *c : label_class_pointers) {
+        if( c==label_class ) label_class_pointers.erase()
+    }*/
+    label_class_pointers.pop_back();
+    label_class->remove(0,v);
 
     if( !label_class->g.empty() ){
-        label_classes.push_back(tmp);
+        label_classes.push_back(*label_class);
     }
     search_mcs(g0, g1, label_classes, edge_labels, m);
 }
@@ -184,7 +184,7 @@ std::vector<std::pair<int, int>> mc_split(const std::vector<std::vector<double>>
         cout << " " <<d  ;
 
     // Search maximum common connected subgraph
-    //search_mcs(g0, g1, initial_label_classes, edge_labels, {});
+    search_mcs(g0, g1, initial_label_classes, edge_labels, {});
 
     return incumbent;
 }
