@@ -158,11 +158,11 @@
 		},
 		{
 			"isExternal" : true,
-			"path" : "/home/davide/miniconda3/lib/cmake/rdkit/rdkit-config-version.cmake"
+			"path" : "/home/francesco/miniconda3/envs/my-rdkit-env/lib/cmake/rdkit/rdkit-config-version.cmake"
 		},
 		{
 			"isExternal" : true,
-			"path" : "/home/davide/miniconda3/lib/cmake/rdkit/rdkit-config.cmake"
+			"path" : "/home/francesco/miniconda3/envs/my-rdkit-env/lib/cmake/rdkit/rdkit-config.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -221,19 +221,19 @@
 		},
 		{
 			"isExternal" : true,
-			"path" : "/usr/local/lib/cmake/Boost-1.82.0/BoostConfigVersion.cmake"
+			"path" : "/home/francesco/miniconda3/envs/my-rdkit-env/lib/cmake/Boost-1.74.0/BoostConfigVersion.cmake"
 		},
 		{
 			"isExternal" : true,
-			"path" : "/usr/local/lib/cmake/Boost-1.82.0/BoostConfig.cmake"
+			"path" : "/home/francesco/miniconda3/envs/my-rdkit-env/lib/cmake/Boost-1.74.0/BoostConfig.cmake"
 		},
 		{
 			"isExternal" : true,
-			"path" : "/usr/local/lib/cmake/boost_headers-1.82.0/boost_headers-config-version.cmake"
+			"path" : "/home/francesco/miniconda3/envs/my-rdkit-env/lib/cmake/boost_headers-1.74.0/boost_headers-config-version.cmake"
 		},
 		{
 			"isExternal" : true,
-			"path" : "/usr/local/lib/cmake/boost_headers-1.82.0/boost_headers-config.cmake"
+			"path" : "/home/francesco/miniconda3/envs/my-rdkit-env/lib/cmake/boost_headers-1.74.0/boost_headers-config.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -249,11 +249,11 @@
 		},
 		{
 			"isExternal" : true,
-			"path" : "/home/davide/miniconda3/lib/cmake/rdkit/rdkit-targets.cmake"
+			"path" : "/home/francesco/miniconda3/envs/my-rdkit-env/lib/cmake/rdkit/rdkit-targets.cmake"
 		},
 		{
 			"isExternal" : true,
-			"path" : "/home/davide/miniconda3/lib/cmake/rdkit/rdkit-targets-release.cmake"
+			"path" : "/home/francesco/miniconda3/envs/my-rdkit-env/lib/cmake/rdkit/rdkit-targets-release.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -272,26 +272,26 @@
 		},
 		{
 			"isExternal" : true,
-			"path" : "/usr/local/lib/cmake/Boost-1.82.0/BoostConfigVersion.cmake"
+			"path" : "/home/francesco/miniconda3/envs/my-rdkit-env/lib/cmake/Boost-1.74.0/BoostConfigVersion.cmake"
 		},
 		{
 			"isExternal" : true,
-			"path" : "/usr/local/lib/cmake/Boost-1.82.0/BoostConfig.cmake"
+			"path" : "/home/francesco/miniconda3/envs/my-rdkit-env/lib/cmake/Boost-1.74.0/BoostConfig.cmake"
 		},
 		{
 			"isExternal" : true,
-			"path" : "/usr/local/lib/cmake/boost_headers-1.82.0/boost_headers-config-version.cmake"
+			"path" : "/home/francesco/miniconda3/envs/my-rdkit-env/lib/cmake/boost_headers-1.74.0/boost_headers-config-version.cmake"
 		},
 		{
 			"isExternal" : true,
-			"path" : "/usr/local/lib/cmake/boost_headers-1.82.0/boost_headers-config.cmake"
+			"path" : "/home/francesco/miniconda3/envs/my-rdkit-env/lib/cmake/boost_headers-1.74.0/boost_headers-config.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
-		"source" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C"
+		"build" : "/home/francesco/Desktop/MaxSubGraph_CUDA_C/build",
+		"source" : "/home/francesco/Desktop/MaxSubGraph_CUDA_C"
 	},
 	"version" : 
 	{

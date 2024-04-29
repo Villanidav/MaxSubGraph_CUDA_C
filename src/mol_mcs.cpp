@@ -177,9 +177,9 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
     }    cout << "]" ;*/
     cout << "\n step up classes : \n " << endl;
     //ho cambiato la seguente riga dal codice Python
-    std::vector<std::pair<int, int>> mapping = mc_split(g0, g1, label_ring_data.first , label_ring_data.second , ring_classes);
+    std::vector<std::pair<int, int>> mapping = mc_split(g0, g1, label_ring_data.first, label_ring_data.second, ring_classes);
 
-    cout << "\n step up classes : \n " << endl;
+    cout << "\n step ritorno classes : \n " << endl;
     std::sort(mapping.begin(), mapping.end());
 
     std::vector<int> mapped_atom_idxs_g0;

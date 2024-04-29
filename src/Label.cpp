@@ -25,14 +25,28 @@ class LabelClass {
     
      // Remove method
     void remove(int graph, int elem) {
-        
+       
         if (graph == 0) {
-            auto it = std::find(g.begin(), g.end(), elem);
-            if (it != g.end()) {
-                int idx = std::distance(g.begin(), it);
-                g.erase(it);
-                rings_g[idx].erase(rings_g[idx].begin() + idx);
+            if(g.size() == 1){
+                std::cout << "\n if elem size == 1 => g.clear()" << g.at(0) <<"\n";
+                g.clear();
+                rings_g.clear();
+                std::cout<<"\n g empty is: "<<g.empty()<<"\n";
+            }else{
+                auto it = std::find(g.begin(), g.end(), elem);
+                
+                if (it != g.end()) {
+                    int idx = std::distance(g.begin(), it);
+                    g.erase(g.begin() + idx); 
+                    rings_g.erase(rings_g.begin() + idx);
+                }else{
+                    std::cout << "\n ERR, in Label.cpp non ho trovato l'elemento che devo cancellare:  "<<"\n";
+                    std::cout << "\n l'elemento che devo cancellare è:  " << elem<<"\n";
+                    int posizione = 0;
+                }
             }
+
+            
         } else {
             auto it = std::find(h.begin(), h.end(), elem);
             if (it != h.end()) {
