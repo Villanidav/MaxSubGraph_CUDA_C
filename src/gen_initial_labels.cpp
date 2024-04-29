@@ -5,33 +5,25 @@ using namespace std;
 #include <algorithm>
 #include <unordered_set>
 
+
 std::vector<std::string> find_common_strings(const std::vector<std::string>& l0, const std::vector<std::string>& l1) {
     // Utilizzare un set per memorizzare ed effettuare velocemente la ricerca di stringhe comuni uniche
-    std::set<std::string> common_strings;
+    std::unordered_set<std::string> common_strings(l0.begin(), l0.end());
 
-    // Aggiungere le singole lettere dalla prima molecola al set
-    for (const std::string& molecule : l0) {
-        for (char letter : molecule) {
-            std::string letter_str(1, letter); // Convertire il carattere in una stringa di lunghezza 1
-            common_strings.insert(letter_str);
-        }
-    }
-
-    // Trovare le intersezioni tra le singole lettere della seconda molecola e le stringhe nel set
+    // Vettore per memorizzare le stringhe comuni trovate
     std::vector<std::string> result;
-    for (const std::string& molecule : l1) {
-        for (char letter : molecule) {
-            std::string letter_str(1, letter); // Convertire il carattere in una stringa di lunghezza 1
-            if (common_strings.find(letter_str) != common_strings.end()) {
-                // Se la lettera è comune, aggiungila al risultato
-                result.push_back(letter_str);
-                // Rimuovi la lettera dal set per evitare duplicati
-                common_strings.erase(letter_str);
-            }
+
+    // Trovare le intersezioni tra le stringhe della seconda lista e le stringhe nel set
+    for (const std::string& str : l1) {
+        // Se la stringa è presente nel set delle stringhe comuni
+        if (common_strings.find(str) != common_strings.end()) {
+            // Aggiungila al risultato
+            result.push_back(str);
+            // Rimuovi la stringa dal set per evitare duplicati
+            common_strings.erase(str);
         }
     }
-
-    return result;
+       return result;
 }
 
 std::vector<LabelClass> gen_initial_labels(const std::vector<std::string>& l0, const std::vector<std::string>& l1,     std::vector<std::vector<int> >& ring_classes){

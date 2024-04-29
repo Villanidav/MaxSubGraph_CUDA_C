@@ -1,7 +1,7 @@
 #include <vector>
 #include "test.hpp"
 
-LabelClass* select_label(std::vector<LabelClass*>& label_classes, int map_size) {
+LabelClass *select_label(std::vector<LabelClass*>& label_classes, int map_size) {
 
     
     int min_size = 999;
@@ -16,6 +16,6 @@ LabelClass* select_label(std::vector<LabelClass*>& label_classes, int map_size) 
             }
         }
     }
-
+    
     return label;
 }

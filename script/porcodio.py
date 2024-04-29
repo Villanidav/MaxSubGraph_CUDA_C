@@ -5,6 +5,8 @@ import numpy as np
 
 # largest mapping found so far
 incumbent = []
+
+
 class LabelClass:
     # class used to represent two sets of nodes, from graphs g and h, which share the same label
     # NOTE: the actual value of the label is not needed
@@ -33,8 +35,16 @@ class LabelClass:
         res = [self.rings_g[j] for j in idxlist]
 
         return res
+    
+    def pri(self):
+        print(self.label)
+        print(self.g)
+        print(self.h)
+        print(self.rings_g)
 
 
+# generates all possible rotations of a string. Used to find all axes of symmetry in a ring.
+# Returns a list with all rotations and respective rotation amounts
 def gen_rotations(s):
     rot_len = len(s)
     tmp = s * 2
@@ -111,7 +121,6 @@ def hood(vtx, g, edge):
     return friends
 
 
-
 # A ring class is a set of equivalent rings. Two rings are part of the same class if they share the same size and the
 # same atom order. Ring equivalence classes are represented here as two arrays, one per molecule,
 # containing nothing if the atom is not part of a ring,
@@ -124,12 +133,15 @@ def gen_ring_classes(mol0, mol1):
 
     # AtomRings() returns a list of rings from the molecule containing the indexes of atom members
     ring_info_m0 = mol0.GetRingInfo().AtomRings()
+    print("ring info m0 " , ring_info_m0)
     ring_info_m1 = mol1.GetRingInfo().AtomRings()
+    print("ring info m1 " , ring_info_m1)
 
     for r0 in ring_info_m0:
         for a0 in r0:
             ring_comp_m0[a0] = [-1]
-
+    
+    print("ring comp m0 ", ring_comp_m0)
     # iterate through rings to match them to their compatibility class, marking each atom as a member
     for r0 in ring_info_m0:
 
@@ -170,6 +182,7 @@ def gen_ring_classes(mol0, mol1):
                             ring_comp_m0[a0].append(r1[(rev_idx - amt)])
     return ring_comp_m0
 
+
 # l0:   list of all labels in graph 0
 # l1:   list of all labels in graph 1
 def gen_initial_labels(l0, l1, ring_classes):
@@ -180,6 +193,7 @@ def gen_initial_labels(l0, l1, ring_classes):
     label_classes = []
 
     common_labels = list(set(l0) & set(l1))
+    print("common labels ", common_labels)
 
     for label in common_labels:
         # atoms in either molecule which do not have label correspondence are discarded, together with their ring data
@@ -193,9 +207,76 @@ def gen_initial_labels(l0, l1, ring_classes):
         label_classes.append(label_class)
     return label_classes
 
+
+# g0:   graph 0
+# g1:   graph 1
+def gen_bond_labels(g0, g1):
+    # generates bond labels based on the set of bonds common to both graphs.
+    common_labels = set([edge for row in g0 for edge in row]) & set([edge for row in g1 for edge in row])
+    return list(common_labels)
+
+
+# l:    list of graphs labels (atom symbols)
+# adj:  graphs adjacency matrix, with bond types
+def g2mol(l, adj):
+    # convert adjacency matrix and atom symbol list to rdkit mol object
+
+    # create empty editable mol object
+    mol = RWMol()
+
+    # add atoms to mol and keep track of index
+    node_to_idx = {}
+    for i in range(len(l)):
+        a = Chem.rdchem.Atom(str(l[i]))
+        mol_idx = mol.AddAtom(a)
+        node_to_idx[i] = mol_idx
+
+    # add bonds between adjacent atoms
+    for ix, row in enumerate(adj):
+        for iy, bond in enumerate(row):
+
+            # only traverse half the matrix
+            if iy <= ix:
+                continue
+
+            # add relevant bond type
+            if bond == 0:
+                continue
+            elif bond == 1.5:
+                bond_type = Chem.rdchem.BondType.AROMATIC
+                mol.AddBond(node_to_idx[ix], node_to_idx[iy], bond_type)
+            elif bond == 1:
+                bond_type = Chem.rdchem.BondType.SINGLE
+                mol.AddBond(node_to_idx[ix], node_to_idx[iy], bond_type)
+            elif bond == 2:
+                bond_type = Chem.rdchem.BondType.DOUBLE
+                mol.AddBond(node_to_idx[ix], node_to_idx[iy], bond_type)
+            elif bond == 3:
+                bond_type = Chem.rdchem.BondType.TRIPLE
+                mol.AddBond(node_to_idx[ix], node_to_idx[iy], bond_type)
+            elif bond == 4:
+                bond_type = Chem.rdchem.BondType.QUADRUPLE
+                mol.AddBond(node_to_idx[ix], node_to_idx[iy], bond_type)
+            elif bond == 5:
+                bond_type = Chem.rdchem.BondType.QUINTUPLE
+                mol.AddBond(node_to_idx[ix], node_to_idx[iy], bond_type)
+            elif bond == 6:
+                bond_type = Chem.rdchem.BondType.HEXTUPLE
+                mol.AddBond(node_to_idx[ix], node_to_idx[iy], bond_type)
+
+    # Convert RWMol to Mol object
+    mol = mol.GetMol()
+
+    return mol
+
+
+# g0, g1:           graphs
+# label_classes:    list of current label classes
+# edge_labels:      list of all edge labels common to both graphs
+# m:                current mapping of vertices being explored
 def search_mcs(g0, g1, label_classes, edge_labels, m):
     global incumbent
-
+    print("INIZIO RICORSIONE")
     # bound calculation
     bound = len(m) + calc_bound(label_classes)
 
@@ -204,6 +285,7 @@ def search_mcs(g0, g1, label_classes, edge_labels, m):
         incumbent = m
     # if the incumbent has reached the maximum calculated size given current label classes, return
     if len(incumbent) >= bound:
+        print("fine")
         return
 
     # select label form classes
@@ -217,12 +299,13 @@ def search_mcs(g0, g1, label_classes, edge_labels, m):
     v = select_vertex(label_class.g, g0)
     # get rings containing v
     v_ring_atoms = label_class.get_ring_match_data([v])[0]
-
+    print(" len " ,len(v_ring_atoms))
     # cycle through vertices in g1 with selected label
     for idx, w in enumerate(label_class.h):
         # get rings containing w
         # if v and w are not members of at least one shared ring class, v and w cannot be mapped together
         if len(v_ring_atoms) != 0 and (-1 in v_ring_atoms or w not in v_ring_atoms):
+            print("continue:")
             continue
         # label classes for the next recursive call
         l_draft = []
@@ -242,10 +325,14 @@ def search_mcs(g0, g1, label_classes, edge_labels, m):
                     adj = (1 if (edge_l != 0 or label.adj == 1) else 0)
                     l_draft.append(LabelClass(v_conn, w_conn, v_c_rings, adj=adj))
         # add (v, w) to current mapping, continue exploring
+        print("nuova chiamata ricosiva m")
+        print(m + [(v, w)])
         search_mcs(g0, g1, l_draft, edge_labels, m + [(v, w)])
 
+    print("salto, fine primo w")
     # remove node v from selected label class. If the label class did not contain nodes other than v in graph g0,
     # remove label class
+    print("label in posizione ", label_classes.index(label_class) )
     label_classes.remove(label_class)
     label_class.remove(0, v)
 
@@ -253,20 +340,42 @@ def search_mcs(g0, g1, label_classes, edge_labels, m):
         label_classes.append(label_class)
     # explore consequences of not adding node v to current mapping
     search_mcs(g0, g1, label_classes, edge_labels, m)
-def gen_bond_labels(g0, g1):
-    # generates bond labels based on the set of bonds common to both graphs.
-    common_labels = set([edge for row in g0 for edge in row]) & set([edge for row in g1 for edge in row])
-    return list(common_labels)
+
+
+# g0, g1:   adjacency matrices of the two graphs
+# l0, l1:   list of labels (atom types and ring data) of the two graphs
 def mc_split(g0, g1, l0, l1, ring_classes):
     global incumbent
     incumbent = []
     # generate label data
     initial_label_classes = gen_initial_labels(l0, l1, ring_classes)
+    print("int lab cla \n")
+    for  c in initial_label_classes:
+        c.pri()
+    
     edge_labels = gen_bond_labels(g0, g1)
-
+    print("BOND LABELS")
+    print(edge_labels)
     # search maximum common connected subgraph
     search_mcs(g0, g1, initial_label_classes, edge_labels, [])
     return incumbent
+
+
+# s0, s1:       smiles of the two molecules involved in the substructure search
+# bond_match:   if set to 1 will match bond types in substructure
+# ring_match:   if set to 1 will only map atoms in rings to other atoms in rings
+def smiles_mcs(s0, s1, bond_match=1, ring_match=1):
+
+    mol0 = Chem.MolFromSmiles(s0)
+    mol1 = Chem.MolFromSmiles(s1)
+
+    return mol_mcs(mol0, mol1, bond_match, ring_match)
+
+
+# mol0, mol1:   two molecules involved in the substructure search
+# bond_match:   if set to 1 will match bond types in substructure
+# ring_match:   if set to 1 will only map atoms in rings to other atoms in rings
+# return_map:   for debugging purposes, returns a list of pairs of atom indices (atom_idx_g0 maps to atom_idx_g1)
 def mol_mcs(mol0, mol1, bond_match=1, ring_match=1, return_map=0):
     mols = [mol0, mol1]
 
@@ -284,71 +393,83 @@ def mol_mcs(mol0, mol1, bond_match=1, ring_match=1, return_map=0):
         g0 = Chem.rdmolops.GetAdjacencyMatrix(mol0)
         g1 = Chem.rdmolops.GetAdjacencyMatrix(mol1)
 
-    for line in g1:
-        print("\n")
-        for idx in line:
-            print(idx, end=" ")
-
+    
     if ring_match:
         # AtomRings() returns a list of rings, represented as a list containing the indexes of atom members
         ring_info = [mol0.GetRingInfo().AtomRings(), mol1.GetRingInfo().AtomRings()]
+        
         for mol_idx in range(2):
+           
             for ring in ring_info[mol_idx]:
+                
                 for atom_idx in ring:
+                    
                     # if an atom is in 2 rings, make sure not to add a double "R" at the end
                     if label_ring_data[mol_idx][atom_idx][-1] != "R":
+                    
                         label_ring_data[mol_idx][atom_idx] += "R"
-                     
+            
+
+    print(label_ring_data)
 
     ring_classes = gen_ring_classes(mol0, mol1)
 
+    print(ring_classes)
+
     mapping = mc_split(g0, g1, label_ring_data[0], label_ring_data[1], ring_classes)
-    return mapping
-    
-def smiles_mcs(s0, s1, bond_match=1, ring_match=1):
 
-    mol0 = Chem.MolFromSmiles(s0)
-    mol1 = Chem.MolFromSmiles(s1)
+    # sorting the mapping to make sure it matches the adjacency matrix
+    mapping.sort()
 
-    return mol_mcs(mol0, mol1, bond_match, ring_match)
+    # all indexes of atoms in g0 which are part of the substructure
+    mapped_atom_idxs_g0 = [pair[0] for pair in mapping]
 
-"""
+    mcs_labels = []
+    # ordered substructure labels
+    for idx_g0 in mapped_atom_idxs_g0:
+        mcs_labels.append(l0[idx_g0])
 
-l0 = ["C", "C", "O", "C", "H", "H", "O"]
-l1 = ["C","H","F","O","H","C","B","R"]
+    # delete unmapped rows and columns from either graph (in this case g0) to get the substructure graph.
+    mcs_matrix = np.delete(g0,
+                           [idx for idx in range(len(g0)) if idx not in mapped_atom_idxs_g0], 0)
+    mcs_matrix = np.delete(mcs_matrix,
+                           [idx for idx in range(len(g0)) if idx not in mapped_atom_idxs_g0], 1)
+    # convert labels and adjacency matrix to mol
+    mcs = g2mol(mcs_labels, mcs_matrix)
+    if return_map:
+        return incumbent
+    return mcs
 
-ring_info_m0 = [ [0, 1, 2], [4, 3, 5]]
-ring_info_m1  = [[4, 1, 0],  [1, 2, 3], [1, 4, 5], [5, 0, 3]]
 
 
-gen_classes = gen_ring_classes(l0,l1,ring_info_m0,ring_info_m1)
-i = 0
-
-#for posizione in gen_classes:
-#    print("\nidx:", i)
-#    i += 1
-
-#    for j in posizione:
-#        print(j, end=" ")
-
-initial_label = gen_initial_labels(l0,l1,gen_classes)
-
+#ordine di chiamata: 
+#   -smilemcs__ 
+#   |   molmcs__ 
+#      |     genering_classes__ 
+#      |     |    gen_rotation__ 
+#      |     mcSplit__ 
+#      |     |    getInitialLabels__ 
+#      |     |    genBondLabels__ 
+#      |     |    searchMcs__  (((recursive)))
+#      |         |    calcBound__ 
+#      |         |    select_label__ 
+#      |         |    select_vertex__ 
+#      |         |    hood__ 
+#      |      
+#      |   g2Mol__ 
+#        
 #
-#    for label in initial_label:
-#        print("\n" + label.label + ":")
-#        print("\ng:")
-#        for idx in label.g :
-#            print(idx)
-#        print("\nh:")
-#        for idx in label.h:
-#            print(idx)
-#
-#
-"""
+
 
 smile0 = "CN(c1ccc(cc1)c2nnn(CC(=O)Nc3ccc4nc(oc4c3)c5ccccc5Cl)n2)c6cc(C)c(N)cn6"
 smile1 = "O=C(Cn1nnc(n1)c2ccc(Nc3ccccn3)cc2)Nc4ccc5nc(oc5c4)c6ccccc6"
+
 result = smiles_mcs(smile0,smile1,bond_match=1, ring_match=1)
 
-print(result)
 
+l0 = [a.GetSymbol() for a in result.GetAtoms()]
+
+
+
+
+print(l0)

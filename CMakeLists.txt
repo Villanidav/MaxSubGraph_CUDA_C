@@ -142,6 +142,13 @@ endif()
 
 # since RDKit doesn't handle the dependencies in a correct way, we need to improvise
 # NOTE: by using this way of importing RDKit, we need to manually include its dependencies
+# Get the installation prefix of RDKit
+
+#get_filename_component(RDKIT_INSTALL_PREFIX "/home/francesco/miniconda3/envs/my-rdkit-env" REALPATH)
+
+# Add the installation prefix of RDKit to CMAKE_PREFIX_PATH
+
+#list(APPEND CMAKE_PREFIX_PATH "${RDKIT_INSTALL_PREFIX}")
 
 # the rdkit to perform the heavy lifting
 find_package(RDKit REQUIRED)
