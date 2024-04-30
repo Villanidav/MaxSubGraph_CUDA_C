@@ -34,11 +34,21 @@ class LabelClass {
                 std::cout<<"\n g empty is: "<<g.empty()<<"\n";
             }else{
                 auto it = std::find(g.begin(), g.end(), elem);
-                
+                int posizione = 0;
+                for(int elem : g){
+                    posizione++;
+                }
+                std::cout<<"\n";
                 if (it != g.end()) {
                     int idx = std::distance(g.begin(), it);
-                    g.erase(g.begin() + idx); 
+                    g.erase(g.begin() + idx);
                     rings_g.erase(rings_g.begin() + idx);
+                    int posizione = 0;
+                    for(int elem : g){
+                        std::cout<<"g[ "<<posizione<< " ] = "<<elem<<"\n";
+                        posizione++;
+                    }
+                    std::cout<<"\n";
                 }else{
                     std::cout << "\n ERR, in Label.cpp non ho trovato l'elemento che devo cancellare:  "<<"\n";
                     std::cout << "\n l'elemento che devo cancellare è:  " << elem<<"\n";
@@ -46,7 +56,7 @@ class LabelClass {
                 }
             }
 
-            
+
         } else {
             auto it = std::find(h.begin(), h.end(), elem);
             if (it != h.end()) {
@@ -59,9 +69,10 @@ class LabelClass {
     std::vector<std::vector<int> > get_ring_match_data( std::vector<int>& elems) {
         std::vector<std::vector<int> > res = {};
         std::vector<int> idxList = {};
-        int c=0;
+        int c;
 
         if( !elems.empty() ) {
+
             for (int i : elems) {
                 c=0;
                 if( !g.empty() ){
@@ -92,4 +103,3 @@ class LabelClass {
 
 
 };
-

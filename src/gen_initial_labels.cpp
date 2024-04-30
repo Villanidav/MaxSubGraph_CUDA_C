@@ -29,6 +29,7 @@ std::vector<std::string> find_common_strings(const std::vector<std::string>& l0,
 std::vector<LabelClass> gen_initial_labels(const std::vector<std::string>& l0, const std::vector<std::string>& l1,     std::vector<std::vector<int> >& ring_classes){
     std::vector<LabelClass> label_classes;
     const std::vector<string> common_labels = find_common_strings(l0,l1);
+
     cout << "common labelssssaSAassaSasSAAS";
     for ( string r : common_labels )
         cout << " " << r;

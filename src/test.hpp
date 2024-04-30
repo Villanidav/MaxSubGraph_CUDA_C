@@ -27,7 +27,7 @@ std::vector<int> hood(int vtx, const std::vector<std::vector<double> >& g, doubl
 
 
 
-int calc_bound( std::vector<LabelClass>& label_classes);
+int calc_bound( std::vector<LabelClass> label_classes);
 
 std::vector<double> gen_bond_labels(const std::vector<std::vector<double> >& g0, const std::vector<std::vector<double> >& g1);
 
@@ -42,7 +42,7 @@ std::vector<std::pair<int, int>> mc_split(const std::vector<std::vector<double>>
                                           const std::vector<std::string>& l0, const std::vector<std::string>& l1,
                                           std::vector<std::vector<int> >& ring_classes);
 
-void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<double> > g1, std::vector<LabelClass>& label_classes, std::vector<double> edge_labels, std::vector<std::pair<int, int> > m);
+void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<double> > g1, std::vector<LabelClass>& label_classes, std::vector<double> edge_labels, const std::vector<std::pair<int, int> >& m);
 
 RDKit::ROMol g2mol( std::vector<std::string>& labels,  std::vector<std::vector<double>>& adj) ;
 

@@ -10,56 +10,60 @@ std::vector<std::pair<int, int>> incumbent;
 
 LabelClass *select_label(std::vector<LabelClass*>& label_classes, int map_size);
 
-void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<double> > g1, std::vector<LabelClass>& label_classes, std::vector<double> edge_labels, std::vector<std::pair<int, int> > m){
+void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<double> > g1, std::vector<LabelClass>& label_classes, std::vector<double> edge_labels, const std::vector<std::pair<int, int> >& m){
 
-    cout << "\n INIZIO RICORSIONE:   "<<endl ;
-    cout << "\n m.size() = " << m.size() << "  incumbent.size() = " << incumbent.size() << "  bound = " << m.size() + calc_bound(label_classes) << endl;
+    //cout << "\n INIZIO RICORSIONE:   "<<endl ;
+    //cout << "\n m.size() = " << m.size() << "  incumbent.size() = " << incumbent.size() << "  bound = " << m.size() + calc_bound(label_classes) << endl;
     //incumbent has to be GLOBAL
     int bound;
-    if( !m.empty() )  bound = m.size() + calc_bound(label_classes);
-    else bound = 0 + calc_bound(label_classes);
+    bound = m.size() + calc_bound(label_classes);
+    cout << "\n BOUND  SIZE\n   "<< bound << " SIZE" << m.size() <<endl ;
 
     if(m.size() > incumbent.size()){
         incumbent = m;
     }
+    cout << "\n INCUMBENT SIZE \n   "<< incumbent.size() <<endl ;
     if(incumbent.size() >= bound){
-       // cout << "\n fine \n   "<<endl ;
+        cout << "\n fine \n   "<<endl ;
         return;
     }
+
     std::vector<LabelClass*> label_class_pointers;
-    if( !label_classes.empty() ) label_class_pointers.reserve(label_classes.size()); // Reserve space for the pointers
+    if( !label_classes.empty() ) label_class_pointers.reserve(label_classes.size()+1); // Reserve space for the pointers
 
 
     for (LabelClass& item : label_classes) {
         label_class_pointers.push_back(&item); // Add the address of each element to the new vector
     }
 
-    LabelClass* label_class_pointer;
-   
+
+    LabelClass* single_label_class_pointer;
+
 
     //da completare
-    if ( !m.empty() )  label_class_pointer = select_label(label_class_pointers, m.size());
-    else label_class_pointer = select_label(label_class_pointers, 0);
+    if ( !m.empty() )  single_label_class_pointer = select_label(label_class_pointers, m.size());
+    else single_label_class_pointer = select_label(label_class_pointers, 0);
 
 
 
     // label_class.size() = 0 || label_class = null
-    if( label_class_pointer == nullptr ){
+    if( m.size()>0 && !single_label_class_pointer  ){
+        cout << "\n NULL POINTER \n   "<<endl ;
         return;
-    }else{
-        LabelClass label_class = *label_class_pointer;
+    }
+        LabelClass label_class = *single_label_class_pointer;
 
 
-        
+
 
     //    std::cout << "\n label_class selected is: "<<label_class.label<<endl;
-        
+
 
         int v = select_vertex(label_class.g, g0);
-        
-        
+
+
     //    std::cout << "\nv selezionato: "<<v<<endl;
-        
+
         std::vector<int> vector;
         vector.push_back(v);
 
@@ -72,16 +76,34 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
         if ( !returned_data.empty()) {
             v_ring_atoms = label_class.get_ring_match_data(vector).at(0);
         }
-
-        
-        for( int w : label_class.h){
-
-            if(   !v_ring_atoms.empty()    &&
-                ( std::find(v_ring_atoms.begin(), v_ring_atoms.end(), -1) == v_ring_atoms.end() ||
-                std::find(v_ring_atoms.begin(),v_ring_atoms.end(), w) == v_ring_atoms.end() ) ){
-                //cout << "continue : "<<endl ;
-                continue;
+        cout << "v ring atoms \n [";
+        if (!v_ring_atoms.empty()) {
+            for ( int x : v_ring_atoms ) {
+                cout << "[ " << x << "]";
             }
+        }
+        cout << "]";
+
+
+        for( int w : label_class.h){
+            bool flag = false;
+            bool flag_m = false;
+            if( !v_ring_atoms.empty() ) {
+                for(int x : v_ring_atoms){
+                    //cout << "\n[ " << x << " "<< "]" <<endl;
+                    if( x == -1 ) {
+                        flag_m = true;
+                    }
+                    if(x == w ){
+                        flag = true;
+                        break;
+                    }
+                    //cout << "\n flag = "<<flag<<endl;
+                }
+                if ( !flag || flag_m ) continue;
+            }
+
+
 
             std::vector<LabelClass> l_draft;
 
@@ -97,7 +119,7 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
                     }
                     v_c_rings = label.get_ring_match_data(v_conn);
                     for(int vtx : hood(w,g1,edge_l)){
-                        if(std::find(label.h.begin(),label.h.end(),vtx) != label.g.end() ){
+                        if(std::find(label.h.begin(),label.h.end(),vtx) != label.h.end() ){
                             w_conn.push_back(vtx);
                         }
                     }
@@ -110,7 +132,6 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
                         }
                         LabelClass tmp(v_conn,w_conn,v_c_rings,adj=adj, label.label);
                         l_draft.push_back(tmp);
-
                     }
                 }
             }
@@ -120,27 +141,23 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
             std::vector<std::pair<int, int> > h = m;
 
             h.push_back(nuova_coppia);
-            
-            for(std::pair<int, int> pair : h){
+
+            /*for(std::pair<int, int> pair : h){
                 cout << "\n[ " << pair.first << " ," << pair.second << "]" <<endl;
-            } 
+            }*/
             search_mcs(g0, g1, l_draft, edge_labels, h );
         }
-       // cout << "\n salto, fine primo w:   "<<endl ;
+        cout << "\n salto, fine primo w:   "<<endl ;
 
 
-        auto it = std::find(label_classes.begin(), label_classes.end(), label_class);
-        if (it != label_classes.end()) {
-            int index = std::distance(label_classes.begin(), it);
-            label_classes.erase(it);
-        }
+        label_classes.erase(std::find(label_classes.begin(), label_classes.end(), label_class));
         label_class.remove(0, v);
 
         if( !label_class.g.empty() ){
             label_classes.push_back(label_class);
         }
         search_mcs(g0, g1, label_classes, edge_labels, m);
-    }   
+
 }
 
 
@@ -183,18 +200,15 @@ std::vector<std::pair<int, int>> mc_split(const std::vector<std::vector<double>>
    cout << "\n fino a qui porta tutto \nfunzione mc_split riga 167";
 
 */
-    std::ofstream outfile("mc_split_output.txt");
-    std::streambuf* coutbuf = std::cout.rdbuf();
-    std::cout.rdbuf(outfile.rdbuf());
 
 
     std::vector<double> edge_labels = gen_bond_labels(g0, g1);
-    cout << "\nBOND LABELS: "  ;
+
+    cout << "\nBOND LABELSss: "  ;
     for ( double d : edge_labels)
         cout << " " <<d  ;
 
     // Search maximum common connected subgraph
     search_mcs(g0, g1, initial_label_classes, edge_labels, {});
-    std::cout.rdbuf(coutbuf);
     return incumbent;
 }

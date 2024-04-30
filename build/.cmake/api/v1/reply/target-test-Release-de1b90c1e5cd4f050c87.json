@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "testFra"
+			"path" : "test"
 		}
 	],
 	"backtrace" : 1,
@@ -14,6 +14,7 @@
 			"target_link_directories",
 			"target_link_libraries",
 			"add_compile_options",
+			"set_target_properties",
 			"include_directories"
 		],
 		"files" : 
@@ -28,25 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 107,
+				"line" : 83,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 186,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 187,
+				"line" : 177,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 188,
+				"line" : 178,
 				"parent" : 0
 			},
 			{
@@ -58,31 +53,37 @@
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 153,
+				"line" : 125,
 				"parent" : 0
 			},
 			{
-				"command" : 4,
+				"command" : 5,
 				"file" : 0,
-				"line" : 161,
+				"line" : 156,
 				"parent" : 0
 			},
 			{
-				"command" : 4,
+				"command" : 5,
 				"file" : 0,
-				"line" : 162,
+				"line" : 164,
 				"parent" : 0
 			},
 			{
-				"command" : 4,
+				"command" : 5,
 				"file" : 0,
-				"line" : 172,
+				"line" : 165,
 				"parent" : 0
 			},
 			{
-				"command" : 4,
+				"command" : 5,
 				"file" : 0,
-				"line" : 185,
+				"line" : 175,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 188,
 				"parent" : 0
 			}
 		]
@@ -93,61 +94,79 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-O3 -DNDEBUG"
+					"fragment" : "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -O3 -DNDEBUG"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 4,
 					"fragment" : "-Wall"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 4,
 					"fragment" : "-Wextra"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 4,
 					"fragment" : "-Wpedantic"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 4,
 					"fragment" : "-Wl,-z,defs"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 4,
 					"fragment" : "-Wl,-z,now"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 4,
 					"fragment" : "-Wl,-z,relro"
+				},
+				{
+					"fragment" : "-std=c++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 5,
+					"define" : "TESTING"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 6,
-					"path" : "/home/francesco/miniconda3/envs/my-rdkit-env/include"
+					"path" : "/usr/local/include"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "/home/francesco/miniconda3/envs/my-rdkit-env/include/rdkit"
+					"path" : "/home/davide/miniconda3/include/rdkit"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "/home/francesco/Desktop/MaxSubGraph_CUDA_C/subgraph_search"
+					"path" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "/home/francesco/Desktop/MaxSubGraph_CUDA_C/PUBLIC"
+					"path" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC"
 				},
 				{
 					"backtrace" : 9,
-					"path" : "/home/francesco/Desktop/MaxSubGraph_CUDA_C/test"
+					"path" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "/home/francesco/Desktop/MaxSubGraph_CUDA_C/testFra"
+					"path" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra"
 				}
 			],
 			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					5
+				],
+				"standard" : "17"
+			},
 			"sourceIndexes" : 
 			[
 				3,
@@ -168,58 +187,58 @@
 			]
 		}
 	],
-	"id" : "testFra::@6890427a1f51a3e7e1df",
+	"id" : "test::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-O3 -DNDEBUG",
+				"fragment" : "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -O3 -DNDEBUG",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "",
+				"fragment" : "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/davide/miniconda3/lib -Wl,-rpath-link,/home/davide/miniconda3/lib -L/home/davide/miniconda3/lib",
 				"role" : "flags"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-L/home/francesco/miniconda3/envs/my-rdkit-env/lib",
+				"fragment" : "-L/home/davide/miniconda3/lib64",
 				"role" : "libraryPath"
 			},
 			{
-				"backtrace" : 3,
-				"fragment" : "-L/home/francesco/miniconda3/envs/my-rdkit-env/lib64",
-				"role" : "libraryPath"
-			},
-			{
-				"fragment" : "-Wl,-rpath,/home/francesco/miniconda3/envs/my-rdkit-env/lib:/home/francesco/miniconda3/envs/my-rdkit-env/lib64",
+				"fragment" : "-Wl,-rpath,/home/davide/miniconda3/lib64",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
+				"backtrace" : 3,
 				"fragment" : "-lRDKitFileParsers",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
+				"backtrace" : 3,
 				"fragment" : "-lRDKitGraphMol",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
+				"backtrace" : 3,
 				"fragment" : "-lRDKitRDGeneral",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
+				"backtrace" : 3,
 				"fragment" : "-lRDKitSmilesParse",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "-lRDKitSubstructMatch",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "testFra",
-	"nameOnDisk" : "testFra",
+	"name" : "test",
+	"nameOnDisk" : "test",
 	"paths" : 
 	{
 		"build" : ".",
@@ -278,7 +297,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/testFra.cpp",
+			"path" : "src/test.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{

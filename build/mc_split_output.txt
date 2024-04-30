@@ -1,0 +1,3584 @@
+
+BOND LABELSss:  0 1 1.5 2
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 0  bound = 37
+
+[ 14 ,0]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 0  bound = 40
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 1  bound = 40
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 2  bound = 40
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()11
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 3  bound = 39
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,0]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 3  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,4]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,5]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,6]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 39
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,7]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,8]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 39
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,9]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,10]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,11]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 39
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,12]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 39
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,13]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 39
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,14]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,15]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,16]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,17]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,18]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,19]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,20]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,21]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 39
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,22]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 39
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,23]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,24]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,25]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,26]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,27]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 39
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,28]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,29]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,30]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,31]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 39
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,32]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,33]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,34]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,35]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+[ 15 ,36]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()15
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 40
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()11
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 39
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,0]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,2]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 39
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,3]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 39
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,4]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,5]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,6]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 39
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,7]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,8]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 39
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,9]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,10]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,11]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 39
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,12]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 39
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,13]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 39
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,14]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,15]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,16]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,17]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,18]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,19]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,20]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,23]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,24]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,25]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,26]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,27]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 39
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,28]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,29]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,30]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,31]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 39
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,32]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,33]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,34]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,35]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+[ 15 ,36]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 4  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()15
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()12
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 39
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 15 ,2]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 39
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+[ 14 ,0]
+
+[ 13 ,1]
+
+[ 15 ,21]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 39
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()15
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 38
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()13
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 39
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()14
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 36
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()22
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 35
+
+[ 1 ,12]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 38
+
+[ 1 ,12]
+
+[ 0 ,11]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 38
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 37
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()33
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 36
+
+ NULL POINTER 
+   
+
+[ 1 ,12]
+
+[ 0 ,13]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 38
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 37
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()33
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 36
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()0
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 37
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 36
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()33
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 35
+
+ NULL POINTER 
+   
+
+[ 1 ,21]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 38
+
+[ 1 ,21]
+
+[ 0 ,1]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 38
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 37
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()33
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 36
+
+ NULL POINTER 
+   
+
+[ 1 ,21]
+
+[ 0 ,22]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 38
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 37
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()33
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 36
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()0
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 37
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 36
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()33
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 35
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 35
+
+[ 15 ,12]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 37
+
+[ 15 ,12]
+
+[ 13 ,11]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 37
+
+[ 15 ,12]
+
+[ 13 ,11]
+
+[ 12 ,12]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 37
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()11
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 36
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 35
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()12
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 36
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 35
+
+ NULL POINTER 
+   
+
+[ 15 ,12]
+
+[ 13 ,13]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 37
+
+[ 15 ,12]
+
+[ 13 ,13]
+
+[ 12 ,12]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 37
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()11
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 36
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 35
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()12
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 36
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 35
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()13
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 36
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 35
+
+ NULL POINTER 
+   
+
+[ 15 ,21]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 37
+
+[ 15 ,21]
+
+[ 13 ,1]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 37
+
+[ 15 ,21]
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 37
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()11
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 36
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 35
+
+ NULL POINTER 
+   
+
+[ 15 ,21]
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 37
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()11
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 36
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 35
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()12
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 36
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 35
+
+ NULL POINTER 
+   
+
+[ 15 ,21]
+
+[ 13 ,22]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 37
+
+[ 15 ,21]
+
+[ 13 ,22]
+
+[ 12 ,21]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 37
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()11
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 36
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 3  incumbent.size() = 4  bound = 35
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()12
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 36
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 35
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()13
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 36
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()16
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 35
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 34
+
+[ 38 ,12]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 36
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()37
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 35
+
+ NULL POINTER 
+   
+
+[ 38 ,21]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 36
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()37
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 35
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()38
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 33
+
+[ 13 ,1]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 35
+
+[ 13 ,1]
+
+[ 12 ,2]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 35
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()11
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 34
+
+ NULL POINTER 
+   
+
+[ 13 ,1]
+
+[ 12 ,21]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 35
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()11
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 34
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()12
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 34
+
+ NULL POINTER 
+   
+
+[ 13 ,2]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 35
+
+[ 13 ,2]
+
+[ 12 ,1]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 35
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()11
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 34
+
+ NULL POINTER 
+   
+
+[ 13 ,2]
+
+[ 12 ,3]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 35
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()11
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 2  incumbent.size() = 4  bound = 34
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()12
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 34
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 33
+
+[ 12 ,1]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 34
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()11
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 33
+
+ NULL POINTER 
+   
+
+[ 12 ,2]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 34
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()11
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 33
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 33
+
+[ 0 ,1]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 33
+
+ NULL POINTER 
+   
+
+[ 0 ,2]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 33
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 32
+
+[ 36 ,1]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 32
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()35
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 31
+
+ NULL POINTER 
+   
+
+[ 36 ,2]
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 32
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()35
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 1  incumbent.size() = 4  bound = 31
+
+ NULL POINTER 
+   
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()36
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 31
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 30
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 29
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 28
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 27
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 26
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ if elem size == 1 => g.clear()40
+
+ g empty is: 1
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 25
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 24
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 23
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 22
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 21
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 20
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 19
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 18
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 17
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 16
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 15
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 14
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 13
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 12
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 11
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 10
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 9
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 8
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 7
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 6
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 5
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+continue : 
+
+ salto, fine primo w:   
+
+ INIZIO RICORSIONE:   
+
+ m.size() = 0  incumbent.size() = 4  bound = 4
+
+ fine 
+   
