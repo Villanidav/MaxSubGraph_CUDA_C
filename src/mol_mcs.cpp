@@ -68,15 +68,6 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
 
     std::pair<std::vector<std::string>, std::vector<std::string>> label_ring_data = {l0, l1};
 
-    //stampa per prove
-    cout << "\n first molecule: " <<endl;
-
-    for ( string idx : l0 )
-        cout << idx;
-
-    cout << "\n second molecule: " <<endl;
-    for ( string idx : l1 )
-        cout  << idx;
 
     std::vector<std::vector<double>> g0,g1;
 
@@ -88,24 +79,6 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
         g1 = getAdjacencyMatrix(mol1);
     }
 
-    //print matrix
-    std::cout<<"\n first adiacent Matrix";
-    for (vector<double> line : g0){
-        std::cout<<"\n";
-        for(double i : line){
-            std::cout<<" "<<i;
-        }
-    }
-
-    std::cout<<"\n second adiacent Matrix";
-    for (vector<double> line : g1){
-        std::cout<<"\n";
-        for(double i : line){
-            std::cout<<" "<<i;
-        }
-    }
-
-    cout << " INIZIO COSA ANELLI  " << endl;
 
     if (ring_match) {
         std::pair< std::vector<std::vector<int> > , std::vector<std::vector<int>> > ring_info ;
@@ -117,7 +90,6 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
             ring_info.second.push_back(var);
 
 
-        //cout << "  SIZE : " << ring_info.size() <<endl;
         if( !label_ring_data.first.at(0).empty() ) {
             for (auto & ring : ring_info.first) {
                 for ( int atm_idx : ring ) {
@@ -148,38 +120,14 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
         }
     }
 
-    cout << " LABEL RING DATA \n";
-    for ( string r : label_ring_data.first)
-        cout<< " "<< r;
-    cout << "\n 2 \n";
-    for ( string r : label_ring_data.second)
-        cout<< " "<< r;
-
-
-    cout << "\n FINE COSA ANELLI  " << endl;
-
-    //todo risolvere questione stringa inversa
 
     std::vector<std::vector<int>> ring_classes = gen_ring_classes(mol0, mol1);
 
-    /*cout << "\n ring classes : \n " << endl;
-    cout << "[" ;
-    if( !ring_classes.empty() ){
-        for ( std::vector<int> r : ring_classes ) {
-            cout << "[" ;
-            if( !r.empty() ) {
-                for ( int idx : r)
-                {cout << "'" <<idx << "'" ;}
-                cout << "]," ;
-            }
-        }
 
-    }    cout << "]" ;*/
-    cout << "\n step up classes : \n " << endl;
     //ho cambiato la seguente riga dal codice Python
     std::vector<std::pair<int, int>> mapping = mc_split(g0, g1, label_ring_data.first, label_ring_data.second, ring_classes);
 
-    cout << "\n step ritorno classes : \n " << endl;
+
     std::sort(mapping.begin(), mapping.end());
 
     std::vector<int> mapped_atom_idxs_g0;

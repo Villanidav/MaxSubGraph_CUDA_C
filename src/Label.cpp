@@ -28,10 +28,8 @@ class LabelClass {
        
         if (graph == 0) {
             if(g.size() == 1){
-                std::cout << "\n if elem size == 1 => g.clear()" << g.at(0) <<"\n";
                 g.clear();
                 rings_g.clear();
-                std::cout<<"\n g empty is: "<<g.empty()<<"\n";
             }else{
                 auto it = std::find(g.begin(), g.end(), elem);
                 int posizione = 0;
@@ -45,13 +43,9 @@ class LabelClass {
                     rings_g.erase(rings_g.begin() + idx);
                     int posizione = 0;
                     for(int elem : g){
-                        std::cout<<"g[ "<<posizione<< " ] = "<<elem<<"\n";
                         posizione++;
                     }
-                    std::cout<<"\n";
                 }else{
-                    std::cout << "\n ERR, in Label.cpp non ho trovato l'elemento che devo cancellare:  "<<"\n";
-                    std::cout << "\n l'elemento che devo cancellare è:  " << elem<<"\n";
                     int posizione = 0;
                 }
             }
