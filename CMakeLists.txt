@@ -96,6 +96,8 @@ add_executable(test ${header_files} "${source_path}/test.cpp"
         "${source_path}/mol_mcs.cpp"
         "${source_path}/mc_split.cpp"
         "${source_path}/g2mol.cpp"
+        "${source_path}/gpu_mc_split.cpp"
+        "${source_path}/pair_vertex.cpp"
 )
 set_target_properties(test PROPERTIES
     COMPILE_DEFINITIONS "TESTING"

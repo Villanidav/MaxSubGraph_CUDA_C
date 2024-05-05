@@ -347,6 +347,30 @@ src/gen_rotations.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gen_rotations.cpp.s
 .PHONY : src/gen_rotations.cpp.s
 
+src/gpu_mc_split.o: src/gpu_mc_split.cpp.o
+.PHONY : src/gpu_mc_split.o
+
+# target to build an object file
+src/gpu_mc_split.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gpu_mc_split.cpp.o
+.PHONY : src/gpu_mc_split.cpp.o
+
+src/gpu_mc_split.i: src/gpu_mc_split.cpp.i
+.PHONY : src/gpu_mc_split.i
+
+# target to preprocess a source file
+src/gpu_mc_split.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gpu_mc_split.cpp.i
+.PHONY : src/gpu_mc_split.cpp.i
+
+src/gpu_mc_split.s: src/gpu_mc_split.cpp.s
+.PHONY : src/gpu_mc_split.s
+
+# target to generate assembly for a file
+src/gpu_mc_split.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gpu_mc_split.cpp.s
+.PHONY : src/gpu_mc_split.cpp.s
+
 src/hood.o: src/hood.cpp.o
 .PHONY : src/hood.o
 
@@ -457,6 +481,30 @@ src/mol_mcs.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/mol_mcs.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/mol_mcs.cpp.s
 .PHONY : src/mol_mcs.cpp.s
+
+src/pair_vertex.o: src/pair_vertex.cpp.o
+.PHONY : src/pair_vertex.o
+
+# target to build an object file
+src/pair_vertex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pair_vertex.cpp.o
+.PHONY : src/pair_vertex.cpp.o
+
+src/pair_vertex.i: src/pair_vertex.cpp.i
+.PHONY : src/pair_vertex.i
+
+# target to preprocess a source file
+src/pair_vertex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pair_vertex.cpp.i
+.PHONY : src/pair_vertex.cpp.i
+
+src/pair_vertex.s: src/pair_vertex.cpp.s
+.PHONY : src/pair_vertex.s
+
+# target to generate assembly for a file
+src/pair_vertex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pair_vertex.cpp.s
+.PHONY : src/pair_vertex.cpp.s
 
 src/search_mcs.o: src/search_mcs.cpp.o
 .PHONY : src/search_mcs.o
@@ -646,6 +694,9 @@ help:
 	@echo "... src/gen_rotations.o"
 	@echo "... src/gen_rotations.i"
 	@echo "... src/gen_rotations.s"
+	@echo "... src/gpu_mc_split.o"
+	@echo "... src/gpu_mc_split.i"
+	@echo "... src/gpu_mc_split.s"
 	@echo "... src/hood.o"
 	@echo "... src/hood.i"
 	@echo "... src/hood.s"
@@ -658,6 +709,9 @@ help:
 	@echo "... src/mol_mcs.o"
 	@echo "... src/mol_mcs.i"
 	@echo "... src/mol_mcs.s"
+	@echo "... src/pair_vertex.o"
+	@echo "... src/pair_vertex.i"
+	@echo "... src/pair_vertex.s"
 	@echo "... src/search_mcs.o"
 	@echo "... src/search_mcs.i"
 	@echo "... src/search_mcs.s"

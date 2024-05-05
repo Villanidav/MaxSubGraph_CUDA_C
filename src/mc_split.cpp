@@ -10,7 +10,9 @@ std::vector<std::pair<int, int>> incumbent;
 
 LabelClass *select_label(std::vector<LabelClass*>& label_classes, int map_size);
 
-void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<double> > g1, std::vector<LabelClass>& label_classes, std::vector<double> edge_labels, const std::vector<std::pair<int, int> >& m){
+void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<double> > g1,
+    std::vector<LabelClass>& label_classes, std::vector<double> edge_labels,
+    const std::vector<std::pair<int, int> >& m){
 
 
     //incumbent has to be GLOBAL
@@ -36,7 +38,7 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
     LabelClass* single_label_class_pointer;
 
 
-    //da completare
+
     if ( !m.empty() )  single_label_class_pointer = select_label(label_class_pointers, m.size());
     else single_label_class_pointer = select_label(label_class_pointers, 0);
 
@@ -160,7 +162,13 @@ std::vector<std::pair<int, int>> mc_split(const std::vector<std::vector<double>>
 
     std::vector<double> edge_labels = gen_bond_labels(g0, g1);
 
+    gpu_mc_split(g0,g1,l0,l1,ring_classes);
     // Search maximum common connected subgraph
     search_mcs(g0, g1, initial_label_classes, edge_labels, {});
+    cout<< "INCUMBENT \n[";
+    for ( std::pair<int,int> p : incumbent) {
+        cout<< "["<< p.first << ", "<< p.second << "]";
+    }
+    cout<< "]"<<endl;
     return incumbent;
 }

@@ -279,6 +279,34 @@ CMakeFiles/test.dir/src/g2mol.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/g2mol.cpp.s"
 	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/g2mol.cpp -o CMakeFiles/test.dir/src/g2mol.cpp.s
 
+CMakeFiles/test.dir/src/gpu_mc_split.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/gpu_mc_split.cpp.o: ../src/gpu_mc_split.cpp
+CMakeFiles/test.dir/src/gpu_mc_split.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/test.dir/src/gpu_mc_split.cpp.o"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/gpu_mc_split.cpp.o -MF CMakeFiles/test.dir/src/gpu_mc_split.cpp.o.d -o CMakeFiles/test.dir/src/gpu_mc_split.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gpu_mc_split.cpp
+
+CMakeFiles/test.dir/src/gpu_mc_split.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/gpu_mc_split.cpp.i"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gpu_mc_split.cpp > CMakeFiles/test.dir/src/gpu_mc_split.cpp.i
+
+CMakeFiles/test.dir/src/gpu_mc_split.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/gpu_mc_split.cpp.s"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/gpu_mc_split.cpp -o CMakeFiles/test.dir/src/gpu_mc_split.cpp.s
+
+CMakeFiles/test.dir/src/pair_vertex.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/src/pair_vertex.cpp.o: ../src/pair_vertex.cpp
+CMakeFiles/test.dir/src/pair_vertex.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/test.dir/src/pair_vertex.cpp.o"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/src/pair_vertex.cpp.o -MF CMakeFiles/test.dir/src/pair_vertex.cpp.o.d -o CMakeFiles/test.dir/src/pair_vertex.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/pair_vertex.cpp
+
+CMakeFiles/test.dir/src/pair_vertex.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/src/pair_vertex.cpp.i"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/pair_vertex.cpp > CMakeFiles/test.dir/src/pair_vertex.cpp.i
+
+CMakeFiles/test.dir/src/pair_vertex.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/src/pair_vertex.cpp.s"
+	/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/pair_vertex.cpp -o CMakeFiles/test.dir/src/pair_vertex.cpp.s
+
 # Object files for target test
 test_OBJECTS = \
 "CMakeFiles/test.dir/src/test.cpp.o" \
@@ -295,7 +323,9 @@ test_OBJECTS = \
 "CMakeFiles/test.dir/src/search_mcs.cpp.o" \
 "CMakeFiles/test.dir/src/mol_mcs.cpp.o" \
 "CMakeFiles/test.dir/src/mc_split.cpp.o" \
-"CMakeFiles/test.dir/src/g2mol.cpp.o"
+"CMakeFiles/test.dir/src/g2mol.cpp.o" \
+"CMakeFiles/test.dir/src/gpu_mc_split.cpp.o" \
+"CMakeFiles/test.dir/src/pair_vertex.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
@@ -315,9 +345,11 @@ test: CMakeFiles/test.dir/src/search_mcs.cpp.o
 test: CMakeFiles/test.dir/src/mol_mcs.cpp.o
 test: CMakeFiles/test.dir/src/mc_split.cpp.o
 test: CMakeFiles/test.dir/src/g2mol.cpp.o
+test: CMakeFiles/test.dir/src/gpu_mc_split.cpp.o
+test: CMakeFiles/test.dir/src/pair_vertex.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

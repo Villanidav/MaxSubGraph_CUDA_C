@@ -25,6 +25,11 @@ int select_vertex(std::vector<int>& vtx_set, std::vector<std::vector<double> >& 
 
 std::vector<int> hood(int vtx, const std::vector<std::vector<double> >& g, double edge);
 
+std::pair<int, int> pair_vertex(LabelClass lb,  std::vector<std::vector<double>> g0);
+
+void gpu_mc_split(const std::vector<std::vector<double>>& g00, const std::vector<std::vector<double>>& g11,
+                                          const std::vector<std::string>& l0, const std::vector<std::string>& l1,
+                                          std::vector<std::vector<int> >& ring_classes);
 
 
 int calc_bound( std::vector<LabelClass> label_classes);

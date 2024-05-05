@@ -43,21 +43,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "subgraph_search::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-subgraph_search-Release-36f61ff99dfbe55440eb.json",
+					"jsonFile" : "target-subgraph_search-Release-53a3d26faca676ae85a6.json",
 					"name" : "subgraph_search",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test-Release-de1b90c1e5cd4f050c87.json",
+					"jsonFile" : "target-test-Release-16fe12568b7ba5b1ecc4.json",
 					"name" : "test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "testFra::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-testFra-Release-52fd73f20202493a0325.json",
+					"jsonFile" : "target-testFra-Release-ada01b47ef83de8e3c80.json",
 					"name" : "testFra",
 					"projectIndex" : 0
 				}

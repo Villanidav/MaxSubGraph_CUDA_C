@@ -19,8 +19,8 @@ int main()
 
     clock_t start = clock();
     ROMol result;
-    for( int i=0 ; i < 100 ; ++i )
-        { result = smiles_mcs(smile0, smile1, 1,1);}
+    //for( int i=0 ; i < 100 ; ++i )
+    result = smiles_mcs(smile0, smile1, 1,1);
 
 
     clock_t end = clock();
