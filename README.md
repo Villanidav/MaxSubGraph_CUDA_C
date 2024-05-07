@@ -29,57 +29,11 @@ The project is organized as follow:
  - buildo nuovamente l'app ed eseguo ./test o ./testFra
 NON AGGIUNGERE ALTRO NEL CMAKE FILE
 
-## Merge ⭐
-```
-$ git config pull.rebase false 
-```
-
-'''
- git add .
- git commit -m "aggiornamento"
- git merge
- git push 
-'''
-
- - commit and synch
-## CMakeCache.txt Problems ⭐
+## CMakeCache.txt Problems 
 ```
 cd build
 rm CMakeCache.txt
 cd ..
 $ cmake -S ./ -B ./build
 ```
-
-
-
-
-## Test ✅ / ❌      ✅❌  = (❗️ scritta ma mancano i test)
-- gen_rotations : ✅
-- Label : ✅
-- select_vertex : ✅
-- hood : ✅
-- select_label : ✅
-- gen_initial_label : ✅
-- gen_ring_classes :  ✅ 
-- calc_bound : ✅
-- gen_bond_classes : ✅
-- smile_mcs : ✅
-- molmcs : ✅
-- search_mcs : ✅ -> da testare con rings
-- g2Mol : ✅
-- mc_split : ✅
-  
-## Rdkit
-Data structure
-
-    Basic data structure to describe a molecule: RDKit::RWMol or RDKit::ROMol
-
-Parsing
-
-    Parse a string that describe the protein (in PDB format): RDKit::PDBBlockToMol
-    Parse a string that describe the ligand (in Mol2 format): RDKit::Mol2BlockToMol
-
-Headers
-
-    GraphMol/FileParsers/FileParsers.h <- to parse a file format GraphMol/GraphMol.h <- data structure definition
 
