@@ -73,10 +73,37 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/memcheck.dir/clean
 clean: CMakeFiles/subgraph_search.dir/clean
 clean: CMakeFiles/test.dir/clean
 clean: CMakeFiles/testFra.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/memcheck.dir
+
+# All Build rule for target.
+CMakeFiles/memcheck.dir/all: CMakeFiles/test.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck.dir/build.make CMakeFiles/memcheck.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck.dir/build.make CMakeFiles/memcheck.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles --progress-num= "Built target memcheck"
+.PHONY : CMakeFiles/memcheck.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/memcheck.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles 18
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/memcheck.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles 0
+.PHONY : CMakeFiles/memcheck.dir/rule
+
+# Convenience name for target.
+memcheck: CMakeFiles/memcheck.dir/rule
+.PHONY : memcheck
+
+# clean rule for target.
+CMakeFiles/memcheck.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck.dir/build.make CMakeFiles/memcheck.dir/clean
+.PHONY : CMakeFiles/memcheck.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/subgraph_search.dir

@@ -41,6 +41,13 @@ endif()
 # ########################################################################
 # ### Add external dependency
 # ########################################################################
+find_program(VALGRIND_EXECUTABLE valgrind)
+
+if(VALGRIND_EXECUTABLE)
+  set(MEMORYCHECK_COMMAND "${VALGRIND_EXECUTABLE}" "--leak-check=full" "--show-leak-kinds=all" "--track-origins=yes" "--verbose" "--log-file=valgrind.log")
+  set(MEMORYCHECK_COMMAND_OPTIONS "--leak-check=full --show-leak-kinds=all --track-origins=yes --verbose --log-file=valgrind.log")
+  add_custom_target(memcheck COMMAND ${MEMORYCHECK_COMMAND} $<TARGET_FILE:test>)
+endif()
 
 # ########################################################################
 # ### Define the application sources
@@ -132,16 +139,6 @@ set_target_properties(test PROPERTIES
 )
 
 
-find_program(VALGRIND "valgrind")
-
-if(VALGRIND)
-  add_custom_target(valgrind COMMAND
-          "${VALGRIND}"
-          --tool=memcheck
-          --leak-check=yes
-          "${source_path}/test.cpp"  # Replace with your executable name
-  )
-endif()
 
 # enable link-time optimizations
 include(CheckIPOSupported)

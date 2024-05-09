@@ -3250,3 +3250,195 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "CMakeLists.txt:148 (check_ipo_supported)"
+    directories:
+      source: "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /home/davide/Downloads/clion-2024.1/bin/ninja/linux/x64/ninja -v
+        [1/4] /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always -o CMakeFiles/boo.dir/main.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [2/4] /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always -o CMakeFiles/foo.dir/foo.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [3/4] : && /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/bin/cmake -E rm -f libfoo.a && "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ar" cr libfoo.a  CMakeFiles/foo.dir/foo.cpp.o && "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ranlib" libfoo.a && :
+        [4/4] : && /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/davide/miniconda3/lib -Wl,-rpath-link,/home/davide/miniconda3/lib -L/home/davide/miniconda3/lib CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "CMakeLists.txt:148 (check_ipo_supported)"
+    directories:
+      source: "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+        Run Build Command(s): /home/davide/Downloads/clion-2024.1/bin/ninja/linux/x64/ninja -v
+        [1/4] /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always -o CMakeFiles/foo.dir/foo.c.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [2/4] /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always -o CMakeFiles/boo.dir/main.c.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [3/4] : && /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/bin/cmake -E rm -f libfoo.a && "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ar" cr libfoo.a  CMakeFiles/foo.dir/foo.c.o && "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ranlib" libfoo.a && :
+        [4/4] : && /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/davide/miniconda3/lib -Wl,-rpath-link,/home/davide/miniconda3/lib -L/home/davide/miniconda3/lib CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "CMakeLists.txt:148 (check_ipo_supported)"
+    directories:
+      source: "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /home/davide/Downloads/clion-2024.1/bin/ninja/linux/x64/ninja -v
+        [1/4] /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always -o CMakeFiles/boo.dir/main.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [2/4] /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always -o CMakeFiles/foo.dir/foo.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [3/4] : && /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/bin/cmake -E rm -f libfoo.a && "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ar" cr libfoo.a  CMakeFiles/foo.dir/foo.cpp.o && "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ranlib" libfoo.a && :
+        [4/4] : && /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/davide/miniconda3/lib -Wl,-rpath-link,/home/davide/miniconda3/lib -L/home/davide/miniconda3/lib CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "CMakeLists.txt:148 (check_ipo_supported)"
+    directories:
+      source: "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+        Run Build Command(s): /home/davide/Downloads/clion-2024.1/bin/ninja/linux/x64/ninja -v
+        [1/4] /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always -o CMakeFiles/foo.dir/foo.c.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [2/4] /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always -o CMakeFiles/boo.dir/main.c.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [3/4] : && /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/bin/cmake -E rm -f libfoo.a && "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ar" cr libfoo.a  CMakeFiles/foo.dir/foo.c.o && "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ranlib" libfoo.a && :
+        [4/4] : && /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/davide/miniconda3/lib -Wl,-rpath-link,/home/davide/miniconda3/lib -L/home/davide/miniconda3/lib CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "CMakeLists.txt:145 (check_ipo_supported)"
+    directories:
+      source: "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /home/davide/Downloads/clion-2024.1/bin/ninja/linux/x64/ninja -v
+        [1/4] /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always -o CMakeFiles/foo.dir/foo.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [2/4] /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always -o CMakeFiles/boo.dir/main.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [3/4] : && /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/bin/cmake -E rm -f libfoo.a && "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ar" cr libfoo.a  CMakeFiles/foo.dir/foo.cpp.o && "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ranlib" libfoo.a && :
+        [4/4] : && /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/davide/miniconda3/lib -Wl,-rpath-link,/home/davide/miniconda3/lib -L/home/davide/miniconda3/lib CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "CMakeLists.txt:145 (check_ipo_supported)"
+    directories:
+      source: "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+        Run Build Command(s): /home/davide/Downloads/clion-2024.1/bin/ninja/linux/x64/ninja -v
+        [1/4] /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always -o CMakeFiles/foo.dir/foo.c.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [2/4] /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always -o CMakeFiles/boo.dir/main.c.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [3/4] : && /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/bin/cmake -E rm -f libfoo.a && "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ar" cr libfoo.a  CMakeFiles/foo.dir/foo.c.o && "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ranlib" libfoo.a && :
+        [4/4] : && /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/davide/miniconda3/lib -Wl,-rpath-link,/home/davide/miniconda3/lib -L/home/davide/miniconda3/lib CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "CMakeLists.txt:145 (check_ipo_supported)"
+    directories:
+      source: "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /home/davide/Downloads/clion-2024.1/bin/ninja/linux/x64/ninja -v
+        [1/4] /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always -o CMakeFiles/foo.dir/foo.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [2/4] /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++   -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always -o CMakeFiles/boo.dir/main.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [3/4] : && /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/bin/cmake -E rm -f libfoo.a && "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ar" cr libfoo.a  CMakeFiles/foo.dir/foo.cpp.o && "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ranlib" libfoo.a && :
+        [4/4] : && /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/davide/miniconda3/lib -Wl,-rpath-link,/home/davide/miniconda3/lib -L/home/davide/miniconda3/lib CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a && :
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/share/cmake-3.28/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "CMakeLists.txt:145 (check_ipo_supported)"
+    directories:
+      source: "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+        Run Build Command(s): /home/davide/Downloads/clion-2024.1/bin/ninja/linux/x64/ninja -v
+        [1/4] /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always -o CMakeFiles/foo.dir/foo.c.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [2/4] /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -fdiagnostics-color=always -o CMakeFiles/boo.dir/main.c.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [3/4] : && /home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/bin/cmake -E rm -f libfoo.a && "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ar" cr libfoo.a  CMakeFiles/foo.dir/foo.c.o && "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ranlib" libfoo.a && :
+        [4/4] : && /home/davide/miniconda3/bin/x86_64-conda-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -flto=auto -fno-fat-lto-objects -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/davide/miniconda3/lib -Wl,-rpath-link,/home/davide/miniconda3/lib -L/home/davide/miniconda3/lib CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a && :
+        
+      exitCode: 0
+...

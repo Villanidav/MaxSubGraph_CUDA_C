@@ -100,32 +100,26 @@ bool solve_mcs() {
     }
     vector<LabelClass> temp_lcs;
 
+    queue_elem qel;
+    pair<int,int> m_temp;
 
     for ( LabelClass lc : lcs ) {
-
-        //LabelClass lc = *select_label(label_class_pointers, m_local.size());
-
-        while ( !lc.g.empty() )  {
+        for( int v : lc.g )  {
             v = select_vertex(lc.g, g0);
-
             for ( int w : lc.h ) {
                 if ( !matchable(v,w,lc) ) continue;
                 temp_lcs = genNewLabels(v,w,lcs);
-                pair<int,int> m_temp;
                 m_temp.first = v;
                 m_temp.second = w;
                 m_local.push_back(m_temp);
-                queue_elem qel;
                 qel.labels = temp_lcs;
                 qel.m_local = m_local;
                 Q.push_back(qel);
                 if ( m_local.size() > m_best.size() ) m_best = m_local;
                 m_local.pop_back();
-
             }
             lc.remove(0, v);
         }
-        //lcs.erase(std::find(lcs.begin(), lcs.end(), lc));
     }
     return true;
 }
@@ -146,33 +140,26 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<double>>& g00, 
     std::vector<LabelClass> initial_label_classes = gen_initial_labels(l0, l1, ring_classes);
     vector<pair<int,int>> m_local={{}};
     vector<LabelClass> temp_lcs;
-    //temp_lcs.reserve();
+    queue_elem elem;
 
-   for( LabelClass lc : initial_label_classes )  {
-        //LabelClass lc = *select_label(label_class_pointers, 0 );
-
+   for( LabelClass lc : initial_label_classes ) {
         for(int v : lc.g) {
+            //generiamo v_conn e rings
             for ( int w : lc.h ) {
                 if ( !matchable(v,w,lc) ) continue;
-
                 temp_lcs = genNewLabels(v,w,initial_label_classes);
-
-
+                //gen w_conn
+                //gen new lbclass
                 m_local.at(0).first = v;
                 m_local.at(0).second = w;
-                queue_elem elem;
-                elem.labels = temp_lcs; elem.m_local=m_local;
+                elem.labels = temp_lcs;
+                elem.m_local=m_local;
                 Q.push_back(elem);
-                //manca while dei threads
+                //todo
             }
-            //lc.remove(0, v);
         }
-        //initial_label_classes.erase(std::find(initial_label_classes.begin(), initial_label_classes.end(), lc));
     }
-    //cout<<"\nQsize:"<< Q.size();
     bool flag = true;
-    while( flag ) {
-        flag = solve_mcs();
-    }
+    while( flag ) {flag = solve_mcs();}
     return m_best;
 }

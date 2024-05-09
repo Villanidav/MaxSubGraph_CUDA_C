@@ -117,6 +117,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named memcheck
+
+# Build rule for target.
+memcheck: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 memcheck
+.PHONY : memcheck
+
+# fast build rule for target.
+memcheck/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/memcheck.dir/build.make CMakeFiles/memcheck.dir/build
+.PHONY : memcheck/fast
+
+#=============================================================================
 # Target rules for targets named subgraph_search
 
 # Build rule for target.
@@ -670,6 +683,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... memcheck"
 	@echo "... subgraph_search"
 	@echo "... test"
 	@echo "... testFra"

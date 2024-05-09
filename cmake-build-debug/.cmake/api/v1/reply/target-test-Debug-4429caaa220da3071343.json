@@ -29,19 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 83,
+				"line" : 90,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 179,
+				"line" : 185,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 180,
+				"line" : 186,
 				"parent" : 0
 			},
 			{
@@ -51,39 +51,45 @@
 				"parent" : 0
 			},
 			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 33,
+				"parent" : 0
+			},
+			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 127,
+				"line" : 134,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 158,
+				"line" : 164,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 166,
+				"line" : 172,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 167,
+				"line" : 173,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 177,
+				"line" : 183,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 190,
+				"line" : 196,
 				"parent" : 0
 			}
 		]
@@ -94,7 +100,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -O3 -DNDEBUG"
+					"fragment" : "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g -std=c++17 -fdiagnostics-color=always"
 				},
 				{
 					"backtrace" : 4,
@@ -121,40 +127,41 @@
 					"fragment" : "-Wl,-z,relro"
 				},
 				{
-					"fragment" : "-std=c++17"
+					"backtrace" : 5,
+					"fragment" : "-fdiagnostics-color=always"
 				}
 			],
 			"defines" : 
 			[
 				{
-					"backtrace" : 5,
+					"backtrace" : 6,
 					"define" : "TESTING"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 6,
+					"backtrace" : 7,
 					"path" : "/usr/local/include"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 8,
 					"path" : "/home/davide/miniconda3/include/rdkit"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 9,
 					"path" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 9,
 					"path" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 10,
 					"path" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test"
 				},
 				{
-					"backtrace" : 10,
+					"backtrace" : 11,
 					"path" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra"
 				}
 			],
@@ -163,7 +170,7 @@
 			{
 				"backtraces" : 
 				[
-					5
+					6
 				],
 				"standard" : "17"
 			},
@@ -195,7 +202,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -O3 -DNDEBUG",
+				"fragment" : "-fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -g",
 				"role" : "flags"
 			},
 			{

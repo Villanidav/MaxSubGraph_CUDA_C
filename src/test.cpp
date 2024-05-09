@@ -20,7 +20,7 @@ int main()
     //string smile1 = "O=C(Cn1nnc(n1)c2c3CCCc3c(nc2SCc4ccccc4)c5ccccc5)Nc6ccc7nc(oc7c6)c8ccccc8";
     clock_t start = clock();
     ROMol result;
-    cout<<"PRE FUNCTION" ;
+    //cout<<"PRE FUNCTION" ;
     result = smiles_mcs(smile0, smile1, 1,1);
 
 
@@ -32,7 +32,7 @@ int main()
     // Print the elapsed time in seconds
     std::cout << "Elapsed time: " << elapsed_seconds << " seconds" << std::endl;
 
-
+/*
     std::vector<std::string> result_string;
     for (const auto &atom : result.atoms()) {
         result_string.push_back(atom->getSymbol());
@@ -42,6 +42,6 @@ int main()
     for ( string idx : result_string )
         cout <<"'"<<idx<<"', ";
     cout << "]" ;
-
+*/
     return 0;
 }

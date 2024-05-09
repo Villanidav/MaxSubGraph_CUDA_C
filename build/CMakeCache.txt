@@ -238,6 +238,9 @@ RDKit_DIR:PATH=/home/davide/miniconda3/lib/cmake/rdkit
 //The target cpu for architecture-specific optimizations
 TARGET_CPU_ARCHITECTURE:STRING=generic
 
+//Path to a program.
+VALGRIND_EXECUTABLE:FILEPATH=/usr/bin/valgrind
+
 //The directory containing a CMake configuration file for boost_headers.
 boost_headers_DIR:PATH=/usr/local/lib/cmake/boost_headers-1.82.0
 

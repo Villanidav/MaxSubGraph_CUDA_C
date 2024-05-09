@@ -1326,6 +1326,18 @@
 			"value" : "generic"
 		},
 		{
+			"name" : "VALGRIND_EXECUTABLE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/valgrind"
+		},
+		{
 			"name" : "boost_headers_DIR",
 			"properties" : 
 			[

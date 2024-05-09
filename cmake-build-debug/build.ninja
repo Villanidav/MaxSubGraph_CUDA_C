@@ -40,6 +40,12 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/
+
+#############################################
+# Utility command for memcheck
+
+build memcheck: phony CMakeFiles/memcheck test
+
 # =============================================================================
 # Object build statements for EXECUTABLE target subgraph_search
 
@@ -395,12 +401,6 @@ build testFra: CXX_EXECUTABLE_LINKER__testFra_Debug CMakeFiles/testFra.dir/src/t
 
 
 #############################################
-# Utility command for valgrind
-
-build valgrind: phony CMakeFiles/valgrind
-
-
-#############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
@@ -424,10 +424,10 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 
 #############################################
-# Custom command for CMakeFiles/valgrind
+# Custom command for CMakeFiles/memcheck
 
-build CMakeFiles/valgrind | ${cmake_ninja_workdir}CMakeFiles/valgrind: CUSTOM_COMMAND
-  COMMAND = cd /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug && /usr/bin/valgrind --tool=memcheck --leak-check=yes /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/test.cpp
+build CMakeFiles/memcheck | ${cmake_ninja_workdir}CMakeFiles/memcheck: CUSTOM_COMMAND || test
+  COMMAND = cd /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug && /usr/bin/valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose --log-file=valgrind.log /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/test
 
 # =============================================================================
 # Target aliases.

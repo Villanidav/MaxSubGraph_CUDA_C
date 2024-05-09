@@ -1,26 +1,6 @@
 [
 {
   "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
-  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++  -I/usr/local/include -I/home/davide/miniconda3/include/rdkit -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -std=c++17 -o CMakeFiles/subgraph_search.dir/src/main.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/main.cpp",
-  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/main.cpp"
-},
-{
-  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
-  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++  -I/usr/local/include -I/home/davide/miniconda3/include/rdkit -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -std=c++17 -o CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mc_split.cpp",
-  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mc_split.cpp"
-},
-{
-  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
-  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++  -I/usr/local/include -I/home/davide/miniconda3/include/rdkit -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -std=c++17 -o CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mol_mcs.cpp",
-  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mol_mcs.cpp"
-},
-{
-  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
-  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++  -I/usr/local/include -I/home/davide/miniconda3/include/rdkit -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -std=c++17 -o CMakeFiles/subgraph_search.dir/src/g2mol.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/g2mol.cpp",
-  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/g2mol.cpp"
-},
-{
-  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
   "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -DTESTING -I/usr/local/include -I/home/davide/miniconda3/include/rdkit -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -std=c++17 -o CMakeFiles/test.dir/src/test.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/test.cpp",
   "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/test.cpp"
 },
@@ -103,6 +83,26 @@
   "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
   "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++ -DTESTING -I/usr/local/include -I/home/davide/miniconda3/include/rdkit -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -O3 -DNDEBUG -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -std=c++17 -o CMakeFiles/test.dir/src/pair_vertex.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/pair_vertex.cpp",
   "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/pair_vertex.cpp"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++  -I/usr/local/include -I/home/davide/miniconda3/include/rdkit -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -std=c++17 -o CMakeFiles/subgraph_search.dir/src/main.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/main.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/main.cpp"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++  -I/usr/local/include -I/home/davide/miniconda3/include/rdkit -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -std=c++17 -o CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mc_split.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mc_split.cpp"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++  -I/usr/local/include -I/home/davide/miniconda3/include/rdkit -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -std=c++17 -o CMakeFiles/subgraph_search.dir/src/mol_mcs.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mol_mcs.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/mol_mcs.cpp"
+},
+{
+  "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
+  "command": "/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++  -I/usr/local/include -I/home/davide/miniconda3/include/rdkit -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/subgraph_search -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/PUBLIC -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/test -I/home/davide/CLionProjects/MaxSubGraph_CUDA_C/testFra -fvisibility-inlines-hidden -std=c++17 -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/davide/miniconda3/include -O3 -DNDEBUG -flto -fno-fat-lto-objects -Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro -std=c++17 -o CMakeFiles/subgraph_search.dir/src/g2mol.cpp.o -c /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/g2mol.cpp",
+  "file": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/g2mol.cpp"
 },
 {
   "directory": "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",

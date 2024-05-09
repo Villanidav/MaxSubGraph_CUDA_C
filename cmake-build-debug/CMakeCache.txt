@@ -257,6 +257,9 @@ TARGET_CPU_ARCHITECTURE:STRING=generic
 //Path to a program.
 VALGRIND:FILEPATH=/usr/bin/valgrind
 
+//Path to a program.
+VALGRIND_EXECUTABLE:FILEPATH=/usr/bin/valgrind
+
 //The directory containing a CMake configuration file for boost_headers.
 boost_headers_DIR:PATH=/usr/local/lib/cmake/boost_headers-1.82.0
 

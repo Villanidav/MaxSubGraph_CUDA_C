@@ -1,3 +1,4 @@
+/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/memcheck.dir
 /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/subgraph_search.dir
 /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/test.dir
 /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/testFra.dir
