@@ -132,7 +132,16 @@ set_target_properties(test PROPERTIES
 )
 
 
+find_program(VALGRIND "valgrind")
 
+if(VALGRIND)
+  add_custom_target(valgrind COMMAND
+          "${VALGRIND}"
+          --tool=memcheck
+          --leak-check=yes
+          "${source_path}/test.cpp"  # Replace with your executable name
+  )
+endif()
 
 # enable link-time optimizations
 include(CheckIPOSupported)

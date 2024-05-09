@@ -91,6 +91,7 @@ bool solve_mcs() {
     vector<pair<int,int >> m_local = elem.m_local;
     int bound,v;
     bound = m_local.size() + calc_bound(lcs);
+
     if ( bound <= m_best.size() ){ if( !Q.empty() ){ return true; } return false;}
     vector<LabelClass*> label_class_pointers;
     label_class_pointers.reserve(lcs.size()+1);
@@ -104,14 +105,15 @@ bool solve_mcs() {
 
         //LabelClass lc = *select_label(label_class_pointers, m_local.size());
 
-        for( int v : lc.g )  {
+        while ( !lc.g.empty() )  {
             v = select_vertex(lc.g, g0);
 
             for ( int w : lc.h ) {
                 if ( !matchable(v,w,lc) ) continue;
-
                 temp_lcs = genNewLabels(v,w,lcs);
                 pair<int,int> m_temp;
+                m_temp.first = v;
+                m_temp.second = w;
                 m_local.push_back(m_temp);
                 queue_elem qel;
                 qel.labels = temp_lcs;
@@ -121,7 +123,7 @@ bool solve_mcs() {
                 m_local.pop_back();
 
             }
-            //lc.remove(0, v);
+            lc.remove(0, v);
         }
         //lcs.erase(std::find(lcs.begin(), lcs.end(), lc));
     }
@@ -142,21 +144,14 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<double>>& g00, 
     edge_labels = gen_bond_labels(g0, g1);
 
     std::vector<LabelClass> initial_label_classes = gen_initial_labels(l0, l1, ring_classes);
-    std::vector<LabelClass* > label_class_pointers;
-    int v;
-    label_class_pointers.reserve(initial_label_classes.size()+1);
-    for (LabelClass& item : initial_label_classes) {
-        label_class_pointers.push_back(&item);
-    }
     vector<pair<int,int>> m_local={{}};
     vector<LabelClass> temp_lcs;
+    //temp_lcs.reserve();
 
    for( LabelClass lc : initial_label_classes )  {
         //LabelClass lc = *select_label(label_class_pointers, 0 );
 
         for(int v : lc.g) {
-             v = select_vertex(lc.g, g0);
-
             for ( int w : lc.h ) {
                 if ( !matchable(v,w,lc) ) continue;
 

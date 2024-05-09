@@ -36,7 +36,6 @@ class LabelClass {
                 for(int elem : g){
                     posizione++;
                 }
-                std::cout<<"\n";
                 if (it != g.end()) {
                     int idx = std::distance(g.begin(), it);
                     g.erase(g.begin() + idx);

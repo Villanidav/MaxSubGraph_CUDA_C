@@ -395,6 +395,12 @@ build testFra: CXX_EXECUTABLE_LINKER__testFra_Debug CMakeFiles/testFra.dir/src/t
 
 
 #############################################
+# Utility command for valgrind
+
+build valgrind: phony CMakeFiles/valgrind
+
+
+#############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
@@ -415,6 +421,13 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Custom command for CMakeFiles/valgrind
+
+build CMakeFiles/valgrind | ${cmake_ninja_workdir}CMakeFiles/valgrind: CUSTOM_COMMAND
+  COMMAND = cd /home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug && /usr/bin/valgrind --tool=memcheck --leak-check=yes /home/davide/CLionProjects/MaxSubGraph_CUDA_C/src/test.cpp
 
 # =============================================================================
 # Target aliases.

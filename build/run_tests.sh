@@ -1,4 +1,4 @@
 cd ..
-cmake --build ./build -j
+cmake --build ./build -j 
 cd build
 ./test

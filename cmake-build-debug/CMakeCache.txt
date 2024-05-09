@@ -33,6 +33,9 @@ CMAKE_BUILD_TYPE:STRING=Debug
 //Enable colored diagnostics throughout.
 CMAKE_COLOR_DIAGNOSTICS:BOOL=ON
 
+//CUDA compiler
+CMAKE_CUDA_COMPILER:FILEPATH=CMAKE_CUDA_COMPILER-NOTFOUND
+
 //CXX compiler
 CMAKE_CXX_COMPILER:FILEPATH=/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-c++
 
@@ -251,6 +254,9 @@ RDKit_DIR:PATH=/home/davide/miniconda3/lib/cmake/rdkit
 //The target cpu for architecture-specific optimizations
 TARGET_CPU_ARCHITECTURE:STRING=generic
 
+//Path to a program.
+VALGRIND:FILEPATH=/usr/bin/valgrind
+
 //The directory containing a CMake configuration file for boost_headers.
 boost_headers_DIR:PATH=/usr/local/lib/cmake/boost_headers-1.82.0
 
@@ -291,6 +297,8 @@ CMAKE_COMMAND:INTERNAL=/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/b
 CMAKE_CPACK_COMMAND:INTERNAL=/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/bin/cpack
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=/home/davide/Downloads/clion-2024.1/bin/cmake/linux/x64/bin/ctest
+//ADVANCED property for variable: CMAKE_CUDA_COMPILER
+CMAKE_CUDA_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_COMPILER
 CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_COMPILER_AR
