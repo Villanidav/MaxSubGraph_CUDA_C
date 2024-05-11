@@ -10,7 +10,7 @@ std::vector<std::pair<int, int>> incumbent;
 
 LabelClass *select_label(std::vector<LabelClass*>& label_classes, int map_size);
 
-void printLabelClass(LabelClass lb) {
+void printLabelClasses(LabelClass lb) {
     if( true) {
         cout<< lb.label << " [ ";
         cout<< " G("<< lb.g.size() << "): ";
@@ -48,8 +48,8 @@ bool matchablee( int v, int w, LabelClass lc ) {
 }
 
 
-void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<double> > g1,
-    std::vector<LabelClass>& label_classes, std::vector<double> edge_labels,
+void search_mcs(std::vector<std::vector<float> > g0, std::vector<std::vector<float> > g1,
+    std::vector<LabelClass>& label_classes, std::vector<float> edge_labels,
     const std::vector<std::pair<int, int> >& m){
 
 
@@ -133,7 +133,7 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
 
             for(LabelClass label : label_classes){
 
-                for(double edge_l : edge_labels){
+                for(float edge_l : edge_labels){
                     std::vector<int> v_conn;
                     std::vector<int> w_conn;
                     std::vector<std::vector<int> > v_c_rings;
@@ -170,7 +170,7 @@ void search_mcs(std::vector<std::vector<double> > g0, std::vector<std::vector<do
 
             h.push_back(nuova_coppia);
             cout<<"\n\n new LABEL CLASSES "<< nuova_coppia.first << " , " << nuova_coppia.second<<endl;
-            for ( LabelClass lb : l_draft ) printLabelClass(lb);
+            for ( LabelClass lb : l_draft ) printLabelClasses(lb);
             search_mcs(g0, g1, l_draft, edge_labels, h );
         }
 
@@ -194,7 +194,7 @@ std::vector<std::pair<int, int>> getIncumbent(){
 
 
 
-std::vector<std::pair<int, int>> mc_split(const std::vector<std::vector<double>> g0, const std::vector<std::vector<double>> g1,
+std::vector<std::pair<int, int>> mc_split(const std::vector<std::vector<float>> g0, const std::vector<std::vector<float>> g1,
                                           const std::vector<std::string>& l0, const std::vector<std::string>& l1,
                                           std::vector<std::vector<int> >& ring_classes) {
 
@@ -203,13 +203,13 @@ std::vector<std::pair<int, int>> mc_split(const std::vector<std::vector<double>>
     std::vector<LabelClass> initial_label_classes = gen_initial_labels(l0, l1, ring_classes);
 
     cout<<"MATRIX"<<endl;
-    for( std::vector<double> i : g0 ) {
-        for( double j : i )
+    for( std::vector<float> i : g0 ) {
+        for( float j : i )
             cout<<"["<<j<<"]";
         cout<<"\n";
     }
 
-    std::vector<double> edge_labels = gen_bond_labels(g0, g1);
+    std::vector<float> edge_labels = gen_bond_labels(g0, g1);
 
 
     // Search maximum common connected subgraph

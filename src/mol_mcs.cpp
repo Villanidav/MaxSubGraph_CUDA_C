@@ -10,9 +10,9 @@
 
 
 
-vector<vector<double>> getAdjacencyMatrix(const RWMol& mol) {
+vector<vector<float>> getAdjacencyMatrix(const RWMol& mol) {
     int numAtoms = mol.getNumAtoms();
-    vector adjacencyMatrix(numAtoms, vector<double>(numAtoms, 0.0));
+    vector adjacencyMatrix(numAtoms, vector<float>(numAtoms, 0.0));
 
     // Iterare su tutti i legami nella molecola e aggiornare la matrice di adiacenza con il peso dei legami
     // Iterare su tutti i legami nella molecola e aggiornare la matrice di adiacenza con il peso dei legami
@@ -26,7 +26,7 @@ vector<vector<double>> getAdjacencyMatrix(const RWMol& mol) {
         int endAtomIdx = endAtom->getIdx();
 
         // Impostare il peso del legame in base al tipo di legame
-        double bondWeight = 1.0; // Peso predefinito per il legame singolo
+        float bondWeight = 1.0; // Peso predefinito per il legame singolo
         if (bondType == Bond::DOUBLE) {
             bondWeight = 2.0;
         } else if (bondType == Bond::TRIPLE) {
@@ -66,10 +66,10 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
         l1.push_back(atom->getSymbol());
     }
 
-    std::pair<std::vector<std::string>, std::vector<std::string>> label_ring_data = {l0, l1};
+    std::pair label_ring_data = {l0, l1};
 
 
-    std::vector<std::vector<double>> g0,g1;
+    std::vector<std::vector<float>> g0,g1;
 
     if (bond_match) {
         g0 = getAdjacencyMatrix(mol0);
@@ -136,16 +136,18 @@ ROMol mol_mcs(const RDKit::RWMol &mol0, const RDKit::RWMol &mol1, int bond_match
     std::sort(mapping.begin(), mapping.end());
 
     std::vector<int> mapped_atom_idxs_g0;
+    mapped_atom_idxs_g0.reserve(mapping.size());
     for (const auto &pair : mapping) {
         mapped_atom_idxs_g0.push_back(pair.first);
     }
 
     std::vector<std::string> mcs_labels;
+    mcs_labels.reserve(mapped_atom_idxs_g0.size());
     for (int idx_g0 : mapped_atom_idxs_g0) {
         mcs_labels.push_back(l0[idx_g0]);
     }
 
-    vector<vector<double>> mcs_matrix = g0;
+    vector<vector<float>> mcs_matrix = g0;
     for (int idx = g0.size() - 1; idx >= 0; --idx) {
         if (std::find(mapped_atom_idxs_g0.begin(), mapped_atom_idxs_g0.end(), idx) == mapped_atom_idxs_g0.end()) {
             mcs_matrix.erase(mcs_matrix.begin() + idx);

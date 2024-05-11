@@ -7,7 +7,7 @@
 #include <queue>
 #include <algorithm>
 
-std::pair<int, int> pair_vertex(LabelClass lb,  std::vector<std::vector<double>> g0) {
+std::pair<int, int> pair_vertex(LabelClass lb,  std::vector<std::vector<float>> g0) {
     std::pair<int, int> pair;
     int v = select_vertex(lb.g, g0);
     pair.first = v;

@@ -5,7 +5,7 @@
 #include <RDGeneral/test.h>
 
 // Function to convert a graph (adjacency matrix and labels) to an RDKit molecule
-RDKit::ROMol g2mol( std::vector<std::string>& labels,  std::vector<std::vector<double>>& adj) {
+RDKit::ROMol g2mol( std::vector<std::string>& labels,  std::vector<std::vector<float>>& adj) {
     // Create an empty editable molecule
     RWMol mol;
 
@@ -26,7 +26,7 @@ RDKit::ROMol g2mol( std::vector<std::string>& labels,  std::vector<std::vector<d
     for (size_t ix = 0; ix < adj.size(); ++ix) {
         for (size_t iy = ix + 1; iy < adj[ix].size(); ++iy) {  // Only iterate upper triangle
 
-            double bond_type = adj[ix][iy];
+            float bond_type = adj[ix][iy];
             if (bond_type == 0.0) {
                 continue;
             }
