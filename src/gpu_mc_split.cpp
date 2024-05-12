@@ -9,7 +9,6 @@
 #include <algorithm>
 
 using namespace std;
-
     std::vector<std::vector<float>> g0;
     std::vector<std::vector<float>> g1;
     std::vector<float> edge_labels;
@@ -86,7 +85,8 @@ vector<LabelClass> genNewLabels(int v, int w, const vector<LabelClass>& lcs) {
 
 
 bool solve_mcs() {
-    queue_elem elem =  Q.back();
+    cout<<"\nin solve"<<Q.size();
+    queue_elem elem =  Q.back();Q.pop_back();
     vector<LabelClass> lcs = elem.labels;
 
     std::vector<LabelClass*> label_class_pointers;
@@ -94,7 +94,6 @@ bool solve_mcs() {
     for (LabelClass& item : lcs) {label_class_pointers.push_back(&item);}
 
     vector<pair<int,int >> m_local = elem.m_local;
-    Q.pop_back();
 
     if ( m_local.size() + calc_bound(lcs) <= m_best.size() ){ if( !Q.empty() ){ return true; } return false;}
     queue_elem qel;
@@ -109,9 +108,12 @@ bool solve_mcs() {
             m_local.push_back(m_temp);
             qel.labels = genNewLabels(v,w,lcs);
             qel.m_local = m_local;
+            //atomize {
             Q.push_back(qel);
             if ( m_local.size() > m_best.size() ) m_best = m_local;
+            // }
             m_local.pop_back();
+            //cout<<"\nin solve"<<Q.size();
         }
     }
 
@@ -128,19 +130,19 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
     std::vector<LabelClass> initial_label_classes = gen_initial_labels(l0, l1, ring_classes);
     vector<pair<int,int>> m_local={{}};
     queue_elem elem;
-    int v;
-
+    int v=0,w=0;
     for( LabelClass lc : initial_label_classes ) {
         v = select_vertex(lc.g,g0);
-        for ( int w : lc.h ) {
+        w = select_vertex(lc.h,g1);
+        //for( int w : lc.h ){
             if ( !matchable(v,w,lc) ) continue;
             m_local.at(0).first = v;
             m_local.at(0).second = w;
-            elem.labels = genNewLabels(v,w,initial_label_classes);;
+            elem.labels = genNewLabels(v,w,initial_label_classes);
             elem.m_local=m_local;
             Q.push_back(elem);
             //todo
-        }
+        //}
     }
 
     bool flag;
