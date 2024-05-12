@@ -14,11 +14,27 @@ using namespace std;
     std::vector<float> edge_labels;
     vector<pair<int,int>> m_best;
 
+
     struct queue_elem{
         vector<LabelClass> labels;
         vector<pair<int,int>> m_local;
     };
     vector<queue_elem> Q;
+
+void printLabelClass(LabelClass lb) {
+    if( true) {
+        cout<< lb.label << " [ ";
+        cout<< " G("<< lb.g.size() << "): ";
+        if(!lb.g.empty()) {for ( int i : lb.g ) cout<<"["<<i<<"]";}
+        cout<< " H("<< lb.h.size() << "): ";
+        if(!lb.h.empty()) {for ( int i : lb.h ) cout<<"["<<i<<"]";}
+        cout<< " RINGS("<< lb.rings_g.size() << "): [";
+        for( vector<int> i : lb.rings_g ){cout<<"("<<i.size()<<")"<<"["; for( int j: i ) cout<<j<<", ";  cout<<" ]";}
+        cout<<"]";
+        cout<< " edge : " <<lb.adj<<" " ;
+        cout<< lb.label << " ] "<<endl;
+    }
+}
 
 
 LabelClass *select_label(std::vector<LabelClass*>& label_classes, int map_size);
@@ -85,10 +101,9 @@ vector<LabelClass> genNewLabels(int v, int w, const vector<LabelClass>& lcs) {
 
 
 bool solve_mcs() {
-    cout<<"\nin solve"<<Q.size();
     queue_elem elem =  Q.back();Q.pop_back();
     vector<LabelClass> lcs = elem.labels;
-
+    //for( LabelClass lc : lcs ) printLabelClass(lc);
     std::vector<LabelClass*> label_class_pointers;
     label_class_pointers.reserve(lcs.size()); // Reserve space for the pointers
     for (LabelClass& item : lcs) {label_class_pointers.push_back(&item);}
@@ -121,19 +136,41 @@ bool solve_mcs() {
 }
 
 
+int calcSize(vector<LabelClass> lcs) {
+    int result=0;
+    for( LabelClass lc : lcs) {
+        result = result + (lc.g.size()+lc.h.size());
+        for( vector<int> i : lc.rings_g ) {
+            result += i.size();
+        }
+        result += 3;
+    }
+    return result;
+}
+
+
+
 vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, const std::vector<std::vector<float>>& g11,
                                           const std::vector<std::string>& l0, const std::vector<std::string>& l1,
                                           std::vector<std::vector<int> >& ring_classes){
     g0 = g00;
     g1 = g11;
     edge_labels = gen_bond_labels(g0, g1);
+    int min = std::min(l0.size(), l1.size());
     std::vector<LabelClass> initial_label_classes = gen_initial_labels(l0, l1, ring_classes);
+    int size_of_label_classes = calcSize(initial_label_classes);
+    Q.reserve(32*32);
+    for( int x = 0; x<Q.size() ; ++x) {
+        Q.at(x).labels.reserve(size_of_label_classes);
+        Q.at(x).m_local.reserve(min);
+    }
+
     vector<pair<int,int>> m_local={{}};
     queue_elem elem;
     int v=0,w=0;
     for( LabelClass lc : initial_label_classes ) {
         v = select_vertex(lc.g,g0);
-        w = select_vertex(lc.h,g1);
+        //w = select_vertex(lc.h,g1);
         //for( int w : lc.h ){
             if ( !matchable(v,w,lc) ) continue;
             m_local.at(0).first = v;
@@ -147,5 +184,7 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
 
     bool flag;
     do{flag = solve_mcs();}while(flag);
+
+
     return m_best;
 }
