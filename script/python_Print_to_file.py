@@ -36,11 +36,7 @@ class LabelClass:
 
         return res
     
-    def pri(self):
-        print(self.label)
-        print(self.g)
-        print(self.h)
-        print(self.rings_g)
+   
 
 
 # generates all possible rotations of a string. Used to find all axes of symmetry in a ring.
@@ -133,15 +129,15 @@ def gen_ring_classes(mol0, mol1):
 
     # AtomRings() returns a list of rings from the molecule containing the indexes of atom members
     ring_info_m0 = mol0.GetRingInfo().AtomRings()
-    print("ring info m0 " , ring_info_m0)
+    
     ring_info_m1 = mol1.GetRingInfo().AtomRings()
-    print("ring info m1 " , ring_info_m1)
+    
 
     for r0 in ring_info_m0:
         for a0 in r0:
             ring_comp_m0[a0] = [-1]
     
-    print("ring comp m0 ", ring_comp_m0)
+    
     # iterate through rings to match them to their compatibility class, marking each atom as a member
     for r0 in ring_info_m0:
 
@@ -193,7 +189,7 @@ def gen_initial_labels(l0, l1, ring_classes):
     label_classes = []
 
     common_labels = list(set(l0) & set(l1))
-    print("common labels ", common_labels)
+    
 
     for label in common_labels:
         # atoms in either molecule which do not have label correspondence are discarded, together with their ring data
@@ -276,7 +272,7 @@ def g2mol(l, adj):
 # m:                current mapping of vertices being explored
 def search_mcs(g0, g1, label_classes, edge_labels, m):
     global incumbent
-    print("INIZIO RICORSIONE")
+    
     # bound calculation
     bound = len(m) + calc_bound(label_classes)
 
@@ -285,7 +281,7 @@ def search_mcs(g0, g1, label_classes, edge_labels, m):
         incumbent = m
     # if the incumbent has reached the maximum calculated size given current label classes, return
     if len(incumbent) >= bound:
-        print("fine")
+        
         return
 
     # select label form classes
@@ -299,13 +295,13 @@ def search_mcs(g0, g1, label_classes, edge_labels, m):
     v = select_vertex(label_class.g, g0)
     # get rings containing v
     v_ring_atoms = label_class.get_ring_match_data([v])[0]
-    print(" len " ,len(v_ring_atoms))
+   
     # cycle through vertices in g1 with selected label
     for idx, w in enumerate(label_class.h):
         # get rings containing w
         # if v and w are not members of at least one shared ring class, v and w cannot be mapped together
         if len(v_ring_atoms) != 0 and (-1 in v_ring_atoms or w not in v_ring_atoms):
-            print("continue:")
+            
             continue
         # label classes for the next recursive call
         l_draft = []
@@ -325,14 +321,13 @@ def search_mcs(g0, g1, label_classes, edge_labels, m):
                     adj = (1 if (edge_l != 0 or label.adj == 1) else 0)
                     l_draft.append(LabelClass(v_conn, w_conn, v_c_rings, adj=adj))
         # add (v, w) to current mapping, continue exploring
-        print("nuova chiamata ricosiva m")
-        print(m + [(v, w)])
+        
         search_mcs(g0, g1, l_draft, edge_labels, m + [(v, w)])
 
-    print("salto, fine primo w")
+ 
     # remove node v from selected label class. If the label class did not contain nodes other than v in graph g0,
     # remove label class
-    print("label in posizione ", label_classes.index(label_class) )
+
     label_classes.remove(label_class)
     label_class.remove(0, v)
 
@@ -349,13 +344,11 @@ def mc_split(g0, g1, l0, l1, ring_classes):
     incumbent = []
     # generate label data
     initial_label_classes = gen_initial_labels(l0, l1, ring_classes)
-    print("int lab cla \n")
-    for  c in initial_label_classes:
-        c.pri()
+   
+  
     
     edge_labels = gen_bond_labels(g0, g1)
-    print("BOND LABELS")
-    print(edge_labels)
+
     # search maximum common connected subgraph
     search_mcs(g0, g1, initial_label_classes, edge_labels, [])
     return incumbent
@@ -410,11 +403,11 @@ def mol_mcs(mol0, mol1, bond_match=1, ring_match=1, return_map=0):
                         label_ring_data[mol_idx][atom_idx] += "R"
             
 
-    print(label_ring_data)
+
 
     ring_classes = gen_ring_classes(mol0, mol1)
 
-    print(ring_classes)
+
 
     mapping = mc_split(g0, g1, label_ring_data[0], label_ring_data[1], ring_classes)
 
@@ -460,16 +453,32 @@ def mol_mcs(mol0, mol1, bond_match=1, ring_match=1, return_map=0):
 #        
 #
 
+filename = "smiles.txt"
+smiles = []
 
-smile0 = "CN(c1ccc(cc1)c2nnn(CC(=O)Nc3ccc4nc(oc4c3)c5ccccc5Cl)n2)c6cc(C)c(N)cn6"
-smile1 = "O=C(Cn1nnc(n1)c2ccc(Nc3ccccn3)cc2)Nc4ccc5nc(oc5c4)c6ccccc6"
+try:
+    with open(filename, "r") as file:
+        for line in file:
+            smiles.append(line.strip())
+except FileNotFoundError:
+    print("Error opening file:", filename)
 
-result = smiles_mcs(smile0,smile1,bond_match=1, ring_match=1)
+# No need to explicitly close the file in Python, as it's handled by the "with" statement
+
+# Open the file in write mode (creates the file if it doesn't exist)
+with open("outputPython.txt", "w") as f:
+    for i in range(len(smiles) - 1):
+        # Iterate over the indices from i+1 to len(smiles)-1
+        for j in range(i + 1, len(smiles)):
+            result = smiles_mcs(smiles[i],smiles[j],bond_match=1, ring_match=1)
+            l0 = [a.GetSymbol() for a in result.GetAtoms()]
+            print(l0, file=f)
+            
+    
 
 
-l0 = [a.GetSymbol() for a in result.GetAtoms()]
 
 
 
 
-print(l0)
+

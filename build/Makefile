@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/davide/CLionProjects/MaxSubGraph_CUDA_C
+CMAKE_SOURCE_DIR = /home/francesco/Desktop/MaxSubGraph_CUDA_C
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build
+CMAKE_BINARY_DIR = /home/francesco/Desktop/MaxSubGraph_CUDA_C/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles /home/francesco/Desktop/MaxSubGraph_CUDA_C/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -366,6 +366,7 @@ src/gpu_mc_split.o: src/gpu_mc_split.cpp.o
 # target to build an object file
 src/gpu_mc_split.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gpu_mc_split.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gpu_mc_split.cpp.o
 .PHONY : src/gpu_mc_split.cpp.o
 
 src/gpu_mc_split.i: src/gpu_mc_split.cpp.i
@@ -374,6 +375,7 @@ src/gpu_mc_split.i: src/gpu_mc_split.cpp.i
 # target to preprocess a source file
 src/gpu_mc_split.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gpu_mc_split.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gpu_mc_split.cpp.i
 .PHONY : src/gpu_mc_split.cpp.i
 
 src/gpu_mc_split.s: src/gpu_mc_split.cpp.s
@@ -382,6 +384,7 @@ src/gpu_mc_split.s: src/gpu_mc_split.cpp.s
 # target to generate assembly for a file
 src/gpu_mc_split.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/gpu_mc_split.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/gpu_mc_split.cpp.s
 .PHONY : src/gpu_mc_split.cpp.s
 
 src/hood.o: src/hood.cpp.o
@@ -501,6 +504,7 @@ src/pair_vertex.o: src/pair_vertex.cpp.o
 # target to build an object file
 src/pair_vertex.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pair_vertex.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/pair_vertex.cpp.o
 .PHONY : src/pair_vertex.cpp.o
 
 src/pair_vertex.i: src/pair_vertex.cpp.i
@@ -509,6 +513,7 @@ src/pair_vertex.i: src/pair_vertex.cpp.i
 # target to preprocess a source file
 src/pair_vertex.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pair_vertex.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/pair_vertex.cpp.i
 .PHONY : src/pair_vertex.cpp.i
 
 src/pair_vertex.s: src/pair_vertex.cpp.s
@@ -517,6 +522,7 @@ src/pair_vertex.s: src/pair_vertex.cpp.s
 # target to generate assembly for a file
 src/pair_vertex.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/pair_vertex.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/pair_vertex.cpp.s
 .PHONY : src/pair_vertex.cpp.s
 
 src/search_mcs.o: src/search_mcs.cpp.o

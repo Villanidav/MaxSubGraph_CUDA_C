@@ -126,7 +126,7 @@ bool solve_mcs() {
             //atomize {
             Q.push_back(qel);
             if ( m_local.size() > m_best.size() ) m_best = m_local;
-            // }
+            
             m_local.pop_back();
             //cout<<"\nin solve"<<Q.size();
         }
@@ -170,7 +170,7 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
     int v=0,w=0;
     for( LabelClass lc : initial_label_classes ) {
         v = select_vertex(lc.g,g0);
-        //w = select_vertex(lc.h,g1);
+        w = select_vertex(lc.h,g1);
         //for( int w : lc.h ){
             if ( !matchable(v,w,lc) ) continue;
             m_local.at(0).first = v;

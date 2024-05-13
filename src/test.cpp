@@ -1,6 +1,8 @@
 //
 // Created by davide on 4/19/24.
 //
+
+#include <fstream>
 #include <iostream>
 #include <vector>
 #include <string>
@@ -13,33 +15,66 @@ using namespace RDKit;
 
 int main()
 {
-    string smile0 = "CC1CCc2c(C1)sc(NC(=O)c3ccc(cc3)C(C)(C)C)c2c4nnn(CC(=O)Nc5ccc6nc(oc6c5)c7ccccc7Cl)n4";
-    string smile1 = "O=C(Cn1nnc(n1)c2c3CCCCc3sc2NC(=O)c4ccccc4)Nc5ccc6nc(oc6c5)c7ccccc7";
+
+    std::string filename = "smiles.txt"; 
+    std::vector<std::string> smiles;
+    std::ifstream file(filename);
+
+    if (file.is_open()) {
+    std::string line;
+        while (std::getline(file, line)) {
+            smiles.push_back(line);
+        }
+
+    } else {
+    std::cerr << "Error opening file: " << filename << std::endl;
+  }
+
+  
+
+    // Close the file
+    file.close();
+
+  std::ofstream outfile("output.txt");
+  std::streambuf* original_cout_buffer = std::cout.rdbuf();  // Save original buffer
+  std::cout.rdbuf(outfile.rdbuf());
+    
+
+    
+
     clock_t start = clock();
     ROMol result;
     //cout<<"PRE FUNCTION" ;
-    for ( int i = 0 ; i<1 ; ++i) {
-        result = smiles_mcs(smile0, smile1, 1,1);
+    for ( int i = 0 ; i<smiles.size() -1; ++i) {
+        for(int j = i+1; j < smiles.size(); j++){
+            result = smiles_mcs(smiles.at(i), smiles.at(j), 1,1);
+
+            std::vector<std::string> result_string;
+            for (const auto &atom : result.atoms()) {
+                result_string.push_back(atom->getSymbol());
+            }
+            cout << "[";
+            for ( int idx = 0; idx < result_string.size(); idx++ ){
+                if(idx == result_string.size()-1 ){
+                    cout <<"'"<<result_string.at(idx)<<"']"<<endl;
+                }
+                else cout <<"'"<<result_string.at(idx)<<"', ";
+            }
+        } 
     }
 
     clock_t end = clock();
 
     // Calculate elapsed time in seconds
     double elapsed_seconds = (double)(end - start) / CLOCKS_PER_SEC;
-
+/*
     // Print the elapsed time in seconds
     std::cout << "\nElapsed time: " << elapsed_seconds << " seconds" << std::endl;
+*/
 
+std::cout.rdbuf(original_cout_buffer);
 
-    std::vector<std::string> result_string;
-    for (const auto &atom : result.atoms()) {
-        result_string.push_back(atom->getSymbol());
-    }
-
-    cout << "\n MAX COMMON STRUCTURE ATOMS: \n[" ;
-    for ( string idx : result_string )
-        cout <<"'"<<idx<<"', ";
-    cout << "]" ;
+     
 
     return 0;
 }

@@ -129,6 +129,8 @@ add_executable(testFra ${header_files} "${source_path}/testFra.cpp"
         "${source_path}/mol_mcs.cpp"
         "${source_path}/mc_split.cpp"
         "${source_path}/g2mol.cpp"
+        "${source_path}/gpu_mc_split.cpp"
+        "${source_path}/pair_vertex.cpp"
 )
 
 set_target_properties(test PROPERTIES
@@ -152,11 +154,11 @@ endif()
 # NOTE: by using this way of importing RDKit, we need to manually include its dependencies
 # Get the installation prefix of RDKit
 
-#get_filename_component(RDKIT_INSTALL_PREFIX "/home/francesco/miniconda3/envs/my-rdkit-env" REALPATH)
+get_filename_component(RDKIT_INSTALL_PREFIX "/home/francesco/miniconda3/envs/my-rdkit-env" REALPATH)
 
 # Add the installation prefix of RDKit to CMAKE_PREFIX_PATH
 
-#list(APPEND CMAKE_PREFIX_PATH "${RDKIT_INSTALL_PREFIX}")
+list(APPEND CMAKE_PREFIX_PATH "${RDKIT_INSTALL_PREFIX}")
 
 # the rdkit to perform the heavy lifting
 find_package(RDKit REQUIRED)
