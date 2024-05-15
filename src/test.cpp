@@ -16,21 +16,45 @@ using namespace RDKit;
 int main()
 {
 
-    /*std::string filename = "smiles.txt";
-    std::vector<std::string> smiles;
+ 
+
+     std::string filename = "smiles.txt";
+    std::vector<std::pair<std::string, std::string>> smiles;
     std::ifstream file(filename);
-
+    int skip;
+    std::string first, second;
     if (file.is_open()) {
-    std::string line;
+        std::string line;
         while (std::getline(file, line)) {
-            smiles.push_back(line);
+            std::istringstream iss(line);
+            
+            // Skip the first int
+            iss >> skip;
+            // Read the first string
+            iss >> first;
+            // Skip the next four ints
+            for (int i = 0; i < 4; ++i) {
+                iss >> skip;
+            }
+            // Read the second string
+            iss >> second;
+            // Store the pair of strings
+            smiles.push_back(std::make_pair(first, second));
         }
-
     } else {
-    std::cerr << "Error opening file: " << filename << std::endl;
-  }
+        std::cerr << "Error opening file: " << filename << std::endl;
+    }
 
-  
+    std::cout << "Read " << smiles.size() << " pairs" << std::endl;
+
+    // Print the pairs for verification
+    for (const auto& pair : smiles) {
+        std::cout << pair.first << " " << pair.second << std::endl;
+    }
+
+
+
+
 
     // Close the file
     file.close();
@@ -38,29 +62,34 @@ int main()
   std::ofstream outfile("output.txt");
   std::streambuf* original_cout_buffer = std::cout.rdbuf();  // Save original buffer
   std::cout.rdbuf(outfile.rdbuf());
-    
+ 
+  
 
-    
 
     clock_t start = clock();
     ROMol result;
-    //cout<<"PRE FUNCTION" ;
-    for ( int i = 0 ; i<smiles.size() -1; ++i) {
-        for(int j = i+1; j < smiles.size(); j++){
-            result = smiles_mcs(smiles.at(i), smiles.at(j), 1,1);
+    std::vector<std::string> result_string;
+    
+    for ( int i = 0 ; i<smiles.size(); ++i) {
+     
+            result = smiles_mcs(smiles.at(i).first, smiles.at(i).second, 1,1);
 
-            std::vector<std::string> result_string;
+            result_string.clear();
+           
             for (const auto &atom : result.atoms()) {
                 result_string.push_back(atom->getSymbol());
             }
-            cout << "[";
+            
+           cout << "[";
             for ( int idx = 0; idx < result_string.size(); idx++ ){
                 if(idx == result_string.size()-1 ){
                     cout <<"'"<<result_string.at(idx)<<"']"<<endl;
                 }
                 else cout <<"'"<<result_string.at(idx)<<"', ";
             }
-        } 
+
+            
+        
     }
 
     clock_t end = clock();
@@ -68,25 +97,11 @@ int main()
     // Calculate elapsed time in seconds
     double elapsed_seconds = (double)(end - start) / CLOCKS_PER_SEC;
 
-    // Print the elapsed time in seconds
-    std::cout << "\nElapsed time: " << elapsed_seconds << " seconds" << std::endl;
+    
+
+    std::cout.rdbuf(original_cout_buffer);
 
 
-std::cout.rdbuf(original_cout_buffer);*/
-    string s0 = "COCCCOc1cc(C[C@@H](C[C@H](NC(=O)OC(C)(C)C)C(O)CCCC(=O)N2CC3CCC(C3)C2)C(C)C)ccc1OC";
-    string s1 = "O=C(CCCCCCCCc1ccccc1)N2CC3CCC(C3)C2";
-    ROMol result = smiles_mcs(s0, s1 );
-    std::vector<std::string> result_string;
-    for (const auto &atom : result.atoms()) {
-        result_string.push_back(atom->getSymbol());
-    }
-    cout << "[";
-    for ( int idx = 0; idx < result_string.size(); idx++ ){
-        if(idx == result_string.size()-1 ){
-            cout <<"'"<<result_string.at(idx)<<"']"<<endl;
-        }
-        else cout <<"'"<<result_string.at(idx)<<"', ";
-    }
-    cout<<"done\n\n";
     return 0;
+
 }

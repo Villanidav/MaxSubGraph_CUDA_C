@@ -453,29 +453,32 @@ def mol_mcs(mol0, mol1, bond_match=1, ring_match=1, return_map=0):
 #        
 #
 
+
 filename = "smiles.txt"
 smiles = []
 
 try:
-    with open(filename, "r") as file:
+    with open(filename, 'r') as file:
         for line in file:
-            smiles.append(line.strip())
+            line = line.strip().split()
+            first = line[1]  # First string after skipping the first int
+            second = line[6]  # Second string after skipping four ints
+            
+            smiles.append((first, second))
 except FileNotFoundError:
     print("Error opening file:", filename)
 
 # No need to explicitly close the file in Python, as it's handled by the "with" statement
 
-# Open the file in write mode (creates the file if it doesn't exist)
 with open("outputPython.txt", "w") as f:
-    for i in range(len(smiles) - 1):
-        # Iterate over the indices from i+1 to len(smiles)-1
-        for j in range(i + 1, len(smiles)):
-            result = smiles_mcs(smiles[i],smiles[j],bond_match=1, ring_match=1)
-            l0 = [a.GetSymbol() for a in result.GetAtoms()]
-            print(l0, file=f)
+    for i in range(len(smiles)):     
+        result = smiles_mcs(smiles[i][0],smiles[i][1],bond_match=1, ring_match=1)
+        l0 = [a.GetSymbol() for a in result.GetAtoms()]
+        print(l0, file=f)
             
     
-
+            
+    
 
 
 
