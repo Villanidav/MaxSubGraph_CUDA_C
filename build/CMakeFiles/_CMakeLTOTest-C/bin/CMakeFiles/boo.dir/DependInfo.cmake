@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/src/main.c" "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/main.c.o"
+  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/src/main.c" "/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -22,7 +22,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake"
+  "/home/francesco/Desktop/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

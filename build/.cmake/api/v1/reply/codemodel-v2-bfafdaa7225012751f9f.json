@@ -52,21 +52,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "subgraph_search::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-subgraph_search-Release-edfeee632b502f3481c1.json",
+					"jsonFile" : "target-subgraph_search-Release-eeab297a597110f9eb14.json",
 					"name" : "subgraph_search",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test-Release-19b64fe803bc4383f11a.json",
+					"jsonFile" : "target-test-Release-19c533d6e5c65862f62e.json",
 					"name" : "test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "testFra::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-testFra-Release-89176f67eebfa5766084.json",
+					"jsonFile" : "target-testFra-Release-48e69b398b2e96aaf07d.json",
 					"name" : "testFra",
 					"projectIndex" : 0
 				}
@@ -76,8 +76,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C/build",
-		"source" : "/home/davide/CLionProjects/MaxSubGraph_CUDA_C"
+		"build" : "/home/francesco/Desktop/MaxSubGraph_CUDA_C/build",
+		"source" : "/home/francesco/Desktop/MaxSubGraph_CUDA_C"
 	},
 	"version" : 
 	{
