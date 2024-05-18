@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20 FATAL_ERROR)
 project(subgraph_search VERSION 5.0)
-enable_language(CXX)
+enable_language(CXX CUDA)
 
 # ########################################################################
 # ### Tweak the default configuration

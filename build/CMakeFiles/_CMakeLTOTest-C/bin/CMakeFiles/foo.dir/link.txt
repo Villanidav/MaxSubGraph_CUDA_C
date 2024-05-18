@@ -1,2 +1,2 @@
-"/usr/bin/gcc-ar-11" cr libfoo.a CMakeFiles/foo.dir/foo.c.o
-"/usr/bin/gcc-ranlib-11" libfoo.a
+"/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ar" cr libfoo.a CMakeFiles/foo.dir/foo.c.o
+"/home/davide/miniconda3/bin/x86_64-conda-linux-gnu-gcc-ranlib" libfoo.a

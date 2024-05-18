@@ -32,20 +32,16 @@ class LabelClass {
                 rings_g.clear();
             }else{
                 auto it = std::find(g.begin(), g.end(), elem);
-                int posizione = 0;
-                for(int elem : g){
-                    posizione++;
-                }
+                int posizione;
+                posizione = g.size();
                 if (it != g.end()) {
                     int idx = std::distance(g.begin(), it);
                     g.erase(g.begin() + idx);
                     rings_g.erase(rings_g.begin() + idx);
-                    int posizione = 0;
-                    for(int elem : g){
-                        posizione++;
-                    }
+                    posizione;
+                    posizione = g.size();
                 }else{
-                    int posizione = 0;
+                     posizione = 0;
                 }
             }
 

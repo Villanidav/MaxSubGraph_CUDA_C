@@ -21,7 +21,19 @@ using namespace std;
     };
     vector<queue_elem> Q;
 
-void printLabelClass(LabelClass lb) {
+size_t calcSize(const vector<LabelClass>& lcs) {
+    size_t result=0;
+    for( const LabelClass& lc : lcs) {
+        result = result + (lc.g.size()+lc.h.size());
+        for( vector<int> i : lc.rings_g ) {
+            result += i.size();
+        }
+        result += 3;
+    }
+    return result;
+}
+
+void printLabelClass(const LabelClass& lb) {
     if( true) {
         cout<< lb.label << " [ ";
         cout<< " G("<< lb.g.size() << "): ";
@@ -39,22 +51,16 @@ void printLabelClass(LabelClass lb) {
 
 LabelClass *select_label(std::vector<LabelClass*>& label_classes, int map_size);
 
-bool matchable( int v, int w, LabelClass lc ) {
+bool matchable(const int v,const int w, LabelClass lc ) {
     std::vector<int> vector;
     vector.push_back(v);
     std::vector<int>  v_ring_atoms = {};
     v_ring_atoms = lc.get_ring_match_data(vector).at(0);
 
     if( !v_ring_atoms.empty() ) {
-        for(int x : v_ring_atoms){
-
-            if( x == -1 ) {
-                return false;
-            }
-            if(x == w ){
-                return true;
-            }
-        }
+        for(const int x : v_ring_atoms){
+            if( x == -1 )return false;
+            if( x == w ) return true;}
         return false;
     }
     return true;
@@ -62,33 +68,23 @@ bool matchable( int v, int w, LabelClass lc ) {
 
 vector<LabelClass> genNewLabels(int v, int w, const vector<LabelClass>& lcs) {
     vector<LabelClass> l_draft;
-    for(LabelClass label : lcs){
 
+    for(LabelClass label : lcs){
         for(float edge_l : edge_labels){
             std::vector<int> v_conn;
             std::vector<int> w_conn;
             std::vector<std::vector<int> > v_c_rings;
 
-            for(int vtx : hood(v,g0,edge_l)){
-                if( std::find(label.g.begin(),label.g.end(),vtx) != label.g.end() ){
-                    v_conn.push_back(vtx);
-                }
-            }
+            for(int vtx : hood(v,g0,edge_l)){if( std::find(label.g.begin(),label.g.end(),vtx) != label.g.end() )   v_conn.push_back(vtx);}
+
             v_c_rings = label.get_ring_match_data(v_conn);
 
-            for(int vtx : hood(w,g1,edge_l)){
-                if(std::find(label.h.begin(),label.h.end(),vtx) != label.h.end() ){
-                    w_conn.push_back(vtx);
-                }
-            }
+            for(int vtx : hood(w,g1,edge_l)){if(std::find(label.h.begin(),label.h.end(),vtx) != label.h.end() )  w_conn.push_back(vtx);}
 
             int adj;
             if(!v_conn.empty() && !w_conn.empty()){
-                if(edge_l != 0.0 || label.adj == 1){
-                    adj = 1;
-                }else{
-                    adj = 0;
-                }
+                if(edge_l != 0.0 || label.adj == 1) adj = 1;
+                else adj = 0;
                 LabelClass tmp(v_conn,w_conn,v_c_rings,adj, label.label);
                 l_draft.push_back(tmp);
             }
@@ -102,27 +98,21 @@ vector<LabelClass> genNewLabels(int v, int w, const vector<LabelClass>& lcs) {
 
 bool solve_mcs() {
 
-    queue_elem elem =  Q.back();
-
-    Q.pop_back();
+    queue_elem elem =  Q.back(); Q.pop_back();
 
     vector<LabelClass> lcs = elem.labels;
+    vector<pair<int,int >> m_local = elem.m_local;
 
     std::vector<LabelClass*> label_class_pointers;
-
     label_class_pointers.reserve(lcs.size());
-    
     for (LabelClass& item : lcs) {label_class_pointers.push_back(&item);}
 
-    vector<pair<int,int >> m_local = elem.m_local;
-    LabelClass *lcc = select_label(label_class_pointers, m_local.size());
 
+    LabelClass *lcc = select_label(label_class_pointers, m_local.size());
     if ( m_local.size() + calc_bound(lcs) <= m_best.size() || ( !lcc && !m_local.empty() )  ){ if( !Q.empty() ){ return true; } return false;}
 
     queue_elem qel;
-
     LabelClass lc = *lcc;
-
     pair<int,int> m_temp;
 
     for( int v : lc.g )  {
@@ -143,17 +133,7 @@ bool solve_mcs() {
 }
 
 
-int calcSize(vector<LabelClass> lcs) {
-    int result=0;
-    for( LabelClass lc : lcs) {
-        result = result + (lc.g.size()+lc.h.size());
-        for( vector<int> i : lc.rings_g ) {
-            result += i.size();
-        }
-        result += 3;
-    }
-    return result;
-}
+
 
 
 
@@ -168,6 +148,7 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
     int min = std::min(l0.size(), l1.size());
     std::vector<LabelClass> initial_label_classes = gen_initial_labels(l0, l1, ring_classes);
     int size_of_label_classes = calcSize(initial_label_classes);
+
     Q.reserve(32*32);
     for(auto & x : Q) {
         x.labels.reserve(size_of_label_classes);
@@ -186,7 +167,6 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
         elem.labels = genNewLabels(v,w,initial_label_classes);
         elem.m_local=m_local;
         Q.push_back(elem);
-        //todo
     }
 
     bool flag;
