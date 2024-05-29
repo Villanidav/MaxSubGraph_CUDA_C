@@ -13,8 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/test.dir/src/gen_ring_classes.cpp.o.d"
   "CMakeFiles/test.dir/src/gen_rotations.cpp.o"
   "CMakeFiles/test.dir/src/gen_rotations.cpp.o.d"
-  "CMakeFiles/test.dir/src/gpu_mc_split.cpp.o"
-  "CMakeFiles/test.dir/src/gpu_mc_split.cpp.o.d"
+  "CMakeFiles/test.dir/src/gpu_mc_split.cu.o"
+  "CMakeFiles/test.dir/src/gpu_mc_split.cu.o.d"
   "CMakeFiles/test.dir/src/hood.cpp.o"
   "CMakeFiles/test.dir/src/hood.cpp.o.d"
   "CMakeFiles/test.dir/src/mc_split.cpp.o"
@@ -38,6 +38,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang CUDA CXX)
   include(CMakeFiles/test.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

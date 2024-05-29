@@ -1,4 +1,0 @@
-/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir
-/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir
-/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/edit_cache.dir
-/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/rebuild_cache.dir

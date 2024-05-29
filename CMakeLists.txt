@@ -21,11 +21,12 @@ endif()
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # enable additional warning flags
-if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
-  add_compile_options(-Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro)
-elseif("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic -Wshadow -Wdouble-promotion)
-endif()
+#if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
+#  add_compile_options(-Wall -Wextra -Wpedantic -Wl,-z,defs -Wl,-z,now -Wl,-z,relro)
+#elseif("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
+# add_compile_options(-Wall -Wextra -Wpedantic -Wshadow -Wdouble-promotion)
+#endif()
+set(CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS} -Xcudafe --diag_suppress=20091-D -Xcudafe --diag_suppress=20092-D")
 
 # enable colored compiler output (with Ninja)
 if("${CMAKE_GENERATOR}" STREQUAL "Ninja")
@@ -78,6 +79,7 @@ add_executable(subgraph_search ${header_files} "${source_path}/main.cpp" ${sourc
         src/mc_split.cpp
         src/mol_mcs.cpp
         src/g2mol.cpp
+        src/gpu_mc_split.cu
 )
 set_target_properties(subgraph_search
   PROPERTIES
@@ -103,7 +105,7 @@ add_executable(test ${header_files} "${source_path}/test.cpp"
         "${source_path}/mol_mcs.cpp"
         "${source_path}/mc_split.cpp"
         "${source_path}/g2mol.cpp"
-        "${source_path}/gpu_mc_split.cpp"
+        "${source_path}/gpu_mc_split.cu"
         "${source_path}/pair_vertex.cpp"
 )
 set_target_properties(test PROPERTIES
@@ -113,7 +115,7 @@ set_target_properties(test PROPERTIES
         CXX_EXTENSIONS OFF
 )
 
-add_executable(testFra ${header_files} "${source_path}/testFra.cpp"
+add_executable(testFra ${header_files} "${source_path}/testFra.cu"
         "${source_path}/gen_bond_labels.cpp"
         "${source_path}/gen_rotations.cpp"
         "${source_path}/select_vertex.cpp"
@@ -129,7 +131,7 @@ add_executable(testFra ${header_files} "${source_path}/testFra.cpp"
         "${source_path}/mol_mcs.cpp"
         "${source_path}/mc_split.cpp"
         "${source_path}/g2mol.cpp"
-        "${source_path}/gpu_mc_split.cpp"
+        "${source_path}/gpu_mc_split.cu"
         "${source_path}/pair_vertex.cpp"
 )
 

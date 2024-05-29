@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/subgraph_search.dir/src/g2mol.cpp.o"
   "CMakeFiles/subgraph_search.dir/src/g2mol.cpp.o.d"
+  "CMakeFiles/subgraph_search.dir/src/gpu_mc_split.cu.o"
+  "CMakeFiles/subgraph_search.dir/src/gpu_mc_split.cu.o.d"
   "CMakeFiles/subgraph_search.dir/src/main.cpp.o"
   "CMakeFiles/subgraph_search.dir/src/main.cpp.o.d"
   "CMakeFiles/subgraph_search.dir/src/mc_split.cpp.o"
@@ -12,6 +14,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang CUDA CXX)
   include(CMakeFiles/subgraph_search.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

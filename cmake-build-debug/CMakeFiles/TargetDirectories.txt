@@ -1,6 +1,0 @@
-/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/memcheck.dir
-/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/subgraph_search.dir
-/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/test.dir
-/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/testFra.dir
-/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/davide/CLionProjects/MaxSubGraph_CUDA_C/cmake-build-debug/CMakeFiles/rebuild_cache.dir

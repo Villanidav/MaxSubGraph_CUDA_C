@@ -13,8 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o.d"
   "CMakeFiles/testFra.dir/src/gen_rotations.cpp.o"
   "CMakeFiles/testFra.dir/src/gen_rotations.cpp.o.d"
-  "CMakeFiles/testFra.dir/src/gpu_mc_split.cpp.o"
-  "CMakeFiles/testFra.dir/src/gpu_mc_split.cpp.o.d"
+  "CMakeFiles/testFra.dir/src/gpu_mc_split.cu.o"
+  "CMakeFiles/testFra.dir/src/gpu_mc_split.cu.o.d"
   "CMakeFiles/testFra.dir/src/hood.cpp.o"
   "CMakeFiles/testFra.dir/src/hood.cpp.o.d"
   "CMakeFiles/testFra.dir/src/mc_split.cpp.o"
@@ -31,13 +31,13 @@ file(REMOVE_RECURSE
   "CMakeFiles/testFra.dir/src/select_vertex.cpp.o.d"
   "CMakeFiles/testFra.dir/src/smiles_mcs.cpp.o"
   "CMakeFiles/testFra.dir/src/smiles_mcs.cpp.o.d"
-  "CMakeFiles/testFra.dir/src/testFra.cpp.o"
-  "CMakeFiles/testFra.dir/src/testFra.cpp.o.d"
+  "CMakeFiles/testFra.dir/src/testFra.cu.o"
+  "CMakeFiles/testFra.dir/src/testFra.cu.o.d"
   "testFra"
   "testFra.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang CUDA CXX)
   include(CMakeFiles/testFra.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()
