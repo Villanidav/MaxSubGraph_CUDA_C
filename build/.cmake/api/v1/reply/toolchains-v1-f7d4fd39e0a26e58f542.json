@@ -1,0 +1,171 @@
+{
+	"kind" : "toolchains",
+	"toolchains" : 
+	[
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/opt/install/cuda/11.7/include",
+						"/opt/install/gcc/11.3.0/include",
+						"/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include",
+						"/usr/local/include",
+						"/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed",
+						"/usr/include/x86_64-linux-gnu",
+						"/usr/include"
+					],
+					"linkDirectories" : 
+					[
+						"/opt/install/gcc/11.3.0/lib64",
+						"/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0",
+						"/lib/x86_64-linux-gnu",
+						"/lib64",
+						"/usr/lib/x86_64-linux-gnu",
+						"/usr/lib64",
+						"/opt/install/gcc/11.3.0/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"gcc",
+						"gcc_s",
+						"c",
+						"gcc",
+						"gcc_s"
+					]
+				},
+				"path" : "/opt/install/gcc/11.3.0/bin/gcc",
+				"version" : "11.3.0"
+			},
+			"language" : "C",
+			"sourceFileExtensions" : 
+			[
+				"c",
+				"m"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "NVIDIA",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/opt/install/gcc/11.3.0/include",
+						"/opt/install/gcc/11.3.0/include/c++/11.3.0",
+						"/opt/install/gcc/11.3.0/include/c++/11.3.0/x86_64-pc-linux-gnu",
+						"/opt/install/gcc/11.3.0/include/c++/11.3.0/backward",
+						"/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include",
+						"/usr/local/include",
+						"/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed",
+						"/usr/include/x86_64-linux-gnu",
+						"/usr/include"
+					],
+					"linkDirectories" : 
+					[
+						"/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs",
+						"/opt/install/cuda/11.7/targets/x86_64-linux/lib",
+						"/opt/install/gcc/11.3.0/lib64",
+						"/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0",
+						"/lib/x86_64-linux-gnu",
+						"/lib64",
+						"/usr/lib/x86_64-linux-gnu",
+						"/usr/lib64",
+						"/opt/install/gcc/11.3.0/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"stdc++",
+						"m",
+						"gcc_s",
+						"gcc",
+						"c",
+						"gcc_s",
+						"gcc"
+					]
+				},
+				"path" : "/opt/install/cuda/11.7/bin/nvcc",
+				"version" : "11.7.64"
+			},
+			"language" : "CUDA",
+			"sourceFileExtensions" : 
+			[
+				"cu"
+			]
+		},
+		{
+			"compiler" : 
+			{
+				"id" : "GNU",
+				"implicit" : 
+				{
+					"includeDirectories" : 
+					[
+						"/opt/install/cuda/11.7/include",
+						"/opt/install/gcc/11.3.0/include",
+						"/opt/install/gcc/11.3.0/include/c++/11.3.0",
+						"/opt/install/gcc/11.3.0/include/c++/11.3.0/x86_64-pc-linux-gnu",
+						"/opt/install/gcc/11.3.0/include/c++/11.3.0/backward",
+						"/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include",
+						"/usr/local/include",
+						"/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed",
+						"/usr/include/x86_64-linux-gnu",
+						"/usr/include"
+					],
+					"linkDirectories" : 
+					[
+						"/opt/install/gcc/11.3.0/lib64",
+						"/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0",
+						"/lib/x86_64-linux-gnu",
+						"/lib64",
+						"/usr/lib/x86_64-linux-gnu",
+						"/usr/lib64",
+						"/opt/install/gcc/11.3.0/lib"
+					],
+					"linkFrameworkDirectories" : [],
+					"linkLibraries" : 
+					[
+						"stdc++",
+						"m",
+						"gcc_s",
+						"gcc",
+						"c",
+						"gcc_s",
+						"gcc"
+					]
+				},
+				"path" : "/opt/install/gcc/11.3.0/bin/g++",
+				"version" : "11.3.0"
+			},
+			"language" : "CXX",
+			"sourceFileExtensions" : 
+			[
+				"C",
+				"M",
+				"c++",
+				"cc",
+				"cpp",
+				"cxx",
+				"mm",
+				"mpp",
+				"CPP",
+				"ixx",
+				"cppm",
+				"ccm",
+				"cxxm",
+				"c++m"
+			]
+		}
+	],
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 0
+	}
+}
