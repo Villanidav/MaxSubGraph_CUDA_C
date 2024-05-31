@@ -366,42 +366,42 @@ int LabelFromCpuToGpu(GpuLabelClass *new_label, vector<LabelClass>& old_label ){
         new_label = nullptr;
         return  0;
     }
-    int count = 0;
-    for(LabelClass lc : old_label){
+    int count;
+    for( count = 0; count < old_label.size() ; ++count ){
         int sizeG = 0;
         int sizeH = 0;
 
-        for(int g : lc.g){
+        for(int g : old_label.at(count).g){
             new_label[count].g[sizeG] = g;
             sizeG++;
         }
 
 
-        for(int h : lc.h){
+        for(int h : old_label.at(count).h){
             new_label[count].h[sizeH] = h;
             sizeH++;
         }
 
 
         int row = 0;
-        for(vector<int> ring :lc.rings_g ){
-            cout<<"inn3n \n";
+        for(vector<int> ring : old_label.at(count).rings_g ){
             int column = 0;
             for(int i : ring){
-                cout<<"innn4 \n";
+                cout<<"INDEX "<< count<<endl;
+                cout<<"ROW "<< row<<endl ;
+                cout<<"COL "<< column<<endl;
+                cout<<"VAL "<< i<<endl;
                 new_label[count].rings_g[row][column] = i;
-                cout<<"innn5\n";
+
                 column++;
             }
 
             row++;
         }
-        
-        count++;
-        cout<<"in label\n";
+
     }
 
-return count;
+    return count;
 }
 
 
@@ -562,6 +562,7 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
     //cuda malloc GpuLabelClass array
     cudaMallocManaged( &gpu_initial_label_classes, initial_label_classes.size() * sizeof(GpuLabelClass *));
     for( int i = 0 ; i < initial_label_classes.size() ; i++ ){
+        cout<<"INDICEEEEEEEEEEEEEEE "<< i<<endl;
         gpu_initial_label_classes[i].g_size = initial_label_classes[i].g.size();
         gpu_initial_label_classes[i].h_size = initial_label_classes[i].h.size();
         gpu_initial_label_classes[i].row_ring_size = initial_label_classes[i].rings_g.size();
@@ -573,6 +574,12 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
         cudaMallocManaged( &gpu_initial_label_classes[i].h , sizeof(int) * gpu_initial_label_classes[i].h_size);
         cudaMallocManaged( &gpu_initial_label_classes[i].rings_g , sizeof(int*) * gpu_initial_label_classes[i].row_ring_size);
         for (int j = 0; j < gpu_initial_label_classes[i].row_ring_size ; ++j) {
+            cout<<"index "<< j<<endl;
+            cout<<"col "<< gpu_initial_label_classes[i].col_ring_size[j]<<endl;
+            cout<<"col in lab "<< initial_label_classes[i].rings_g[j].size()<<endl;
+            cout<<"row "<< gpu_initial_label_classes[i].row_ring_size<<endl;
+            cout<<"row in lab"<< initial_label_classes[i].rings_g.size() <<endl;
+
             cudaMallocManaged((void**)&(gpu_initial_label_classes[i].rings_g[j]), gpu_initial_label_classes[i].col_ring_size[j] * sizeof(int));}
     }
 
