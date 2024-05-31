@@ -627,7 +627,6 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
         cout<<" - "<<thread_pool[j].m_local[0].second<<endl;
         cout<<thread_pool[j].labels_size<<endl;
     }
-
     /*bool flag;
     do{flag = solve_mcs();}while(flag);*/
     return m_best;
