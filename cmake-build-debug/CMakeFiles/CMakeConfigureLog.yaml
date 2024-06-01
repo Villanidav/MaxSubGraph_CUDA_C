@@ -617,3 +617,23 @@ events:
     message: |
       Checking whether the CUDA compiler is Clang using "" did not match "(clang version)":
 ...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/dvillani/.cache/JetBrains/RemoteDev/dist/e18121c307679_CLion-242.12881.46/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/home/dvillani/.cache/JetBrains/RemoteDev/dist/e18121c307679_CLion-242.12881.46/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCUDACompiler.cmake:75 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:3 (enable_language)"
+    message: |
+      Checking whether the CUDA compiler is NVIDIA using "" did not match "nvcc: NVIDIA \\(R\\) Cuda compiler driver":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/dvillani/.cache/JetBrains/RemoteDev/dist/e18121c307679_CLion-242.12881.46/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:1144 (message)"
+      - "/home/dvillani/.cache/JetBrains/RemoteDev/dist/e18121c307679_CLion-242.12881.46/bin/cmake/linux/x64/share/cmake-3.28/Modules/CMakeDetermineCUDACompiler.cmake:75 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:3 (enable_language)"
+    message: |
+      Checking whether the CUDA compiler is Clang using "" did not match "(clang version)":
+...

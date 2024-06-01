@@ -80,6 +80,7 @@ add_executable(subgraph_search ${header_files} "${source_path}/main.cpp" ${sourc
         src/mol_mcs.cpp
         src/g2mol.cpp
         src/gpu_mc_split.cu
+        src/gpu_mc_split.cu
 )
 set_target_properties(subgraph_search
   PROPERTIES

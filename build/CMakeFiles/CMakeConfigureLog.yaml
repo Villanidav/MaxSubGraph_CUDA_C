@@ -3077,3 +3077,127 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "CMakeLists.txt:150 (check_ipo_supported)"
+    directories:
+      source: "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /opt/install/cmake/3.27/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        gmake[1]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /opt/install/cmake/3.27/bin/cmake -S/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /opt/install/cmake/3.27/bin/cmake -E cmake_progress_start /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[2]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[3]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /opt/install/cmake/3.27/bin/cmake -E cmake_depends "Unix Makefiles" /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        Dependee "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[3]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[3]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /opt/install/gcc/11.3.0/bin/g++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /opt/install/cmake/3.27/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /opt/install/cmake/3.27/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-11" cr libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-11" libfoo.a
+        gmake[3]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[3]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin && /opt/install/cmake/3.27/bin/cmake -E cmake_depends "Unix Makefiles" /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        Dependee "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[3]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[3]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /opt/install/gcc/11.3.0/bin/g++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /opt/install/cmake/3.27/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /opt/install/gcc/11.3.0/bin/g++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a 
+        gmake[3]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[2]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /opt/install/cmake/3.27/bin/cmake -E cmake_progress_start /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        gmake[1]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "CMakeLists.txt:150 (check_ipo_supported)"
+    directories:
+      source: "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+        Run Build Command(s): /opt/install/cmake/3.27/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        gmake[1]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        /opt/install/cmake/3.27/bin/cmake -S/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/src -B/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /opt/install/cmake/3.27/bin/cmake -E cmake_progress_start /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[2]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[3]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin && /opt/install/cmake/3.27/bin/cmake -E cmake_depends "Unix Makefiles" /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/src /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/src /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        Dependee "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[3]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[3]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 25%] Building C object CMakeFiles/foo.dir/foo.c.o
+        /opt/install/gcc/11.3.0/bin/gcc   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.c.o -c /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [ 50%] Linking C static library libfoo.a
+        /opt/install/cmake/3.27/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /opt/install/cmake/3.27/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-11" cr libfoo.a CMakeFiles/foo.dir/foo.c.o
+        "/usr/bin/gcc-ranlib-11" libfoo.a
+        gmake[3]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[3]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin && /opt/install/cmake/3.27/bin/cmake -E cmake_depends "Unix Makefiles" /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/src /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/src /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        Dependee "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[3]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[3]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 75%] Building C object CMakeFiles/boo.dir/main.c.o
+        /opt/install/gcc/11.3.0/bin/gcc   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.c.o -c /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [100%] Linking C executable boo
+        /opt/install/cmake/3.27/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /opt/install/gcc/11.3.0/bin/gcc -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a 
+        gmake[3]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        [100%] Built target boo
+        gmake[2]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        /opt/install/cmake/3.27/bin/cmake -E cmake_progress_start /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles 0
+        gmake[1]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+      exitCode: 0
+...
