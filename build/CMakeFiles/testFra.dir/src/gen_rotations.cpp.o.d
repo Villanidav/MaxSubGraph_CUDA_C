@@ -1,5 +1,5 @@
 CMakeFiles/testFra.dir/src/gen_rotations.cpp.o: \
- /home/fvirgulti/MaxSubGraph_CUDA_C/src/gen_rotations.cpp \
+ /home/dvillani/subgraph/MaxSubGraph_CUDA_C/src/gen_rotations.cpp \
  /usr/include/stdc-predef.h \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/iostream \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/x86_64-pc-linux-gnu/bits/c++config.h \

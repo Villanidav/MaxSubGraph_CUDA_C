@@ -1,4 +1,4 @@
-# Install script for directory: /home/fvirgulti/MaxSubGraph_CUDA_C
+# Install script for directory: /home/dvillani/subgraph/MaxSubGraph_CUDA_C
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/fvirgulti/MaxSubGraph_CUDA_C/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

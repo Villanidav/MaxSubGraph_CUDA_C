@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/fvirgulti/MaxSubGraph_CUDA_C/CMakeLists.txt"
+  "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/CMakeLists.txt"
   "CMakeFiles/3.27.0/CMakeCCompiler.cmake"
   "CMakeFiles/3.27.0/CMakeCUDACompiler.cmake"
   "CMakeFiles/3.27.0/CMakeCXXCompiler.cmake"

@@ -1,4 +1,4 @@
-CMakeFiles/testFra.dir/src/gpu_mc_split.cu.o : /home/fvirgulti/MaxSubGraph_CUDA_C/src/gpu_mc_split.cu \
+CMakeFiles/testFra.dir/src/gpu_mc_split.cu.o : /home/dvillani/subgraph/MaxSubGraph_CUDA_C/src/gpu_mc_split.cu \
     /usr/include/stdc-predef.h \
     /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include/cuda_runtime.h \
     /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include/crt/host_config.h \
@@ -180,7 +180,7 @@ CMakeFiles/testFra.dir/src/gpu_mc_split.cu.o : /home/fvirgulti/MaxSubGraph_CUDA_
     /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include/surface_indirect_functions.h \
     /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include/crt/cudacc_ext.h \
     /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include/device_launch_parameters.h \
-    /home/fvirgulti/MaxSubGraph_CUDA_C/src/test.hpp \
+    /home/dvillani/subgraph/MaxSubGraph_CUDA_C/src/test.hpp \
     /opt/install/gcc/11.3.0/include/c++/11.3.0/vector \
     /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/allocator.h \
     /opt/install/gcc/11.3.0/include/c++/11.3.0/x86_64-pc-linux-gnu/bits/c++allocator.h \
@@ -197,7 +197,7 @@ CMakeFiles/testFra.dir/src/gpu_mc_split.cu.o : /home/fvirgulti/MaxSubGraph_CUDA_
     /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/hash_bytes.h \
     /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/range_access.h \
     /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/vector.tcc \
-    /home/fvirgulti/MaxSubGraph_CUDA_C/src/Label.cpp \
+    /home/dvillani/subgraph/MaxSubGraph_CUDA_C/src/Label.cpp \
     /opt/install/gcc/11.3.0/include/c++/11.3.0/algorithm \
     /opt/install/gcc/11.3.0/include/c++/11.3.0/utility \
     /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/stl_relops.h \

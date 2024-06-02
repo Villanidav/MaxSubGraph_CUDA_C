@@ -11,7 +11,7 @@ CUDA_FLAGS = -O3 -DNDEBUG -std=c++17 "--generate-code=arch=compute_52,code=[comp
 
 CXX_DEFINES = -DTESTING
 
-CXX_INCLUDES = -I/opt/install/rdkit/2023.03.2_gcc_11.3/include/rdkit -I/home/fvirgulti/MaxSubGraph_CUDA_C/subgraph_search -I/home/fvirgulti/MaxSubGraph_CUDA_C/PUBLIC -I/home/fvirgulti/MaxSubGraph_CUDA_C/test -I/home/fvirgulti/MaxSubGraph_CUDA_C/testFra
+CXX_INCLUDES = -I/opt/install/rdkit/2023.03.2_gcc_11.3/include/rdkit -I/home/dvillani/subgraph/MaxSubGraph_CUDA_C/subgraph_search -I/home/dvillani/subgraph/MaxSubGraph_CUDA_C/PUBLIC -I/home/dvillani/subgraph/MaxSubGraph_CUDA_C/test -I/home/dvillani/subgraph/MaxSubGraph_CUDA_C/testFra
 
 CXX_FLAGS = -O3 -DNDEBUG -std=c++17
 

@@ -1246,8 +1246,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/fvirgulti/MaxSubGraph_CUDA_C/build",
-		"source" : "/home/fvirgulti/MaxSubGraph_CUDA_C"
+		"build" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build",
+		"source" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C"
 	},
 	"version" : 
 	{

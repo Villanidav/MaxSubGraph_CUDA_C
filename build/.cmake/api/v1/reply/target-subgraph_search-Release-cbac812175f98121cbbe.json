@@ -92,19 +92,19 @@
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/subgraph_search"
+					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/subgraph_search"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/PUBLIC"
+					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/PUBLIC"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/test"
+					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/test"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/testFra"
+					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/testFra"
 				}
 			],
 			"language" : "CXX",
@@ -139,19 +139,19 @@
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/subgraph_search"
+					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/subgraph_search"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/PUBLIC"
+					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/PUBLIC"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/test"
+					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/test"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/testFra"
+					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/testFra"
 				}
 			],
 			"language" : "CUDA",

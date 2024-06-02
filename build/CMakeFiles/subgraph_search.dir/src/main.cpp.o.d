@@ -1,5 +1,5 @@
 CMakeFiles/subgraph_search.dir/src/main.cpp.o: \
- /home/fvirgulti/MaxSubGraph_CUDA_C/src/main.cpp \
+ /home/dvillani/subgraph/MaxSubGraph_CUDA_C/src/main.cpp \
  /usr/include/stdc-predef.h \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/cstdlib \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -167,4 +167,4 @@ CMakeFiles/subgraph_search.dir/src/main.cpp.o: \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/ostream.tcc \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/istream \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/istream.tcc \
- /home/fvirgulti/MaxSubGraph_CUDA_C/src/main.hpp
+ /home/dvillani/subgraph/MaxSubGraph_CUDA_C/src/main.hpp

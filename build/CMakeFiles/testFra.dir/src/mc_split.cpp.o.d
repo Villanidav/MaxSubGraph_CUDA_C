@@ -1,7 +1,7 @@
 CMakeFiles/testFra.dir/src/mc_split.cpp.o: \
- /home/fvirgulti/MaxSubGraph_CUDA_C/src/mc_split.cpp \
+ /home/dvillani/subgraph/MaxSubGraph_CUDA_C/src/mc_split.cpp \
  /usr/include/stdc-predef.h \
- /home/fvirgulti/MaxSubGraph_CUDA_C/src/test.hpp \
+ /home/dvillani/subgraph/MaxSubGraph_CUDA_C/src/test.hpp \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/vector \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/stl_algobase.h \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -48,7 +48,7 @@ CMakeFiles/testFra.dir/src/mc_split.cpp.o: \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/hash_bytes.h \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/range_access.h \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/vector.tcc \
- /home/fvirgulti/MaxSubGraph_CUDA_C/src/Label.cpp \
+ /home/dvillani/subgraph/MaxSubGraph_CUDA_C/src/Label.cpp \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/algorithm \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/utility \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/stl_relops.h \
