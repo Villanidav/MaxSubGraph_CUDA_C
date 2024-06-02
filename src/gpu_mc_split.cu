@@ -60,6 +60,23 @@ __shared__ Pair *m_best;
 __shared__ int m_best_size;
 
 
+
+
+void copyIntArray(int *a, int *b, int sizeb){
+    for ( int i = 0 ; i < sizeb ; i++){
+        a[i] = b[i];
+    }
+}
+
+
+void copyIntMatrix(int **a, int **b, int rowsize, int *colsize )
+{
+    for( int i = 0 ; i < rowsize ; i++){
+        for( int j = 0 ; j < colsize[i] ; j++){
+            a[i][j] = b[i][j];
+        }
+    }
+}
 // vtx_set: selected label class
 // g: selected graph
 int select_vertex(std::vector<int>& vtx_set, std::vector<std::vector<float> >& g) {
@@ -722,22 +739,22 @@ void cpyThreadPool( ThreadVar *thread_pool_read, ThreadVar *thread_pool_write ){
             thread_pool_read[r_idx].m_local->first = thread_pool_write[w_idx].m_local->first;
             thread_pool_read[r_idx].m_local->second = thread_pool_write[w_idx].m_local->second;
             for ( int l_idx = 0 ; l_idx < thread_pool_write[w_idx].labels_size ; l_idx++ ){
-                thread_pool_read[r_idx].labels[l_idx].g = thread_pool_write[w_idx].labels[l_idx].g;
-                thread_pool_read[r_idx].labels[l_idx].h = thread_pool_write[w_idx].labels[l_idx].h;
-                thread_pool_read[r_idx].labels[l_idx].col_ring_size = thread_pool_write[w_idx].labels[l_idx].col_ring_size;
                 thread_pool_read[r_idx].labels[l_idx].row_ring_size = thread_pool_write[w_idx].labels[l_idx].row_ring_size;
                 thread_pool_read[r_idx].labels[l_idx].g_size = thread_pool_write[w_idx].labels[l_idx].g_size;
                 thread_pool_read[r_idx].labels[l_idx].h_size = thread_pool_write[w_idx].labels[l_idx].h_size;
+                copyIntArray( thread_pool_read[r_idx].labels[l_idx].g , thread_pool_write[w_idx].labels[l_idx].g , thread_pool_write[w_idx].labels[l_idx].g_size );
+                copyIntArray( thread_pool_read[r_idx].labels[l_idx].h , thread_pool_write[w_idx].labels[l_idx].h , thread_pool_write[w_idx].labels[l_idx].h_size );
+                copyIntArray( thread_pool_read[r_idx].labels[l_idx].col_ring_size , thread_pool_write[w_idx].labels[l_idx].col_ring_size , thread_pool_write[w_idx].labels[l_idx].row_ring_size );
                 strcpy(thread_pool_write[w_idx].labels[l_idx].label, thread_pool_write[w_idx].labels[l_idx].label );
-                for ( int ring_idx = 0 ; ring_idx < thread_pool_write[w_idx].labels[l_idx].row_ring_size ; ring_idx++ ){
-                    thread_pool_read[r_idx].labels[l_idx].rings_g[ring_idx] = thread_pool_write[w_idx].labels[l_idx].rings_g[ring_idx];
-                }
+                copyIntMatrix( thread_pool_write[w_idx].labels[l_idx].rings_g , thread_pool_write[w_idx].labels[l_idx].rings_g, 
+                                thread_pool_write[w_idx].labels[l_idx].row_ring_size, thread_pool_write[w_idx].labels[l_idx].col_ring_size );
             }
             r_idx++;
         }
         thread_pool_write[w_idx].labels_size = 0;
     }
 }
+
 
 
 
@@ -794,7 +811,6 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
         thread_pool_write->m_size = 0;
         cudaMallocManaged(&thread_pool_write[j].labels, sizeof(gpu_initial_label_classes));
         cudaMallocManaged(&thread_pool_write[j].m_local, sizeof(Pair) * min_mol_size);
-
     }
 
     //initialize
