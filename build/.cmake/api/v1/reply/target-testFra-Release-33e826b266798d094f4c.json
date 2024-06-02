@@ -33,12 +33,6 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 202,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
 				"line" : 203,
 				"parent" : 0
 			},
@@ -46,12 +40,6 @@
 				"command" : 2,
 				"file" : 0,
 				"line" : 204,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 169,
 				"parent" : 0
 			},
 			{
@@ -92,28 +80,24 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 5,
-					"path" : "/opt/install/boost/1.85.0_gcc_11.3/include"
-				},
-				{
-					"backtrace" : 6,
+					"backtrace" : 4,
 					"path" : "/opt/install/rdkit/2023.03.2_gcc_11.3/include/rdkit"
 				},
 				{
-					"backtrace" : 7,
-					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/subgraph_search"
+					"backtrace" : 5,
+					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/subgraph_search"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/PUBLIC"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/test"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/PUBLIC"
-				},
-				{
-					"backtrace" : 8,
-					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/test"
-				},
-				{
-					"backtrace" : 9,
-					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/testFra"
+					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/testFra"
 				}
 			],
 			"language" : "CUDA",
@@ -141,28 +125,24 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 5,
-					"path" : "/opt/install/boost/1.85.0_gcc_11.3/include"
-				},
-				{
-					"backtrace" : 6,
+					"backtrace" : 4,
 					"path" : "/opt/install/rdkit/2023.03.2_gcc_11.3/include/rdkit"
 				},
 				{
-					"backtrace" : 7,
-					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/subgraph_search"
+					"backtrace" : 5,
+					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/subgraph_search"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/PUBLIC"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/test"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/PUBLIC"
-				},
-				{
-					"backtrace" : 8,
-					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/test"
-				},
-				{
-					"backtrace" : 9,
-					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/testFra"
+					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/testFra"
 				}
 			],
 			"language" : "CXX",
@@ -201,11 +181,6 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-L/opt/install/rdkit/2023.03.2_gcc_11.3/lib",
-				"role" : "libraryPath"
-			},
-			{
-				"backtrace" : 3,
 				"fragment" : "-L/opt/install/rdkit/2023.03.2_gcc_11.3/lib64",
 				"role" : "libraryPath"
 			},
@@ -218,26 +193,26 @@
 				"role" : "libraryPath"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/opt/install/rdkit/2023.03.2_gcc_11.3/lib:/opt/install/rdkit/2023.03.2_gcc_11.3/lib64",
+				"fragment" : "-Wl,-rpath,/opt/install/rdkit/2023.03.2_gcc_11.3/lib64",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
+				"backtrace" : 3,
 				"fragment" : "-lRDKitFileParsers",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
+				"backtrace" : 3,
 				"fragment" : "-lRDKitGraphMol",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
+				"backtrace" : 3,
 				"fragment" : "-lRDKitRDGeneral",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
+				"backtrace" : 3,
 				"fragment" : "-lRDKitSmilesParse",
 				"role" : "libraries"
 			},

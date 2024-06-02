@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "subgraph_search"
+			"path" : "test"
 		}
 	],
 	"backtrace" : 1,
@@ -13,8 +13,8 @@
 			"add_executable",
 			"target_link_directories",
 			"target_link_libraries",
-			"include_directories",
-			"set_target_properties"
+			"set_target_properties",
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -28,61 +28,49 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 78,
+				"line" : 93,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 179,
-				"parent" : 0
-			},
-			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 180,
+				"line" : 190,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 181,
+				"line" : 191,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 169,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 177,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 178,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 188,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 201,
+				"line" : 139,
 				"parent" : 0
 			},
 			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 85,
+				"line" : 177,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 178,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 188,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 201,
 				"parent" : 0
 			}
 		]
@@ -93,34 +81,37 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-O3 -DNDEBUG -std=c++17 -flto=auto -fno-fat-lto-objects"
+					"fragment" : "-O3 -DNDEBUG -std=c++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "TESTING"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 5,
-					"path" : "/opt/install/boost/1.85.0_gcc_11.3/include"
-				},
-				{
-					"backtrace" : 6,
 					"path" : "/opt/install/rdkit/2023.03.2_gcc_11.3/include/rdkit"
 				},
 				{
-					"backtrace" : 7,
-					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/subgraph_search"
+					"backtrace" : 6,
+					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/subgraph_search"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/PUBLIC"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/PUBLIC"
+					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/test"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/test"
-				},
-				{
-					"backtrace" : 9,
-					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/testFra"
+					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/testFra"
 				}
 			],
 			"language" : "CXX",
@@ -128,7 +119,7 @@
 			{
 				"backtraces" : 
 				[
-					10
+					4
 				],
 				"standard" : "17"
 			},
@@ -137,7 +128,19 @@
 				3,
 				4,
 				5,
-				6
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				19
 			]
 		},
 		{
@@ -147,31 +150,34 @@
 					"fragment" : "-O3 -DNDEBUG -std=c++17 \"--generate-code=arch=compute_52,code=[compute_52,sm_52]\""
 				}
 			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "TESTING"
+				}
+			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 5,
-					"path" : "/opt/install/boost/1.85.0_gcc_11.3/include"
-				},
-				{
-					"backtrace" : 6,
 					"path" : "/opt/install/rdkit/2023.03.2_gcc_11.3/include/rdkit"
 				},
 				{
-					"backtrace" : 7,
-					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/subgraph_search"
+					"backtrace" : 6,
+					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/subgraph_search"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/PUBLIC"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/PUBLIC"
+					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/test"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/test"
-				},
-				{
-					"backtrace" : 9,
-					"path" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/testFra"
+					"path" : "/home/fvirgulti/MaxSubGraph_CUDA_C/testFra"
 				}
 			],
 			"language" : "CUDA",
@@ -179,23 +185,23 @@
 			{
 				"backtraces" : 
 				[
-					10
+					4
 				],
 				"standard" : "17"
 			},
 			"sourceIndexes" : 
 			[
-				7
+				18
 			]
 		}
 	],
-	"id" : "subgraph_search::@6890427a1f51a3e7e1df",
+	"id" : "test::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-O3 -DNDEBUG -flto=auto -fno-fat-lto-objects",
+				"fragment" : "-O3 -DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -204,11 +210,6 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-L/opt/install/rdkit/2023.03.2_gcc_11.3/lib",
-				"role" : "libraryPath"
-			},
-			{
-				"backtrace" : 3,
 				"fragment" : "-L/opt/install/rdkit/2023.03.2_gcc_11.3/lib64",
 				"role" : "libraryPath"
 			},
@@ -221,31 +222,31 @@
 				"role" : "libraryPath"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/opt/install/rdkit/2023.03.2_gcc_11.3/lib:/opt/install/rdkit/2023.03.2_gcc_11.3/lib64",
+				"fragment" : "-Wl,-rpath,/opt/install/rdkit/2023.03.2_gcc_11.3/lib64",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
+				"backtrace" : 3,
 				"fragment" : "-lRDKitFileParsers",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
+				"backtrace" : 3,
 				"fragment" : "-lRDKitGraphMol",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
+				"backtrace" : 3,
 				"fragment" : "-lRDKitRDGeneral",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
+				"backtrace" : 3,
 				"fragment" : "-lRDKitSmilesParse",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
+				"backtrace" : 3,
 				"fragment" : "-lRDKitSubstructMatch",
 				"role" : "libraries"
 			},
@@ -270,11 +271,10 @@
 				"role" : "libraries"
 			}
 		],
-		"language" : "CXX",
-		"lto" : true
+		"language" : "CXX"
 	},
-	"name" : "subgraph_search",
-	"nameOnDisk" : "subgraph_search",
+	"name" : "test",
+	"nameOnDisk" : "test",
 	"paths" : 
 	{
 		"build" : ".",
@@ -299,7 +299,19 @@
 				4,
 				5,
 				6,
-				7
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19
 			]
 		}
 	],
@@ -323,19 +335,85 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/main.cpp",
+			"path" : "src/test.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/mc_split.cpp",
+			"path" : "src/gen_bond_labels.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/gen_rotations.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/select_vertex.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/hood.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Label.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/smiles_mcs.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/calc_bound.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/select_label.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/gen_initial_labels.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/gen_ring_classes.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/search_mcs.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/mol_mcs.cpp",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/mc_split.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -348,6 +426,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
 			"path" : "src/gpu_mc_split.cu",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/pair_vertex.cpp",
 			"sourceGroupIndex" : 1
 		}
 	],

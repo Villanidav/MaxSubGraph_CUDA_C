@@ -87,7 +87,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build"
+			"value" : "/home/fvirgulti/MaxSubGraph_CUDA_C/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -687,7 +687,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/fvirgulti/MaxSubGraph_CUDA_C/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -759,7 +759,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C"
+			"value" : "/home/fvirgulti/MaxSubGraph_CUDA_C"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1475,7 +1475,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build"
+			"value" : "/home/fvirgulti/MaxSubGraph_CUDA_C/build"
 		},
 		{
 			"name" : "subgraph_search_IS_TOP_LEVEL",
@@ -1499,7 +1499,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dvillani/subgraph/MaxSubGraph_CUDA_C"
+			"value" : "/home/fvirgulti/MaxSubGraph_CUDA_C"
 		}
 	],
 	"kind" : "cache",

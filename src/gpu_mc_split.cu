@@ -59,7 +59,9 @@ typedef struct {
 __shared__ Pair *m_best;
 __shared__ int m_best_size;
 
+LabelClass *select_label_DC(std::vector<LabelClass*>& label_classes, int map_size) {
 
+<<<<<<< HEAD
 
 
 void copyIntArray(int *a, int *b, int sizeb){
@@ -76,6 +78,23 @@ void copyIntMatrix(int **a, int **b, int rowsize, int *colsize )
             a[i][j] = b[i][j];
         }
     }
+=======
+    
+    int min_size = 999;
+    LabelClass* label = nullptr;
+
+    for ( LabelClass* c_label : label_classes) {
+        if (c_label->adj == 1 || map_size == 0) {
+            int c_max_size = std::max(c_label->g.size(), c_label->h.size());
+            if (c_max_size < min_size) {
+                min_size = c_max_size;
+                label = c_label;
+            }
+        }
+    }
+
+    return label;
+>>>>>>> origin/main
 }
 // vtx_set: selected label class
 // g: selected graph
@@ -259,19 +278,25 @@ int kernel_get_ring_match_data(int *dim_col, int **result, int *idxList, int *el
 }
 
 int host_get_ring_match_data(int *dim_col, int **result, int *idxList, int *elems, int elem_size, GpuLabelClass *lc){
+    
     int index;
-
+    int k=0;
     for( int i = 0; i < elem_size ; ++i){
+        index = 0;
         for( int j = 0 ; j < lc->g_size ; ++j ){
-            if( lc->g[j] == elems[i] ) idxList[index] = index;
+            if( lc->g[j] == elems[i] ) idxList[k] = index;
             index++;
+            k++;
         }
     }
-    for ( int k = 0 , i = 0 ; k < index+1 ; ++k , ++i ){
-        result[i] = lc->rings_g[idxList[k]];
+
+    for ( int k = 0 , i = 0 ; k < index ; ++k , ++i ){
         dim_col[i] = lc->col_ring_size[idxList[k]];
+        for ( int j = 0 ; j < dim_col[i] ; ++j ){
+             result[i][j] = lc->rings_g[idxList[k]][j];
+        }
     }
-    return index+1;
+    return index;
 }
 // function used in matchable, returns a 1D array containing the ring data related to vertex v
 // returns the size of the 1D array
@@ -310,6 +335,23 @@ int host_matchable_ring_data(int *result, int v, GpuLabelClass *lc){
 // return the best select label given an array of labels
 __device__
 void kernel_select_label(GpuLabelClass *label , GpuLabelClass *lcs, int map_size, int lcs_size){
+    int min = 999;
+    int max = 0;
+    for( int i = 0 ; i < lcs_size ; ++i ){
+        if( lcs[i].adj == 1 || map_size == 0 ){
+            if( lcs[i].g_size > lcs[i].h_size ) max = lcs[i].g_size;
+            else max = lcs[i].h_size;
+            if( max < min ){
+                min = max;
+                *label = lcs[i];
+            }
+        }
+    }
+    return;
+}
+
+
+void host_select_label(GpuLabelClass *label , GpuLabelClass *lcs, int map_size, int lcs_size){
     int min = 999;
     int max = 0;
     for( int i = 0 ; i < lcs_size ; ++i ){
@@ -378,6 +420,21 @@ void kernel_resize(int *array, int size_arr, int place_availabel){
     }
 }
 
+// result == size of generated label
+// output is l_draft
+// input : v
+
+void host_resize(int *array, int size_arr, int place_availabel){
+    int count = 0;
+    bool flag = true;
+    for(int i = 0; i < size_arr && flag ; ++i){
+        if(array[i] == -1){continue;}
+        if( i == count){ count ++; continue; }
+        array[count] = array[i]; count++;
+        if(count == place_availabel){flag = false;}
+    }
+}
+
 
 __device__
 int kernel_gen_new_Labels(GpuLabelClass *l_draft ,  int v, int w, GpuLabelClass *lcs, int lcs_size, int *idxList) {
@@ -424,22 +481,29 @@ int kernel_gen_new_Labels(GpuLabelClass *l_draft ,  int v, int w, GpuLabelClass 
 }
 
 
-int host_gen_new_Labels(GpuLabelClass *l_draft,int v, int w, GpuLabelClass *lcs, int lcs_size, int *v_conn, int *w_conn, int **v_c_rings, int *friends, int *idxList, int *dim_col) {
+int host_gen_new_Labels(GpuLabelClass *l_draft ,  int v, int w, GpuLabelClass *lcs, int lcs_size, int *idxList) {
     int vs,ws, draft_size = 0;
     int dim_row;
+    int count = 0;
     for ( int i = 0 ; i < lcs_size ; ++i ){
         for ( int j = 0 ; j < size_edge_labels ; ++j ){
-            int friendsize = host_hoodG(friends, v, gpu_edge_labels[j], gpu_g0 );
+            int friendsize = host_hoodG(l_draft[draft_size].g, v, gpu_edge_labels[j], gpu_g0 );
             for ( int k = 0 , vs = 0 ; k < friendsize ; ++k ){
-                if( host_contains(friends[k], lcs[i].g, lcs[i].g_size) ){ v_conn[vs] = friends[k]; vs++; }
+                if( host_contains(l_draft[draft_size].g[k], lcs[i].g, lcs[i].g_size) ){  vs++;  }
+                else{ l_draft[draft_size].g[k] = -1;}
             }
+            host_resize(l_draft[draft_size].g, friendsize, vs );
 
-            dim_row = host_get_ring_match_data(dim_col, v_c_rings, idxList ,v_conn, vs+1, &lcs[i] );
+            dim_row = host_get_ring_match_data(l_draft[draft_size].col_ring_size, l_draft[draft_size].rings_g, idxList ,l_draft[draft_size].g, vs+1, &lcs[i] );
 
-            friendsize = host_hoodG(friends, w, gpu_edge_labels[j], gpu_g1 );
+            friendsize = host_hoodG(l_draft[draft_size].h, w, gpu_edge_labels[j], gpu_g1 );
             for ( int k = 0 , ws = 0 ; k < friendsize ; ++k ){
-                if( host_contains(friends[k], lcs[i].h, lcs[i].h_size) ){ w_conn[ws] = friends[k]; ws++; }
+                if( host_contains(l_draft[draft_size].h[k], lcs[i].h, lcs[i].h_size) ){  ws++; }
+                else {
+                    l_draft[draft_size].h[k] = -1;
+                }
             }
+            host_resize(l_draft[draft_size].h, friendsize, ws );
 
             int adj;
             if ( ws > 0 && vs > 0 ){
@@ -448,14 +512,11 @@ int host_gen_new_Labels(GpuLabelClass *l_draft,int v, int w, GpuLabelClass *lcs,
                 l_draft[draft_size].g_size = vs;
                 l_draft[draft_size].h_size = ws;
                 l_draft[draft_size].row_ring_size = dim_row;
-                l_draft[draft_size].col_ring_size = dim_col;
-                l_draft[draft_size].g = v_conn;
-                l_draft[draft_size].h = w_conn;
                 l_draft[draft_size].adj = adj;
                 for( int c = 0 ; c < 4 ; c++){
                     l_draft[draft_size].label[c] = lcs[i].label[c];
                 }
-                l_draft[draft_size].rings_g = v_c_rings;
+                
                 draft_size++;
             }
         }
@@ -582,7 +643,7 @@ __device__ void kernel_select_vertex(int *result, int *result_pos, int *vtx_set,
 
 // vtx_set: selected label class
 // g: selected graph
-int host_select_vertex(int result, int *result_pos, int *vtx_set, int vtx_size, float **g, int num_row, int num_column) {
+void host_select_vertex(int *result, int *result_pos, int *vtx_set, int vtx_size, float **g, int num_row, int num_column) {
     int max_deg = -1;
     int vtx = 0;
 
@@ -597,11 +658,11 @@ int host_select_vertex(int result, int *result_pos, int *vtx_set, int vtx_size, 
 
         if(deg>max_deg){
             max_deg = deg;
-            result = vtx_set[i];
+            *result = vtx_set[i];
             *result_pos = i;
         }
     }
-    return result;
+    return ;
 }
 
 
@@ -828,8 +889,8 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
 
     cout << "CPU: Initializing thread pool" << endl;
 
-
-    int v,w,n_threads=0;
+    //init n_thread at 1
+    int v,w,n_threads=1;
     for( LabelClass lc : initial_label_classes ) {
         v = select_vertex(lc.g,g0);
         w = select_vertex(lc.h,g1);
@@ -845,7 +906,48 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
         n_threads++;
     }
 
+    LabelFromCpuToGpu(gpu_initial_label_classes[0],initial_label_classes);
+    host_select_label(&thread_pool_write[0].single_label, gpu_initial_label_classes[0],0, initial_label_classes.size() );
+    
+    std::vector<LabelClass*> label_class_pointers;
+    if( !initial_label_classes.empty() ) label_class_pointers.reserve(initial_label_classes.size()+1); // Reserve space for the pointers
 
+    for (LabelClass& item : initial_label_classes) {
+        label_class_pointers.push_back(&item); // Add the address of each element to the new vector
+    }
+
+    LabelClass* single_label_class_pointer;
+    single_label_class_pointer = select_label_DC(label_class_pointers, 0);
+    
+    cout << "GPU: label selected : " << thread_pool_write[0].single_label.label << endl;
+    cout << "CPU : label selected : " << single_label_class_pointer->label << endl;
+
+
+    int v_tmp = select_vertex(single_label_class_pointer->g,g0);
+    int w_tmp = select_vertex(single_label_class_pointer->h,g1);
+    int *result_v;
+    int *result_w;
+    int *result_pos;
+    cudaMallocManaged(&result_v, sizeof(int));
+    cudaMallocManaged(&result_w, sizeof(int));
+    cudaMallocManaged(&result_pos, sizeof(int));
+    host_select_vertex(result_v,result_pos, thread_pool_write[0].single_label.g,  thread_pool_write[0].single_label.g_size, gpu_g0, size_gpu_g0_row, size_gpu_g0_col );
+    host_select_vertex(result_w,result_pos, thread_pool_write[0].single_label.h,  thread_pool_write[0].single_label.h_size, gpu_g1, size_gpu_g1_row, size_gpu_g1_col );
+    
+
+    cout << "GPU: vertex V selected : " << *result_v << endl;
+    cout << "CPU: vertex V selected : " << v_tmp << endl;
+
+    cout << "GPU: vertex W selected : " << *result_w << endl;
+    cout << "CPU: vertex W selected : " << w_tmp << endl;
+
+
+    lcs = genNewLabels(v_tmp,w_tmp,initial_label_classes);
+    int *idxList;
+    cudaMallocManaged(&idxList, sizeof(int) * min_mol_size);
+    int new_labels_size = host_gen_new_Labels(thread_pool_write[1].labels, v_tmp, w_tmp, gpu_initial_label_classes[0], initial_label_classes.size(), idxList);
+
+    
     //stampa thread pool read
     /*for ( int j = 0 ; j < n_threads ; ++j ){
         for ( int k = 0 ; k < thread_pool_read[j].labels_size ; ++k ){
@@ -877,6 +979,7 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
     threadsPerBlock = 8;
     numberOfBlocks = 8;
     int h = 0;
+/*
 
     do{
         printf("\nnew kernel call\n");
@@ -900,7 +1003,7 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
             thread_pool_read[j].m_local->first = thread_pool_write[i].m_local->first;
             j++;
         }
-    }*/
+    }
    
 
 
@@ -908,8 +1011,7 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
     }while( h < 2);
 
 
-
-
+*/
 
 
 

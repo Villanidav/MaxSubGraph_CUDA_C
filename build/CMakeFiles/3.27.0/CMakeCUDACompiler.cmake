@@ -64,9 +64,9 @@ set(CMAKE_CUDA_HOST_IMPLICIT_LINK_LIBRARIES "")
 set(CMAKE_CUDA_HOST_IMPLICIT_LINK_DIRECTORIES "/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs;/opt/install/cuda/11.7/targets/x86_64-linux/lib")
 set(CMAKE_CUDA_HOST_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
 
-set(CMAKE_CUDA_IMPLICIT_INCLUDE_DIRECTORIES "/opt/install/gcc/11.3.0/include;/opt/install/gcc/11.3.0/include/c++/11.3.0;/opt/install/gcc/11.3.0/include/c++/11.3.0/x86_64-pc-linux-gnu;/opt/install/gcc/11.3.0/include/c++/11.3.0/backward;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include;/usr/local/include;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include")
+set(CMAKE_CUDA_IMPLICIT_INCLUDE_DIRECTORIES "/opt/install/rdkit/2023.03.2_gcc_11.3/include;/opt/install/boost/1.85.0_gcc_11.3/include;/opt/install/gcc/11.3.0/include;/opt/install/gcc/11.3.0/include/c++/11.3.0;/opt/install/gcc/11.3.0/include/c++/11.3.0/x86_64-pc-linux-gnu;/opt/install/gcc/11.3.0/include/c++/11.3.0/backward;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include;/usr/local/include;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include")
 set(CMAKE_CUDA_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc_s;gcc;c;gcc_s;gcc")
-set(CMAKE_CUDA_IMPLICIT_LINK_DIRECTORIES "/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs;/opt/install/cuda/11.7/targets/x86_64-linux/lib;/opt/install/gcc/11.3.0/lib64;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/opt/install/gcc/11.3.0/lib")
+set(CMAKE_CUDA_IMPLICIT_LINK_DIRECTORIES "/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs;/opt/install/cuda/11.7/targets/x86_64-linux/lib;/opt/install/gcc/11.3.0/lib64;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/opt/install/rdkit/2023.03.2_gcc_11.3/lib;/opt/install/boost/1.85.0_gcc_11.3/lib;/opt/install/gcc/11.3.0/lib")
 set(CMAKE_CUDA_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
 
 set(CMAKE_CUDA_RUNTIME_LIBRARY_DEFAULT "STATIC")

@@ -1,5 +1,5 @@
 CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o: \
- /home/dvillani/subgraph/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp \
+ /home/fvirgulti/MaxSubGraph_CUDA_C/src/gen_ring_classes.cpp \
  /usr/include/stdc-predef.h \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/vector \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/stl_algobase.h \
@@ -144,8 +144,8 @@ CMakeFiles/testFra.dir/src/gen_ring_classes.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/charconv.h \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/basic_string.tcc \
- /home/dvillani/subgraph/MaxSubGraph_CUDA_C/src/test.hpp \
- /home/dvillani/subgraph/MaxSubGraph_CUDA_C/src/Label.cpp \
+ /home/fvirgulti/MaxSubGraph_CUDA_C/src/test.hpp \
+ /home/fvirgulti/MaxSubGraph_CUDA_C/src/Label.cpp \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/algorithm \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/utility \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/stl_relops.h \
