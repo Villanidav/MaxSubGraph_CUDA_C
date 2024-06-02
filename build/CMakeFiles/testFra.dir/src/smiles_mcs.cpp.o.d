@@ -1,5 +1,5 @@
 CMakeFiles/testFra.dir/src/smiles_mcs.cpp.o: \
- /home/dvillani/subgraph/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp \
+ /home/fvirgulti/MaxSubGraph_CUDA_C/src/smiles_mcs.cpp \
  /usr/include/stdc-predef.h \
  /opt/install/rdkit/2023.03.2_gcc_11.3/include/rdkit/GraphMol/GraphMol.h \
  /opt/install/rdkit/2023.03.2_gcc_11.3/include/rdkit/RDGeneral/export.h \
@@ -1427,8 +1427,8 @@ CMakeFiles/testFra.dir/src/smiles_mcs.cpp.o: \
  /opt/install/rdkit/2023.03.2_gcc_11.3/include/rdkit/GraphMol/Atom.h \
  /opt/install/rdkit/2023.03.2_gcc_11.3/include/rdkit/GraphMol/Bond.h \
  /opt/install/rdkit/2023.03.2_gcc_11.3/include/rdkit/RDGeneral/test.h \
- /home/dvillani/subgraph/MaxSubGraph_CUDA_C/src/test.hpp \
- /home/dvillani/subgraph/MaxSubGraph_CUDA_C/src/Label.cpp \
+ /home/fvirgulti/MaxSubGraph_CUDA_C/src/test.hpp \
+ /home/fvirgulti/MaxSubGraph_CUDA_C/src/Label.cpp \
  /opt/install/rdkit/2023.03.2_gcc_11.3/include/rdkit/GraphMol/FileParsers/MolSupplier.h \
  /opt/install/rdkit/2023.03.2_gcc_11.3/include/rdkit/GraphMol/ROMol.h \
  /opt/install/rdkit/2023.03.2_gcc_11.3/include/rdkit/RDGeneral/BadFileException.h \

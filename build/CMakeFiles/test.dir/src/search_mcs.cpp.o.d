@@ -1,5 +1,5 @@
 CMakeFiles/test.dir/src/search_mcs.cpp.o: \
- /home/dvillani/subgraph/MaxSubGraph_CUDA_C/src/search_mcs.cpp \
+ /home/fvirgulti/MaxSubGraph_CUDA_C/src/search_mcs.cpp \
  /usr/include/stdc-predef.h \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/vector \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/stl_algobase.h \
@@ -112,8 +112,8 @@ CMakeFiles/test.dir/src/search_mcs.cpp.o: \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/unordered_map.h \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/erase_if.h \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/pstl/execution_defs.h \
- /home/dvillani/subgraph/MaxSubGraph_CUDA_C/src/test.hpp \
- /home/dvillani/subgraph/MaxSubGraph_CUDA_C/src/Label.cpp \
+ /home/fvirgulti/MaxSubGraph_CUDA_C/src/test.hpp \
+ /home/fvirgulti/MaxSubGraph_CUDA_C/src/Label.cpp \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/iostream \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/ostream \
  /opt/install/gcc/11.3.0/include/c++/11.3.0/ios \

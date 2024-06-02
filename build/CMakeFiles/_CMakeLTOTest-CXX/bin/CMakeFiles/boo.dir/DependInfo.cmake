@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp" "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/main.cpp.o"
+  "/home/fvirgulti/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp" "/home/fvirgulti/MaxSubGraph_CUDA_C/build/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -68,7 +68,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/opt/install/cuda/11.7/include;/opt/install/gcc/11.3.0/include;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include;/usr/local/include;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/opt/install/cuda/11.7/include;/opt/install/rdkit/2023.03.2_gcc_11.3/include;/opt/install/boost/1.85.0_gcc_11.3/include;/opt/install/gcc/11.3.0/include;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include;/usr/local/include;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;gcc_s;c;gcc;gcc_s")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/opt/install/gcc/11.3.0/lib64;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/opt/install/gcc/11.3.0/lib")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/opt/install/gcc/11.3.0/lib64;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/opt/install/rdkit/2023.03.2_gcc_11.3/lib;/opt/install/boost/1.85.0_gcc_11.3/lib;/opt/install/gcc/11.3.0/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

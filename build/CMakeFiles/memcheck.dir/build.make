@@ -53,10 +53,10 @@ RM = /opt/install/cmake/3.27/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dvillani/subgraph/MaxSubGraph_CUDA_C
+CMAKE_SOURCE_DIR = /home/fvirgulti/MaxSubGraph_CUDA_C
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build
+CMAKE_BINARY_DIR = /home/fvirgulti/MaxSubGraph_CUDA_C/build
 
 # Utility rule file for memcheck.
 
@@ -67,7 +67,7 @@ include CMakeFiles/memcheck.dir/compiler_depend.make
 include CMakeFiles/memcheck.dir/progress.make
 
 CMakeFiles/memcheck:
-	/usr/bin/valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose --log-file=valgrind.log /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/test
+	/usr/bin/valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose --log-file=valgrind.log /home/fvirgulti/MaxSubGraph_CUDA_C/build/test
 
 memcheck: CMakeFiles/memcheck
 memcheck: CMakeFiles/memcheck.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/memcheck.dir/clean:
 .PHONY : CMakeFiles/memcheck.dir/clean
 
 CMakeFiles/memcheck.dir/depend:
-	cd /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dvillani/subgraph/MaxSubGraph_CUDA_C /home/dvillani/subgraph/MaxSubGraph_CUDA_C /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build /home/dvillani/subgraph/MaxSubGraph_CUDA_C/build/CMakeFiles/memcheck.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/fvirgulti/MaxSubGraph_CUDA_C/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fvirgulti/MaxSubGraph_CUDA_C /home/fvirgulti/MaxSubGraph_CUDA_C /home/fvirgulti/MaxSubGraph_CUDA_C/build /home/fvirgulti/MaxSubGraph_CUDA_C/build /home/fvirgulti/MaxSubGraph_CUDA_C/build/CMakeFiles/memcheck.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/memcheck.dir/depend
 
