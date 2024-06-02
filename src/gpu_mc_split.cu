@@ -670,6 +670,7 @@ __global__
 void kernel_function( ThreadVar *thread_pool_read, ThreadVar *thread_pool_write ){
     int index = threadIdx.x + blockIdx.x * blockDim.x;
     int space = 4;
+    
     if ( thread_pool_read[index].m_local->first > 0 ){
         printf(" [ %d ] FIRST %d\n", index ,thread_pool_read[index].m_local->first);
         //printf(" [ %d ] SECOND %d\n", index ,thread_pool_read[index].m_local->second);
@@ -677,7 +678,36 @@ void kernel_function( ThreadVar *thread_pool_read, ThreadVar *thread_pool_write 
         for ( int jump = 0 ; jump < space ; jump++ ){
             thread_pool_write[4*index + jump].m_local->first = index+1;
         }
-        thread_pool_read[index].labels_size = 0;
+        thread_pool_write[index].labels_size = thread_pool_read[index].labels_size;
+    }
+}
+
+
+void cpyThreadPool( ThreadVar *thread_pool_read, ThreadVar *thread_pool_write ){
+    int r_idx = 0;
+    for( int w_idx = 0; w_idx < DIM_POOL*DIM_POOL ; w_idx++){ 
+        thread_pool_read[r_idx].labels_size = thread_pool_write[w_idx].labels_size;
+        
+        if ( thread_pool_write[w_idx].m_local->first > 0 ){
+            printf(" im in ");
+            thread_pool_read[r_idx].m_size = thread_pool_write[w_idx].m_size;
+            thread_pool_read[r_idx].m_local->first = thread_pool_write[w_idx].m_local->first;
+            thread_pool_read[r_idx].m_local->second = thread_pool_write[w_idx].m_local->second;
+            for ( int l_idx = 0 ; l_idx < thread_pool_write[w_idx].labels_size ; l_idx++ ){
+                thread_pool_read[r_idx].labels[l_idx].g = thread_pool_write[w_idx].labels[l_idx].g;
+                thread_pool_read[r_idx].labels[l_idx].h = thread_pool_write[w_idx].labels[l_idx].h;
+                thread_pool_read[r_idx].labels[l_idx].col_ring_size = thread_pool_write[w_idx].labels[l_idx].col_ring_size;
+                thread_pool_read[r_idx].labels[l_idx].row_ring_size = thread_pool_write[w_idx].labels[l_idx].row_ring_size;
+                thread_pool_read[r_idx].labels[l_idx].g_size = thread_pool_write[w_idx].labels[l_idx].g_size;
+                thread_pool_read[r_idx].labels[l_idx].h_size = thread_pool_write[w_idx].labels[l_idx].h_size;
+                strcpy(thread_pool_write[w_idx].labels[l_idx].label, thread_pool_write[w_idx].labels[l_idx].label );
+                for ( int ring_idx = 0 ; ring_idx < thread_pool_write[w_idx].labels[l_idx].row_ring_size ; ring_idx++ ){
+                    thread_pool_read[r_idx].labels[l_idx].rings_g[ring_idx] = thread_pool_write[w_idx].labels[l_idx].rings_g[ring_idx];
+                }
+            }
+            r_idx++;
+        }
+        thread_pool_write[w_idx].labels_size = 0;
     }
 }
 
@@ -688,21 +718,19 @@ void kernel_function( ThreadVar *thread_pool_read, ThreadVar *thread_pool_write 
 vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, const std::vector<std::vector<float>>& g11,
                                    const std::vector<std::string>& l0, const std::vector<std::string>& l1,
                                    std::vector<std::vector<int> >& ring_classes) {
-    cout << "CPU: Initializing ..." << endl;
     //vars
     g0 = g00;
     g1 = g11;
     size_t N = DIM_POOL * DIM_POOL;
-    edge_labels = cpu_gen_bond_labels(g0, g1);
+    ThreadVar *thread_pool_read;
+    ThreadVar *thread_pool_write;
+    edge_labels =cpu_gen_bond_labels(g0, g1);
     int min_mol_size = std::min(l0.size(), l1.size());
     std::vector <LabelClass> initial_label_classes = cpu_gen_initial_labels(l0, l1, ring_classes);
     GpuLabelClass **gpu_initial_label_classes;
     int gpu_initial_label_classes_size = initial_label_classes.size();
     Pair m_local;
     vector <LabelClass> lcs;
-        ThreadVar *thread_pool_read;
-    ThreadVar *thread_pool_write;
-
     //cuda Mallocs
     //cuda malloc edge labels
     cudaMallocManaged(&gpu_edge_labels, sizeof(float) * edge_labels.size());
@@ -802,33 +830,50 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
 
     threadsPerBlock = 8;
     numberOfBlocks = 8;
-    int h = 0;
+    int h = 1;
 
     do{
-
-    cout<<"N THREAD     "<< n_threads<<endl;
+        printf("\nnew kernel call\n");
     kernel_function<<< threadsPerBlock , numberOfBlocks >>>( thread_pool_read , thread_pool_write);
-
     cudaDeviceSynchronize();
     
     cout<<"\n\n\nSTAMPA DI THPOOL WRITE POST CHIAMATA A FUNZIONE (stampo lo zero )\n";
     for( int i = 0; i < N ; i++){
         cout<<"[ "<<i<<"] "<<thread_pool_write[i].m_local->first<<endl;
     }
-    int j = 0;
-    for( int i = 0; i < N ; i++){ 
-        if ( thread_pool_write[i].m_local->first != 0 ){
-            thread_pool_read[j].m_local->first = thread_pool_write[i].m_local->first;
-            j++;
-        }
-    }
+    cpyThreadPool( thread_pool_read , thread_pool_write );
+
     cout<<"\n\n\nSTAMPA DI THPOOL READ POST COPY (non stampo lo zero)\n";
     for( int i = 0; i < N ; i++){
         if( thread_pool_read[i].m_local->first > 0 )
             cout<<"[ "<<i<<"] "<<thread_pool_read[i].m_local->first<<endl;
     }
+    /*int j = 0;
+    for( int i = 0; i < N ; i++){ 
+        if ( thread_pool_write[i].m_local->first != 0 ){
+            thread_pool_read[j].m_local->first = thread_pool_write[i].m_local->first;
+            j++;
+        }
+    }*/
+   
+
+
     h++;
     }while( h < 2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     //cudaFree
     cudaFree( gpu_edge_labels );
