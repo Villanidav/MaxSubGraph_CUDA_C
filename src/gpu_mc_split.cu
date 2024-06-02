@@ -1,7 +1,6 @@
 //
 // Created by davide on 5/3/24.
 //
-
 #include "test.hpp"
 #include <vector>
 #include <string.h>
@@ -11,7 +10,7 @@
 #include <unordered_set>
 
 using namespace std;
-const int DIM_POOL = 16;
+const int DIM_POOL = 8;
 std::vector<std::vector<float>> g0;
 std::vector<std::vector<float>> g1;
 std::vector<float> edge_labels;
@@ -264,6 +263,7 @@ int host_matchable_ring_data(int *result, int v, GpuLabelClass *lc){
         index++;
     }
     return index;
+
 }
 
 // return the best select label given an array of labels
@@ -666,6 +666,21 @@ bool solve_mcs() {
 }
 
 
+__global__ 
+void kernel_function( ThreadVar *thread_pool_read, ThreadVar *thread_pool_write ){
+    int index = threadIdx.x + blockIdx.x * blockDim.x;
+    int space = 4;
+    if ( thread_pool_read[index].labels_size > 0 ){
+        printf(" [ %d ] FIRST %d\n", index ,thread_pool_read[index].m_local->first);
+        printf(" [ %d ] SECOND %d\n", index ,thread_pool_read[index].m_local->second);
+        if( index%2 == 0 ) space = 1;
+        for ( int jump = 0 ; jump < space ; jump++ ){
+            thread_pool_write[4*index + jump].m_local->first = index+1;
+        }
+        thread_pool_read[index].labels_size = 0;
+    }
+}
+
 
 
 
@@ -677,7 +692,6 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
     //vars
     g0 = g00;
     g1 = g11;
-    ThreadVar *thread_pool;
     size_t N = DIM_POOL * DIM_POOL;
     edge_labels = cpu_gen_bond_labels(g0, g1);
     int min_mol_size = std::min(l0.size(), l1.size());
@@ -686,6 +700,8 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
     int gpu_initial_label_classes_size = initial_label_classes.size();
     Pair m_local;
     vector <LabelClass> lcs;
+        ThreadVar *thread_pool_read;
+    ThreadVar *thread_pool_write;
 
     //cuda Mallocs
     //cuda malloc edge labels
@@ -709,12 +725,19 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
             for (int j = 0; j < l0.size(); ++j) {
                 cudaMallocManaged(&(gpu_initial_label_classes[k][i].rings_g[j]), l0.size() * sizeof(int));}}}
     //cudamalloc / initialize pool
-    cudaMallocManaged(&thread_pool, sizeof(ThreadVar) * N);
+    cudaMallocManaged(&thread_pool_read, sizeof(ThreadVar) * N);
     for (int j = 0; j < N; ++j) {
-        thread_pool->labels_size = 0;
-        thread_pool->m_size = 0;
-        cudaMallocManaged(&thread_pool[j].labels, sizeof(gpu_initial_label_classes));
-        cudaMallocManaged(&thread_pool[j].m_local, sizeof(Pair) * min_mol_size);
+        thread_pool_read->labels_size = 0;
+        thread_pool_read->m_size = 0;
+        cudaMallocManaged(&thread_pool_read[j].labels, sizeof(gpu_initial_label_classes));
+        cudaMallocManaged(&thread_pool_read[j].m_local, sizeof(Pair) * min_mol_size);
+    }
+    cudaMallocManaged(&thread_pool_write, sizeof(ThreadVar) * N);
+    for (int j = 0; j < N; ++j) {
+        thread_pool_write->labels_size = 0;
+        thread_pool_write->m_size = 0;
+        cudaMallocManaged(&thread_pool_write[j].labels, sizeof(gpu_initial_label_classes));
+        cudaMallocManaged(&thread_pool_write[j].m_local, sizeof(Pair) * min_mol_size);
     }
 
     //initialize
@@ -742,16 +765,16 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
         m_local.second = w;
         lcs = genNewLabels(v,w,initial_label_classes);
         LabelFromCpuToGpu(gpu_initial_label_classes[n_threads],lcs);
-        thread_pool[n_threads].labels = gpu_initial_label_classes[n_threads];
-        thread_pool[n_threads].labels_size = lcs.size();
-        thread_pool[n_threads].m_size = 1;
-        thread_pool[n_threads].m_local[0] = m_local;
+        thread_pool_read[n_threads].labels = gpu_initial_label_classes[n_threads];
+        thread_pool_read[n_threads].labels_size = lcs.size();
+        thread_pool_read[n_threads].m_size = 1;
+        thread_pool_read[n_threads].m_local[0] = m_local;
         n_threads++;
     }
 
 
 
-    for ( int j = 0 ; j < n_threads ; ++j ){
+    /*for ( int j = 0 ; j < n_threads ; ++j ){
         for ( int k = 0 ; k < thread_pool[j].labels_size ; ++k ){
             cout<< "\nLABEL : "<<thread_pool[j].labels[k].label;
             cout<< "\nADJ : "<<thread_pool[j].labels[k].adj;
@@ -772,14 +795,35 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
                 cout<<" }} ";
             }
         }
+    }*/
+
+    size_t threadsPerBlock;
+    size_t numberOfBlocks;
+
+    threadsPerBlock = 8;
+    numberOfBlocks = 8;
+
+    cout<<"N THREAD     "<< n_threads<<endl;
+    kernel_function<<< threadsPerBlock , numberOfBlocks >>>( thread_pool_read , thread_pool_write);
+
+    cudaDeviceSynchronize();
+    
+    cout<<"\n\n\nSTAMPA DI THPOOL WRITE POST CHIAMATA A FUNZIONE (stampo lo zero )\n";
+    for( int i = 0; i < N ; i++){
+        cout<<"[ "<<i<<"] "<<thread_pool_write[i].m_local->first<<endl;
     }
-
-
-
-    /*bool flag;
-    do{flag = solve_mcs();}while(flag);*/
-
-
+    int j = 0;
+    for( int i = 0; i < N ; i++){ 
+        if ( thread_pool_write[i].m_local->first != 0 ){
+            thread_pool_read[j].m_local->first = thread_pool_write[i].m_local->first;
+            j++;
+        }
+    }
+    cout<<"\n\n\nSTAMPA DI THPOOL READ POST COPY (non stampo lo zero)\n";
+    for( int i = 0; i < N ; i++){
+        if( thread_pool_read[i].m_local->first > 0 )
+            cout<<"[ "<<i<<"] "<<thread_pool_read[i].m_local->first<<endl;
+    }
 
 
     //cudaFree
