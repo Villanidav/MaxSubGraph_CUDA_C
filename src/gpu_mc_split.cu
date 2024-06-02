@@ -670,9 +670,9 @@ __global__
 void kernel_function( ThreadVar *thread_pool_read, ThreadVar *thread_pool_write ){
     int index = threadIdx.x + blockIdx.x * blockDim.x;
     int space = 4;
-    if ( thread_pool_read[index].labels_size > 0 ){
+    if ( thread_pool_read[index].m_local->first > 0 ){
         printf(" [ %d ] FIRST %d\n", index ,thread_pool_read[index].m_local->first);
-        printf(" [ %d ] SECOND %d\n", index ,thread_pool_read[index].m_local->second);
+        //printf(" [ %d ] SECOND %d\n", index ,thread_pool_read[index].m_local->second);
         if( index%2 == 0 ) space = 1;
         for ( int jump = 0 ; jump < space ; jump++ ){
             thread_pool_write[4*index + jump].m_local->first = index+1;
@@ -773,7 +773,7 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
     }
 
 
-
+    //stampa thread pool read
     /*for ( int j = 0 ; j < n_threads ; ++j ){
         for ( int k = 0 ; k < thread_pool[j].labels_size ; ++k ){
             cout<< "\nLABEL : "<<thread_pool[j].labels[k].label;
@@ -802,6 +802,9 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
 
     threadsPerBlock = 8;
     numberOfBlocks = 8;
+    int h = 0;
+
+    do{
 
     cout<<"N THREAD     "<< n_threads<<endl;
     kernel_function<<< threadsPerBlock , numberOfBlocks >>>( thread_pool_read , thread_pool_write);
@@ -824,7 +827,8 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g00, c
         if( thread_pool_read[i].m_local->first > 0 )
             cout<<"[ "<<i<<"] "<<thread_pool_read[i].m_local->first<<endl;
     }
-
+    h++;
+    }while( h < 2);
 
     //cudaFree
     cudaFree( gpu_edge_labels );
