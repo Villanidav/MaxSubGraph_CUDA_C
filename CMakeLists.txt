@@ -101,13 +101,14 @@ add_executable(test ${header_files} "${source_path}/test.cpp"
         "${source_path}/select_label.cpp"
         "${source_path}/gen_initial_labels.cpp"
         "${source_path}/gen_ring_classes.cpp"
-        "${source_path}/gen_rotations.cpp"
         "${source_path}/search_mcs.cpp"
         "${source_path}/mol_mcs.cpp"
         "${source_path}/mc_split.cpp"
         "${source_path}/g2mol.cpp"
         "${source_path}/gpu_mc_split.cu"
+        
         "${source_path}/pair_vertex.cpp"
+        "${source_path}/cpu_mc_split.cpp"
 )
 set_target_properties(test PROPERTIES
     COMPILE_DEFINITIONS "TESTING"
@@ -117,6 +118,7 @@ set_target_properties(test PROPERTIES
 )
 
 add_executable(testFra ${header_files} "${source_path}/testFra.cu"
+        
         "${source_path}/gen_bond_labels.cpp"
         "${source_path}/gen_rotations.cpp"
         "${source_path}/select_vertex.cpp"
@@ -127,13 +129,13 @@ add_executable(testFra ${header_files} "${source_path}/testFra.cu"
         "${source_path}/select_label.cpp"
         "${source_path}/gen_initial_labels.cpp"
         "${source_path}/gen_ring_classes.cpp"
-        "${source_path}/gen_rotations.cpp"
         "${source_path}/search_mcs.cpp"
         "${source_path}/mol_mcs.cpp"
         "${source_path}/mc_split.cpp"
         "${source_path}/g2mol.cpp"
         "${source_path}/gpu_mc_split.cu"
         "${source_path}/pair_vertex.cpp"
+        "${source_path}/cpu_mc_split.cpp"
 )
 
 set_target_properties(test PROPERTIES

@@ -31,7 +31,10 @@ std::vector<std::pair<int,int>> gpu_mc_split(const std::vector<std::vector<float
                                           const std::vector<std::string>& l0, const std::vector<std::string>& l1,
                                           std::vector<std::vector<int> >& ring_classes);
 
-
+std::vector<std::pair<int,int>> cpu_mc_split(const std::vector<std::vector<float>>& g00, const std::vector<std::vector<float>>& g11,
+                                          const std::vector<std::string>& l0, const std::vector<std::string>& l1,
+                                          std::vector<std::vector<int> >& ring_classes);
+                                          
 int calc_bound( std::vector<LabelClass> label_classes);
 
 std::vector<float> gen_bond_labels(const std::vector<std::vector<float> >& g0, const std::vector<std::vector<float> >& g1);

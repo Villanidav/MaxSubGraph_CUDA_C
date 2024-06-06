@@ -222,6 +222,33 @@ src/calc_bound.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/calc_bound.cpp.s
 .PHONY : src/calc_bound.cpp.s
 
+src/cpu_mc_split.o: src/cpu_mc_split.cpp.o
+.PHONY : src/cpu_mc_split.o
+
+# target to build an object file
+src/cpu_mc_split.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/cpu_mc_split.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/cpu_mc_split.cpp.o
+.PHONY : src/cpu_mc_split.cpp.o
+
+src/cpu_mc_split.i: src/cpu_mc_split.cpp.i
+.PHONY : src/cpu_mc_split.i
+
+# target to preprocess a source file
+src/cpu_mc_split.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/cpu_mc_split.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/cpu_mc_split.cpp.i
+.PHONY : src/cpu_mc_split.cpp.i
+
+src/cpu_mc_split.s: src/cpu_mc_split.cpp.s
+.PHONY : src/cpu_mc_split.s
+
+# target to generate assembly for a file
+src/cpu_mc_split.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/src/cpu_mc_split.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/testFra.dir/build.make CMakeFiles/testFra.dir/src/cpu_mc_split.cpp.s
+.PHONY : src/cpu_mc_split.cpp.s
+
 src/g2mol.o: src/g2mol.cpp.o
 .PHONY : src/g2mol.o
 
@@ -702,6 +729,9 @@ help:
 	@echo "... src/calc_bound.o"
 	@echo "... src/calc_bound.i"
 	@echo "... src/calc_bound.s"
+	@echo "... src/cpu_mc_split.o"
+	@echo "... src/cpu_mc_split.i"
+	@echo "... src/cpu_mc_split.s"
 	@echo "... src/g2mol.o"
 	@echo "... src/g2mol.i"
 	@echo "... src/g2mol.s"

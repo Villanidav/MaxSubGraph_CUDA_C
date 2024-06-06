@@ -73,12 +73,13 @@ class LabelClass {
             }
         }
 
-
         if ( !rings_g.empty() && !idxList.empty() ) {
             for ( int j : idxList ) {
                 res.push_back(rings_g.at(j));
             }
         }
+
+    
 
         return res;
     }

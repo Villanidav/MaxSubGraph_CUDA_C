@@ -1,0 +1,1277 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 5.15.0-101-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /opt/install/gcc/11.3.0/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/3.27.0/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /opt/install/gcc/11.3.0/bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/3.27.0/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-I4By9t"
+      binary: "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-I4By9t"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-I4By9t'
+        
+        Run Build Command(s): /opt/install/cmake/3.27/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_28d67/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_28d67.dir/build.make CMakeFiles/cmTC_28d67.dir/build
+        gmake[1]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-I4By9t'
+        Building C object CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.o
+        /opt/install/gcc/11.3.0/bin/gcc   -v -o CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.o -c /opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/opt/install/gcc/11.3.0/bin/gcc
+        Target: x86_64-pc-linux-gnu
+        Configured with: ./configure --prefix=/opt/install/gcc/11.3.0 --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_28d67.dir/'
+         /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_28d67.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccIbkrCo.s
+        GNU C17 (GCC) version 11.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 11.3.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring duplicate directory "/opt/install/gcc/11.3.0/include"
+        ignoring nonexistent directory "/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/install/cuda/11.7/include
+         /opt/install/rdkit/2023.03.2_gcc_11.3/include
+         /opt/install/boost/1.85.0_gcc_11.3/include
+         /opt/install/gcc/11.3.0/include
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include
+         /usr/local/include
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C17 (GCC) version 11.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 11.3.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: e2e8e8d760f00d06bcb27876ec468f83
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_28d67.dir/'
+         as -v --64 -o CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.o /tmp/ccIbkrCo.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/opt/install/gcc/11.3.0/lib64/../lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/install/rdkit/2023.03.2_gcc_11.3/lib/:/opt/install/boost/1.85.0_gcc_11.3/lib/:/opt/install/gcc/11.3.0/lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_28d67
+        /opt/install/cmake/3.27/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28d67.dir/link.txt --verbose=1
+        /opt/install/gcc/11.3.0/bin/gcc  -v CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.o -o cmTC_28d67 
+        Using built-in specs.
+        COLLECT_GCC=/opt/install/gcc/11.3.0/bin/gcc
+        COLLECT_LTO_WRAPPER=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: ./configure --prefix=/opt/install/gcc/11.3.0 --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.3.0 (GCC) 
+        COMPILER_PATH=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/opt/install/gcc/11.3.0/lib64/../lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/install/rdkit/2023.03.2_gcc_11.3/lib/:/opt/install/boost/1.85.0_gcc_11.3/lib/:/opt/install/gcc/11.3.0/lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_28d67' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_28d67.'
+         /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/collect2 -plugin /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/liblto_plugin.so -plugin-opt=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3Vr9YZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_28d67 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o -L/opt/install/gcc/11.3.0/lib64/../lib64 -L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0 -L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/opt/install/rdkit/2023.03.2_gcc_11.3/lib -L/opt/install/boost/1.85.0_gcc_11.3/lib -L/opt/install/gcc/11.3.0/lib64 -L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../.. CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o /lib/x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_28d67' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_28d67.'
+        gmake[1]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-I4By9t'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/install/cuda/11.7/include]
+          add: [/opt/install/rdkit/2023.03.2_gcc_11.3/include]
+          add: [/opt/install/boost/1.85.0_gcc_11.3/include]
+          add: [/opt/install/gcc/11.3.0/include]
+          add: [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include]
+          add: [/usr/local/include]
+          add: [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/opt/install/cuda/11.7/include] ==> [/opt/install/cuda/11.7/include]
+        collapse include dir [/opt/install/rdkit/2023.03.2_gcc_11.3/include] ==> [/opt/install/rdkit/2023.03.2_gcc_11.3/include]
+        collapse include dir [/opt/install/boost/1.85.0_gcc_11.3/include] ==> [/opt/install/boost/1.85.0_gcc_11.3/include]
+        collapse include dir [/opt/install/gcc/11.3.0/include] ==> [/opt/install/gcc/11.3.0/include]
+        collapse include dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include] ==> [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed] ==> [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/opt/install/cuda/11.7/include;/opt/install/rdkit/2023.03.2_gcc_11.3/include;/opt/install/boost/1.85.0_gcc_11.3/include;/opt/install/gcc/11.3.0/include;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include;/usr/local/include;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-I4By9t']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/install/cmake/3.27/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_28d67/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_28d67.dir/build.make CMakeFiles/cmTC_28d67.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-I4By9t']
+        ignore line: [Building C object CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/opt/install/gcc/11.3.0/bin/gcc   -v -o CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.o -c /opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/install/gcc/11.3.0/bin/gcc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ./configure --prefix=/opt/install/gcc/11.3.0 --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.3.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_28d67.dir/']
+        ignore line: [ /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/cc1 -quiet -v -imultiarch x86_64-linux-gnu /opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_28d67.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccIbkrCo.s]
+        ignore line: [GNU C17 (GCC) version 11.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/opt/install/gcc/11.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/install/cuda/11.7/include]
+        ignore line: [ /opt/install/rdkit/2023.03.2_gcc_11.3/include]
+        ignore line: [ /opt/install/boost/1.85.0_gcc_11.3/include]
+        ignore line: [ /opt/install/gcc/11.3.0/include]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (GCC) version 11.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: e2e8e8d760f00d06bcb27876ec468f83]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_28d67.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.o /tmp/ccIbkrCo.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/opt/install/gcc/11.3.0/lib64/../lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/install/rdkit/2023.03.2_gcc_11.3/lib/:/opt/install/boost/1.85.0_gcc_11.3/lib/:/opt/install/gcc/11.3.0/lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_28d67]
+        ignore line: [/opt/install/cmake/3.27/bin/cmake -E cmake_link_script CMakeFiles/cmTC_28d67.dir/link.txt --verbose=1]
+        ignore line: [/opt/install/gcc/11.3.0/bin/gcc  -v CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.o -o cmTC_28d67 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/install/gcc/11.3.0/bin/gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ./configure --prefix=/opt/install/gcc/11.3.0 --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.3.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/opt/install/gcc/11.3.0/lib64/../lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/install/rdkit/2023.03.2_gcc_11.3/lib/:/opt/install/boost/1.85.0_gcc_11.3/lib/:/opt/install/gcc/11.3.0/lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_28d67' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_28d67.']
+        link line: [ /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/collect2 -plugin /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/liblto_plugin.so -plugin-opt=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc3Vr9YZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_28d67 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o -L/opt/install/gcc/11.3.0/lib64/../lib64 -L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0 -L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/opt/install/rdkit/2023.03.2_gcc_11.3/lib -L/opt/install/boost/1.85.0_gcc_11.3/lib -L/opt/install/gcc/11.3.0/lib64 -L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../.. CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cc3Vr9YZ.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_28d67] ==> ignore
+          arg [/lib/x86_64-linux-gnu/crt1.o] ==> obj [/lib/x86_64-linux-gnu/crt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o] ==> obj [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o]
+          arg [-L/opt/install/gcc/11.3.0/lib64/../lib64] ==> dir [/opt/install/gcc/11.3.0/lib64/../lib64]
+          arg [-L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0] ==> dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0]
+          arg [-L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64] ==> dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/opt/install/rdkit/2023.03.2_gcc_11.3/lib] ==> dir [/opt/install/rdkit/2023.03.2_gcc_11.3/lib]
+          arg [-L/opt/install/boost/1.85.0_gcc_11.3/lib] ==> dir [/opt/install/boost/1.85.0_gcc_11.3/lib]
+          arg [-L/opt/install/gcc/11.3.0/lib64] ==> dir [/opt/install/gcc/11.3.0/lib64]
+          arg [-L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../..] ==> dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../..]
+          arg [CMakeFiles/cmTC_28d67.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o] ==> obj [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/opt/install/gcc/11.3.0/lib64/../lib64] ==> [/opt/install/gcc/11.3.0/lib64]
+        collapse library dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0] ==> [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0]
+        collapse library dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64] ==> [/opt/install/gcc/11.3.0/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/opt/install/rdkit/2023.03.2_gcc_11.3/lib] ==> [/opt/install/rdkit/2023.03.2_gcc_11.3/lib]
+        collapse library dir [/opt/install/boost/1.85.0_gcc_11.3/lib] ==> [/opt/install/boost/1.85.0_gcc_11.3/lib]
+        collapse library dir [/opt/install/gcc/11.3.0/lib64] ==> [/opt/install/gcc/11.3.0/lib64]
+        collapse library dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../..] ==> [/opt/install/gcc/11.3.0/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/crt1.o;/lib/x86_64-linux-gnu/crti.o;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/opt/install/gcc/11.3.0/lib64;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/opt/install/rdkit/2023.03.2_gcc_11.3/lib;/opt/install/boost/1.85.0_gcc_11.3/lib;/opt/install/gcc/11.3.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-zm1L0l"
+      binary: "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-zm1L0l"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-zm1L0l'
+        
+        Run Build Command(s): /opt/install/cmake/3.27/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d4121/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d4121.dir/build.make CMakeFiles/cmTC_d4121.dir/build
+        gmake[1]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-zm1L0l'
+        Building CXX object CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.o
+        /opt/install/gcc/11.3.0/bin/g++   -v -o CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.o -c /opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/opt/install/gcc/11.3.0/bin/g++
+        Target: x86_64-pc-linux-gnu
+        Configured with: ./configure --prefix=/opt/install/gcc/11.3.0 --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d4121.dir/'
+         /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d4121.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccmUsbfd.s
+        GNU C++17 (GCC) version 11.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 11.3.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring duplicate directory "/opt/install/gcc/11.3.0/include"
+        ignoring nonexistent directory "/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/install/cuda/11.7/include
+         /opt/install/rdkit/2023.03.2_gcc_11.3/include
+         /opt/install/boost/1.85.0_gcc_11.3/include
+         /opt/install/gcc/11.3.0/include
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-pc-linux-gnu
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include
+         /usr/local/include
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C++17 (GCC) version 11.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 11.3.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: e1ff5f91c7fd7f6ba156b00a616c6b8c
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d4121.dir/'
+         as -v --64 -o CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccmUsbfd.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/opt/install/gcc/11.3.0/lib64/../lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/install/rdkit/2023.03.2_gcc_11.3/lib/:/opt/install/boost/1.85.0_gcc_11.3/lib/:/opt/install/gcc/11.3.0/lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_d4121
+        /opt/install/cmake/3.27/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4121.dir/link.txt --verbose=1
+        /opt/install/gcc/11.3.0/bin/g++  -v CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d4121 
+        Using built-in specs.
+        COLLECT_GCC=/opt/install/gcc/11.3.0/bin/g++
+        COLLECT_LTO_WRAPPER=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: ./configure --prefix=/opt/install/gcc/11.3.0 --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.3.0 (GCC) 
+        COMPILER_PATH=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/opt/install/gcc/11.3.0/lib64/../lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/install/rdkit/2023.03.2_gcc_11.3/lib/:/opt/install/boost/1.85.0_gcc_11.3/lib/:/opt/install/gcc/11.3.0/lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d4121' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d4121.'
+         /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/collect2 -plugin /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/liblto_plugin.so -plugin-opt=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cctdzQcs.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d4121 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o -L/opt/install/gcc/11.3.0/lib64/../lib64 -L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0 -L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/opt/install/rdkit/2023.03.2_gcc_11.3/lib -L/opt/install/boost/1.85.0_gcc_11.3/lib -L/opt/install/gcc/11.3.0/lib64 -L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../.. CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o /lib/x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d4121' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d4121.'
+        gmake[1]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-zm1L0l'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/install/cuda/11.7/include]
+          add: [/opt/install/rdkit/2023.03.2_gcc_11.3/include]
+          add: [/opt/install/boost/1.85.0_gcc_11.3/include]
+          add: [/opt/install/gcc/11.3.0/include]
+          add: [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0]
+          add: [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-pc-linux-gnu]
+          add: [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward]
+          add: [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include]
+          add: [/usr/local/include]
+          add: [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/opt/install/cuda/11.7/include] ==> [/opt/install/cuda/11.7/include]
+        collapse include dir [/opt/install/rdkit/2023.03.2_gcc_11.3/include] ==> [/opt/install/rdkit/2023.03.2_gcc_11.3/include]
+        collapse include dir [/opt/install/boost/1.85.0_gcc_11.3/include] ==> [/opt/install/boost/1.85.0_gcc_11.3/include]
+        collapse include dir [/opt/install/gcc/11.3.0/include] ==> [/opt/install/gcc/11.3.0/include]
+        collapse include dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0] ==> [/opt/install/gcc/11.3.0/include/c++/11.3.0]
+        collapse include dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-pc-linux-gnu] ==> [/opt/install/gcc/11.3.0/include/c++/11.3.0/x86_64-pc-linux-gnu]
+        collapse include dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward] ==> [/opt/install/gcc/11.3.0/include/c++/11.3.0/backward]
+        collapse include dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include] ==> [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed] ==> [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/opt/install/cuda/11.7/include;/opt/install/rdkit/2023.03.2_gcc_11.3/include;/opt/install/boost/1.85.0_gcc_11.3/include;/opt/install/gcc/11.3.0/include;/opt/install/gcc/11.3.0/include/c++/11.3.0;/opt/install/gcc/11.3.0/include/c++/11.3.0/x86_64-pc-linux-gnu;/opt/install/gcc/11.3.0/include/c++/11.3.0/backward;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include;/usr/local/include;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-zm1L0l']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/install/cmake/3.27/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d4121/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_d4121.dir/build.make CMakeFiles/cmTC_d4121.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-zm1L0l']
+        ignore line: [Building CXX object CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/opt/install/gcc/11.3.0/bin/g++   -v -o CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.o -c /opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/install/gcc/11.3.0/bin/g++]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ./configure --prefix=/opt/install/gcc/11.3.0 --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.3.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d4121.dir/']
+        ignore line: [ /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_d4121.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccmUsbfd.s]
+        ignore line: [GNU C++17 (GCC) version 11.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/opt/install/gcc/11.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/install/cuda/11.7/include]
+        ignore line: [ /opt/install/rdkit/2023.03.2_gcc_11.3/include]
+        ignore line: [ /opt/install/boost/1.85.0_gcc_11.3/include]
+        ignore line: [ /opt/install/gcc/11.3.0/include]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-pc-linux-gnu]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (GCC) version 11.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: e1ff5f91c7fd7f6ba156b00a616c6b8c]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d4121.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccmUsbfd.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/opt/install/gcc/11.3.0/lib64/../lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/install/rdkit/2023.03.2_gcc_11.3/lib/:/opt/install/boost/1.85.0_gcc_11.3/lib/:/opt/install/gcc/11.3.0/lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_d4121]
+        ignore line: [/opt/install/cmake/3.27/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d4121.dir/link.txt --verbose=1]
+        ignore line: [/opt/install/gcc/11.3.0/bin/g++  -v CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d4121 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/install/gcc/11.3.0/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ./configure --prefix=/opt/install/gcc/11.3.0 --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.3.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/opt/install/gcc/11.3.0/lib64/../lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/install/rdkit/2023.03.2_gcc_11.3/lib/:/opt/install/boost/1.85.0_gcc_11.3/lib/:/opt/install/gcc/11.3.0/lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_d4121' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_d4121.']
+        link line: [ /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/collect2 -plugin /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/liblto_plugin.so -plugin-opt=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cctdzQcs.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_d4121 /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o -L/opt/install/gcc/11.3.0/lib64/../lib64 -L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0 -L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/opt/install/rdkit/2023.03.2_gcc_11.3/lib -L/opt/install/boost/1.85.0_gcc_11.3/lib -L/opt/install/gcc/11.3.0/lib64 -L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../.. CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cctdzQcs.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_d4121] ==> ignore
+          arg [/lib/x86_64-linux-gnu/crt1.o] ==> obj [/lib/x86_64-linux-gnu/crt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o] ==> obj [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o]
+          arg [-L/opt/install/gcc/11.3.0/lib64/../lib64] ==> dir [/opt/install/gcc/11.3.0/lib64/../lib64]
+          arg [-L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0] ==> dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0]
+          arg [-L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64] ==> dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/opt/install/rdkit/2023.03.2_gcc_11.3/lib] ==> dir [/opt/install/rdkit/2023.03.2_gcc_11.3/lib]
+          arg [-L/opt/install/boost/1.85.0_gcc_11.3/lib] ==> dir [/opt/install/boost/1.85.0_gcc_11.3/lib]
+          arg [-L/opt/install/gcc/11.3.0/lib64] ==> dir [/opt/install/gcc/11.3.0/lib64]
+          arg [-L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../..] ==> dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../..]
+          arg [CMakeFiles/cmTC_d4121.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o] ==> obj [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/opt/install/gcc/11.3.0/lib64/../lib64] ==> [/opt/install/gcc/11.3.0/lib64]
+        collapse library dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0] ==> [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0]
+        collapse library dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64] ==> [/opt/install/gcc/11.3.0/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/opt/install/rdkit/2023.03.2_gcc_11.3/lib] ==> [/opt/install/rdkit/2023.03.2_gcc_11.3/lib]
+        collapse library dir [/opt/install/boost/1.85.0_gcc_11.3/lib] ==> [/opt/install/boost/1.85.0_gcc_11.3/lib]
+        collapse library dir [/opt/install/gcc/11.3.0/lib64] ==> [/opt/install/gcc/11.3.0/lib64]
+        collapse library dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../..] ==> [/opt/install/gcc/11.3.0/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/crt1.o;/lib/x86_64-linux-gnu/crti.o;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/opt/install/gcc/11.3.0/lib64;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/opt/install/rdkit/2023.03.2_gcc_11.3/lib;/opt/install/boost/1.85.0_gcc_11.3/lib;/opt/install/gcc/11.3.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:1107 (message)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCUDACompiler.cmake:75 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:3 (enable_language)"
+    message: |
+      Checking whether the CUDA compiler is NVIDIA using "" matched "nvcc: NVIDIA \\(R\\) Cuda compiler driver":
+      nvcc: NVIDIA (R) Cuda compiler driver
+      Copyright (c) 2005-2022 NVIDIA Corporation
+      Built on Tue_May__3_18:49:52_PDT_2022
+      Cuda compilation tools, release 11.7, V11.7.64
+      Build cuda_11.7.r11.7/compiler.31294372_0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:53 (__determine_compiler_id_test)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCUDACompiler.cmake:307 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (enable_language)"
+    message: |
+      Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" succeeded.
+      Compiler: /opt/install/cuda/11.7/bin/nvcc 
+      Build flags: 
+      Id flags: --keep;--keep-dir;tmp -v
+      
+      The output was:
+      0
+      #$ _NVVM_BRANCH_=nvvm
+      #$ _SPACE_= 
+      #$ _CUDART_=cudart
+      #$ _HERE_=/opt/install/cuda/11.7/bin
+      #$ _THERE_=/opt/install/cuda/11.7/bin
+      #$ _TARGET_SIZE_=
+      #$ _TARGET_DIR_=
+      #$ _TARGET_DIR_=targets/x86_64-linux
+      #$ TOP=/opt/install/cuda/11.7/bin/..
+      #$ NVVMIR_LIBRARY_DIR=/opt/install/cuda/11.7/bin/../nvvm/libdevice
+      #$ LD_LIBRARY_PATH=/opt/install/cuda/11.7/bin/../lib:/opt/install/rdkit/2023.03.2_gcc_11.3/lib:/opt/install/boost/1.85.0_gcc_11.3/lib:/opt/install/gcc/11.3.0/lib64:/opt/install/cuda/11.7/compat:/opt/install/cuda/11.7/lib64:/opt/install/cuda/11.7/extras/CUPTI/lib64
+      #$ PATH=/opt/install/cuda/11.7/bin/../nvvm/bin:/opt/install/cuda/11.7/bin:/opt/install/rdkit/2023.03.2_gcc_11.3/bin:/opt/install/boost/1.85.0_gcc_11.3/bin:/opt/install/gcc/11.3.0/bin:/opt/install/cmake/3.27/bin:/opt/install/cuda/11.7/opt/nvidia/nsight-compute/2021.1.0:/opt/install/cuda/11.7/samples/bin/ppc64le/linux/release:/opt/install/cuda/11.7/bin:/opt/install/Modules/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/snap/bin
+      #$ INCLUDES="-I/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include"  
+      #$ LIBRARIES=  "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib"
+      #$ CUDAFE_FLAGS=
+      #$ PTXAS_FLAGS=
+      #$ rm tmp/a_dlink.reg.c
+      #$ gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=7 -D__CUDACC_VER_BUILD__=64 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=7 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" 
+      #$ cicc --c++17 --gnu_version=110300 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/3.27.0/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"
+      #$ ptxas -arch=sm_52 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_52.cubin" 
+      #$ fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=tmp/CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" 
+      #$ gcc -D__CUDA_ARCH_LIST__=520 -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=7 -D__CUDACC_VER_BUILD__=64 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=7 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" 
+      #$ cudafe++ --c++17 --gnu_version=110300 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/3.27.0/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" 
+      #$ gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include"   -m64 "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" 
+      #$ nvlink -m64 --arch=sm_52 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.sm_52.cubin" --host-ccbin "gcc"
+      #$ fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=tmp/a_dlink.sm_52.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" 
+      #$ gcc -D__CUDA_ARCH_LIST__=520 -c -x c++ -DFATBINFILE="\\"tmp/a_dlink.fatbin.c\\"" -DREGISTERLINKBINARYFILE="\\"tmp/a_dlink.reg.c\\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=7 -D__CUDACC_VER_BUILD__=64 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=7 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/opt/install/cuda/11.7/bin/crt/link.stub" -o "tmp/a_dlink.o" 
+      #$ g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" 
+      
+      
+      Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "a.out"
+      
+      The CUDA compiler identification is NVIDIA, found in:
+        /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/3.27.0/CompilerIdCUDA/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCUDACompiler.cmake:523 (message)"
+      - "CMakeLists.txt:3 (enable_language)"
+    message: |
+      Parsed CUDA nvcc implicit link information:
+        found 'PATH=' string: [/opt/install/cuda/11.7/bin/../nvvm/bin:/opt/install/cuda/11.7/bin:/opt/install/rdkit/2023.03.2_gcc_11.3/bin:/opt/install/boost/1.85.0_gcc_11.3/bin:/opt/install/gcc/11.3.0/bin:/opt/install/cmake/3.27/bin:/opt/install/cuda/11.7/opt/nvidia/nsight-compute/2021.1.0:/opt/install/cuda/11.7/samples/bin/ppc64le/linux/release:/opt/install/cuda/11.7/bin:/opt/install/Modules/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/snap/bin]
+        found 'LIBRARIES=' string: ["-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib"]
+        considering line: [#$ rm tmp/a_dlink.reg.c]
+        considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=7 -D__CUDACC_VER_BUILD__=64 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=7 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" ]
+        considering line: [cicc --c++17 --gnu_version=110300 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/3.27.0/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"]
+        considering line: [ptxas -arch=sm_52 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_52.cubin" ]
+        considering line: [fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=tmp/CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" ]
+        considering line: [gcc -D__CUDA_ARCH_LIST__=520 -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=7 -D__CUDACC_VER_BUILD__=64 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=7 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [cudafe++ --c++17 --gnu_version=110300 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/3.27.0/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include"   -m64 "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" ]
+        considering line: [nvlink -m64 --arch=sm_52 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.sm_52.cubin" --host-ccbin "gcc"]
+          ignoring nvlink line
+        considering line: [fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=tmp/a_dlink.sm_52.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" ]
+        considering line: [gcc -D__CUDA_ARCH_LIST__=520 -c -x c++ -DFATBINFILE="\\"tmp/a_dlink.fatbin.c\\"" -DREGISTERLINKBINARYFILE="\\"tmp/a_dlink.reg.c\\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=7 -D__CUDACC_VER_BUILD__=64 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=7 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/opt/install/cuda/11.7/bin/crt/link.stub" -o "tmp/a_dlink.o" ]
+        considering line: [g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+          extracted link line: [g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+        considering line: []
+        extracted link launcher name: [g++]
+        found link launcher absolute path: [/opt/install/gcc/11.3.0/bin/g++]
+      
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        link line: [cuda-fake-ld g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+          arg [cuda-fake-ld] ==> ignore
+          arg [g++] ==> ignore
+          arg [-D__CUDA_ARCH_LIST__=520] ==> ignore
+          arg [-m64] ==> ignore
+          arg [-Wl,--start-group] ==> ignore
+          arg [tmp/a_dlink.o] ==> ignore
+          arg [tmp/CMakeCUDACompilerId.o] ==> ignore
+          arg [-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs] ==> dir [/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs]
+          arg [-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib] ==> dir [/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib]
+          arg [-lcudadevrt] ==> lib [cudadevrt]
+          arg [-lcudart_static] ==> lib [cudart_static]
+          arg [-lrt] ==> lib [rt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ldl] ==> lib [dl]
+          arg [-Wl,--end-group] ==> ignore
+          arg [-o] ==> ignore
+          arg [a.out] ==> ignore
+        collapse library dir [/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs] ==> [/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs]
+        collapse library dir [/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib] ==> [/opt/install/cuda/11.7/targets/x86_64-linux/lib]
+        implicit libs: [cudadevrt;cudart_static;rt;pthread;dl]
+        implicit objs: []
+        implicit dirs: [/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs;/opt/install/cuda/11.7/targets/x86_64-linux/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCUDACompiler.cmake:579 (message)"
+      - "CMakeLists.txt:3 (enable_language)"
+    message: |
+      Parsed CUDA nvcc include information:
+        found 'PATH=' string: [/opt/install/cuda/11.7/bin/../nvvm/bin:/opt/install/cuda/11.7/bin:/opt/install/rdkit/2023.03.2_gcc_11.3/bin:/opt/install/boost/1.85.0_gcc_11.3/bin:/opt/install/gcc/11.3.0/bin:/opt/install/cmake/3.27/bin:/opt/install/cuda/11.7/opt/nvidia/nsight-compute/2021.1.0:/opt/install/cuda/11.7/samples/bin/ppc64le/linux/release:/opt/install/cuda/11.7/bin:/opt/install/Modules/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/snap/bin]
+        found 'LIBRARIES=' string: ["-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib"]
+        considering line: [#$ rm tmp/a_dlink.reg.c]
+        considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=7 -D__CUDACC_VER_BUILD__=64 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=7 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" ]
+        considering line: [cicc --c++17 --gnu_version=110300 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/3.27.0/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed   -arch compute_52 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"]
+        considering line: [ptxas -arch=sm_52 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.sm_52.cubin" ]
+        considering line: [fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=52,file=tmp/CMakeCUDACompilerId.sm_52.cubin" "--image3=kind=ptx,sm=52,file=tmp/CMakeCUDACompilerId.ptx" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" ]
+        considering line: [gcc -D__CUDA_ARCH_LIST__=520 -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=7 -D__CUDACC_VER_BUILD__=64 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=7 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" -m64 "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [cudafe++ --c++17 --gnu_version=110300 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/3.27.0/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+        considering line: [gcc -D__CUDA_ARCH__=520 -D__CUDA_ARCH_LIST__=520 -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include"   -m64 "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" ]
+        considering line: [nvlink -m64 --arch=sm_52 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib" -cpu-arch=X86_64 "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.sm_52.cubin" --host-ccbin "gcc"]
+          ignoring nvlink line
+        considering line: [fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=52,file=tmp/a_dlink.sm_52.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" ]
+        considering line: [gcc -D__CUDA_ARCH_LIST__=520 -c -x c++ -DFATBINFILE="\\"tmp/a_dlink.fatbin.c\\"" -DREGISTERLINKBINARYFILE="\\"tmp/a_dlink.reg.c\\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=7 -D__CUDACC_VER_BUILD__=64 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=7 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -m64 "/opt/install/cuda/11.7/bin/crt/link.stub" -o "tmp/a_dlink.o" ]
+        considering line: [g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+          extracted link line: [g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+        considering line: []
+        extracted link launcher name: [g++]
+        found link launcher absolute path: [/opt/install/gcc/11.3.0/bin/g++]
+        found 'INCLUDES=' string: ["-I/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include"  ]
+      
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        link line: [cuda-fake-ld g++ -D__CUDA_ARCH_LIST__=520 -m64 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o"   "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs" "-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+          arg [cuda-fake-ld] ==> ignore
+          arg [g++] ==> ignore
+          arg [-D__CUDA_ARCH_LIST__=520] ==> ignore
+          arg [-m64] ==> ignore
+          arg [-Wl,--start-group] ==> ignore
+          arg [tmp/a_dlink.o] ==> ignore
+          arg [tmp/CMakeCUDACompilerId.o] ==> ignore
+          arg [-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs] ==> dir [/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs]
+          arg [-L/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib] ==> dir [/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib]
+          arg [-lcudadevrt] ==> lib [cudadevrt]
+          arg [-lcudart_static] ==> lib [cudart_static]
+          arg [-lrt] ==> lib [rt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ldl] ==> lib [dl]
+          arg [-Wl,--end-group] ==> ignore
+          arg [-o] ==> ignore
+          arg [a.out] ==> ignore
+        collapse library dir [/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib/stubs] ==> [/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs]
+        collapse library dir [/opt/install/cuda/11.7/bin/../targets/x86_64-linux/lib] ==> [/opt/install/cuda/11.7/targets/x86_64-linux/lib]
+        implicit libs: [cudadevrt;cudart_static;rt;pthread;dl]
+        implicit objs: []
+        implicit dirs: [/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs;/opt/install/cuda/11.7/targets/x86_64-linux/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (enable_language)"
+    checks:
+      - "Detecting CUDA compiler ABI info"
+    directories:
+      source: "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-i9us7Z"
+      binary: "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-i9us7Z"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_CUDA_FLAGS: ""
+      CMAKE_CUDA_FLAGS_DEBUG: "-g"
+      CMAKE_CUDA_RUNTIME_LIBRARY: "Static"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CUDA_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-i9us7Z'
+        
+        Run Build Command(s): /opt/install/cmake/3.27/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8407d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8407d.dir/build.make CMakeFiles/cmTC_8407d.dir/build
+        gmake[1]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-i9us7Z'
+        Building CUDA object CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o
+        /opt/install/cuda/11.7/bin/nvcc -forward-unknown-to-host-compiler   "--generate-code=arch=compute_52,code=[compute_52,sm_52]"   -Xcompiler=-v -MD -MT CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o -MF CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o.d -x cu -c /opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o
+        Using built-in specs.
+        COLLECT_GCC=gcc
+        Target: x86_64-pc-linux-gnu
+        Configured with: ./configure --prefix=/opt/install/gcc/11.3.0 --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=7' '-D' '__CUDACC_VER_BUILD__=64' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=7' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00327879_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/'
+         /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/cc1plus -E -quiet -v -I /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=11 -D __CUDACC_VER_MINOR__=7 -D __CUDACC_VER_BUILD__=64 -D __CUDA_API_VER_MAJOR__=11 -D __CUDA_API_VER_MINOR__=7 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_00327879_00000000-7_CMakeCUDACompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64 -dumpdir /tmp/ -dumpbase tmpxft_00327879_00000000-7_CMakeCUDACompilerABI.cpp1.cu -dumpbase-ext .cu
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring duplicate directory "/opt/install/gcc/11.3.0/include"
+        ignoring nonexistent directory "/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/opt/install/cuda/11.7/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include
+         /opt/install/rdkit/2023.03.2_gcc_11.3/include
+         /opt/install/boost/1.85.0_gcc_11.3/include
+         /opt/install/gcc/11.3.0/include
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-pc-linux-gnu
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include
+         /usr/local/include
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        COMPILER_PATH=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/opt/install/gcc/11.3.0/lib64/../lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/install/rdkit/2023.03.2_gcc_11.3/lib/:/opt/install/boost/1.85.0_gcc_11.3/lib/:/opt/install/gcc/11.3.0/lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=7' '-D' '__CUDACC_VER_BUILD__=64' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=7' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00327879_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/tmpxft_00327879_00000000-7_CMakeCUDACompilerABI.cpp1.'
+        Using built-in specs.
+        COLLECT_GCC=gcc
+        Target: x86_64-pc-linux-gnu
+        Configured with: ./configure --prefix=/opt/install/gcc/11.3.0 --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=7' '-D' '__CUDACC_VER_BUILD__=64' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=7' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00327879_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/'
+         /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/cc1plus -E -quiet -v -I /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D __CUDA_ARCH_LIST__=520 -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=11 -D __CUDACC_VER_MINOR__=7 -D __CUDACC_VER_BUILD__=64 -D __CUDA_API_VER_MAJOR__=11 -D __CUDA_API_VER_MINOR__=7 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_00327879_00000000-5_CMakeCUDACompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64 -dumpdir /tmp/ -dumpbase tmpxft_00327879_00000000-5_CMakeCUDACompilerABI.cpp4.cu -dumpbase-ext .cu
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring duplicate directory "/opt/install/gcc/11.3.0/include"
+        ignoring nonexistent directory "/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/opt/install/cuda/11.7/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include
+         /opt/install/rdkit/2023.03.2_gcc_11.3/include
+         /opt/install/boost/1.85.0_gcc_11.3/include
+         /opt/install/gcc/11.3.0/include
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-pc-linux-gnu
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include
+         /usr/local/include
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        COMPILER_PATH=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/opt/install/gcc/11.3.0/lib64/../lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/install/rdkit/2023.03.2_gcc_11.3/lib/:/opt/install/boost/1.85.0_gcc_11.3/lib/:/opt/install/gcc/11.3.0/lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=7' '-D' '__CUDACC_VER_BUILD__=64' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=7' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00327879_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/tmpxft_00327879_00000000-5_CMakeCUDACompilerABI.cpp4.'
+        Using built-in specs.
+        COLLECT_GCC=gcc
+        Target: x86_64-pc-linux-gnu
+        Configured with: ./configure --prefix=/opt/install/gcc/11.3.0 --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8407d.dir/'
+         /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/cc1plus -quiet -v -I /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS /tmp/tmpxft_00327879_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpdir CMakeFiles/cmTC_8407d.dir/ -dumpbase CMakeCUDACompilerABI.cu.cpp -dumpbase-ext .cpp -m64 -mtune=generic -march=x86-64 -version -o /tmp/ccfN2WvQ.s
+        GNU C++17 (GCC) version 11.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 11.3.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring duplicate directory "/opt/install/gcc/11.3.0/include"
+        ignoring nonexistent directory "/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/opt/install/cuda/11.7/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include
+         /opt/install/rdkit/2023.03.2_gcc_11.3/include
+         /opt/install/boost/1.85.0_gcc_11.3/include
+         /opt/install/gcc/11.3.0/include
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-pc-linux-gnu
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include
+         /usr/local/include
+         /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C++17 (GCC) version 11.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 11.3.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: e1ff5f91c7fd7f6ba156b00a616c6b8c
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8407d.dir/'
+         as -v -I /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o /tmp/ccfN2WvQ.s
+        GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+        COMPILER_PATH=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/opt/install/gcc/11.3.0/lib64/../lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/install/rdkit/2023.03.2_gcc_11.3/lib/:/opt/install/boost/1.85.0_gcc_11.3/lib/:/opt/install/gcc/11.3.0/lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.'
+        Linking CUDA executable cmTC_8407d
+        /opt/install/cmake/3.27/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8407d.dir/link.txt --verbose=1
+        /opt/install/gcc/11.3.0/bin/g++  -v CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o -o cmTC_8407d  -lcudadevrt -lcudart_static -lrt -lpthread -ldl  -L"/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs" -L"/opt/install/cuda/11.7/targets/x86_64-linux/lib"
+        Using built-in specs.
+        COLLECT_GCC=/opt/install/gcc/11.3.0/bin/g++
+        COLLECT_LTO_WRAPPER=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/lto-wrapper
+        Target: x86_64-pc-linux-gnu
+        Configured with: ./configure --prefix=/opt/install/gcc/11.3.0 --disable-multilib
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.3.0 (GCC) 
+        COMPILER_PATH=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/
+        LIBRARY_PATH=/opt/install/gcc/11.3.0/lib64/../lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/install/rdkit/2023.03.2_gcc_11.3/lib/:/opt/install/boost/1.85.0_gcc_11.3/lib/:/opt/install/gcc/11.3.0/lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8407d' '-L/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs' '-L/opt/install/cuda/11.7/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8407d.'
+         /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/collect2 -plugin /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/liblto_plugin.so -plugin-opt=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvUmbEU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8407d /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o -L/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs -L/opt/install/cuda/11.7/targets/x86_64-linux/lib -L/opt/install/gcc/11.3.0/lib64/../lib64 -L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0 -L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/opt/install/rdkit/2023.03.2_gcc_11.3/lib -L/opt/install/boost/1.85.0_gcc_11.3/lib -L/opt/install/gcc/11.3.0/lib64 -L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../.. CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o /lib/x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8407d' '-L/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs' '-L/opt/install/cuda/11.7/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8407d.'
+        gmake[1]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-i9us7Z'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (enable_language)"
+    message: |
+      Parsed CUDA implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include]
+          add: [/opt/install/rdkit/2023.03.2_gcc_11.3/include]
+          add: [/opt/install/boost/1.85.0_gcc_11.3/include]
+          add: [/opt/install/gcc/11.3.0/include]
+          add: [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0]
+          add: [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-pc-linux-gnu]
+          add: [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward]
+          add: [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include]
+          add: [/usr/local/include]
+          add: [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include] ==> [/opt/install/cuda/11.7/targets/x86_64-linux/include]
+        collapse include dir [/opt/install/rdkit/2023.03.2_gcc_11.3/include] ==> [/opt/install/rdkit/2023.03.2_gcc_11.3/include]
+        collapse include dir [/opt/install/boost/1.85.0_gcc_11.3/include] ==> [/opt/install/boost/1.85.0_gcc_11.3/include]
+        collapse include dir [/opt/install/gcc/11.3.0/include] ==> [/opt/install/gcc/11.3.0/include]
+        collapse include dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0] ==> [/opt/install/gcc/11.3.0/include/c++/11.3.0]
+        collapse include dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-pc-linux-gnu] ==> [/opt/install/gcc/11.3.0/include/c++/11.3.0/x86_64-pc-linux-gnu]
+        collapse include dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward] ==> [/opt/install/gcc/11.3.0/include/c++/11.3.0/backward]
+        collapse include dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include] ==> [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed] ==> [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/opt/install/cuda/11.7/targets/x86_64-linux/include;/opt/install/rdkit/2023.03.2_gcc_11.3/include;/opt/install/boost/1.85.0_gcc_11.3/include;/opt/install/gcc/11.3.0/include;/opt/install/gcc/11.3.0/include/c++/11.3.0;/opt/install/gcc/11.3.0/include/c++/11.3.0/x86_64-pc-linux-gnu;/opt/install/gcc/11.3.0/include/c++/11.3.0/backward;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include;/usr/local/include;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeTestCUDACompiler.cmake:19 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (enable_language)"
+    message: |
+      Parsed CUDA implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-i9us7Z']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/install/cmake/3.27/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8407d/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_8407d.dir/build.make CMakeFiles/cmTC_8407d.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-i9us7Z']
+        ignore line: [Building CUDA object CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o]
+        ignore line: [/opt/install/cuda/11.7/bin/nvcc -forward-unknown-to-host-compiler   "--generate-code=arch=compute_52 code=[compute_52 sm_52]"   -Xcompiler=-v -MD -MT CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o -MF CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o.d -x cu -c /opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=gcc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ./configure --prefix=/opt/install/gcc/11.3.0 --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.3.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=7' '-D' '__CUDACC_VER_BUILD__=64' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=7' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00327879_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/']
+        ignore line: [ /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/cc1plus -E -quiet -v -I /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=11 -D __CUDACC_VER_MINOR__=7 -D __CUDACC_VER_BUILD__=64 -D __CUDA_API_VER_MAJOR__=11 -D __CUDA_API_VER_MINOR__=7 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_00327879_00000000-7_CMakeCUDACompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64 -dumpdir /tmp/ -dumpbase tmpxft_00327879_00000000-7_CMakeCUDACompilerABI.cpp1.cu -dumpbase-ext .cu]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/opt/install/gcc/11.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/opt/install/cuda/11.7/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include]
+        ignore line: [ /opt/install/rdkit/2023.03.2_gcc_11.3/include]
+        ignore line: [ /opt/install/boost/1.85.0_gcc_11.3/include]
+        ignore line: [ /opt/install/gcc/11.3.0/include]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-pc-linux-gnu]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [COMPILER_PATH=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/opt/install/gcc/11.3.0/lib64/../lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/install/rdkit/2023.03.2_gcc_11.3/lib/:/opt/install/boost/1.85.0_gcc_11.3/lib/:/opt/install/gcc/11.3.0/lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=7' '-D' '__CUDACC_VER_BUILD__=64' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=7' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00327879_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/tmpxft_00327879_00000000-7_CMakeCUDACompilerABI.cpp1.']
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=gcc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ./configure --prefix=/opt/install/gcc/11.3.0 --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.3.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=7' '-D' '__CUDACC_VER_BUILD__=64' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=7' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00327879_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/']
+        ignore line: [ /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/cc1plus -E -quiet -v -I /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D __CUDA_ARCH_LIST__=520 -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=11 -D __CUDACC_VER_MINOR__=7 -D __CUDACC_VER_BUILD__=64 -D __CUDA_API_VER_MAJOR__=11 -D __CUDA_API_VER_MINOR__=7 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeCUDACompilerABI.cu -o /tmp/tmpxft_00327879_00000000-5_CMakeCUDACompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64 -dumpdir /tmp/ -dumpbase tmpxft_00327879_00000000-5_CMakeCUDACompilerABI.cpp4.cu -dumpbase-ext .cu]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/opt/install/gcc/11.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/opt/install/cuda/11.7/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include]
+        ignore line: [ /opt/install/rdkit/2023.03.2_gcc_11.3/include]
+        ignore line: [ /opt/install/boost/1.85.0_gcc_11.3/include]
+        ignore line: [ /opt/install/gcc/11.3.0/include]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-pc-linux-gnu]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [COMPILER_PATH=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/opt/install/gcc/11.3.0/lib64/../lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/install/rdkit/2023.03.2_gcc_11.3/lib/:/opt/install/boost/1.85.0_gcc_11.3/lib/:/opt/install/gcc/11.3.0/lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=520' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=7' '-D' '__CUDACC_VER_BUILD__=64' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=7' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_00327879_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=generic' '-march=x86-64' '-dumpdir' '/tmp/tmpxft_00327879_00000000-5_CMakeCUDACompilerABI.cpp4.']
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=gcc]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ./configure --prefix=/opt/install/gcc/11.3.0 --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.3.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8407d.dir/']
+        ignore line: [ /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/cc1plus -quiet -v -I /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D __CUDA_ARCH__=520 -D __CUDA_ARCH_LIST__=520 -D CUDA_DOUBLE_MATH_FUNCTIONS /tmp/tmpxft_00327879_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -quiet -dumpdir CMakeFiles/cmTC_8407d.dir/ -dumpbase CMakeCUDACompilerABI.cu.cpp -dumpbase-ext .cpp -m64 -mtune=generic -march=x86-64 -version -o /tmp/ccfN2WvQ.s]
+        ignore line: [GNU C++17 (GCC) version 11.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/opt/install/gcc/11.3.0/include"]
+        ignore line: [ignoring nonexistent directory "/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/opt/install/cuda/11.7/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include]
+        ignore line: [ /opt/install/rdkit/2023.03.2_gcc_11.3/include]
+        ignore line: [ /opt/install/boost/1.85.0_gcc_11.3/include]
+        ignore line: [ /opt/install/gcc/11.3.0/include]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/x86_64-pc-linux-gnu]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../include/c++/11.3.0/backward]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (GCC) version 11.3.0 (x86_64-pc-linux-gnu)]
+        ignore line: [	compiled by GNU C version 11.3.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: e1ff5f91c7fd7f6ba156b00a616c6b8c]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8407d.dir/']
+        ignore line: [ as -v -I /opt/install/cuda/11.7/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o /tmp/ccfN2WvQ.s]
+        ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+        ignore line: [COMPILER_PATH=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/opt/install/gcc/11.3.0/lib64/../lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/install/rdkit/2023.03.2_gcc_11.3/lib/:/opt/install/boost/1.85.0_gcc_11.3/lib/:/opt/install/gcc/11.3.0/lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=520' '-D' '__CUDA_ARCH_LIST__=520' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/opt/install/cuda/11.7/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.']
+        ignore line: [Linking CUDA executable cmTC_8407d]
+        ignore line: [/opt/install/cmake/3.27/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8407d.dir/link.txt --verbose=1]
+        ignore line: [/opt/install/gcc/11.3.0/bin/g++  -v CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o -o cmTC_8407d  -lcudadevrt -lcudart_static -lrt -lpthread -ldl  -L"/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs" -L"/opt/install/cuda/11.7/targets/x86_64-linux/lib"]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/opt/install/gcc/11.3.0/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Configured with: ./configure --prefix=/opt/install/gcc/11.3.0 --disable-multilib]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 11.3.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/opt/install/gcc/11.3.0/lib64/../lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/install/rdkit/2023.03.2_gcc_11.3/lib/:/opt/install/boost/1.85.0_gcc_11.3/lib/:/opt/install/gcc/11.3.0/lib64/:/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8407d' '-L/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs' '-L/opt/install/cuda/11.7/targets/x86_64-linux/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8407d.']
+        link line: [ /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/collect2 -plugin /opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/liblto_plugin.so -plugin-opt=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccvUmbEU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8407d /lib/x86_64-linux-gnu/crt1.o /lib/x86_64-linux-gnu/crti.o /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o -L/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs -L/opt/install/cuda/11.7/targets/x86_64-linux/lib -L/opt/install/gcc/11.3.0/lib64/../lib64 -L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0 -L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/opt/install/rdkit/2023.03.2_gcc_11.3/lib -L/opt/install/boost/1.85.0_gcc_11.3/lib -L/opt/install/gcc/11.3.0/lib64 -L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../.. CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/opt/install/gcc/11.3.0/libexec/gcc/x86_64-pc-linux-gnu/11.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccvUmbEU.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_8407d] ==> ignore
+          arg [/lib/x86_64-linux-gnu/crt1.o] ==> obj [/lib/x86_64-linux-gnu/crt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o] ==> obj [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o]
+          arg [-L/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs] ==> dir [/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs]
+          arg [-L/opt/install/cuda/11.7/targets/x86_64-linux/lib] ==> dir [/opt/install/cuda/11.7/targets/x86_64-linux/lib]
+          arg [-L/opt/install/gcc/11.3.0/lib64/../lib64] ==> dir [/opt/install/gcc/11.3.0/lib64/../lib64]
+          arg [-L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0] ==> dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0]
+          arg [-L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64] ==> dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/opt/install/rdkit/2023.03.2_gcc_11.3/lib] ==> dir [/opt/install/rdkit/2023.03.2_gcc_11.3/lib]
+          arg [-L/opt/install/boost/1.85.0_gcc_11.3/lib] ==> dir [/opt/install/boost/1.85.0_gcc_11.3/lib]
+          arg [-L/opt/install/gcc/11.3.0/lib64] ==> dir [/opt/install/gcc/11.3.0/lib64]
+          arg [-L/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../..] ==> dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../..]
+          arg [CMakeFiles/cmTC_8407d.dir/CMakeCUDACompilerABI.cu.o] ==> ignore
+          arg [-lcudadevrt] ==> lib [cudadevrt]
+          arg [-lcudart_static] ==> lib [cudart_static]
+          arg [-lrt] ==> lib [rt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ldl] ==> lib [dl]
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o] ==> obj [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs] ==> [/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs]
+        collapse library dir [/opt/install/cuda/11.7/targets/x86_64-linux/lib] ==> [/opt/install/cuda/11.7/targets/x86_64-linux/lib]
+        collapse library dir [/opt/install/gcc/11.3.0/lib64/../lib64] ==> [/opt/install/gcc/11.3.0/lib64]
+        collapse library dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0] ==> [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0]
+        collapse library dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../lib64] ==> [/opt/install/gcc/11.3.0/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/opt/install/rdkit/2023.03.2_gcc_11.3/lib] ==> [/opt/install/rdkit/2023.03.2_gcc_11.3/lib]
+        collapse library dir [/opt/install/boost/1.85.0_gcc_11.3/lib] ==> [/opt/install/boost/1.85.0_gcc_11.3/lib]
+        collapse library dir [/opt/install/gcc/11.3.0/lib64] ==> [/opt/install/gcc/11.3.0/lib64]
+        collapse library dir [/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../..] ==> [/opt/install/gcc/11.3.0/lib]
+        implicit libs: [cudadevrt;cudart_static;rt;pthread;dl;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/crt1.o;/lib/x86_64-linux-gnu/crti.o;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtbegin.o;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0/crtend.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/opt/install/cuda/11.7/targets/x86_64-linux/lib/stubs;/opt/install/cuda/11.7/targets/x86_64-linux/lib;/opt/install/gcc/11.3.0/lib64;/opt/install/gcc/11.3.0/lib/gcc/x86_64-pc-linux-gnu/11.3.0;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/opt/install/rdkit/2023.03.2_gcc_11.3/lib;/opt/install/boost/1.85.0_gcc_11.3/lib;/opt/install/gcc/11.3.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "CMakeLists.txt:152 (check_ipo_supported)"
+    directories:
+      source: "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/src"
+      binary: "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        
+        Run Build Command(s): /opt/install/cmake/3.27/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /opt/install/cmake/3.27/bin/cmake -S/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/src -B/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /opt/install/cmake/3.27/bin/cmake -E cmake_progress_start /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin && /opt/install/cmake/3.27/bin/cmake -E cmake_depends "Unix Makefiles" /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/src /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/src /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        Dependee "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 25%] Building CXX object CMakeFiles/foo.dir/foo.cpp.o
+        /opt/install/gcc/11.3.0/bin/g++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.cpp.o -c /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp
+        [ 50%] Linking CXX static library libfoo.a
+        /opt/install/cmake/3.27/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /opt/install/cmake/3.27/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-11" cr libfoo.a CMakeFiles/foo.dir/foo.cpp.o
+        "/usr/bin/gcc-ranlib-11" libfoo.a
+        gmake[2]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        cd /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin && /opt/install/cmake/3.27/bin/cmake -E cmake_depends "Unix Makefiles" /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/src /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/src /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        Dependee "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [ 75%] Building CXX object CMakeFiles/boo.dir/main.cpp.o
+        /opt/install/gcc/11.3.0/bin/g++   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.cpp.o -c /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp
+        [100%] Linking CXX executable boo
+        /opt/install/cmake/3.27/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /opt/install/gcc/11.3.0/bin/g++ -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.cpp.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin'
+        /opt/install/cmake/3.27/bin/cmake -E cmake_progress_start /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CheckIPOSupported.cmake:138 (try_compile)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CheckIPOSupported.cmake:266 (_ipo_run_language_check)"
+      - "CMakeLists.txt:152 (check_ipo_supported)"
+    directories:
+      source: "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/src"
+      binary: "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin"
+    buildResult:
+      variable: "_IPO_LANGUAGE_CHECK_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin'
+        
+        Run Build Command(s): /opt/install/cmake/3.27/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile
+        /opt/install/cmake/3.27/bin/cmake -S/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/src -B/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin --check-build-system CMakeFiles/Makefile.cmake 0
+        /opt/install/cmake/3.27/bin/cmake -E cmake_progress_start /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin//CMakeFiles/progress.marks
+        /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+        gmake[1]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/depend
+        gmake[2]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin && /opt/install/cmake/3.27/bin/cmake -E cmake_depends "Unix Makefiles" /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/src /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/src /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake
+        Dependee "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/DependInfo.cmake" is newer than depender "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/depend.internal".
+        Dependee "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir/depend.internal".
+        Scanning dependencies of target foo
+        gmake[2]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/foo.dir/build.make CMakeFiles/foo.dir/build
+        gmake[2]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 25%] Building C object CMakeFiles/foo.dir/foo.c.o
+        /opt/install/gcc/11.3.0/bin/gcc   -flto=auto -fno-fat-lto-objects -o CMakeFiles/foo.dir/foo.c.o -c /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/src/foo.c
+        [ 50%] Linking C static library libfoo.a
+        /opt/install/cmake/3.27/bin/cmake -P CMakeFiles/foo.dir/cmake_clean_target.cmake
+        /opt/install/cmake/3.27/bin/cmake -E cmake_link_script CMakeFiles/foo.dir/link.txt --verbose=1
+        "/usr/bin/gcc-ar-11" cr libfoo.a CMakeFiles/foo.dir/foo.c.o
+        "/usr/bin/gcc-ranlib-11" libfoo.a
+        gmake[2]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 50%] Built target foo
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/depend
+        gmake[2]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin'
+        cd /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin && /opt/install/cmake/3.27/bin/cmake -E cmake_depends "Unix Makefiles" /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/src /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/src /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake
+        Dependee "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/DependInfo.cmake" is newer than depender "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/depend.internal".
+        Dependee "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir/depend.internal".
+        Scanning dependencies of target boo
+        gmake[2]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin'
+        /usr/bin/gmake  -f CMakeFiles/boo.dir/build.make CMakeFiles/boo.dir/build
+        gmake[2]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin'
+        [ 75%] Building C object CMakeFiles/boo.dir/main.c.o
+        /opt/install/gcc/11.3.0/bin/gcc   -flto=auto -fno-fat-lto-objects -o CMakeFiles/boo.dir/main.c.o -c /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/src/main.c
+        [100%] Linking C executable boo
+        /opt/install/cmake/3.27/bin/cmake -E cmake_link_script CMakeFiles/boo.dir/link.txt --verbose=1
+        /opt/install/gcc/11.3.0/bin/gcc -flto=auto -fno-fat-lto-objects CMakeFiles/boo.dir/main.c.o -o boo  libfoo.a 
+        gmake[2]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin'
+        [100%] Built target boo
+        gmake[1]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin'
+        /opt/install/cmake/3.27/bin/cmake -E cmake_progress_start /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles 0
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/opt/install/cmake/3.27/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/opt/install/rdkit/2023.03.2_gcc_11.3/lib/cmake/rdkit/rdkit-config.cmake:34 (find_dependency)"
+      - "CMakeLists.txt:169 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-FRn4u5"
+      binary: "/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-FRn4u5"
+    cmakeVariables:
+      CMAKE_CUDA_ARCHITECTURES: "52"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-FRn4u5'
+        
+        Run Build Command(s): /opt/install/cmake/3.27/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_aaf81/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_aaf81.dir/build.make CMakeFiles/cmTC_aaf81.dir/build
+        gmake[1]: Entering directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-FRn4u5'
+        Building C object CMakeFiles/cmTC_aaf81.dir/src.c.o
+        /opt/install/gcc/11.3.0/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_aaf81.dir/src.c.o -c /home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-FRn4u5/src.c
+        Linking C executable cmTC_aaf81
+        /opt/install/cmake/3.27/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aaf81.dir/link.txt --verbose=1
+        /opt/install/gcc/11.3.0/bin/gcc CMakeFiles/cmTC_aaf81.dir/src.c.o -o cmTC_aaf81 
+        gmake[1]: Leaving directory '/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/CMakeScratch/TryCompile-FRn4u5'
+        
+      exitCode: 0
+...

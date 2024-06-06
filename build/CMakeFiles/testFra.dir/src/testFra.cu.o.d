@@ -75,7 +75,6 @@ CMakeFiles/testFra.dir/src/testFra.cu.o : /home/dvillani/subgraph/MaxSubGraph_CU
     /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
     /usr/include/x86_64-linux-gnu/bits/floatn.h \
     /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-    /usr/include/x86_64-linux-gnu/bits/stdio.h \
     /opt/install/gcc/11.3.0/include/c++/11.3.0/stdlib.h \
     /opt/install/gcc/11.3.0/include/c++/11.3.0/cstdlib \
     /usr/include/stdlib.h \
@@ -97,7 +96,6 @@ CMakeFiles/testFra.dir/src/testFra.cu.o : /home/dvillani/subgraph/MaxSubGraph_CU
     /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
     /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
     /usr/include/alloca.h \
-    /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
     /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
     /opt/install/gcc/11.3.0/include/c++/11.3.0/bits/std_abs.h \
     /usr/include/assert.h \

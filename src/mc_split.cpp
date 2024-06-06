@@ -51,7 +51,7 @@ bool matchablee( int v, int w, LabelClass lc ) {
 void search_mcs(std::vector<std::vector<float> > g0, std::vector<std::vector<float> > g1,
     std::vector<LabelClass>& label_classes, std::vector<float> edge_labels,
     const std::vector<std::pair<int, int> >& m){
-
+/*
 
     //incumbent has to be GLOBAL
     int bound;
@@ -124,7 +124,7 @@ void search_mcs(std::vector<std::vector<float> > g0, std::vector<std::vector<flo
 
                 }
                 if ( !flag || flag_m ) continue;
-            }*/
+            }*//*
             if ( !matchablee(v,w,label_class) ) continue;
 
 
@@ -181,7 +181,7 @@ void search_mcs(std::vector<std::vector<float> > g0, std::vector<std::vector<flo
         if( !label_class.g.empty() ){
             label_classes.push_back(label_class);
         }
-        search_mcs(g0, g1, label_classes, edge_labels, m);
+        search_mcs(g0, g1, label_classes, edge_labels, m);*/
 
 }
 
@@ -198,7 +198,7 @@ std::vector<std::pair<int, int>> mc_split(const std::vector<std::vector<float>> 
                                           const std::vector<std::string>& l0, const std::vector<std::string>& l1,
                                           std::vector<std::vector<int> >& ring_classes) {
 
-    incumbent.clear(); // Clear incumbent result
+   /* incumbent.clear(); // Clear incumbent result
     // Generate label data
     std::vector<LabelClass> initial_label_classes = gen_initial_labels(l0, l1, ring_classes);
 
@@ -218,7 +218,7 @@ std::vector<std::pair<int, int>> mc_split(const std::vector<std::vector<float>> 
     for ( std::pair<int,int> p : incumbent) {
         cout<< "["<< p.first << ", "<< p.second << "]";
     }
-    cout<< "]"<<endl;
+    cout<< "]"<<endl;*/
     return incumbent;
 }
 
