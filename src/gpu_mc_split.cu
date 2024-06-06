@@ -18,7 +18,7 @@ void checkError(cudaError_t r) {
 }
 
 using namespace std;
-const int DIM_POOL = 36*36;
+const int DIM_POOL = 16;
 std::vector<std::vector<float>> g00;
 std::vector<std::vector<float>> g11;
 std::vector<float> edge_labels;
@@ -922,12 +922,13 @@ void host_function( ThreadVar *thread_pool_read, ThreadVar *thread_pool_write, i
                     
                     thread_pool_write[(4*index + jump)].labels_size = l_s;
                     //printf("\nlab size %d ", thread_pool_write[(4*index + jump)].labels_size );
-                    /*if( thread_pool_write[4*index + jump].m_size > m_best_size ){
+                    if( thread_pool_write[4*index + jump].m_size > m_best_size ){
+                        m_best_size = thread_pool_write[4*index + jump].m_size ;
                         for( int z = 0 ; z < thread_pool_write[4*index + jump].m_size ; ++z ){
                             m_best[z].first = thread_pool_write[4*index + jump].m_local[z].first;
                             m_best[z].second = thread_pool_write[4*index + jump].m_local[z].second;
                         }
-                    }*/
+                    }
                 if ( jump != space -1 ) jump ++;
                 }
             }
@@ -984,6 +985,8 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g000, 
     size_t N = DIM_POOL * DIM_POOL;
     edge_labels = cpu_gen_bond_labels(g00, g11);
     std::vector <LabelClass> initial_label_classes = cpu_gen_initial_labels(l0, l1, ring_classes);
+
+    cudaMallocManaged(&m_best , sizeof(Pair)* l1.size());
  
     //cuda Mallocs
     //cuda malloc edge labels
@@ -1108,7 +1111,7 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g000, 
         
         level++;
         printf("next %d   %d\n", level, n_threads);
-    }while( n_threads > 0 );
+    }while( level < 6 );
 
     printf("\nFINE DIMENSIONE MASSIMA %d", max);
 
