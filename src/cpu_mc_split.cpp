@@ -108,9 +108,7 @@ bool solve_mcs(int size) {
         queue_elem elem =  Q.front();
         Q.pop();
 
-        
-
-
+    
         vector<LabelClass> lcs = elem.labels;
         vector<pair<int,int >> m_local = elem.m_local;
 
@@ -134,7 +132,11 @@ bool solve_mcs(int size) {
                 qel.labels = genNewLabelsss(v,w,lcs);
                 qel.m_local = m_local;
                 Q.push(qel);
-                if ( m_local.size() > m_best.size() ) m_best = m_local;
+                if ( m_local.size() > m_best.size() ) {
+                    m_best = m_local;
+                    cout<<"\nsize : "<< m_best.size()<<endl;
+                    for( pair<int,int> p : m_best ) cout<<"["<< p.first << " , "<< p.second <<" ]";
+                }
                 m_local.pop_back();
             }
         }

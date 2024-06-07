@@ -18,7 +18,7 @@ void checkError(cudaError_t r) {
 }
 
 using namespace std;
-const int DIM_POOL = 16;
+const int DIM_POOL = 50;
 std::vector<std::vector<float>> g00;
 std::vector<std::vector<float>> g11;
 std::vector<float> edge_labels;
@@ -906,15 +906,17 @@ void host_function( ThreadVar *thread_pool_read, ThreadVar *thread_pool_write, i
                 for( int w_idx = 0 ; w_idx < label->h_size ; ++w_idx){
 
                     if( !host_matchable(label->rings_g, label->g[v_idx], label->h[w_idx], label, thread_pool_read[index].idxList ) ) continue;
-                    for( z = 0 ; z < thread_pool_read[index].m_size ; ++z ){
+                    
+                    for( z = 0 ; z < thread_pool_read[index].m_size ; z++ ){
                         thread_pool_write[4*index + jump].m_local[z].first = thread_pool_read[index].m_local[z].first;
                         thread_pool_write[4*index + jump].m_local[z].second = thread_pool_read[index].m_local[z].second;
                     }
+                    thread_pool_write[4*index + jump].m_size = thread_pool_read[index].m_size + 1;
                     thread_pool_write[4*index + jump].m_local[z].first = label->g[v_idx];
                     thread_pool_write[4*index + jump].m_local[z].second = label->h[v_idx];
-                    thread_pool_write[4*index + jump].m_size = thread_pool_read[index].m_size++;
-
-                    //printf("\n size: %d", thread_pool_write[4*index + jump].m_size);
+                    
+                    //printf("\n size read [%d]   %d",index, thread_pool_read[index].m_size);
+                    //printf("\n size [%d]   %d",4*index + jump, thread_pool_write[4*index + jump].m_size);
 
                     int l_s = host_gen_new_labels( thread_pool_write[(4*index + jump)].labels , label->g[v_idx], label->h[w_idx] ,
                                                                                             thread_pool_read[index].labels , thread_pool_read[index].labels_size ,
@@ -924,12 +926,15 @@ void host_function( ThreadVar *thread_pool_read, ThreadVar *thread_pool_write, i
                     //printf("\nlab size %d ", thread_pool_write[(4*index + jump)].labels_size );
                     if( thread_pool_write[4*index + jump].m_size > m_best_size ){
                         m_best_size = thread_pool_write[4*index + jump].m_size ;
-                        for( int z = 0 ; z < thread_pool_write[4*index + jump].m_size ; ++z ){
+                        //printf("\nsize [%d] : \n { ");
+                        for( int z = 0 ; z < thread_pool_write[4*index + jump].m_size ; z++ ){
                             m_best[z].first = thread_pool_write[4*index + jump].m_local[z].first;
                             m_best[z].second = thread_pool_write[4*index + jump].m_local[z].second;
+                            //printf("[%d , %d]", m_best[z].first , m_best[z].second);
                         }
+                       // printf("}");
                     }
-                if ( jump != space -1 ) jump ++;
+                jump ++;
                 }
             }
        }
@@ -967,6 +972,12 @@ int cpyThreadPool( ThreadVar *thread_pool_read, ThreadVar *thread_pool_write ){
                 copyIntMatrix( thread_pool_read[r_idx].labels[l_idx].rings_g , thread_pool_write[w_idx].labels[l_idx].rings_g, 
                                 thread_pool_write[w_idx].labels[l_idx].row_ring_size, thread_pool_write[w_idx].labels[l_idx].col_ring_size );
             }
+            
+            for( int ms = 0 ; ms < thread_pool_write[w_idx].m_size ; ms ++){
+                thread_pool_read[r_idx].m_local[ms].first = thread_pool_write[w_idx].m_local[ms].first;
+                 thread_pool_read[r_idx].m_local[ms].second = thread_pool_write[w_idx].m_local[ms].second;
+            }
+            thread_pool_read[r_idx].m_size = thread_pool_write[w_idx].m_size;
             r_idx++;
         }
         thread_pool_write[w_idx].labels_size = 0;
@@ -1006,8 +1017,8 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g000, 
     ThreadVar *thread_pool_read;
     ThreadVar *thread_pool_write;
 
-    checkError(cudaMallocManaged(&thread_pool_read, sizeof(ThreadVar) * N));
-    for (int j = 0; j < N; ++j) {
+    checkError(cudaMallocManaged(&thread_pool_read, sizeof(ThreadVar) * N/5));
+    for (int j = 0; j < N/5; ++j) {
 
         checkError(cudaMallocManaged(&thread_pool_read[j].single_label.col_ring_size, sizeof(int ) * min_mol_size));
         checkError(cudaMallocManaged(&thread_pool_read[j].single_label.g, sizeof(int) * l0.size()));
@@ -1031,7 +1042,6 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g000, 
         }
     
     }
-            
     checkError(cudaMallocManaged(&thread_pool_write, sizeof(ThreadVar) * N));
     for (int j = 0; j < N; ++j) {
         checkError(cudaMallocManaged(&thread_pool_write[j].labels, size * sizeof(GpuLabelClass)));
@@ -1111,7 +1121,7 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g000, 
         
         level++;
         printf("next %d   %d\n", level, n_threads);
-    }while( level < 6 );
+    }while( n_threads > 0 );
 
     printf("\nFINE DIMENSIONE MASSIMA %d", max);
 
@@ -1131,6 +1141,12 @@ vector<pair<int,int>> gpu_mc_split(const std::vector<std::vector<float>>& g000, 
     cudaFree(gpu_g1);
 
     vector<pair<int,int>> m;
+    pair<int, int> tmp;
+    for( int best = 0 ; best < m_best_size ; best++ ){
+        tmp.first = m_best[best].first;
+        tmp.second = m_best[best].second;
+        m.push_back(tmp);
+    }
 
     return m;
 }

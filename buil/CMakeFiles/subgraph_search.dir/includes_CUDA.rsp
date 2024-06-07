@@ -1,1 +1,0 @@
--I/opt/install/rdkit/2023.03.2_gcc_11.3/include/rdkit -I/home/dvillani/subgraph/MaxSubGraph_CUDA_C/subgraph_search -I/home/dvillani/subgraph/MaxSubGraph_CUDA_C/PUBLIC -I/home/dvillani/subgraph/MaxSubGraph_CUDA_C/test -I/home/dvillani/subgraph/MaxSubGraph_CUDA_C/testFra

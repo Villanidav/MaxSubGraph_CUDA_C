@@ -1,6 +1,0 @@
-/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/memcheck.dir
-/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/subgraph_search.dir
-/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/test.dir
-/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/testFra.dir
-/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/edit_cache.dir
-/home/dvillani/subgraph/MaxSubGraph_CUDA_C/buil/CMakeFiles/rebuild_cache.dir
